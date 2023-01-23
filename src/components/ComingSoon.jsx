@@ -9,7 +9,7 @@ const ComingSoon = () => {
           Apoorv 2k23 | Coming Soon
         </h1>
         <p className={styles.description}>
-          IIITK's Annual Techno Cultural Fest
+          IIITK&#39;s Annual Techno Cultural Fest
         </p> 
       </div>
   )
