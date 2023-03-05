@@ -11,6 +11,7 @@ const Description = () =>{
         <div className={styles.sponsers}>
             <Image 
                 src={sp}
+                alt={"sponsers"}
                 width={1200}
                 height={400}
                 style={{
@@ -23,7 +24,8 @@ const Description = () =>{
         <div className={styles.main_div}>
         <div className={styles.img}>
             <Image
-                 src={abc}
+                src={abc}
+                alt={"image"}
                 width={350}
                 height={350}
                 style={{
@@ -33,7 +35,7 @@ const Description = () =>{
             />
         </div>
             <div className={styles.head} >
-                <h1>Apoorv, IIITk's<br></br>
+                <h1>Apoorv, IIITk&apos;s<br></br>
                 techno-cultural fest,</h1><br></br>
             </div>
             <div className={styles.body}>
@@ -42,7 +44,7 @@ const Description = () =>{
                     since its inception in 2019, A myriad of events with
                     impressive and breathtaking performances has always
                     been the norm.<br></br>
-                    It's the amalgamation of mind gruelling competitions,
+                    It&apos;s the amalgamation of mind gruelling competitions,
                     thought proving expert talks and workshops that
                     stimulate your cerebral matter!<br></br><br></br>
                 </p>
