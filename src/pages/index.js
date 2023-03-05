@@ -1,10 +1,12 @@
 import ComingSoon from '@/components/ComingSoon'
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+import Description from '@/components/Description'
 
 export default function Home() {
   return (
     <>
+      <Description/>
       <Head>
         <title>Apoorv 2k23</title>
         <meta name="description" content="Apoorv IIITK's Techno Cultural Website" />
