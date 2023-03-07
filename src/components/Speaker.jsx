@@ -21,7 +21,7 @@ const Speaker = () => {
         {/* use a map function to loop through the speakers array and display the speakers */}
         <div className={styles.grid}>
           {people?.map((speaker) => (
-            <div className={styles.card}>
+            <div key={speakers.id} className={styles.card}>
               <img
                 src={speaker.image}
                 alt=''
