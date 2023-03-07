@@ -2,25 +2,98 @@
 import React from 'react'
 import styles from '../styles/Description.module.css'
 import Image from 'next/image'
-import sp from '../../public/sponsers.png'
+import sp1 from '../../public/spon1.png'
+import sp2 from '../../public/spon2.png'
+import sp3 from '../../public/spon3.png'
+
+
 import abc from '../../public/img.png'
 
 const Description = () =>{
     return(
         <>
+        <div className={styles.back}>
         <div className={styles.sponsers}>
             <Image 
-                src={sp}
+                src={sp1}
                 alt={"sponsers"}
-                width={1200}
-                height={400}
+                // width={1200}
+                // height={400}
                 style={{
-                maxWidth: '100%',
+                maxWidth: '33%',
+                height: 'auto',
+        }}
+        />
+        {/* </div>
+        <div className={styles.sponsers}> */}
+            <Image 
+                src={sp2}
+                alt={"sponsers"}
+                // width={1200}
+                // height={400}
+                style={{
+                maxWidth: '33%',
+                height: 'auto',
+        }}
+        />
+        {/* </div>
+        <div className={styles.sponsers}> */}
+            <Image 
+                src={sp3}
+                alt={"sponsers"}
+                // width={1200}
+                // height={400}
+                style={{
+                maxWidth: '33%',
                 height: 'auto',
         }}
         />
         </div>
+
+        <div className={styles.sponsers1}>
+            <Image 
+                src={sp1}
+                alt={"sponsers"}
+                // width={1200}
+                // height={400}
+                style={{
+                maxWidth: '33%',
+                height: 'auto',
+                }}
+        />
+        {/* </div>
+        <div className={styles.sponsers}>  */}
+             <Image 
+                src={sp2}
+                alt={"sponsers"}
+                // width={1200}
+                // height={400}
+                style={{
+                maxWidth: '33%',
+                height: 'auto',
+                }}
+        />
+        <Image 
+                src={sp3}
+                alt={"sponsers"}
+                // width={1200}
+                // height={400}
+                style={{
+                maxWidth: '33%',
+                height: 'auto',
+                }}
+         /> 
+        </div>
+        <div style={{
+            maxWidth: '100%',
+            height: '80px',
+            }}>
+
+        </div>
+        </div>
         
+
+
         <div className={styles.main_div}>
         <div className={styles.img}>
             <Image
