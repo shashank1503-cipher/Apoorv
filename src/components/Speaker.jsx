@@ -18,19 +18,19 @@ const Speaker = () => {
     <div>
       <h1 className={styles.title}>Speakers</h1>
       <div className={styles.container}>
-        {/* use a map function to loop through the speakers array and display the speakers */}
+        {/* use a map function using its key to loop through the speakers array and display the speakers */}
         <div className={styles.grid}>
-          {people?.map((speaker) => (
-            <div key={speakers.id} className={styles.card}>
+          {people?.map((person) => (
+            <div className={styles.card} key={person.id}>
               <img
-                src={speaker.image}
+                src={person.image}
                 alt=''
                 srcset=''
                 height='250px'
                 width='auto'
               />
-              <h3>{speaker.name}</h3>
-              <p>{speaker.title}</p>
+              <h3>{person.name}</h3>
+              <p>{person.title}</p>
             </div>
           ))}
         </div>
