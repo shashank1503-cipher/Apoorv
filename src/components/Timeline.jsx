@@ -9,7 +9,7 @@ import { useDetectScroll } from "@smakss/react-scroll-direction";
 const Timeline = () => {
 
     const [day, setDay] = useState(1)
-    const [events, setEvents] = useState([])
+    const [events, setEvents] = useState(timelineData[0].events)
     const stickyContainerRef = useRef(null)
 
     const scrollDirection = useDetectScroll({});
@@ -190,6 +190,9 @@ const Timeline = () => {
                         </div>
                     </div>
                 </div>
+            </div>
+            <div className={styles.badge}>
+                <Image src="/static/images/badge.png" alt="badge" fill />
             </div>
         </div>
     )
