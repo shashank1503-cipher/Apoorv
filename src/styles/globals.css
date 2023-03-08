@@ -11,6 +11,8 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  -webkit-tap-highlight-color: transparent;
+
 }
 
 :root {
@@ -20,6 +22,7 @@
   --brand-white: #FFFFFF;
   --brand-purple: #6525DB;
   --brand-black: #000000;
+  --sponsors-bg: #009f64;
   --brand-head-font: 'Homrice', serif;
   --brand-body-font: 'Roboto Slab', serif;
 }
