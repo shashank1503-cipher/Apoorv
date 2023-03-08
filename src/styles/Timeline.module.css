@@ -1,0 +1,141 @@
+.timelineContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.badge {
+    position: relative;
+    height: 10rem;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    color: var(--brand-white);
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 100%;
+    padding: 0 1rem;
+
+}
+
+.title {
+    width: 100%;
+    font-family: var(--brand-head-font);
+    font-size: 7.5rem;
+    font-weight: 700;
+    padding: 0 1rem;
+    margin: 4rem auto;
+    text-align: center;
+    line-height: 1;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.left .title {
+    justify-content: flex-end;
+}
+
+.left .imageContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.middle .title {
+    color: var(--brand-black);
+    font-size: 5.5rem;
+    padding: 0 0;
+    /* margin: 0rem 0; */
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 2rem; */
+}
+
+.middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 20%;
+    background-color: var(--brand-purple);
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* align-items: center; */
+    width: 40%;
+    height: 100%;
+    padding: 0 1rem;
+    margin: 0 auto
+}
+
+.sideParagraph {
+    margin: 4rem auto;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+    margin: 0 auto;
+    font-family: var(--brand-body-font);
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+.date {
+    display: flex;
+    justify-content: flex-end;
+    text-transform: capitalize;
+    /* margin-top: 1rem; */
+    text-align: right;
+}
+
+.stickyContainer {
+    height: 700vh;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.eventContainer {
+
+    height: 70vh;
+}
+
+.eventDetails {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+    /* margin: 1.5rem auto; */
+    font-family: var(--brand-body-font);
+}
+
+.imageWrapper {
+    width: 20rem;
+    height: 13.33rem;
+    position: relative;
+
+}
