@@ -5,7 +5,7 @@ import Year from "../styles/2023.svg";
 import styles from "../styles/Footer.module.css";
 
 
-import {AiFillMail,AiFillLinkedin,AiFillTwitterCircle,AiFillFacebook} from 'react-icons/Ai';
+import {AiFillMail,AiFillLinkedin,AiFillTwitterCircle,AiFillFacebook} from 'react-icons/ai';
 
 const Footer=()=> {
   return (
