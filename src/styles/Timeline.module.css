@@ -113,7 +113,7 @@
 }
 
 .stickyContainer {
-    height: 300vh;
+    height: 400vh;
 }
 
 .sticky {
@@ -142,5 +142,68 @@
     height: 13.33rem;
     position: relative;
 
+}
+@media (max-width: 1200px) {
+    .imageWrapper {
+        width: 15rem;
+        height: 10rem;
+    }
+
+    .title {
+        font-size: 5rem;
+    }
+
+    .middle .title {
+        font-size: 4rem;
+    }
+
+    .content {
+        font-size: 1.5rem;
+    }
+
+    .eventDetails {
+        font-size: 1.25rem;
+    }
+
+    .sideParagraph {
+        margin: 2rem auto;
+    }
+
+    .date {
+        margin-top: 0.5rem;
+    }
+
+}
+
+@media (max-width: 800px) {
+    .imageWrapper {
+        width: 10rem;
+        height: 6.66rem;
+    }
+
+    .title {
+        font-size: 3.5rem;
+    }
+
+    .middle .title {
+        font-size: 3rem;
+    }
+
+    .content {
+        font-size: 1.25rem;
+    }
+
+    .eventDetails {
+        font-size: 1rem;
+    }
+
+    .sideParagraph {
+        margin: 1rem auto;
+    }
+
+    .date {
+        margin-top: 0.25rem;
+    }
+    
 }
 

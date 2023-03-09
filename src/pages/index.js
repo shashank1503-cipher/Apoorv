@@ -18,8 +18,8 @@ export default function Home() {
       </Head>
       <Description />
       {/* <ComingSoon /> */}
-      <Sponsor/>
       <Timeline />
+      <Sponsor/>
     </>
   )
 }
