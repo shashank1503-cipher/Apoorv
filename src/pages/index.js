@@ -4,6 +4,7 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Description from '@/components/Description'
 import Sponsor from '@/components/Sponsor'
+import { CollisionButton } from '@/components/Buttons/Button'
 
 export default function Home() {
   return (
@@ -18,7 +19,7 @@ export default function Home() {
       <Description />
       {/* <ComingSoon /> */}
       <Timeline />
-      <Sponsor/>
+      <Sponsor />
     </>
   )
 }

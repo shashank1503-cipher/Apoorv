@@ -114,8 +114,6 @@ const Sponsor = () => {
 
         document.addEventListener('scroll', (e) => {
 
-            console.log(e)
-
         })
 
     })
