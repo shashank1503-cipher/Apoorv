@@ -68,7 +68,10 @@
     justify-content: flex-start;
     width: 20%;
     background-color: var(--brand-purple);
+
 }
+
+
 
 .right {
     display: flex;
@@ -94,11 +97,11 @@
     padding: 0 1rem;
     margin: 0 auto;
     font-family: var(--brand-body-font);
-    font-size: 2rem;
+    font-size: 1.75rem;
     font-weight: 400;
     text-align: center;
     text-transform: uppercase;
-
+    overflow-x: scroll;
 }
 
 .date {
@@ -110,7 +113,7 @@
 }
 
 .stickyContainer {
-    height: 700vh;
+    height: 300vh;
 }
 
 .sticky {
@@ -140,3 +143,4 @@
     position: relative;
 
 }
+

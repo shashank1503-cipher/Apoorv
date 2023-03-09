@@ -6,8 +6,8 @@ const ItemName = ({ name, day, index }) => {
     return (
         <motion.div className={styles.content} key={day} initial="hidden" animate="visible" variants={{
             hidden: {
-                y: -50,
-                opacity: 0
+                y: -20,
+                opacity: .8
             },
             visible: {
                 y: 0,
@@ -28,8 +28,8 @@ const ItemDate = ({ date, day, index }) => {
     return (
         <motion.div className={styles.content} initial="hidden" animate="visible" variants={{
             hidden: {
-                y: -50,
-                opacity: 0
+                y: -20,
+                opacity: .8
             },
             visible: {
                 y: 0,
@@ -52,8 +52,8 @@ const ItemDetails = ({ details, day, index }) => {
     return (
         <motion.div className={styles.eventDetails} initial="hidden" animate="visible" variants={{
             hidden: {
-                y: -50,
-                opacity: 0
+                y: -20,
+                opacity: .8
             },
             visible: {
                 y: 0,

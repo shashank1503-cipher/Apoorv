@@ -50,8 +50,7 @@ const Timeline = () => {
 
     }, [])
 
-    console.log(events)
-    return (
+    return (<>
         <div className={styles.timeline}>
             <div className={styles.badge}>
                 <Image src="/static/images/badge.png" alt="badge" fill />
@@ -118,7 +117,7 @@ const Timeline = () => {
                                     },
 
                                 }}>
-                                    <Image fill src={timelineData[day - 1].imageURL}></Image>
+                                    <Image fill alt={'snapshots'} src={timelineData[day - 1].imageURL}></Image>
                                 </motion.div> : null}
                             </div>
 
@@ -128,11 +127,11 @@ const Timeline = () => {
 
                                 <span>DAY  <motion.span key={day} initial="hidden" animate="visible" variants={{
                                     hidden: {
-                                        y: scrollDirection === "up" ? 100 : -100,
+                                        y: -100,
                                         opacity: 0
                                     },
                                     visible: {
-                                        y: 0,
+                                        y: 100,
                                         opacity: 1,
                                         transition: {
                                             delay: .2
@@ -159,7 +158,7 @@ const Timeline = () => {
                                 },
 
                             }}>
-                                <Image fill src={timelineData[day - 1].imageURL}></Image>
+                                <Image fill alt={'snapshots'} src={timelineData[day - 1].imageURL}></Image>
                             </motion.div> : null}
 
                         </div>
@@ -168,14 +167,14 @@ const Timeline = () => {
                         <div className={styles.left}>
                             {events.map((item, index) => {
                                 return (
-                                    <ItemDate date={item.date} day={day} index={index + 1} />
+                                    <ItemDate key={item.id} date={item.date} day={day} index={index + 1} />
                                 )
                             })}
                         </div>
                         <div className={styles.middle}>
                             {events.map((item, index) => {
                                 return (
-                                    <ItemName name={item.name} day={day} index={index + 1} />
+                                    <ItemName key={item.id} name={item.name} day={day} index={index + 1} />
                                 )
                             })}
                         </div>
@@ -183,7 +182,7 @@ const Timeline = () => {
                             {events.map((item, index) => {
                                 return (
 
-                                    <ItemDetails details={item.details} day={day} index={index + 1} />
+                                    <ItemDetails key={item.id} details={item.details} day={day} index={index + 1} />
 
                                 )
                             })}
@@ -195,6 +194,7 @@ const Timeline = () => {
                 <Image src="/static/images/badge.png" alt="badge" fill />
             </div>
         </div>
+    </>
     )
 }
 
