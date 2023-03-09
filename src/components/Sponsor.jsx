@@ -5,7 +5,6 @@ import sponsorbg from '../assets/sponsors.png'
 import sponsorHandShake from '../assets/sponsors_handshake.svg'
 import Image from 'next/image'
 import {motion} from 'framer-motion'
-// import { useDetectScroll } from '@smakss/react-scroll-direction'
 
 const Sponsor = () => {
 
@@ -15,34 +14,6 @@ const Sponsor = () => {
         3: 'SILVER',
         4: 'BRONZE'
     }
-
-    // const scrollDirection = useDetectScroll({})
-
-    // let direction = scrollDirection === 'up' ? 1 : -1
-
-    // const handleScroll = () => {
-
-    // }
-
-    // useEffect(() => {
-    //     document.getElementById('dial').addEventListener(
-    //         'scroll',
-    //         (e) => {
-    //             console.log('scrolling', e)
-    //         },
-    //         false
-    //     )
-
-    // }, [])
-
-    // const controls = useAnimation()
-    // const [ref, inView] = useInView()
-
-    // useEffect(() => {
-    //     if (inView) {
-    //         controls.start('visible')
-    //     }
-    // }, [inView, controls])
 
     const [sponsorsList,setSponsorsList] = useState({
         1:{
@@ -104,19 +75,27 @@ const Sponsor = () => {
         }
     })
 
-    useState(() => {    
-        console.log(sponsorsList)
-    },[sponsorsList])
-
     const [selectedSponsor, setSelectedSponsor] = useState(1)
+
+    const handleWheel = (e) => {
+
+        if(e.deltaY < 100 && e.deltaY > -100) return true
+
+        e.preventDefault()
+        // console.log(e)
+        if(e.deltaY > 1)
+        setSelectedSponsor(selectedSponsor<4?selectedSponsor+1:1)
+        else
+        setSelectedSponsor(selectedSponsor>1?selectedSponsor-1:4)
+    }
 
     useEffect(() => {
 
-        document.addEventListener('scroll', (e) => {
+        document.getElementById('dial').addEventListener('wheel',handleWheel)
 
-            console.log(e)
-
-        })
+        return () => {
+            document.getElementById('dial').removeEventListener('wheel', handleWheel)
+        }
 
     })
 
@@ -136,7 +115,7 @@ const Sponsor = () => {
                     // top: 0,
                 }}
             />
-                <div 
+                <motion.div 
                     className={styles.dial}
                     id="dial"
                 >
@@ -146,7 +125,7 @@ const Sponsor = () => {
                         <div className={styles.shortLine_d}></div>
                         <div className={styles.shortLine_d}></div>
                     </div>
-                    {Object.keys(sponsorsList).map((sponsor) => {
+                    {sponsorsList && Object.keys(sponsorsList).map((sponsor) => {
                         return (
                             <>                            
                                 <div 
@@ -183,12 +162,12 @@ const Sponsor = () => {
                     </div>
                     
 
-                </div>
+                </motion.div>
 
                 <div 
                     className={styles.sponsors}
                 >
-                        {Object.keys(sponsorsList[selectedSponsor]).map((sponsor, i) => {
+                        {Object.keys(sponsorsList[selectedSponsor])?.map((sponsor, i) => {
 
                             const ratts = {
                                 0: {x: 1, y: 1},
@@ -202,6 +181,7 @@ const Sponsor = () => {
                                    
                                     key={sponsor}
                                     className={styles.sponsor_item}
+                                    
                                     initial="hidden" animate={'visible'} variants={{
                                         hidden: {
                                             x: 100*ratts[i].x,

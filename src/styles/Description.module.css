@@ -17,7 +17,7 @@
     margin:0px 50px 0px 0px;
 }
 .back{
-    background-color: #2e2d2d;
+    background-color: rgb(2,2,2);
     /* background-color: #D9D9D9; */
     width:100%;
     height:auto;
@@ -51,11 +51,23 @@
 }
 
 .main_div{
-    background-color:#14cd80;
+    /* background: linear-gradient(
+        to bottom,
+        rgba(4, 215, 136,1) , 
+        rgba(0,0, 0, 1)
+      ); */
+
+      background: var(--sponsors-bg);
+      /* background: var(--brand-bg-green); */
+
+    /* background:  linear-gradient(to bottom, var(--brand-bg-green), var(--sponsors-bg), var(--brand-black) ); */
+                
+
     margin:0px 50px;
     color:white;
     padding-left:50px;
     padding-top:25px;
+    /* border: 1px solid var(--brand-green); */
     border-radius:0px 0px 90px 0px;
     position: relative; 
     transform: translateY(-12.5%);

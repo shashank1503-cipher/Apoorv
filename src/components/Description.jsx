@@ -7,7 +7,7 @@ import sp2 from '../../public/spon2.png'
 import sp3 from '../../public/spon3.png'
 
 
-import abc from '../../public/img.png'
+import abc from '../../public/img.svg'
 
 const Description = () =>{
     return(
