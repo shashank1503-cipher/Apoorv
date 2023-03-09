@@ -11,13 +11,13 @@ const timelineData = [{
         },
         {
             id: 2,
-            name: 'BrandAID',
+            name: 'Commit The Flag',
             date: '12th March 2023',
             details: 'has been celebrating arts, heritage, music and lifestyle since its inception in 2019. A myriad of events with impressive and'
         },
         {
             id: 3,
-            name: 'BrandAID',
+            name: 'Breaking Bad',
             date: '12th March 2023',
             details: 'has been celebrating arts, heritage, music and lifestyle since its inception in 2019. A myriad of events with impressive and'
         }
@@ -36,13 +36,13 @@ const timelineData = [{
         },
         {
             id: 2,
-            name: 'Reverse Coding',
+            name: 'CodeSprint',
             date: '13th March 2023',
             details: 'has been celebrating arts, heritage, music and lifestyle since its inception in 2019. A myriad of events with impressive and'
         },
         {
             id: 3,
-            name: 'Reverse Coding',
+            name: 'Console.log(\'Replicate\')',
             date: '13th March 2023',
             details: 'has been celebrating arts, heritage, music and lifestyle since its inception in 2019. A myriad of events with impressive and'
         }]
@@ -53,19 +53,19 @@ const timelineData = [{
     events: [
         {
             id: 1,
-            name: 'Reverse Coding',
+            name: 'Take De Bait',
             date: '13th March 2023',
             details: 'has been celebrating arts, heritage, music and lifestyle since its inception in 2019. A myriad of events with impressive and'
         },
         {
             id: 2,
-            name: 'Reverse Coding',
+            name: 'Fantasy Stock',
             date: '13th March 2023',
             details: 'has been celebrating arts, heritage, music and lifestyle since its inception in 2019. A myriad of events with impressive and'
         },
         {
             id: 3,
-            name: 'Reverse Coding',
+            name: 'Retropolis',
             date: '13th March 2023',
             details: 'has been celebrating arts, heritage, music and lifestyle since its inception in 2019. A myriad of events with impressive and'
         }]

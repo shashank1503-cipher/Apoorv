@@ -13,7 +13,7 @@ const ItemName = ({ name, day, index }) => {
                 y: 0,
                 opacity: 1,
                 transition: {
-                    delay: .2 * index
+                    delay: .2 
                 }
             },
 
@@ -35,7 +35,7 @@ const ItemDate = ({ date, day, index }) => {
                 y: 0,
                 opacity: 1,
                 transition: {
-                    delay: .2 * index
+                    delay: .2 
                 }
             },
         }}
@@ -59,7 +59,7 @@ const ItemDetails = ({ details, day, index }) => {
                 y: 0,
                 opacity: 1,
                 transition: {
-                    delay: .2 * index
+                    delay: .2 
                 }
             },
         }}

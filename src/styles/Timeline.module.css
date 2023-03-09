@@ -68,7 +68,10 @@
     justify-content: flex-start;
     width: 20%;
     background-color: var(--brand-purple);
+
 }
+
+
 
 .right {
     display: flex;
@@ -94,11 +97,11 @@
     padding: 0 1rem;
     margin: 0 auto;
     font-family: var(--brand-body-font);
-    font-size: 2rem;
+    font-size: 1.75rem;
     font-weight: 400;
     text-align: center;
     text-transform: uppercase;
-
+    overflow-x: scroll;
 }
 
 .date {
@@ -110,7 +113,7 @@
 }
 
 .stickyContainer {
-    height: 700vh;
+    height: 400vh;
 }
 
 .sticky {
@@ -140,3 +143,67 @@
     position: relative;
 
 }
+@media (max-width: 1200px) {
+    .imageWrapper {
+        width: 15rem;
+        height: 10rem;
+    }
+
+    .title {
+        font-size: 5rem;
+    }
+
+    .middle .title {
+        font-size: 4rem;
+    }
+
+    .content {
+        font-size: 1.5rem;
+    }
+
+    .eventDetails {
+        font-size: 1.25rem;
+    }
+
+    .sideParagraph {
+        margin: 2rem auto;
+    }
+
+    .date {
+        margin-top: 0.5rem;
+    }
+
+}
+
+@media (max-width: 800px) {
+    .imageWrapper {
+        width: 10rem;
+        height: 6.66rem;
+    }
+
+    .title {
+        font-size: 3.5rem;
+    }
+
+    .middle .title {
+        font-size: 3rem;
+    }
+
+    .content {
+        font-size: 1.25rem;
+    }
+
+    .eventDetails {
+        font-size: 1rem;
+    }
+
+    .sideParagraph {
+        margin: 1rem auto;
+    }
+
+    .date {
+        margin-top: 0.25rem;
+    }
+    
+}
+

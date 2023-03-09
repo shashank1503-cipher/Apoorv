@@ -34,7 +34,7 @@ const Timeline = () => {
 
 
         for (let index = 0; index < chapterHeights.length; index++) {
-            let chapterLength = chapterHeights[index] + componentTopY / 2;
+            let chapterLength = chapterHeights[index] + componentTopY;
             if (scrollY >= chapterLength) {
                 setDay(timelineData[index].day);
                 setEvents(timelineData[index].events)
@@ -48,10 +48,9 @@ const Timeline = () => {
             window.removeEventListener('scroll', handleScroll)
         }
 
-    }, [])
+    }, [handleScroll])
 
-    console.log(events)
-    return (
+    return (<>
         <div className={styles.timeline}>
             <div className={styles.badge}>
                 <Image src="/static/images/badge.png" alt="badge" fill />
@@ -60,14 +59,14 @@ const Timeline = () => {
                 <div className={styles.left}>
                     <motion.div initial="hidden" whileInView="visible" variants={{
                         hidden: {
-                            scale: .8,
+
                             opacity: 0
                         },
                         visible: {
-                            scale: 1,
+
                             opacity: 1,
                             transition: {
-                                delay: .4
+                                delay: .2
                             }
                         },
                     }}>
@@ -79,16 +78,16 @@ const Timeline = () => {
                 <div className={styles.middle}>
                 </div>
                 <div className={styles.right}>
-                    <motion.div initial="hidden" whileInView="visible" variants={{
+                    {/* <motion.div initial="hidden" whileInView="visible" variants={{
                         hidden: {
-                            scale: .8,
+
                             opacity: 0
                         },
                         visible: {
-                            scale: 1,
+
                             opacity: 1,
                             transition: {
-                                delay: .4
+                                delay: .2
                             }
                         },
                     }}>
@@ -96,7 +95,7 @@ const Timeline = () => {
                             has been celebrating arts, heritage, music and lifestyle since its inception in 2019. A myriad of events with impressive and breathtaking performances has always been the norm.
                             It&apos;s the amalgamation of mind gruelling competitions, thought provoking expert talks and workshops that stimulate your cerebral matter!
                         </div>
-                    </motion.div>
+                    </motion.div> */}
                 </div>
             </div>
             <div className={styles.stickyContainer} ref={stickyContainerRef}>
@@ -118,7 +117,7 @@ const Timeline = () => {
                                     },
 
                                 }}>
-                                    <Image fill src={timelineData[day - 1].imageURL}></Image>
+                                    <Image fill alt={'snapshots'} src={timelineData[day - 1].imageURL}></Image>
                                 </motion.div> : null}
                             </div>
 
@@ -128,11 +127,11 @@ const Timeline = () => {
 
                                 <span>DAY  <motion.span key={day} initial="hidden" animate="visible" variants={{
                                     hidden: {
-                                        y: scrollDirection === "up" ? 100 : -100,
+                                        y: -100,
                                         opacity: 0
                                     },
                                     visible: {
-                                        y: 0,
+                                        y: 100,
                                         opacity: 1,
                                         transition: {
                                             delay: .2
@@ -140,7 +139,6 @@ const Timeline = () => {
                                     },
 
                                 }}>{day}</motion.span> </span>
-
 
                             </div>
                         </div>
@@ -159,7 +157,7 @@ const Timeline = () => {
                                 },
 
                             }}>
-                                <Image fill src={timelineData[day - 1].imageURL}></Image>
+                                <Image fill alt={'snapshots'} src={timelineData[day - 1].imageURL}></Image>
                             </motion.div> : null}
 
                         </div>
@@ -168,14 +166,14 @@ const Timeline = () => {
                         <div className={styles.left}>
                             {events.map((item, index) => {
                                 return (
-                                    <ItemDate date={item.date} day={day} index={index + 1} />
+                                    <ItemDate key={item.id} date={item.date} day={day} index={index + 1} />
                                 )
                             })}
                         </div>
                         <div className={styles.middle}>
                             {events.map((item, index) => {
                                 return (
-                                    <ItemName name={item.name} day={day} index={index + 1} />
+                                    <ItemName key={item.id} name={item.name} day={day} index={index + 1} />
                                 )
                             })}
                         </div>
@@ -183,7 +181,7 @@ const Timeline = () => {
                             {events.map((item, index) => {
                                 return (
 
-                                    <ItemDetails details={item.details} day={day} index={index + 1} />
+                                    <ItemDetails key={item.id} details={item.details} day={day} index={index + 1} />
 
                                 )
                             })}
@@ -194,7 +192,19 @@ const Timeline = () => {
             <div className={styles.badge}>
                 <Image src="/static/images/badge.png" alt="badge" fill />
             </div>
+
         </div>
+        <div className={styles.timelineMobile}>
+            <div classname={styles.mobileContainer}>
+                <div className={styles.mobileLeft}>
+                    <div className={styles.mobileStrip}>
+                    </div>
+                </div>
+                <div className={styles.mobileRight}>
+                </div>
+            </div>
+        </div>
+    </>
     )
 }
 
