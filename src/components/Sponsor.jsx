@@ -4,6 +4,8 @@ import {FaCaretRight} from 'react-icons/fa'
 import sponsorbg from '../assets/sponsors.png'
 import sponsorHandShake from '../assets/sponsors_handshake.svg'
 import Image from 'next/image'
+import {motion} from 'framer-motion'
+// import { useDetectScroll } from '@smakss/react-scroll-direction'
 
 const Sponsor = () => {
 
@@ -14,13 +16,41 @@ const Sponsor = () => {
         4: 'BRONZE'
     }
 
+    // const scrollDirection = useDetectScroll({})
+
+    // let direction = scrollDirection === 'up' ? 1 : -1
+
+    // const handleScroll = () => {
+
+    // }
+
+    // useEffect(() => {
+    //     document.getElementById('dial').addEventListener(
+    //         'scroll',
+    //         (e) => {
+    //             console.log('scrolling', e)
+    //         },
+    //         false
+    //     )
+
+    // }, [])
+
+    // const controls = useAnimation()
+    // const [ref, inView] = useInView()
+
+    // useEffect(() => {
+    //     if (inView) {
+    //         controls.start('visible')
+    //     }
+    // }, [inView, controls])
+
     const [sponsorsList,setSponsorsList] = useState({
         1:{
             'google':{
-                logo: '/static/logos_sponsors/logo1.svg'
+                logo: '/static/logos_sponsors/logo1.svg',
             },
             'facebook':{
-                logo: '/static/logos_sponsors/logo1.svg'
+                logo: '/static/logos_sponsors/logo1.svg',
             },
             'oracle':{
                 logo: '/static/logos_sponsors/logo2.svg'
@@ -45,30 +75,30 @@ const Sponsor = () => {
             }
         },
         3:{
-            'logo 1':{
+            'logo 5':{
                 logo: '/static/logos_sponsors/logo1.svg'
             },
-            'logo 2':{
+            'logo 6':{
                 logo: '/static/logos_sponsors/logo2.svg'
             },
-            'logo 3':{
+            'logo 7':{
                 logo: 'static/logos_sponsors/logo3.svg'
             },
-            'logo 4':{
+            'logo 8':{
                 logo: 'static/logos_sponsors/logo4.svg'
             }
         },
         4:{
-            'logo 1':{
+            'logo 11':{
                 logo: '/static/logos_sponsors/logo1.svg'
             },
-            'logo 2':{
+            'logo 12':{
                 logo: '/static/logos_sponsors/logo2.svg'
             },
-            'logo 3':{
+            'logo 13':{
                 logo: 'static/logos_sponsors/logo3.svg'
             },
-            'logo 4':{
+            'logo 14':{
                 logo: 'static/logos_sponsors/logo4.svg'
             }
         }
@@ -108,7 +138,7 @@ const Sponsor = () => {
             />
                 <div 
                     className={styles.dial}
-                    onScroll={(e) => {console.log(e)}}
+                    id="dial"
                 >
                     <div className={styles.lines}>
                         <div className={styles.longLine_d}></div>
@@ -120,6 +150,7 @@ const Sponsor = () => {
                         return (
                             <>                            
                                 <div 
+                                key={sponsor}
                                     className={styles.dial_item}
                                     onClick={() => {setSelectedSponsor(sponsor)}}
                                 >
@@ -154,17 +185,51 @@ const Sponsor = () => {
 
                 </div>
 
-                <div className={styles.sponsors}>
-                        {Object.keys(sponsorsList[selectedSponsor]).map((sponsor) => {
-                            return (
-                                <div className={styles.sponsor_item}>
-                                    <img className={styles.sponsor_logo}
+                <div 
+                    className={styles.sponsors}
+                >
+                        {Object.keys(sponsorsList[selectedSponsor]).map((sponsor, i) => {
 
-                                    src={sponsorsList[selectedSponsor][sponsor]?.logo} />
-                                    <div
-                                        className={styles.sponsor_name}
-                                    >{sponsor.toUpperCase()}</div>
-                                </div>
+                            const ratts = {
+                                0: {x: 1, y: 1},
+                                1: {x: -1, y: 1},
+                                2: {x: 1, y: -1},
+                                3: {x: -1, y: -1},
+                            }
+                            // console.log(sponsor, i)
+                            return (
+                                <motion.div
+                                   
+                                    key={sponsor}
+                                    className={styles.sponsor_item}
+                                    initial="hidden" animate={'visible'} variants={{
+                                        hidden: {
+                                            x: 100*ratts[i].x,
+                                            y:100*ratts[i].y,
+                                            opacity: 0
+                                        },
+                                        visible: {
+                                            x: 0,
+                                            y:0,
+                                            opacity: 1,
+                                            transition: {
+                                                delay: .2
+                                            }
+                                        },
+                                    }}
+                                >
+                                    
+                                        
+                                        <img className={styles.sponsor_logo}
+                                            src={sponsorsList[selectedSponsor][sponsor]?.logo} 
+                                        />
+                                        <div
+                                            className={styles.sponsor_name}
+                                        >
+                                            {sponsor.toUpperCase()}
+                                        </div>
+                                    
+                                </motion.div>
                             )
                         }
                         )}
