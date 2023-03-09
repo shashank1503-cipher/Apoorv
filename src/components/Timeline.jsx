@@ -48,7 +48,7 @@ const Timeline = () => {
             window.removeEventListener('scroll', handleScroll)
         }
 
-    }, [handleScroll])
+    }, [])
 
     return (<>
         <div className={styles.timeline}>
@@ -195,7 +195,7 @@ const Timeline = () => {
 
         </div>
         <div className={styles.timelineMobile}>
-            <div classname={styles.mobileContainer}>
+            <div className={styles.mobileContainer}>
                 <div className={styles.mobileLeft}>
                     <div className={styles.mobileStrip}>
                     </div>
