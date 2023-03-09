@@ -164,7 +164,7 @@ const Timeline = () => {
                         <div className={styles.left}>
                             {events.map((item, index) => {
                                 return (
-                                    <ItemDate key={item.id} date={item.date} day={day} index={index + 1} isAnimated={true} />
+                                    <ItemDate key={item.id} date={item.date} day={day} time={item.time} index={index + 1} isAnimated={true} />
                                 )
                             })}
                         </div>

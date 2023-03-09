@@ -115,8 +115,10 @@
     text-align: right;
 }
 
-.time{
+.time {
     color: var(--brand-white-shaded);
+    display: flex;
+    justify-content: flex-end;
 }
 
 .stickyContainer {
@@ -151,10 +153,28 @@
 
 }
 
+.eventName {
+    transition: all 0.15s ease-in-out;
+    color: var(--brand-white);
+    padding: 1rem 1rem;
+    border-radius: 12px ;
+}
+
+.eventName:hover {
+    cursor: pointer;
+    background-color: #7C30F3;
+}
+
+.eventName:active {
+    background-color: #a16cf7;
+}
+
+
 @media (max-width: 1200px) {
-    .badge{
+    .badge {
         height: 8rem;
     }
+
     .imageWrapper {
         width: 15rem;
         height: 10rem;
@@ -187,9 +207,10 @@
 }
 
 @media (max-width: 800px) {
-    .badge{
+    .badge {
         height: 6rem;
     }
+
     .imageWrapper {
         width: 10rem;
         height: 6.66rem;
@@ -223,9 +244,10 @@
 
 
 @media (max-width:600px) {
-    .badge{
+    .badge {
         height: 4rem;
     }
+
     .timeline {
         display: none;
     }

@@ -19,7 +19,9 @@ const ItemName = ({ name, day, index, isAnimated }) => {
             },
 
         }} >
+            <div className={styles.eventName}>
             {name}
+            </div>
         </motion.div> : <div className={styles.content}>{name}</div>}
     </>
 
