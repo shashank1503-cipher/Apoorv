@@ -6,6 +6,7 @@ import Description from '@/components/Description'
 
 import Hero from '@/components/Hero'
 import Sponsor from '@/components/Sponsor'
+import Speakers from '@/components/Speakers'
 import { CollisionButton } from '@/components/Buttons/Button'
 import Navbar from '@/components/Navbar'
 
@@ -23,7 +24,8 @@ export default function Home() {
       <Description />
       {/* <ComingSoon /> */}
       <Timeline />
-      <Sponsor />
+      <Speakers/>
+      <Sponsor/>
     </>
   )
 }
