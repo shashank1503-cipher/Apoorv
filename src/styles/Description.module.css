@@ -20,13 +20,13 @@
 }
 
 .main_div{
-    /* background: linear-gradient(
+    background: linear-gradient(
         to bottom,
-        rgba(4, 215, 136,1) , 
+        var(--sponsors-bg) , 
         rgba(0,0, 0, 1)
-      ); */
+      );
 
-      background: var(--sponsors-bg);
+      /* background: var(--sponsors-bg); */
       /* background: var(--brand-bg-green); */
 
     /* background:  linear-gradient(to bottom, var(--brand-bg-green), var(--sponsors-bg), var(--brand-black) ); */
@@ -37,7 +37,7 @@
     padding-left:50px;
     padding-top:25px;
     /* border: 1px solid var(--brand-green); */
-    border-radius:0px 0px 90px 0px;
+    border-radius:20px 20px 00px 0px;
     position: relative; 
     transform: translateY(-12.5%);
     z-index: 1;

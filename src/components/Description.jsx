@@ -14,7 +14,7 @@ import Marquee from "react-fast-marquee";
 const Description = () => {
     return (
         <>
-            <div className={styles.back}>
+            <div className={styles.back} id="home">
                 <div className={styles.sponsers}>
                     <Marquee gradient={false} speed={100}>
                         <Image

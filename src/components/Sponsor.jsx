@@ -5,6 +5,7 @@ import sponsorbg from '../assets/sponsors.png'
 import sponsorHandShake from '../assets/sponsors_handshake.svg'
 import Image from 'next/image'
 import {motion} from 'framer-motion'
+import { CollisionButton } from './Buttons/Button'
 
 const Sponsor = () => {
 
@@ -77,30 +78,37 @@ const Sponsor = () => {
 
     const [selectedSponsor, setSelectedSponsor] = useState(1)
 
-    const handleWheel = (e) => {
+   
+    // const detectTrackpad = () => {
+    
+        
+       
+    // };
 
-        if(e.deltaY < 100 && e.deltaY > -100) return true
+    // const handleWheel = (e) => {
 
-        e.preventDefault()
-        // console.log(e)
-        if(e.deltaY > 1)
-        setSelectedSponsor(selectedSponsor<4?selectedSponsor+1:1)
-        else
-        setSelectedSponsor(selectedSponsor>1?selectedSponsor-1:4)
-    }
+    //     if(detectTrackpad()) return true
 
-    useEffect(() => {
+    //     e.preventDefault()
+    //     console.log(e.deltaY)
+    //     if(e.deltaY > 1)
+    //     setSelectedSponsor(selectedSponsor<4?selectedSponsor+1:1)
+    //     else
+    //     setSelectedSponsor(selectedSponsor>1?selectedSponsor-1:4)
+    // }
 
-        document.getElementById('dial').addEventListener('wheel',handleWheel)
+    // useEffect(() => {
 
-        return () => {
-            document.getElementById('dial').removeEventListener('wheel', handleWheel)
-        }
+    //     document.getElementById('dial')?.addEventListener('wheel',handleWheel)
 
-    })
+    //     return () => {
+    //         document.getElementById('dial')?.removeEventListener('wheel', handleWheel)
+    //     }
+
+    // })
 
     return (
-        <div className={styles.main_container}>
+        <div className={styles.main_container} id="sponsors">
 
             <div className={styles.dial_container}>
 
@@ -126,6 +134,7 @@ const Sponsor = () => {
                         <div className={styles.shortLine_d}></div>
                     </div>
                     {sponsorsList && Object.keys(sponsorsList).map((sponsor) => {
+                        console.log("working...")
                         return (
                             <>
                                 <div
@@ -167,7 +176,7 @@ const Sponsor = () => {
                 <div
                     className={styles.sponsors}
                 >
-                        {Object.keys(sponsorsList[selectedSponsor])?.map((sponsor, i) => {
+                        {sponsorsList && sponsorsList[selectedSponsor] && Object.keys(sponsorsList[selectedSponsor])?.map((sponsor, i) => {
 
                             const ratts = {
                                 0: {x: 1, y: 1},
