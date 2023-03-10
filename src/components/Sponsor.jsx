@@ -4,9 +4,8 @@ import { FaCaretRight } from 'react-icons/fa'
 import sponsorbg from '../assets/sponsors.png'
 import sponsorHandShake from '../assets/sponsors_handshake.svg'
 import Image from 'next/image'
-import { motion } from 'framer-motion'
+import {motion} from 'framer-motion'
 import { CollisionButton } from './Buttons/Button'
-// import { useDetectScroll } from '@smakss/react-scroll-direction'
 
 const Sponsor = () => {
 
@@ -17,37 +16,9 @@ const Sponsor = () => {
         4: 'BRONZE'
     }
 
-    // const scrollDirection = useDetectScroll({})
-
-    // let direction = scrollDirection === 'up' ? 1 : -1
-
-    // const handleScroll = () => {
-
-    // }
-
-    // useEffect(() => {
-    //     document.getElementById('dial').addEventListener(
-    //         'scroll',
-    //         (e) => {
-    //             console.log('scrolling', e)
-    //         },
-    //         false
-    //     )
-
-    // }, [])
-
-    // const controls = useAnimation()
-    // const [ref, inView] = useInView()
-
-    // useEffect(() => {
-    //     if (inView) {
-    //         controls.start('visible')
-    //     }
-    // }, [inView, controls])
-
-    const [sponsorsList, setSponsorsList] = useState({
-        1: {
-            'google': {
+    const [sponsorsList,setSponsorsList] = useState({
+        1:{
+            'google':{
                 logo: '/static/logos_sponsors/logo1.svg',
             },
             'facebook': {
@@ -105,37 +76,54 @@ const Sponsor = () => {
         }
     })
 
-    useState(() => {
-        console.log(sponsorsList)
-    }, [sponsorsList])
-
     const [selectedSponsor, setSelectedSponsor] = useState(1)
 
-    useEffect(() => {
+   
+    // const detectTrackpad = () => {
+    
+        
+       
+    // };
 
-        document.addEventListener('scroll', (e) => {
+    // const handleWheel = (e) => {
 
-        })
+    //     if(detectTrackpad()) return true
 
-    })
+    //     e.preventDefault()
+    //     console.log(e.deltaY)
+    //     if(e.deltaY > 1)
+    //     setSelectedSponsor(selectedSponsor<4?selectedSponsor+1:1)
+    //     else
+    //     setSelectedSponsor(selectedSponsor>1?selectedSponsor-1:4)
+    // }
+
+    // useEffect(() => {
+
+    //     document.getElementById('dial')?.addEventListener('wheel',handleWheel)
+
+    //     return () => {
+    //         document.getElementById('dial')?.removeEventListener('wheel', handleWheel)
+    //     }
+
+    // })
 
     return (
-        <div className={styles.main_container}>
+        <div className={styles.main_container} id="sponsors">
 
             <div className={styles.dial_container}>
 
-                <Image
-                    src={sponsorbg}
-                    alt={"sponsers"}
-                    style={{
-                        position: 'absolute',
-                        width: '100%',
-                        height: '100%',
-                        objectFit: 'cover',
-                        // top: 0,
-                    }}
-                />
-                <div
+            <Image 
+                src={sponsorbg}
+                alt={"sponsers"}
+                style={{
+                    position: 'absolute',
+                    width: '100%',
+                    height: '100%',
+                    objectFit: 'cover',
+                    // top: 0,
+                }}
+            />
+                <motion.div 
                     className={styles.dial}
                     id="dial"
                 >
@@ -145,7 +133,8 @@ const Sponsor = () => {
                         <div className={styles.shortLine_d}></div>
                         <div className={styles.shortLine_d}></div>
                     </div>
-                    {Object.keys(sponsorsList).map((sponsor) => {
+                    {sponsorsList && Object.keys(sponsorsList).map((sponsor) => {
+                        console.log("working...")
                         return (
                             <>
                                 <div
@@ -182,19 +171,20 @@ const Sponsor = () => {
                     </div>
 
 
-                </div>
+                </motion.div>
 
                 <div
                     className={styles.sponsors}
                 >
-                    {Object.keys(sponsorsList[selectedSponsor]).map((sponsor, i) => {
+                        {sponsorsList && sponsorsList[selectedSponsor] && Object.keys(sponsorsList[selectedSponsor])?.map((sponsor, i) => {
 
-                        const ratts = {
-                            0: { x: 1, y: 1 },
-                            1: { x: -1, y: 1 },
-                            2: { x: 1, y: -1 },
-                            3: { x: -1, y: -1 },
-                        }
+                            const ratts = {
+                                0: {x: 1, y: 1},
+                                1: {x: -1, y: 1},
+                                2: {x: 1, y: -1},
+                                3: {x: -1, y: -1},
+                            }
+                            // console.log(sponsor, i)
                         // console.log(sponsor, i)
                         return (
                             <motion.div
