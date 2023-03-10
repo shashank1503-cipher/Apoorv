@@ -26,10 +26,10 @@ const Footer = () => {
           <div className={styles.horizontal}></div>
          
           <div className={styles.second}>
-            <div className={styles.foot_font}>APRIL</div>
-            <div className={styles.foot_font}>18-22nd</div>
+            <div className={styles.foot_font2}>April</div>
+            <div className={styles.foot_font2} >18-22nd</div>
             <div className={styles.fontz}><Image src={year}/></div>
-            <div className={styles.foot_font}>IIIT KOTTAYAM</div>
+            <div className={styles.foot_font}>IIIT KOTTAYAM </div>
           </div>
           <div className={styles.horizontal}></div>
           <div className={styles.third}>
@@ -43,7 +43,8 @@ const Footer = () => {
             <div className={styles.foot_font1} >+91 9370324791</div>
           <div className={styles.foot_font1}>+91 9326791283</div>
          <div className={styles.foot_font1} onClick={(e) => {window.location.href ='mailto:apoorv@iiitkottayam.ac.in';}}>apoorv@iiitkottayam.ac.in</div>
-         <div className={styles.foot_font1} style={{marginTop:"1rem"}}>IIIT Kottayam, Pala, Kottayam-686635</div>
+         <div className={styles.foot_font1} style={{marginTop:"1rem"}}>IIIT Kottayam,Valavoor</div>
+         <div className={styles.foot_font1}> Pala, Kottayam-686635</div>
         <div className={styles.foot_font1}>Kerala, India</div>
 
           </div>

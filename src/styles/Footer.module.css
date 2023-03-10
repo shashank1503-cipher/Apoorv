@@ -3,8 +3,17 @@
 
   .fontz{
     color: #5A4BF6;
-    font-size: large;
+    font-size: 2em;
+    padding: 0.5em 0em 0em 1em;
   }
+  @media only screen and (max-width: 728px){
+    .fontz{
+        color: #5A4BF6;
+    font-size: 2em;
+    padding: 0.5em 0em 0em 0em;
+    }
+  }
+
 .footer_container{
   padding: 0 1.5em;
 }
@@ -56,7 +65,7 @@
 }
  .horizontal{
     background-color: white;
-    width: 0.1%;
+    width: 0.2%;
     /* margin-left: 1rem; */
     margin-right: 1rem;
     margin-top: 1rem;
@@ -83,12 +92,18 @@ margin-bottom: 2rem;
   margin-left: 1rem;
   /* margin-right: 10rem; */
 }
+@media only screen and (max-width: 728px){
+    .first{
+        padding: 0.5em 0em 0em 1em ;
+    }
+}
  .second{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
   padding-right: 0.7em;
+  padding: 0em 1em;
  }
  @media only screen and (max-width: 728px){
   .second{
@@ -97,6 +112,8 @@ margin-bottom: 2rem;
   justify-content: flex-start;
   align-items: flex-start;
   margin-left: 1rem;
+  padding-top: 1em;
+
   }
  }
  .third{
@@ -106,6 +123,7 @@ margin-bottom: 2rem;
   align-items: flex-end;
   margin-right: 2vh;
   margin-top: 2rem;
+  padding: 0em 1em;
  }
  @media only screen and (max-width: 728px){
   .third{
@@ -115,6 +133,7 @@ margin-bottom: 2rem;
   align-items: flex-start;
   margin-top: 0rem;
   margin-left: 1rem;
+  padding-top: 1em;
   }
  }
  .icons{
@@ -127,7 +146,7 @@ margin-bottom: 2rem;
  }
  .icon{
   border: 1px solid;
-  background-color: #717171;
+
   color: #2ED798;
   border-radius: 5rem;
   padding: 5px;
@@ -150,16 +169,21 @@ margin-bottom: 2rem;
  }
 
 .line1{
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-bottom: 2rem;
   height: 2px;
   width:100%;
   background-color: white;
 }
-.foot_font{
-  font-family: 'Roboto Slab';
+.foot_font2{
+  font-family: var(--brand-head-font);
+  font-size: 1.5em;
+  line-height: 1.2em;
 }
+.foot_font{
+    font-family: var(--brand-body-font);
+  }
 .foot_font1{
   font-family: 'Roboto Slab';
-  font-size: xx-small;
+  font-size: 0.7em;
 }
