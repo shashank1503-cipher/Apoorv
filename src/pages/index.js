@@ -6,6 +6,7 @@ import Description from '@/components/Description'
 
 import Hero from '@/components/Hero'
 import Sponsor from '@/components/Sponsor'
+import Footer from '@/components/Footer'
 import { CollisionButton } from '@/components/Buttons/Button'
 
 export default function Home() {
@@ -19,9 +20,10 @@ export default function Home() {
       </Head>
       <Hero/>
       <Description />
-      {/* <ComingSoon /> */}
+      <ComingSoon />
       <Timeline />
       <Sponsor />
+      <Footer/>
     </>
   )
 }
