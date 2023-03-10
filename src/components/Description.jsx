@@ -7,14 +7,14 @@ import sp2 from '../../public/spon2.png'
 import sp3 from '../../public/spon3.png'
 
 
-import abc from '../../public/img.png'
+import abc from '../../public/img.svg'
 import { CollisionButton } from './Buttons/Button'
 import Marquee from "react-fast-marquee";
 
 const Description = () => {
     return (
         <>
-            <div className={styles.back}>
+            <div className={styles.back} id="home">
                 <div className={styles.sponsers}>
                     <Marquee gradient={false} speed={100}>
                         <Image

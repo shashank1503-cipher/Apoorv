@@ -2,7 +2,7 @@
 import React from 'react'
 import styles from '../styles/Hero.module.css'
 import Image from 'next/image'
-import img from '../../public/he.png'
+import img from '../../public/he.svg'
 
 
 const Hero = () =>{
