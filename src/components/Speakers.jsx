@@ -20,40 +20,40 @@ const Speakers = () => {
         },
         {
             image:img2,
-            title:'Naoko Okiyama',
+            title:'Naoko Okiyama2',
             description:'A.C.O. by Monsterlab COO / Art Director'
         },
 
         {
             image: img3,
-            title:'Naoko Okiyama',
+            title:'Naoko Okiyama3',
             description:'A.C.O. by Monsterlab COO / Art Director'
         },
         {
             image:img4,
-            title:'Naoko Okiyama',
+            title:'Naoko Okiyama4',
             description:'A.C.O. by Monsterlab COO / Art Director'
         },
 
         {
             image: img5,
-            title:'Naoko Okiyama',
+            title:'Naoko Okiyama5',
             description:'A.C.O. by Monsterlab COO / Art Director'
         },
         {
             image:img6,
-            title:'Naoko Okiyama',
+            title:'Naoko Okiyama6',
             description:'A.C.O. by Monsterlab COO / Art Director'
         },
 
         {
             image: img7,
-            title:'Naoko Okiyama',
+            title:'Naoko Okiyama7',
             description:'A.C.O. by Monsterlab COO / Art Director'
         },
         {
             image:img8,
-            title:'Naoko Okiyama',
+            title:'Naoko Okiyama8',
             description:'A.C.O. by Monsterlab COO / Art Director'
         }
     ];
@@ -70,7 +70,7 @@ const Speakers = () => {
         <div className={styles.SpeakerCards}>
 
             {speakersList.map((item, index) => {
-                return <SpeakerCard  speaker={item} />
+                return <SpeakerCard  key={item.title} speaker={item} />
             })}
 
         

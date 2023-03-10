@@ -8,7 +8,7 @@ const SpeakerCard = ({speaker}) => {
     <div className={styles.CardContainer}>
 
       {/* <img className={styles.CardImage} src="https://images.freeimages.com/images/previews/a3e/wild-horse-1334844.jpg"  /> */}
-      <Image className={styles.CardImage} src={speaker.image} alt="no image" />
+      <Image className={styles.CardImage} src={speaker.image} alt={speaker.title} />
 
       <div className={styles.CardTitle}>
         {/* <h4> Title </h4> */}
