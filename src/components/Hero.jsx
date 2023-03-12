@@ -4,12 +4,27 @@ import styles from '../styles/Hero.module.css'
 import Image from 'next/image'
 import img from '../../public/he.svg'
 import { CollisionButton } from './Buttons/Button'
-
+import { motion } from 'framer-motion'
 
 const Hero = () => {
     return (
         <>
-            <div className={styles.main}>
+            <motion.div className={styles.main} initial="hidden" whileInView="visible" variants={{
+                hidden: {
+
+                    opacity: 0,
+                    y: 20,
+                },
+                visible: {
+
+                    opacity: 1,
+                    y: 0,
+                    transition: {
+                        duration: 0.5,
+
+                    }
+                },
+            }}>
                 <Image
                     className={styles.img}
                     src={img}
@@ -37,7 +52,7 @@ const Hero = () => {
                     </div>
                 </div>
 
-            </div>
+            </motion.div>
         </>
     )
 }
