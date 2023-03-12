@@ -8,8 +8,11 @@
 .img {
     float: none;
     text-align: center;
-    margin: 0px 50px 0px 0px;
+    /* margin: 0px 50px 0px 0px; */
+    width: 50%;
+    margin-right: 2em;
 }
+
 
 .back {
     background-color: #2e2d2d;
@@ -18,29 +21,37 @@
     height: auto;
 
 }
+.desc_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    /* padding: 1em; */
 
+    width: 100%;
+}
 .main_div{
-    background: linear-gradient(
-        to bottom,
-        var(--sponsors-bg) , 
-        rgba(0,0, 0, 1)
-      );
-
-      /* background: var(--sponsors-bg); */
-      /* background: var(--brand-bg-green); */
-
-    /* background:  linear-gradient(to bottom, var(--brand-bg-green), var(--sponsors-bg), var(--brand-black) ); */
-                
-
-    margin:0px 50px;
-    color:white;
-    padding-left:50px;
-    padding-top:25px;
+    width: 90%;
+    /* padding-left: 2em; */
+    margin-left: 3em;
+    background: #04D788;
+    border-radius: 50px;
+    padding-bottom: 1em;
+    /* background: var(--sponsors-bg); */
+    /* background: var(--brand-bg-green); */
+    /* background: linear-gradient(to bottom, var(--brand-bg-green), var(--sponsors-bg), var(--brand-black) ); */
+    display: flex;
+    flex-direction: row-reverse;
+    /* margin: 0px 50px; */
+    color: white;
+    /* padding-left: 50px; */
+    /* padding-top: 25px; */
     /* border: 1px solid var(--brand-green); */
-    border-radius:20px 20px 00px 0px;
-    position: relative; 
+    border-radius: 0 0 5em 0;
+    position: relative;
     transform: translateY(-12.5%);
     z-index: 1;
+    padding-left: 3em;
 }
 
 .head {
@@ -49,13 +60,30 @@
     padding-top: 30px;
 }
 
-.body {
+.desc_textbody {
     size: 1rem;
-    padding-right: 10px;
+    /* padding-right: 10px; */
+    width: 70%;
     font-family: var(--brand-body-font);
+    text-align: justify;
 
 }
 
+@media (max-width:930px) {
+    .main_div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1em;
+    }
+   
+    .desc_text{
+        display: flex;
+        align-items: center;
+    }
+
+}
 
 @media (max-width:600px) {
     .main_div{

@@ -13,7 +13,7 @@ import Marquee from "react-fast-marquee";
 
 const Description = () => {
     return (
-        <>
+        <div className='desc_main'>
             <div className={styles.back} id="home">
                 <div className={styles.sponsers}>
                     <Marquee gradient={false} speed={100}>
@@ -105,11 +105,12 @@ const Description = () => {
                         }}
                     />
                 </div>
+                <div className={styles.desc_text}>
                 <div className={styles.head} >
-                    <h1>Apoorv, IIITk&apos;s<br></br>
+                    <h1>Apoorv, IIITk's<br></br>
                         techno-cultural fest,</h1><br></br>
                 </div>
-                <div className={styles.body}>
+                <div className={styles.desc_textbody}>
                     <p>
                         has been celebrating arts, heritage,music and lifestyle
                         since its inception in 2019, A myriad of events with
@@ -123,8 +124,9 @@ const Description = () => {
                 <CollisionButton>
                     Register Here ! 
                 </CollisionButton>
+                </div>
             </div>
-        </>
+        </div>
     );
 }
 
