@@ -32,21 +32,21 @@ const timelineData = [{
     imageURL: 'https://res.cloudinary.com/dlu72yo9b/image/upload/v1632664486/DSC02855_1_x0oa32.jpg',
     events: [
         {
-            id: 1,
+            id: 4,
             name: 'Reverse Coding',
             date: '13th March 2023',
             time : '10:00 AM',
             details: 'has been celebrating arts, heritage, music and lifestyle since its inception in 2019. A myriad of events with impressive and'
         },
         {
-            id: 2,
+            id: 5,
             name: 'CodeSprint',
             date: '13th March 2023',
             time : '10:00 AM',
             details: 'has been celebrating arts, heritage, music and lifestyle since its inception in 2019. A myriad of events with impressive and'
         },
         {
-            id: 3,
+            id: 6,
             name: 'Web Replica',
             date: '13th March 2023',
             time : '10:00 AM',
@@ -58,21 +58,21 @@ const timelineData = [{
     imageURL: 'https://res.cloudinary.com/dlu72yo9b/image/upload/v1632664485/DSC_0277_1_tdbkek_1_q1hcom.jpg',
     events: [
         {
-            id: 1,
+            id: 7,
             name: 'Take De Bait',
             date: '13th March 2023',
             time : '10:00 AM',
             details: 'has been celebrating arts, heritage, music and lifestyle since its inception in 2019. A myriad of events with impressive and'
         },
         {
-            id: 2,
+            id: 8,
             name: 'Fantasy Stock',
             date: '13th March 2023',
             time : '10:00 AM',
             details: 'has been celebrating arts, heritage, music and lifestyle since its inception in 2019. A myriad of events with impressive and'
         },
         {
-            id: 3,
+            id: 9,
             name: 'Retropolis',
             date: '13th March 2023',
             time : '10:00 AM',
