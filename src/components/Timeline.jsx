@@ -49,7 +49,7 @@ const Timeline = () => {
     }, [])
 
     return (<>
-        <div className={styles.timeline}>
+        <div className={styles.timeline} id='timeline'>
             <div className={styles.badge}>
                 <Image src="/static/images/badge.png" alt="badge" fill />
             </div>

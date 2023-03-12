@@ -1,12 +1,13 @@
 import ComingSoon from '@/components/ComingSoon'
-import Timeline from '@/components/Timeline'
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Description from '@/components/Description'
 
 import Hero from '@/components/Hero'
 import Sponsor from '@/components/Sponsor'
+import Speakers from '@/components/Speakers'
 import { CollisionButton } from '@/components/Buttons/Button'
+import Navbar from '@/components/Navbar'
 import TimelineNew from '@/components/TimelineNew'
 
 export default function Home() {
@@ -18,12 +19,13 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Hero />
+      <Navbar/>
+      <Hero/>
       <Description />
       {/* <ComingSoon /> */}
-      {/* <Timeline /> */}
       <TimelineNew />
-      <Sponsor />
+      <Speakers/>
+      <Sponsor/>
     </>
   )
 }
