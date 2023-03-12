@@ -2,10 +2,25 @@ import React from 'react'
 import styles from '../styles/Speakers.module.css'
 
 import Image from 'next/image'
-
-const SpeakerCard = ({speaker}) => {
+import { motion } from 'framer-motion'
+const SpeakerCard = ({ speaker }) => {
   return (
-    <div className={styles.CardContainer}>
+    <motion.div className={styles.CardContainer} initial="hidden" whileInView="visible" variants={{
+      hidden: {
+
+        opacity: 0,
+        y: 20,
+      },
+      visible: {
+
+        opacity: 1,
+        y: 0,
+        transition: {
+          duration: 0.25,
+
+        }
+      },
+    }}>
 
       {/* <img className={styles.CardImage} src="https://images.freeimages.com/images/previews/a3e/wild-horse-1334844.jpg"  /> */}
       <Image className={styles.CardImage} src={speaker.image} alt={speaker.title} />
@@ -20,7 +35,7 @@ const SpeakerCard = ({speaker}) => {
         <p>{speaker.description}</p>
       </div>
 
-    </div>
+    </motion.div>
   )
 }
 
