@@ -125,11 +125,11 @@ const Timeline = () => {
 
                                 <span>DAY  <motion.span key={day} initial="hidden" animate="visible" variants={{
                                     hidden: {
-                                        y: -100,
+                                        transform: 'translateY(100px)',
                                         opacity: 0
                                     },
                                     visible: {
-                                        y: 100,
+                                        transform: 'translateY(0)',
                                         opacity: 1,
                                         transition: {
                                             delay: .2
@@ -184,7 +184,7 @@ const Timeline = () => {
                                 )
                             })}
                         </div>
-                    </div>
+                   </div>
                 </div>
             </div>
             <div className={styles.badge}>
