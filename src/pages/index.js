@@ -5,6 +5,7 @@ import Description from '@/components/Description'
 
 import Hero from '@/components/Hero'
 import Sponsor from '@/components/Sponsor'
+import Footer from '@/components/Footer'
 import Speakers from '@/components/Speakers'
 import { CollisionButton } from '@/components/Buttons/Button'
 import Navbar from '@/components/Navbar'
@@ -32,6 +33,7 @@ export default function Home() {
   }, [router.asPath])
   return (
     <>
+
       <div className={styles.container} style={{ height: height }}>
         <Head>
           <title>Apoorv - IIITK</title>
@@ -59,8 +61,9 @@ export default function Home() {
           <Description />
           <TimelineNew />
           <Speakers />
-          <Sponsor /></>}
-
+          <Sponsor />
+          <Footer/>
+          </>}
       </div>
     </>
   )
