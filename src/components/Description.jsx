@@ -1,17 +1,53 @@
 
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import styles from '../styles/Description.module.css'
 import Image from 'next/image'
 import sp1 from '../../public/spon1.png'
 import sp2 from '../../public/spon2.png'
 import sp3 from '../../public/spon3.png'
 
+import a1 from '../assets/Asset_4.png'
+import a2 from '../assets/Asset_5.png'
+import a3 from '../assets/Asset_6.png'
+import a4 from '../assets/Asset_7.png'
+import a5 from '../assets/Asset_8.png'
+import a6 from '../assets/Asset_9.png'
 
-import abc from '../../public/img.svg'
+
+// import abc from '../../public/img.svg'
 import { CollisionButton } from './Buttons/Button'
 import Marquee from "react-fast-marquee";
 
+const colors = [
+    'blue',
+    'green',
+    'pink',
+    'red',
+    // 'purple',
+    'yellow',
+    'gray',
+];
+
+const image = [a1, a2, a3, a4, a5, a6];
+
+
 const Description = () => {
+
+  const [value, setValue] = useState(0);
+
+  useEffect(() => {
+
+    const interval = setInterval(() => {
+        setValue((v) => ( (v + 1)%6 ));
+    }, 500);
+
+    return () =>{
+        clearInterval(interval)
+    }
+
+  },[])
+
+
     return (
         <>
             <div className={styles.back} id="home">
@@ -92,7 +128,7 @@ const Description = () => {
 
 
 
-            <div className={styles.main_div}>
+            <div className={styles.main_div} style={ { backgroundColor: colors[value]} }>
                 <div className={styles.wrapper}>
                     <div className={styles.head} >
                         <h1>Apoorv, IIITk&apos;s<br></br>
@@ -115,7 +151,7 @@ const Description = () => {
                 </div>
                 <div className={styles.img}>
                     <Image
-                        src={abc}
+                        src={image[value]}
                         alt={"image"}
                         width={350}
                         height={350}
