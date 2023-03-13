@@ -31,7 +31,7 @@ const ItemName = ({ name, isAnimated, isCurrent, isPrevious, isNext, }) => {
         isVisible = true
         scale = 1
         opacity = 0.5
-        transformX = '-50%'
+        transformX = '-20%'
     }
     if (isNext) {
         initialScale = 0
@@ -40,7 +40,7 @@ const ItemName = ({ name, isAnimated, isCurrent, isPrevious, isNext, }) => {
         isVisible = true
         scale = 1
         opacity = 0.5
-        transformX = '50%'
+        transformX = '0%'
         // transformX = isFirst ? '100%' : '50%'
     }
 
@@ -100,7 +100,7 @@ const ItemDetails = ({ details, isAnimated, framerKey, isFirst, isLast }) => {
 
     return (
         <>
-            {isAnimated ? <motion.div className={styles.content} key={framerKey} initial="hidden" animate="visible" variants={{
+            {isAnimated ? <motion.div className={styles.eventDetails} key={framerKey} initial="hidden" animate="visible" variants={{
                 hidden: {
                     transform: 'translateY(10%)',
                     opacity: 0
