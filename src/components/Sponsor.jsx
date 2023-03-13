@@ -178,12 +178,12 @@ const Sponsor = () => {
                 >
                         {sponsorsList && sponsorsList[selectedSponsor] && Object.keys(sponsorsList[selectedSponsor])?.map((sponsor, i) => {
 
-                            const ratts = {
-                                0: {x: 1, y: 1},
-                                1: {x: -1, y: 1},
-                                2: {x: 1, y: -1},
-                                3: {x: -1, y: -1},
-                            }
+                            // const ratts = {
+                            //     0: {x: 1, y: 1},
+                            //     1: {x: -1, y: 1},
+                            //     2: {x: 1, y: -1},
+                            //     3: {x: -1, y: -1},
+                            // }
                             // console.log(sponsor, i)
                         // console.log(sponsor, i)
                         return (
@@ -193,12 +193,13 @@ const Sponsor = () => {
                                 className={styles.sponsor_item}
                                 initial="hidden" animate={'visible'} variants={{
                                     hidden: {
-                                        x: 100 * ratts[i].x,
-                                        y: 100 * ratts[i].y,
+                                        // x: 100 * ratts[i].x,
+                                        // y: 100 * ratts[i].y,
+                                        y: 100,
                                         opacity: 0
                                     },
                                     visible: {
-                                        x: 0,
+                                        // x: 0,
                                         y: 0,
                                         opacity: 1,
                                         transition: {
