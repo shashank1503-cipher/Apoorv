@@ -4,7 +4,7 @@ import { FaCaretRight } from 'react-icons/fa'
 import sponsorbg from '../assets/sponsors.png'
 import sponsorHandShake from '../assets/sponsors_handshake.svg'
 import Image from 'next/image'
-import {motion} from 'framer-motion'
+import { motion } from 'framer-motion'
 import { CollisionButton } from './Buttons/Button'
 
 const Sponsor = () => {
@@ -16,9 +16,9 @@ const Sponsor = () => {
         4: 'BRONZE'
     }
 
-    const [sponsorsList,setSponsorsList] = useState({
-        1:{
-            'google':{
+    const [sponsorsList, setSponsorsList] = useState({
+        1: {
+            'google': {
                 logo: '/static/logos_sponsors/logo1.svg',
             },
             'facebook': {
@@ -78,11 +78,11 @@ const Sponsor = () => {
 
     const [selectedSponsor, setSelectedSponsor] = useState(1)
 
-   
+
     // const detectTrackpad = () => {
-    
-        
-       
+
+
+
     // };
 
     // const handleWheel = (e) => {
@@ -108,22 +108,22 @@ const Sponsor = () => {
     // })
 
     return (
-        <div className={styles.main_container} id="sponsors">
+        <div className={styles.main_container} id="sponsors" >
 
             <div className={styles.dial_container}>
 
-            <Image 
-                src={sponsorbg}
-                alt={"sponsers"}
-                style={{
-                    position: 'absolute',
-                    width: '100%',
-                    height: '100%',
-                    objectFit: 'cover',
-                    // top: 0,
-                }}
-            />
-                <motion.div 
+                <Image
+                    src={sponsorbg}
+                    alt={"sponsers"}
+                    style={{
+                        position: 'absolute',
+                        width: '100%',
+                        height: '100%',
+                        objectFit: 'cover',
+                        // top: 0,
+                    }}
+                />
+                <motion.div
                     className={styles.dial}
                     id="dial"
                 >
@@ -176,7 +176,7 @@ const Sponsor = () => {
                 <div
                     className={styles.sponsors}
                 >
-                        {sponsorsList && sponsorsList[selectedSponsor] && Object.keys(sponsorsList[selectedSponsor])?.map((sponsor, i) => {
+                    {sponsorsList && sponsorsList[selectedSponsor] && Object.keys(sponsorsList[selectedSponsor])?.map((sponsor, i) => {
 
                             // const ratts = {
                             //     0: {x: 1, y: 1},
@@ -229,7 +229,22 @@ const Sponsor = () => {
 
             </div>
 
-            <div className={styles.make_sponsor}>
+            <motion.div className={styles.make_sponsor} initial="hidden" whileInView="visible" variants={{
+                hidden: {
+
+                    opacity: 0,
+                    y: 50,
+                },
+                visible: {
+
+                    opacity: 1,
+                    y: 0,
+                    transition: {
+                        duration: 0.25,
+
+                    }
+                },
+            }}>
 
                 <div className={styles.make_sponsor_disc}>
 
@@ -241,7 +256,7 @@ const Sponsor = () => {
                         has been celebrating arts, heritage, music and lifestyle since its inception in 2019. A myriad of events with impressive and breathtaking performances has always
                     </div>
 
-                    <CollisionButton style={{ width: "50%",marginTop:"1rem" }}>Contact Us</CollisionButton>
+                    <CollisionButton style={{ width: "50%", marginTop: "1rem" }}>Contact Us</CollisionButton>
                 </div>
 
                 <div
@@ -258,7 +273,7 @@ const Sponsor = () => {
 
                     />
                 </div>
-            </div>
+            </motion.div>
 
         </div>
     )

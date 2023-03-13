@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Bona+Nova:wght@400;700&family=Roboto+Slab&display=swap');
 
 @font-face {
-  font-family: 'Homrice';
-  src: url('/static/fonts/Homrice.otf');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'Homrice';
+    src: url('/static/fonts/Homrice.otf');
+    font-weight: normal;
+    font-style: normal;
 }
 
 .img{
@@ -106,8 +106,9 @@
     /* padding:50px 50px 20px 50px; */
 
 }
-.content{
-    float:none;
+
+.content {
+    float: none;
     /* text-align: left; */
     text-align: centre;
     color: white;
@@ -121,29 +122,32 @@
     position:relative;
 }
 
-.head{
-    size:3.5rem;
+.head {
+    size: 3.5rem;
     font-family: 'Homrice', serif;
-    color:#FFE600;
+    color: #FFE600;
 }
 
 .button1 {
-    background-color:black; /* Green */
+    background-color: black;
+    /* Green */
     border: solid rgb(207, 199, 108);
-    color:#FFE600;
+    color: #FFE600;
     padding: 7px 15px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-family: 'Roboto Slab', serif;
     font-size: 16px;
-    margin: 6% 4% 5% 0%; 
+    margin: 6% 4% 5% 0%;
     cursor: pointer;
     border-radius: 2px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 .button {
-    background-color:white; /* Green */
+    background-color: white;
+    /* Green */
     border: solid rgb(207, 199, 108);
     color: black;
     padding: 7px 15px;
@@ -155,7 +159,7 @@
     /* margin: 0.1% 17% 5%; */
     cursor: pointer;
     border-radius: 2px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .link{
@@ -168,11 +172,11 @@
     flex-wrap: wrap;
 }
 
-@media screen and (min-width: 1100px){
-    .content{
-        float:right;
+@media screen and (min-width: 1100px) {
+    .content {
+        float: right;
         text-align: left;
-        padding-right:10%;
+        padding-right: 10%;
     }
 
     /* .img{

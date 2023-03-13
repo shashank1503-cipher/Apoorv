@@ -2,8 +2,6 @@
 import React, { useEffect, useState } from 'react'
 import styles from '../styles/Hero.module.css'
 import Image from 'next/image'
-
-
 const Hero = () => {
 
     const [animation, setAnimation] = useState(true)
@@ -71,9 +69,6 @@ const Hero = () => {
                 <button className={styles.button}>Register!</button>
                 </div>
                 <div className={styles.link}>
-                    {/* <hr></hr>
-                    <p>MUSIC&emsp;&emsp;&emsp;&emsp;ART&emsp;&emsp;&emsp;&emsp;DANCE&emsp;&emsp;&emsp;&emsp;DRAMA</p>
-                    <hr></hr> */}
                     <div>MUSIC</div>
                     <div>ART</div>
                     <div>DANCE</div>

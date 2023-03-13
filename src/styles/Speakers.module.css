@@ -1,0 +1,76 @@
+.SpeakersContainer {
+    margin: 2rem auto;
+    width: 90%;
+    background-color: #F2EFEB;
+    /* padding: 2rem 0rem 3rem 4rem; */
+    /* padding: 2%; */
+
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    color: black;
+    padding-bottom: 3rem;
+    font-family: "Homrice";
+    font-size: 2rem;
+    font-size: 100;
+
+}
+
+.SpeakerCards {
+    /* gap: 5% 5%; */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    /* justify-content: center; */
+}
+
+
+.CardContainer {
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 3rem;
+    /* margin: 2%; */
+}
+
+.CardImage {
+    /* height: 30vh;
+    width: 15vw; */
+    width: 80%;
+    
+}
+
+.CardTitle {
+    margin-top: 0.5rem;
+    width: 100%;
+    text-align: center;
+}
+
+.CardDescription {
+    margin-top: 0.5rem;
+    width: 100%;
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+@media only screen and (max-width: 700px) {
+    .SpeakerCards {
+      align-items: center;
+      justify-content: center;  
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+  }
+
+  
