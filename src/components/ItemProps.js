@@ -22,7 +22,7 @@ const ItemName = ({ name, isAnimated, isCurrent, isPrevious, isNext, }) => {
         isVisible = true
         scale = 1.2
         opacity = 1
-        transformX = '0%'
+        transformX = '-30%'
     }
     if (isPrevious) {
         initialScale = 1
@@ -31,7 +31,7 @@ const ItemName = ({ name, isAnimated, isCurrent, isPrevious, isNext, }) => {
         isVisible = true
         scale = 1
         opacity = 0.5
-        transformX = '-20%'
+        transformX = '-50%'
     }
     if (isNext) {
         initialScale = 0
@@ -40,7 +40,7 @@ const ItemName = ({ name, isAnimated, isCurrent, isPrevious, isNext, }) => {
         isVisible = true
         scale = 1
         opacity = 0.5
-        transformX = '0%'
+        transformX = '-10%'
         // transformX = isFirst ? '100%' : '50%'
     }
 
@@ -68,7 +68,7 @@ const ItemDate = ({ date, time, isAnimated, framerKey, isFirst, isLast }) => {
                     opacity: 0
                 },
                 visible: {
-                    transform: isFirst ? 'translateY(-25%)' : isLast ? 'translateY(-35%)' : 'translateY(-10%)',
+                    transform: isFirst ? 'translateY(-25%)' : isLast ? 'translateY(-35%)' : 'translateY(-20%)',
                     opacity: 1,
                     transition: {
                         delay: .2
@@ -106,7 +106,7 @@ const ItemDetails = ({ details, isAnimated, framerKey, isFirst, isLast }) => {
                     opacity: 0
                 },
                 visible: {
-                    transform: isFirst ? 'translateY(-25%)' : isLast ? 'translateY(-35%)' : 'translateY(-10%)',
+                    transform: isFirst ? 'translateY(-25%)' : isLast ? 'translateY(-35%)' : 'translateY(-20%)',
                     opacity: 1,
                     transition: {
                         delay: .2
