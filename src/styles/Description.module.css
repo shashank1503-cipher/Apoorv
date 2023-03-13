@@ -29,8 +29,8 @@
         rgba(0,0, 0, 1)
       ); */
 
-    background: var(--sponsors-bg);
-    /* background: var(--brand-green); */
+    /* background: var(--sponsors-bg); */
+    background: var(--brand-green);
 
     /* background:  linear-gradient(to bottom, var(--brand-bg-green), var(--sponsors-bg), var(--brand-black) ); */
 
