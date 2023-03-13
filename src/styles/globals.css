@@ -12,19 +12,19 @@
   padding: 0;
   margin: 0;
   -webkit-tap-highlight-color: transparent;
-  /* overflow-y: overlay; */
+
 }
 
 :root {
   --brand-yellow: #FFE600;
   --brand-green: #00B140;
   --brand-peach: #FE7062;
+  --brand-blue: #3B28FE;
   --brand-white: #FFFFFF;
   --brand-white-shaded: #b2b2b2;
   --brand-purple: #6525DB;
   --brand-black: #000000;
   --sponsors-bg: #009f64;
-  --brand-bg-green: #04d788;
   --brand-head-font: 'Homrice', serif;
   --brand-body-font: 'Roboto Slab', serif;
 }
