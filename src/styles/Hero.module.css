@@ -168,18 +168,6 @@
     justify-content: space-evenly;
     border-top: 1px solid white;
     border-bottom: 1px solid white;
-    color: var(--brand-bg-green);
+    color: var(--sponsors-bg);
     flex-wrap: wrap;
-}
-
-@media screen and (min-width: 1100px) {
-    .content {
-        float: right;
-        text-align: left;
-        padding-right: 10%;
-    }
-
-    /* .img{
-        text-align: left;
-    } */
 }
