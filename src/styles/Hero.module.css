@@ -68,6 +68,15 @@
     }
 }
 
+.img {
+    transition: all 0.3s ease;
+    transform: none;
+}
+
+.img_ani {
+    transform: scale(1.5);
+}
+
 .img_back_1 {
     animation-name: rotts;
     animation-duration: 10s;

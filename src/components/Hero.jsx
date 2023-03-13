@@ -2,9 +2,64 @@
 import React, { useEffect, useState } from 'react'
 import styles from '../styles/Hero.module.css'
 import Image from 'next/image'
+
 const Hero = () => {
 
     const [animation, setAnimation] = useState(true)
+
+    function calculateCenter(image) {
+        var rect1 = image.getBoundingClientRect();
+        var x = rect1.left + rect1.width * 0.5;
+        var y = rect1.top + rect1.height * 0.5;
+        return { x: x, y: y }
+    }
+
+    function getDistance(x1, y1, x2, y2){
+        let y = x2 - x1;
+        let x = y2 - y1;
+      
+        return Math.sqrt(x * x + y * y);
+    }
+
+    function distanceFromCenter(image, mouseX, mouseY) {
+        let imageCenter = calculateCenter(image);
+        return getDistance(imageCenter.x, imageCenter.y, mouseX, mouseY)
+    }
+
+    function adjustImage(image, mX, mY) {
+        let distance = distanceFromCenter(image, mX, mY);
+        let center = calculateCenter(image)
+
+        let mxx = center.x + (mX - center.x)
+        let myy = center.y + (mY - center.y)
+
+        const baseScale = 1
+        const maxScaling = 2;
+        const scalingFactor = 1.5;
+        
+        const adjustedScaling = maxScaling - ((distance / 1000) * scalingFactor)
+        const scaling = adjustedScaling >= baseScale ? adjustedScaling : baseScale
+        
+        image.style.transformOrigin = `${mxx}px ${myy}px`
+        image.style.transform = `scale(${scaling})`
+    }
+
+    const func = (e) => {
+
+        const mx = e.screenX;
+        const my = e.screenY;
+        console.log(e)
+
+        const image = document.getElementById('img');
+        adjustImage(image, mx, my)
+
+    }
+
+    const removeFunc = (e) => {
+        const image = document.getElementById('img');
+        image.style.transform = 'none';
+        image.style.transformOrigin = 'center center';
+    }
 
     useEffect(() => {
 
@@ -22,14 +77,19 @@ const Hero = () => {
 
     return(
         <div className={styles.main}>
-            <div className={styles.img_cont}>
-
+            <div className={styles.img_cont}
+                onMouseMove={(e) => func(e)}
+               onMouseLeave={(e) => removeFunc(e)}
+            >
+            
             <Image
-                className={animation?styles.img_back:styles.img_back_1}
+                // className={animation?styles.img_back:styles.img_back_1}
+                className={`${styles.img} ${animation?styles.img_ani:""}`}
                 src={"/heroBack.png"}
                 alt={"hero"}
                 width={450}
                 height={450}
+                id={"img"}
                 
                 // text-align={"center"}
                 style={{
@@ -38,7 +98,7 @@ const Hero = () => {
                     height: '100%',
                     position: 'absolute',
                 }}
-            />
+            />            
 
             <Image
                 className={styles.img}
@@ -54,7 +114,6 @@ const Hero = () => {
                     zIndex: 12,
                 }}
                 />
-
            
             </div>
             <div className={styles.content}>
