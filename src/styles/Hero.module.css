@@ -117,9 +117,7 @@
 }
 
 .content {
-    float: none;
-    /* text-align: left; */
-    text-align: centre;
+   
     color: white;
     font-family: 'Roboto Slab', serif;
     display: flex;
@@ -179,4 +177,11 @@
     border-bottom: 1px solid white;
     color: var(--sponsors-bg);
     flex-wrap: wrap;
+}
+
+
+.buttonGrp {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }

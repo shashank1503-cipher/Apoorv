@@ -15,12 +15,6 @@
 
 }
 
-*::-webkit-scrollbar {
-  display: none;
-}
-
-
-
 :root {
   --brand-yellow: #FFE600;
   --brand-green: #00B140;
