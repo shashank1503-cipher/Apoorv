@@ -27,19 +27,19 @@
 .prizes_heading {
     color: var(--brand-yellow);
     font-family: var(--brand-head-font);
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 .prizes_text {
     color: #fff;
     font-family: var(--brand-body-font);
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .dial_heading {
     color: var(--brand-yellow);
     font-family: var(--brand-head-font);
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-bottom: 20px;
 }
 
@@ -266,6 +266,7 @@
 } */
 
 @media screen and (max-width: 768px) {
+    
     .make_sponsor_image {
         display: none;
     }
@@ -280,6 +281,15 @@
         gap: 20px;
     }
 
+    .prizes_heading {
+        font-size: 2rem;
+    }
+    .prizes_text {
+        font-size: 1.2rem;
+    }
+    .dial_heading {
+        font-size: 2rem;
+    }
     .dial_container {
         position: relative;
         display: flex;

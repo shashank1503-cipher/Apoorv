@@ -27,7 +27,7 @@ const Hero = () => {
             }}>
                 <Image
                     className={styles.img}
-                    src={img}
+                    src={'https://res.cloudinary.com/dpjf6btln/image/upload/v1678782197/he_tfjsfb.svg'}
                     alt={"hero"}
                     width={450}
                     height={450}

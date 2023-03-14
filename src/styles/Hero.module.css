@@ -11,25 +11,27 @@
     align-self: centre;
 }
 
-.main{
-    margin:70px 20px 20px 20px;
-    position:relative;
+.main {
+    margin: 70px 20px 20px 20px;
+    position: relative;
     text-align: center;
     /* padding:50px 50px 20px 50px; */
 
 }
 
 .content {
-    float: none;
-    /* text-align: left; */
-    text-align: centre;
+    /* t9ext-align: left; */
+    text-align: center;
     color: white;
     font-family: 'Roboto Slab', serif;
-
     font-size: 1.2rem;
     line-height: 1.5;
     margin-top: 5px;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .head {
