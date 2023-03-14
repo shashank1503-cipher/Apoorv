@@ -10,7 +10,7 @@
     /* Closing animation below */
     animation: slide-out-container 3s cubic-bezier(0.97, 0.01, 0.36, 0.99) 1s;
     animation-fill-mode: forwards;
-
+    
 
 
 }
