@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React, { useEffect, useRef, useState } from 'react'
 import styles from '../styles/Timeline.module.css'
-import timelineData from './TimelineData'
+import timelineData from '../data/TimelineData'
 import { motion } from 'framer-motion'
 import { ItemDate, ItemDetails, ItemName } from './ItemProps'
 import { useDetectScroll } from "@smakss/react-scroll-direction";

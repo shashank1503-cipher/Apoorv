@@ -28,8 +28,8 @@ const Hero = () => {
                     className={styles.img}
                     src={'https://res.cloudinary.com/dpjf6btln/image/upload/v1678782197/he_tfjsfb.svg'}
                     alt={"hero"}
-                    width={450}
-                    height={450}
+                    width={600}
+                    height={600}
                     // text-align={"center"}
                     style={{
                         maxWidth: '100%',
@@ -42,7 +42,7 @@ const Hero = () => {
                     </div>
                     <p>A fest to mirror the beautiful chaos of nature and keep<br></br> you on your toes, stir souls and spark your creative<br></br>flair.</p>
 
-                    <CollisionButton style={{ width: "50%", marginTop: "1rem", alignItems: "center" }}>Register Now</CollisionButton>
+                    <CollisionButton style={{ width: "40%", marginTop: "1rem", alignItems: "center" }}>Register Now</CollisionButton>
 
                     <div className={styles.link}>
                         <hr></hr>

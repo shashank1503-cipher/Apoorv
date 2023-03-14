@@ -5,23 +5,23 @@ const timelineData = [{
         {
             id: 1,
             name: 'BrandAID',
-            date: '12th March 2023',
-            time : '10:00 AM',
+            date: '6th March 2023',
+            time: '10:00 AM',
             details: 'has been celebrating arts, heritage, music and lifestyle since its inception in 2019. A myriad of events with impressive and'
 
         },
         {
             id: 2,
             name: 'Commit The Flag',
-            date: '12th March 2023',
-            time : '10:00 AM',
+            date: '6th March 2023',
+            time: '10:00 AM',
             details: 'has been celebrating arts, heritage, music and lifestyle since its inception in 2019. A myriad of events with impressive and'
         },
         {
             id: 3,
             name: 'Breaking Bad',
-            date: '12th March 2023',
-            time : '10:00 AM',
+            date: '6th March 2023',
+            time: '10:00 AM',
             details: 'has been celebrating arts, heritage, music and lifestyle since its inception in 2019. A myriad of events with impressive and'
         }
 
@@ -34,22 +34,22 @@ const timelineData = [{
         {
             id: 4,
             name: 'Reverse Coding',
-            date: '13th March 2023',
-            time : '10:00 AM',
+            date: '7th March 2023',
+            time: '10:00 AM',
             details: 'has been celebrating arts, heritage, music and lifestyle since its inception in 2019. A myriad of events with impressive and'
         },
         {
             id: 5,
             name: 'CodeSprint',
-            date: '13th March 2023',
-            time : '10:00 AM',
+            date: '7th March 2023',
+            time: '10:00 AM',
             details: 'has been celebrating arts, heritage, music and lifestyle since its inception in 2019. A myriad of events with impressive and'
         },
         {
             id: 6,
             name: 'Web Replica',
-            date: '13th March 2023',
-            time : '10:00 AM',
+            date: '7th March 2023',
+            time: '10:00 AM',
             details: 'has been celebrating arts, heritage, music and lifestyle since its inception in 2019. A myriad of events with impressive and'
         }]
 },
@@ -60,22 +60,22 @@ const timelineData = [{
         {
             id: 7,
             name: 'Take De Bait',
-            date: '13th March 2023',
-            time : '10:00 AM',
+            date: '8th March 2023',
+            time: '10:00 AM',
             details: 'has been celebrating arts, heritage, music and lifestyle since its inception in 2019. A myriad of events with impressive and'
         },
         {
             id: 8,
             name: 'Fantasy Stock',
-            date: '13th March 2023',
-            time : '10:00 AM',
+            date: '8th March 2023',
+            time: '10:00 AM',
             details: 'has been celebrating arts, heritage, music and lifestyle since its inception in 2019. A myriad of events with impressive and'
         },
         {
             id: 9,
             name: 'Retropolis',
-            date: '13th March 2023',
-            time : '10:00 AM',
+            date: '8th March 2023',
+            time: '10:00 AM',
             details: 'has been celebrating arts, heritage, music and lifestyle since its inception in 2019. A myriad of events with impressive and'
         }]
 },
