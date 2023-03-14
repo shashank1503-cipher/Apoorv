@@ -181,7 +181,11 @@
 }
 
 
-
+@media (max-width: 1400px) {
+    .middle .title {
+        font-size: 4.5rem;
+    }
+}
 
 
 @media (max-width: 1200px) {
@@ -220,6 +224,12 @@
 
 }
 
+@media (max-width: 1000px) {
+    .middle .title {
+        font-size: 3.25rem;
+    }
+    
+}
 @media (max-width: 800px) {
     .badge {
         height: 6rem;
@@ -235,7 +245,7 @@
     }
 
     .middle .title {
-        font-size: 3rem;
+        font-size: 2.75rem;
     }
 
     .content {
@@ -257,7 +267,7 @@
 }
 
 
-@media (max-width:600px) {
+@media (max-width:750px) {
     .badge {
         height: 4rem;
     }

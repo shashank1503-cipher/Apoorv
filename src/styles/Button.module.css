@@ -7,7 +7,7 @@
     position: relative;
     overflow: hidden;
     transition: 0.3s;
-    width: 20%;
+    width: 50%;
     font-family: var(--brand-head-font);
     color: var(--brand-yellow);
 }
@@ -58,6 +58,6 @@
 }
 @media (max-width:600px) {
     .button{
-        width: 75%;
+        width: 25%;
     }
 }
