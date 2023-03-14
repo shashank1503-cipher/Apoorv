@@ -208,7 +208,7 @@ const TimelineNew = () => {
 
 
 
-        <div className={styles.timelineMobile}>
+        <div className={styles.timelineMobile} id="timeline">
             <div className={styles.badge}>
                 <Image src="/static/images/badge.png" alt="badge" fill />
             </div>
