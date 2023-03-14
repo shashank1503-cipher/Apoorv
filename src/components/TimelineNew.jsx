@@ -87,8 +87,8 @@ const TimelineNew = () => {
     }, [])
 
 
-    return (<>
-        <div className={styles.timeline} id="timeline">
+    return (<div id={"timeline"}>
+        <div className={styles.timeline} >
 
             <div className={styles.badge}>
                 <Image src="/static/images/badge.png" alt="badge" fill />
@@ -193,22 +193,7 @@ const TimelineNew = () => {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <div className={styles.timelineMobile} id="timeline">
+        <div className={styles.timelineMobile} >
             <div className={styles.badge}>
                 <Image src="/static/images/badge.png" alt="badge" fill />
             </div>
@@ -258,7 +243,7 @@ const TimelineNew = () => {
                 <Image src="/static/images/badge.png" alt="badge" fill />
             </div>
         </div>
-    </>
+    </div>
     )
 }
 
