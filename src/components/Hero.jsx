@@ -42,7 +42,7 @@ const Hero = () => {
                     </div>
                     <p>A fest to mirror the beautiful chaos of nature and keep<br></br> you on your toes, stir souls and spark your creative<br></br>flair.</p>
 
-                    <CollisionButton style={{ width: "40%", marginTop: "1rem", alignItems: "center" }}>Register Now</CollisionButton>
+                    <CollisionButton style={{ marginTop: "1rem", alignItems: "center" }}>Register Now</CollisionButton>
 
                     <div className={styles.link}>
                         <hr></hr>
