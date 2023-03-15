@@ -208,6 +208,7 @@ const Sponsor = () => {
                 >
                     {sponsorsList && sponsorsList[selectedSponsor] && Object.keys(sponsorsList[selectedSponsor])?.map((sponsor, i) => {
 
+
                         // const ratts = {
                         //     0: { x: 1, y: 1 },
                         //     1: { x: -1, y: 1 },
@@ -224,11 +225,11 @@ const Sponsor = () => {
                                 initial="hidden" animate={'visible'} variants={{
                                     hidden: {
 
+
                                         y: 50,
                                         opacity: 0
                                     },
                                     visible: {
-
                                         y: 0,
                                         opacity: 1,
                                         transition: {
