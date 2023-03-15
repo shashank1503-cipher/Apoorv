@@ -7,102 +7,9 @@
     font-style: normal;
 }
 
-.img{
-   
-}
-
-@keyframes rotts {
-    0% {
-        transform: scale(1);
-    }
-
-    5% {
-        transform: scale(1.4);
-    }
-
-    8% {
-        transform:scale(1.4) rotate(360deg);
-    } 
-
-    10% {
-        transform: rotate(360deg);
-
-    }
-
-    100% {
-        transform: scale(1);
-    }
-}
-
-@keyframes moves {
-    0%{
-        transform: scale(1);
-    }
-
-    5% {
-        transform: scale(1.4);
-    }
-
-    10% {
-        transform: scale(1.4) translateX(20px);
-    }
-
-    15% {
-        transform: scale(1.4)  translateY(20px);
-    }
-
-    20% {
-        transform: scale(1.4) translateX(-20px);
-    }
-
-    25% {
-        transform:scale(1.4) translateY(-20px);
-    }
-
-    30% {
-        transform: scale(1);
-    }
-
-    100%{
-
-    }
-}
-
 .img {
-    transition: all 0.3s ease;
-    transform: none;
+    align-self: centre;
 }
-
-.img_ani {
-    transform: scale(1.5);
-}
-
-.img_back_1 {
-    animation-name: rotts;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-play-state: running;
-    animation-delay: 0s;
-    animation-timing-function:ease-in-out;
-}
-
-.img_back {
-    animation-name: moves;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-play-state: running;
-    animation-delay: 0s;
-    animation-timing-function:ease-in-out;
-}
-
-.img_cont {
-    /* background-color: #FFE600;  */
-    position: relative;
-    overflow: hidden;
-    width: 450px;
-    height: 450px;
-}
-
 
 .main {
     margin: 70px 20px 20px 20px;
@@ -114,7 +21,6 @@
 }
 
 .content {
-
     /* t9ext-align: left; */
     text-align: center;
     color: white;
@@ -126,6 +32,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center; */
+
 }
 
 .head {
@@ -168,19 +75,27 @@
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.link{
-    padding: 10px;
-    display: flex;
-    justify-content: space-evenly;
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
-    color: var(--sponsors-bg);
-    flex-wrap: wrap;
+/* .heroButton {
+
+    margin: 1rem 0;
+    width: 50%;
+} */
+
+.link {
+    margin-top: 110px;
+    line-height: 40px;
+    font-family: 'Homrice', serif;
+    color: #14cd80;
 }
 
+@media screen and (min-width: 1100px) {
+    .content {
+        float: right;
+        text-align: left;
+        padding-right: 10%;
+    }
 
-.buttonGrp {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+    /* .img{
+        text-align: left;
+    } */
 }

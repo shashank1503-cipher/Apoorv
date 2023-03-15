@@ -96,7 +96,7 @@ const Navbar = () => {
 
     return (
         <div className={styles.Mcontainer} id={'mainCont'}>
-            <div className={styles.container} >
+            <div className={styles.container}>
                 <div className={styles.logo}>
                     <img src="/logo.svg" alt="logo" />
                     <img src="/logoText.svg" alt="logo" />
