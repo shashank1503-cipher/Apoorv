@@ -6,6 +6,7 @@
     position: relative;
     overflow: hidden;
     transition: 0.3s;
+
     width: 40%;
     font-family: var(--brand-head-font);
     color: var(--brand-yellow);
@@ -62,6 +63,7 @@
     .button {
         padding: 0.5rem;
         width: 75%;
+
     }
 
 }
