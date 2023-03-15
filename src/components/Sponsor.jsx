@@ -109,20 +109,50 @@ const Sponsor = () => {
 
     return (
         <div className={styles.main_container} id="sponsors" >
+            <Image
+                src={sponsorbg}
+                alt={"sponsers"}
+                style={{
+                    position: 'absolute',
+                    width: '100%',
+                    // height: '100%',
+                    objectFit: 'cover',
+                    // top: 0,
+                }}
+            />
+            <motion.div initial="hidden" whileInView="visible" variants={{
+                hidden: {
+
+                    opacity: 0,
+                    y: 50,
+                },
+                visible: {
+
+                    opacity: 1,
+                    y: 0,
+                    transition: {
+                        duration: 0.25,
+
+                    }
+                },
+            }} className={styles.prizes_container}>
+                <div className={styles.prizes_heading}>
+                    <h1>Rs. 1,00,000+</h1>
+                </div>
+                <div className={styles.prizes_text}>
+                    in prizes to be won
+                </div>
+                <div className={styles.prizes_text}>
+                    along with exciting goodies from
+                </div>
+                <div className={styles.dial_heading}>
+                    <h1>Our Sponsors</h1>
+                </div>
+            </motion.div>
 
             <div className={styles.dial_container}>
 
-                <Image
-                    src={sponsorbg}
-                    alt={"sponsers"}
-                    style={{
-                        position: 'absolute',
-                        width: '100%',
-                        height: '100%',
-                        objectFit: 'cover',
-                        // top: 0,
-                    }}
-                />
+
                 <motion.div
                     className={styles.dial}
                     id="dial"
@@ -178,13 +208,14 @@ const Sponsor = () => {
                 >
                     {sponsorsList && sponsorsList[selectedSponsor] && Object.keys(sponsorsList[selectedSponsor])?.map((sponsor, i) => {
 
-                            // const ratts = {
-                            //     0: {x: 1, y: 1},
-                            //     1: {x: -1, y: 1},
-                            //     2: {x: 1, y: -1},
-                            //     3: {x: -1, y: -1},
-                            // }
-                            // console.log(sponsor, i)
+
+                        // const ratts = {
+                        //     0: { x: 1, y: 1 },
+                        //     1: { x: -1, y: 1 },
+                        //     2: { x: 1, y: -1 },
+                        //     3: { x: -1, y: -1 },
+                        // }
+                        // console.log(sponsor, i)
                         // console.log(sponsor, i)
                         return (
                             <motion.div
@@ -193,17 +224,17 @@ const Sponsor = () => {
                                 className={styles.sponsor_item}
                                 initial="hidden" animate={'visible'} variants={{
                                     hidden: {
-                                        // x: 100 * ratts[i].x,
-                                        // y: 100 * ratts[i].y,
-                                        y: 100,
+
+
+                                        y: 50,
                                         opacity: 0
                                     },
                                     visible: {
-                                        // x: 0,
                                         y: 0,
                                         opacity: 1,
                                         transition: {
-                                            delay: .2
+                                            delay: .2,
+
                                         }
                                     },
                                 }}
@@ -256,7 +287,7 @@ const Sponsor = () => {
                         has been celebrating arts, heritage, music and lifestyle since its inception in 2019. A myriad of events with impressive and breathtaking performances has always
                     </div>
 
-                    <CollisionButton style={{ width: "50%", marginTop: "1rem" }}>Contact Us</CollisionButton>
+                    <CollisionButton style={{ width: "35%", marginTop: "1rem" }} onClick={() => window.location = 'mailto:apoorv@iiitkottayam.ac.in'}>Contact Us</CollisionButton>
                 </div>
 
                 <div

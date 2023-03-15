@@ -139,6 +139,7 @@
     width: 50%;
     height: 50%;
     transition: all 0.25s ease;
+    font-family: var(--brand-body-font);
 }
 
 .navItem:hover {

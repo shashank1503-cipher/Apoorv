@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React, { useEffect, useRef, useState } from 'react'
 import styles from '../styles/TimelineNew.module.css'
-import timelineData from './TimelineData'
+import timelineData from '../data/TimelineData'
 import { motion, useScroll } from 'framer-motion'
 import { ItemDate, ItemDetails, ItemName } from './ItemProps'
 import timelinebg1 from '../assets/timelinebg1.png'
@@ -12,8 +12,8 @@ import timelinebg3 from '../assets/timelinebg3.png'
 const TimelineNew = () => {
     const [day, setDay] = useState(1)
 
-    const [currentEvent, setCurrentEvent] = useState(timelineData[0].events[1])
-    const [previousEvent, setPreviousEvent] = useState(timelineData[0].events[0])
+    const [currentEvent, setCurrentEvent] = useState(timelineData[0].events[0])
+    const [previousEvent, setPreviousEvent] = useState(null)
     const [nextEvent, setNextEvent] = useState(timelineData[0].events[2])
 
     const wrapper = useRef(null)
@@ -87,8 +87,8 @@ const TimelineNew = () => {
     }, [])
 
 
-    return (<>
-        <div className={styles.timeline} id="timeline">
+    return (<div id={"timeline"}>
+        <div className={styles.timeline} >
 
             <div className={styles.badge}>
                 <Image src="/static/images/badge.png" alt="badge" fill />
@@ -193,22 +193,7 @@ const TimelineNew = () => {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <div className={styles.timelineMobile}>
+        <div className={styles.timelineMobile} >
             <div className={styles.badge}>
                 <Image src="/static/images/badge.png" alt="badge" fill />
             </div>
@@ -258,7 +243,7 @@ const TimelineNew = () => {
                 <Image src="/static/images/badge.png" alt="badge" fill />
             </div>
         </div>
-    </>
+    </div>
     )
 }
 

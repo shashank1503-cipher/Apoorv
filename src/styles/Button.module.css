@@ -1,13 +1,13 @@
 .button {
-    flex: 1 1 auto;
-    padding: 1rem;
+    padding: 0.5rem;
     border: 2px solid var(--brand-yellow);
     text-align: center;
     /* text-transform: uppercase; */
     position: relative;
     overflow: hidden;
     transition: 0.3s;
-    width: 50%;
+
+    width: 40%;
     font-family: var(--brand-head-font);
     color: var(--brand-yellow);
 }
@@ -47,17 +47,23 @@
     left: -10%;
     width: 120%;
 }
-.button:active{
+
+.button:active {
     background-color: antiquewhite;
 }
 
 @media (max-width:800px) {
-    .button{
+    .button {
+        padding: 0.5rem;
         width: 50%;
     }
 }
+
 @media (max-width:600px) {
-    .button{
-        width: 25%;
+    .button {
+        padding: 0.5rem;
+        width: 75%;
+
     }
+
 }
