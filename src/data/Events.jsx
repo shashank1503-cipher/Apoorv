@@ -48,6 +48,7 @@ const events = [
             },
         ],
         poster: 'https://res.cloudinary.com/dpjf6btln/image/upload/v1633793392/BB_bcq4a4.jpg',
+        registration: ""
 
     },
     {
@@ -74,6 +75,7 @@ const events = [
             },
         ],
         poster: 'https://res.cloudinary.com/dpjf6btln/image/upload/v1633793432/CP_Insta_p40r6s.jpg',
+        registration: ""
 
     },
     {
@@ -100,6 +102,7 @@ const events = [
             },
         ],
         poster: 'https://res.cloudinary.com/dpjf6btln/image/upload/v1633793230/WebDev_kdy8jd.png',
+        registration: ""
 
     },
     {
