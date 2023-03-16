@@ -51,13 +51,13 @@ const Footer = () => {
           <div className={styles.third}>
             <div className={styles.foot_font}>follow us</div>
             <div className={styles.icons}>
-              <div><a target="_blank" rel="noreferrer" href='#'><AiFillMail className={styles.icon}/></a></div>
-             <div> <a target="_blank" rel="noreferrer" href='#'><AiFillLinkedin className={styles.icon}/></a></div>
+              <div><a target="_blank" rel="noreferrer" href='mailto:apoorv@iiitkottayam.ac.in'><AiFillMail className={styles.icon}/></a></div>
+             <div> <a target="_blank" rel="noreferrer" href=''><AiFillLinkedin className={styles.icon}/></a></div>
              <div> <a target="_blank" rel="noreferrer" href='#'><AiFillFacebook className={styles.icon}/></a></div>
              <div> <a target="_blank" rel="noreferrer" href='#'><AiFillTwitterCircle className={styles.icon}/></a></div>
             </div>
-            <div className={styles.foot_font1} >+91 9370324791</div>
-          <div className={styles.foot_font1}>+91 9326791283</div>
+            {/* <div className={styles.foot_font1} >+91 9370324791</div>
+          <div className={styles.foot_font1}>+91 9326791283</div> */}
          <div className={styles.foot_font1} onClick={(e) => {window.location.href ='mailto:apoorv@iiitkottayam.ac.in';}}>apoorv@iiitkottayam.ac.in</div>
          <div className={styles.foot_font1} style={{marginTop:"1rem"}}>IIIT Kottayam,Valavoor</div>
          <div className={styles.foot_font1}> Pala, Kottayam-686635</div>
