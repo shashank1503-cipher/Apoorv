@@ -24,13 +24,18 @@ const Hero = () => {
                     }
                 },
             }}>
-                <div className={styles.imageWrapper}>
-                    <Image
-                        src={'https://res.cloudinary.com/dpjf6btln/image/upload/v1678782197/he_tfjsfb.svg'}
-                        alt={"hero"}
-                        fill
-                    />
-                </div>
+                <Image
+                    className={styles.img}
+                    src={'https://res.cloudinary.com/dpjf6btln/image/upload/v1678782197/he_tfjsfb.svg'}
+                    alt={"hero"}
+                    width={600}
+                    height={600}
+                    // text-align={"center"}
+                    style={{
+                        maxWidth: '100%',
+                        height: '100%',
+                    }}
+                />
                 <div className={styles.content}>
                     <div className={styles.head}>
                         <h1>The one of its<br></br>kind event of th year 3</h1>

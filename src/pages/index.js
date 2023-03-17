@@ -10,7 +10,7 @@ import Speakers from '@/components/Speakers'
 import { CollisionButton } from '@/components/Buttons/Button'
 import Navbar from '@/components/Navbar'
 import TimelineNew from '@/components/TimelineNew'
-// import Intro from '@/components/Intro'
+import Intro from '@/components/Intro'
 import { useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
 
@@ -18,19 +18,19 @@ export default function Home() {
   const router = useRouter()
   const [show, setShow] = useState(true)
   const [height, setHeight] = useState('100vh')
+
   useEffect(() => {
     if (router.asPath !== '/') {
       setShow(false)
       setHeight(null)
     } else {
-      setShow(true)
       const timer = setTimeout(() => {
         setShow(false)
         setHeight(null)
       }, 4175)
       return () => clearTimeout(timer)
     }
-  }, [])
+  }, [router.asPath])
 
   useEffect(() => {
     if (show) {
@@ -65,13 +65,14 @@ export default function Home() {
           <meta property="og:type" content="website" />
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        <Navbar />
-        <Hero />
-        <Description />
-        <Speakers />
-        <TimelineNew />
-        <Sponsor />
-        <Footer />
+        {show ? (<Intro />) : <>   <Navbar />
+          <Hero />
+          <Description />
+          <TimelineNew />
+          <Speakers />
+          <Sponsor />
+          <Footer />
+        </>}
       </div>
     </>
   )

@@ -78,15 +78,12 @@ const Navbar = () => {
 
 
     const NavItem = (props) => {
-        const links = {
-            'Home': '/#hero',
-            'Sponsors': '/#sponsors',
-            'Timeline': '/#timeline',
-            'Events': '/events',
-        }
         return (
             <div className={styles.navItem} onClick={() => {
-                window.location.href = `${links[props.text]}`
+                const s = document.getElementById(props.text.toLowerCase())
+                if (s === null || s === undefined || s === 'events') return
+                s.scrollIntoView({ behavior: "smooth" });
+                setOpen(false)
             }}>
                 <div>
 

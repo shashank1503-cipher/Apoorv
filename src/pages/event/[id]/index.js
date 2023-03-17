@@ -5,7 +5,7 @@ import Footer from "@/components/Footer"
 import Navbar from "@/components/Navbar"
 import { events } from "@/data/Events"
 import Head from "next/head"
-
+import styles from '../../../styles/Home.module.css'
 export const getStaticPaths = async () => {
     const paths = events.map((event) => {
         return {
@@ -42,7 +42,7 @@ export const getStaticProps = async (context) => {
 export default function Event({ name, poster, description, register, date, time, organisers, tag }) {
     console.log(name, poster, description, register, date, time, organisers, tag)
     return (<>
-        <div >
+        <div className={styles.container}>
             <Head>
                 <title>Apoorv - IIITK | {name}</title>
                 <meta
