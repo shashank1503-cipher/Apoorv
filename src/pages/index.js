@@ -16,10 +16,25 @@ import { useRouter } from 'next/router'
 
 export default function Home() {
   const router = useRouter()
-  const [show, setShow] = useState(true)
+  const [show, setShow] = useState(false)
   const [height, setHeight] = useState('100vh')
+  const [count, setCount] = useState(0);
 
   useEffect(() => {
+
+    var pageView = sessionStorage.getItem("pageView");
+    if (pageView == null) {
+      // Initialize page views count
+      pageView = 1;
+      setShow(true);
+    } else {
+      // Increment count
+      pageView = Number(pageView) + 1;
+    }
+    // Update session storage
+    sessionStorage.setItem("pageView", pageView);
+    setCount(pageView);
+
     if (router.asPath !== '/') {
       setShow(false)
       setHeight(null)
@@ -27,7 +42,7 @@ export default function Home() {
       const timer = setTimeout(() => {
         setShow(false)
         setHeight(null)
-      }, 4175)
+      }, 4000)
       return () => clearTimeout(timer)
     }
   }, [router.asPath])
@@ -40,9 +55,9 @@ export default function Home() {
       document.body.style.overflow = 'auto'
     }
   }, [show])
+
   return (
     <>
-
       <div className={styles.container} style={{ height: height }}>
         <Head>
           <title>Apoorv - IIITK</title>
@@ -73,6 +88,7 @@ export default function Home() {
           <Sponsor />
           <Footer />
         </>}
+
       </div>
     </>
   )
