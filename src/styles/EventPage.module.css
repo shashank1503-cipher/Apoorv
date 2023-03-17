@@ -1,0 +1,155 @@
+.container {
+
+    margin: 5rem 0rem;
+
+}
+
+.mobileContainer {
+    margin: 5rem 0rem;
+    display: none;
+}
+
+.tabContainer {
+    display: none;
+}
+
+.container h2 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1em;
+    color: var(--brand-yellow);
+    font-family: var(--brand-head-font);
+    text-align: center;
+}
+
+
+.grid {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-flow: row wrap;
+    max-height: 100vh;
+
+}
+
+.grid li {
+    flex: 0 0 33.3333333%;
+    padding: 0 1em;
+    margin-bottom: 1em;
+
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        display: none;
+    }
+
+    .tabContainer {
+        display: block;
+        margin-top: 5rem;
+        margin-left: 2rem;
+    }
+
+    .tabContainer h2 {
+        font-size: 4rem;
+        font-weight: 700;
+        margin-bottom: 1em;
+        color: var(--brand-yellow);
+        font-family: var(--brand-head-font);
+        text-align: center;
+    }
+
+    /* .grid {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    } */
+
+    .grid li {
+        flex: 0 0 50%;
+    }
+
+
+}
+
+@media screen and (max-width: 900px) {
+
+    .container {
+        display: none;
+    }
+
+    .tabContainer {
+        display: block;
+        margin-top: 5rem;
+        margin-left: 2rem;
+    }
+
+    .tabContainer h2 {
+        font-size: 4rem;
+        font-weight: 700;
+        margin-bottom: 1em;
+        color: var(--brand-yellow);
+        font-family: var(--brand-head-font);
+        text-align: center;
+    }
+
+    /* .grid {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+    } */
+
+    .grid li {
+        flex: 0 0 50%;
+    }
+
+
+
+}
+
+
+@media screen and (max-width: 600px) {
+    .container {
+        display: none;
+    }
+
+    .tabContainer{
+        display: none;
+    }
+
+    .mobileContainer {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5rem;
+    }
+
+    .mobileContainer h2 {
+        font-size: 4rem;
+        font-weight: 700;
+        margin-bottom: 1em;
+        color: var(--brand-yellow);
+        font-family: var(--brand-head-font);
+        text-align: center;
+    }
+
+    .grid {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .grid li {
+
+        padding: 0;
+
+    }
+
+
+
+}

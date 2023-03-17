@@ -1,0 +1,91 @@
+.card {
+    margin-left: 5%;
+    width: 21rem;
+    /* height: 30rem; */
+}
+
+.imageWrapper {
+    width: 21rem;
+    height: 30rem;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-bottom: 5%;
+}
+
+.divider>hr {
+    width: 100%;
+    height: 0.1rem;
+    background-color: var(--brand-yellow);
+    border: none;
+}
+
+.content {
+    color: var(--brand-white);
+    font-family: var(--brand-body-font);
+}
+
+.content h1 {
+    font-size: 2rem;
+    font-family: var(--brand-head-font);
+    margin-bottom: 0;
+}
+
+.content p {
+    font-size: 1.5rem;
+    margin-top: 0;
+}
+
+@media screen and (max-width: 1200px) {
+    .card {
+        margin-left: 0;
+        width: 17.5rem;
+    }
+
+    .imageWrapper {
+        width: 17.5rem;
+        height: 25rem;
+    }
+
+    .content h1 {
+        font-size: 1.75rem;
+    }
+
+    .content p {
+        font-size: 1.25rem;
+    }
+    
+}
+@media screen and (max-width: 900px) {
+    .card {
+        margin-left: 0;
+        width: 14rem;
+    }
+
+    .imageWrapper {
+        width: 14rem;
+        height: 20rem;
+    }
+
+    .content h1 {
+        font-size: 1.5rem;
+    }
+
+    .content p {
+        font-size: 1rem;
+    }
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .card {
+        margin-left: 0;
+        width: 14rem;
+    }
+
+    .imageWrapper {
+        width: 14rem;
+        height: 20rem;
+    }
+}

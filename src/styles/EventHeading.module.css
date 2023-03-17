@@ -5,6 +5,7 @@
     display: grid;
     width: 100%;
     grid-template-columns: 66% 34%;
+    align-items: center;
 }
 
 .Heading {
@@ -30,8 +31,8 @@
 }
 
 .image img {
-    width: 22.5rem;
-    height: 22.5rem;
+    width: 21rem;
+    height: 30rem;
     border-radius: 10px;
 }
 

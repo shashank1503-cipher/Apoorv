@@ -7,22 +7,21 @@
     font-style: normal;
 }
 
-.img {
-    align-self: centre;
+.imageWrapper {
+    position: relative;
+    width: 30rem;
+    height: 30rem;
 }
 
 .main {
     margin: 70px 20px 20px 20px;
-    position: relative;
-    text-align: center;
-    min-height: 90vh;
-    /* padding:50px 50px 20px 50px; */
+    display: flex;
+    gap: 2rem;
 
 }
 
 .content {
     /* t9ext-align: left; */
-    text-align: center;
     color: white;
     font-family: 'Roboto Slab', serif;
     font-size: 1.5rem;
@@ -35,45 +34,13 @@
 
 }
 
+
 .head {
     size: 3.5rem;
     font-family: 'Homrice', serif;
     color: #FFE600;
 }
 
-.button1 {
-    background-color: black;
-    /* Green */
-    border: solid rgb(207, 199, 108);
-    color: #FFE600;
-    padding: 7px 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-family: 'Roboto Slab', serif;
-    font-size: 16px;
-    margin: 6% 4% 5% 0%;
-    cursor: pointer;
-    border-radius: 2px;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.button {
-    background-color: white;
-    /* Green */
-    border: solid rgb(207, 199, 108);
-    color: black;
-    padding: 7px 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-family: 'Roboto Slab', serif;
-    font-size: 16px;
-    /* margin: 0.1% 17% 5%; */
-    cursor: pointer;
-    border-radius: 2px;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
 
 /* .heroButton {
 
@@ -88,14 +55,58 @@
     color: #14cd80;
 }
 
-@media screen and (min-width: 1100px) {
-    .content {
-        float: right;
-        text-align: left;
-        padding-right: 10%;
+@media screen and (max-width: 1100px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-right: 0%;
+        size: 1.5rem;
     }
 
-    /* .img{
-        text-align: left;
-    } */
+    .content {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-right: 0%;
+        size: 1.5rem;
+    }
+
+
+}
+
+@media screen and (max-width : 900px) {
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-right: 0%;
+        size: 1rem;
+    }
+
+
+    .imageWrapper {
+        width: 25rem;
+        height: 25rem;
+    }
+    .content {
+        font-size: 1.25rem;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+    .imageWrapper {
+        width: 20rem;
+        height: 20rem;
+    }  
+    
+    .content {
+        font-size: 1rem;
+    }
 }

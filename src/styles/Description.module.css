@@ -61,5 +61,7 @@
     .main_div{
         transform: translateY(-7.5%);
     }
-    
+    .head {
+        size: 2rem;
+    }
 }
