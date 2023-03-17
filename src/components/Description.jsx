@@ -1,4 +1,3 @@
-
 import React from 'react'
 import styles from '../styles/Description.module.css'
 import Image from 'next/image'
@@ -93,36 +92,33 @@ const Description = () => {
 
 
             <div className={styles.main_div}>
+                <div className={styles.wrapper}>
+                    <div className={styles.head} >
+                        <h1>Apoorv, IIITk&apos;s<br></br>
+                            techno-cultural fest,</h1><br></br>
+                    </div>
+                    <div className={styles.body}>
+                        <p>
+                            has been celebrating arts, heritage,music and lifestyle
+                            since its inception in 2019, A myriad of events with
+                            impressive and breathtaking performances has always
+                            been the norm.<br></br>
+                            It&apos;s the amalgamation of mind gruelling competitions,
+                            thought proving expert talks and workshops that
+                            stimulate your cerebral matter!<br></br><br></br>
+                        </p>
+                    </div>
+                    <CollisionButton>
+                        Register Here !
+                    </CollisionButton>
+                </div>
                 <div className={styles.img}>
                     <Image
                         src={abc}
                         alt={"image"}
-                        width={350}
-                        height={350}
-                        style={{
-                            maxWidth: '100%',
-                            height: '100%',
-                        }}
+                        fill
                     />
                 </div>
-                <div className={styles.head} >
-                    <h1>Apoorv, IIITk&apos;s<br></br>
-                        techno-cultural fest,</h1><br></br>
-                </div>
-                <div className={styles.body}>
-                    <p>
-                        has been celebrating arts, heritage,music and lifestyle
-                        since its inception in 2019, A myriad of events with
-                        impressive and breathtaking performances has always
-                        been the norm.<br></br>
-                        It&apos;s the amalgamation of mind gruelling competitions,
-                        thought proving expert talks and workshops that
-                        stimulate your cerebral matter!<br></br><br></br>
-                    </p>
-                </div>
-                <CollisionButton>
-                    Register Here ! 
-                </CollisionButton>
             </div>
         </>
     );

@@ -285,8 +285,9 @@ const Sponsor = () => {
                     <div className={styles.make_sponsor_disc_text}>
                         has been celebrating arts, heritage, music and lifestyle since its inception in 2019. A myriad of events with impressive and breathtaking performances has always
                     </div>
-
-                    <CollisionButton style={{ width: "35%", marginTop: "1rem" }} onClick={() => window.location = 'mailto:apoorv@iiitkottayam.ac.in'}>Contact Us</CollisionButton>
+                    <div className={styles.buttonGroup}>
+                        <CollisionButton style={{ marginTop: "1rem" }} onClick={() => window.location = 'mailto:apoorv@iiitkottayam.ac.in'}>Contact Us</CollisionButton>
+                    </div>
                 </div>
 
                 <div

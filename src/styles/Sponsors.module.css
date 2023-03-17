@@ -281,6 +281,12 @@
         gap: 20px;
     }
 
+    .buttonGroup {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     .prizes_heading {
         font-size: 2rem;
     }

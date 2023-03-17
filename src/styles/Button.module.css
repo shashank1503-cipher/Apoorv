@@ -6,7 +6,7 @@
     position: relative;
     overflow: hidden;
     transition: 0.3s;
-    width: 40%;
+    width: 15rem;
     font-family: var(--brand-head-font);
     color: var(--brand-yellow);
 }
