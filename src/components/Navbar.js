@@ -22,7 +22,7 @@ const MenuClose = () => {
 }
 
 
-const Navbar = () => {
+const Navbar = (props) => {
 
     const [open, setOpen] = useState(false)
     const scrollDirection = useScrollDirection('down');
@@ -95,7 +95,7 @@ const Navbar = () => {
 
 
     return (
-        <div className={styles.Mcontainer} id={'mainCont'}>
+        <div className={styles.Mcontainer} id={'mainCont'} >
             <div className={styles.container}>
                 <div className={styles.logo}>
                     <img src="/logo.svg" alt="logo" />

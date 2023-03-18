@@ -1,0 +1,27 @@
+.button{
+    width: 12rem;
+    padding: 0.5rem;
+    border: 2px solid var(--brand-purple-text);
+    text-align: center;
+    border-radius: 8px;
+    font-family: var(--brand-body-font);
+    transition: all 0.3s ease-in-out;
+}
+
+.button:hover{
+    cursor: pointer;
+}
+
+.purple{    
+    color: var(--brand-purple-text);
+    /* background-color: var(--brand-purple-text); */
+}
+
+.purple:hover{
+    color: var(--brand-white);
+    background-color: var(--brand-purple);
+}
+
+.purple:active{
+    background-color: transparent;
+}

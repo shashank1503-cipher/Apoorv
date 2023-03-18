@@ -17,14 +17,15 @@
     font-weight: 400;
     letter-spacing: -3px;
     margin-bottom: 0px;
-    color: var(--brand-yellow);
+    color: var(--brand-purple-text);
 }
 
 .Heading p {
+    border-left: 0.2rem solid var(--brand-purple-text);
     font-family: var(--brand-body-font), sans-serif;
     font-weight: 500;
     font-size: 1.75rem;
-    padding-left: 0.25em;
+    padding-left: 0.5em;
     padding-right: 0.25em;
     width: 80%;
 }
@@ -43,7 +44,7 @@
     margin-right: 3em;
 }
 
-.Heading button{
+.Heading button {
     margin-top: 5%;
 }
 
