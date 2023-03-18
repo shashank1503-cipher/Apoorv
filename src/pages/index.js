@@ -31,6 +31,15 @@ export default function Home() {
       return () => clearTimeout(timer)
     }
   }, [router.asPath])
+
+  useEffect(() => {
+    if (show) {
+      document.body.style.overflow = 'hidden'
+    }
+    else {
+      document.body.style.overflow = 'auto'
+    }
+  }, [show])
   return (
     <>
 
@@ -49,10 +58,10 @@ export default function Home() {
             property="og:description"
             content="Apoorv - Indian Institute of Information Technology (IIIT) Kottayam Techno Cultural Fest"
           />
-          {/* <meta
-                        property="og:url"
-                        content="https://www.dhruvaiiitk.tech/"
-                    /> */}
+          <meta
+            property="og:url"
+            content="https://apoorviiitk.co/"
+          />
           <meta property="og:type" content="website" />
           <link rel="icon" href="/favicon.ico" />
         </Head>
@@ -62,8 +71,8 @@ export default function Home() {
           <TimelineNew />
           <Speakers />
           <Sponsor />
-          <Footer/>
-          </>}
+          <Footer />
+        </>}
       </div>
     </>
   )

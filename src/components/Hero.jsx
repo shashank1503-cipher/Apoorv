@@ -103,10 +103,10 @@ const Hero = () => {
 
                 <Image
                     className={styles.img}
-                    src={"/hero.png"}
+                    src={'https://res.cloudinary.com/dpjf6btln/image/upload/v1678782197/he_tfjsfb.svg'}
                     alt={"hero"}
-                    width={450}
-                    height={450}
+                    width={600}
+                    height={600}
                     // text-align={"center"}
                     style={{
                         position: 'relative',
@@ -116,13 +116,13 @@ const Hero = () => {
                     }}
                 />
 
+
             </div>
             <div className={styles.content}>
                 <div className={styles.head}>
                     <h1>The one of its<br></br>kind event of th year</h1>
                 </div>
                 <p>A fest to mirror the beautiful chaos of nature and keep<br></br> you on your toes, stir souls and spark your creative<br></br>flair.</p>
-
                 <div>
                     <div className='buttonGrp'>
                         <CollisionButton style={{ width: "40%", marginTop: "1rem", marginBottom: "1rem" ,padding:"0.5rem" }}>Register Here!</CollisionButton>
