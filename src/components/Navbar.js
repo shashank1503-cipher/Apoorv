@@ -78,7 +78,7 @@ const Navbar = () => {
 
 
     const NavItem = (props) => {
-        const newPageLinks = ['Events', 'Sponsor Us', 'Team']
+        const newPageLinks = ['Events', 'Team']
         return (
             <div className={styles.navItem} onClick={() => {
                 if (props.text === "Sponsor Us") {
