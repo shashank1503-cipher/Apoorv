@@ -78,11 +78,16 @@ const Navbar = () => {
 
 
     const NavItem = (props) => {
+        const newPageLinks = ['Events', 'Sponsor Us', 'Team']
         return (
             <div className={styles.navItem} onClick={() => {
-                const s = document.getElementById(props.text.toLowerCase())
-                if (s === null || s === undefined || s === 'events') return
-                s.scrollIntoView({ behavior: "smooth" });
+                if (props.text === "Sponsor Us") {
+                    window.open('https://drive.google.com/file/d/1ALBZIrMHY25nVEEaWlzDjcdKr8BNxYiR/view?usp=sharing', '_blank')
+                }
+                else if (newPageLinks.includes(props.text))
+                    window.location.href = `/${props.text.toLowerCase()}`
+                else
+                    window.location.href = `#${props.text.toLowerCase()}`
                 setOpen(false)
             }}>
                 <div>
@@ -111,6 +116,8 @@ const Navbar = () => {
                     <NavItem text="Sponsors" />
                     <NavItem text="Timeline" />
                     <NavItem text="Events" />
+                    <NavItem text="Team" />
+                    <NavItem text="Sponsor Us" />
                 </div>
 
 
