@@ -6,6 +6,9 @@ import Navbar from "@/components/Navbar"
 import { events } from "@/data/Events"
 import Head from "next/head"
 import styles from '../../../styles/Home.module.css'
+import eventBg from '../../../../public/eventBg.png'
+import Image from "next/image"
+
 export const getStaticPaths = async () => {
     const paths = events.map((event) => {
         return {
@@ -64,7 +67,19 @@ export default function Event({ name, poster, description, register, date, time,
                 <meta property="og:type" content="website" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <Navbar />
+            <Navbar isTransparent={true} />
+            <Image
+                src={eventBg}
+                alt={"sponsers"}
+                style={{
+                    position: 'absolute',
+                    width: '100%',
+                    zIndex: -1,
+                    // height: '100%',
+                    objectFit: 'cover',
+                    // top: 0,
+                }}
+            />
             <EventHeading
                 title={name}
                 content={tag}
