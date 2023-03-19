@@ -24,6 +24,8 @@ const MenuClose = () => {
 
 const Navbar = (props) => {
 
+    let { isTransparent } = props
+
     const [open, setOpen] = useState(false)
     const scrollDirection = useScrollDirection('down');
     const [scrolledToTop, setScrolledToTop] = useState(true);
@@ -73,6 +75,22 @@ const Navbar = (props) => {
             }
         }
 
+        if (isTransparent) {
+            if (!scrolledToTop) {
+                const nav = document.getElementById('mainCont')
+                {
+                    nav.classList.remove(styles.transparent)
+                }
+            }
+            else {
+                const nav = document.getElementById('mainCont')
+                {
+                    nav.classList.add(styles.transparent)
+                }
+            }
+
+        }
+
 
     }, [open, scrollDirection, scrolledToTop])
 
@@ -87,7 +105,7 @@ const Navbar = (props) => {
                 else if (newPageLinks.includes(props.text))
                     window.location.href = `/${props.text.toLowerCase()}`
                 else
-                    window.location.href = `#${props.text.toLowerCase()}`
+                    window.location.href = `/#${props.text.toLowerCase()}`
                 setOpen(false)
             }}>
                 <div>
@@ -100,7 +118,7 @@ const Navbar = (props) => {
 
 
     return (
-        <div className={styles.Mcontainer} id={'mainCont'} >
+        <div className={`${styles.Mcontainer} ${isTransparent ? styles.transparent : ''}`} id={'mainCont'} >
             <div className={styles.container}>
                 <div className={styles.logo}>
                     <img src="/logo.svg" alt="logo" className={styles.logoImg} />

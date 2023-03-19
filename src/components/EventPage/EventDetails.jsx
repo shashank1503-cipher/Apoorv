@@ -8,18 +8,11 @@ const EventDetails = (props) => {
         <div className={styles.main_div}>
             <div className={styles.wrapper}>
                 <div className={styles.head} >
-                    <h1>Apoorv, IIITk&apos;s<br></br>
-                        techno-cultural fest,</h1><br></br>
+                    <h1>Details</h1>
                 </div>
                 <div className={styles.body}>
                     <p>
-                        has been celebrating arts, heritage,music and lifestyle
-                        since its inception in 2019, A myriad of events with
-                        impressive and breathtaking performances has always
-                        been the norm.<br></br>
-                        It&apos;s the amalgamation of mind gruelling competitions,
-                        thought proving expert talks and workshops that
-                        stimulate your cerebral matter!<br></br><br></br>
+                       {props.description}
                     </p>
                 </div>
             </div>

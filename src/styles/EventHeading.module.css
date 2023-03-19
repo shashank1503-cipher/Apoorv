@@ -5,6 +5,7 @@
     display: grid;
     width: 100%;
     grid-template-columns: 66% 34%;
+    align-items: center;
 }
 
 .Heading {
@@ -31,8 +32,8 @@
 }
 
 .image img {
-    width: 22.5rem;
-    height: 22.5rem;
+    width: 21rem;
+    height: 30rem;
     border-radius: 10px;
 }
 
@@ -83,8 +84,8 @@
     }
 
     .image img {
-        width: 19.2rem;
-        height: 19.2rem;
+        width: 17.5rem;
+        height: 25rem;
     }
 }
 
@@ -114,8 +115,8 @@
     }
 
     .image img {
-        width: 17.2rem;
-        height: 17.2rem;
+        width: 14rem;
+        height: 20rem;
     }
 
     .links {
@@ -134,7 +135,7 @@
     }
 
     .image img {
-        width: 14rem;
-        height: 14rem;
+        width: 10.5rem;
+        height: 15rem;
     }
 }

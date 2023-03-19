@@ -67,7 +67,7 @@ export default function Event({ name, poster, description, register, date, time,
                 <meta property="og:type" content="website" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <Navbar style={{ background: 'transparent' }} />
+            <Navbar isTransparent={true} />
             <Image
                 src={eventBg}
                 alt={"sponsers"}

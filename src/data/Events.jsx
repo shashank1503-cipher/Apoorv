@@ -119,6 +119,7 @@ const events = [
                 key: '1',
                 name: 'Aditi Shukla',
                 email: 'techclub@\u200Biiitkottayam.ac.in',
+
             },
         ],
         poster: 'https://res.cloudinary.com/dpjf6btln/image/upload/v1633793221/D1_ceshnu.jpg',
@@ -138,15 +139,17 @@ const events = [
                 key: '1',
                 name: 'Swani',
                 email: 'swani2019@\u200Biiitkottayam.ac.in',
+                image: 'https://res.cloudinary.com/dlu72yo9b/image/upload/v1633973915/IMG_2121_pyqnlt.jpg',
             },
             {
                 key: '2',
                 name: 'Prajjawal',
                 email: 'techclub@\u200Biiitkottayam.ac.in',
                 phoneNumber: '(+91) 9370324791',
+                image: 'https://res.cloudinary.com/dlu72yo9b/image/upload/v1631972395/00100sPORTRAIT_00100_BURST20210908184205917_COVER_x347rg.jpg',
             },
         ],
-        poster: 'https://res.cloudinary.com/dlu72yo9b/image/upload/v1633950066/BrandAID_flot8z.png',
+        poster: 'https://res.cloudinary.com/dpjf6btln/image/upload/v1678950678/Asset_15_eulxyj.png',
         registration: ''
     },
     {

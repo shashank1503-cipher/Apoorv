@@ -4,7 +4,7 @@ const ChakraUIGhostButton = (props) => {
     let { colorScheme } = props
     return (
 
-        <div className={`${styles.button} ${colorScheme === "purple" ? styles.purple : colorScheme === "yellow" ? styles.yellow : ""} `} {...props}>asdasd</div>
+        <div className={`${styles.button} ${colorScheme === "purple" ? styles.purple : colorScheme === "yellow" ? styles.yellow : ""} `} {...props}>{children}</div>
     )
 }
 

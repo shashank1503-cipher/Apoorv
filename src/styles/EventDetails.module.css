@@ -23,10 +23,10 @@
     color: #FFF;
     background: rgba(81, 35, 30, 0.75);
     backdrop-filter: blur(6px);
-    border-radius: 105px 0px;
+    border-radius: 6.563rem 0px;
 }
 
-.date{
+.date {
     position: absolute;
     top: 0;
     left: 0;
@@ -41,7 +41,7 @@
     font-family: var(--brand-head-font);
 }
 
-.time{
+.time {
     position: absolute;
     top: 50%;
     left: 0;
@@ -56,7 +56,7 @@
     font-family: var(--brand-head-font);
 }
 
-.divider hr{
+.divider hr {
     position: absolute;
     top: 50%;
     left: 12.5%;
@@ -64,7 +64,7 @@
     height: 50%;
     height: 0.25rem;
     background: #FE7062;
-    
+
     border: none;
     margin: 0px 0px 0px 0px;
 }
@@ -81,12 +81,12 @@
 
 .main_div {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     background-color: rgba(254, 112, 98, 0.3);
     margin: 10rem 2rem;
     color: white;
-    padding: 5rem 0rem;
+    padding: 5rem 5rem;
     /* border: 1px solid var(--brand-green); */
     border-radius: 8px 8px 100px 8px;
     position: relative;
@@ -101,12 +101,12 @@
 .head {
     size: 3rem;
     font-family: var(--brand-head-font);
-    padding-top: 30px;
+
 }
 
 .body {
     size: 1rem;
-    padding-right: 10px;
+    margin-top: 1rem;
     font-family: var(--brand-body-font);
 
 }
@@ -124,6 +124,10 @@
 
     .img {
         margin-bottom: 2rem;
+    }
+
+    .img .after {
+        border-radius: 4.5rem 0px 4.5rem 0px;
     }
 
 }
