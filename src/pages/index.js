@@ -16,7 +16,7 @@ import { useRouter } from 'next/router'
 
 export default function Home() {
   const router = useRouter()
-  const [show, setShow] = useState(false)
+  const [show, setShow] = useState(true)
   const [height, setHeight] = useState('100vh')
   const [count, setCount] = useState(0);
 
@@ -26,10 +26,10 @@ export default function Home() {
     if (pageView == null) {
       // Initialize page views count
       pageView = 1;
-      setShow(true);
     } else {
       // Increment count
       pageView = Number(pageView) + 1;
+      setShow(false);
     }
     // Update session storage
     sessionStorage.setItem("pageView", pageView);
