@@ -124,7 +124,7 @@ margin-bottom: 2rem;
   align-items: flex-end;
   margin-right: 2vh;
   margin-top: 2rem;
-  padding: 0em 1em;
+  /* padding: 0em 2em; */
  }
  @media only screen and (max-width: 728px){
   .third{
@@ -135,6 +135,7 @@ margin-bottom: 2rem;
   margin-top: 0rem;
   margin-left: 1rem;
   padding-top: 1em;
+  padding-left: 1em;
   }
  }
  .icons{
@@ -171,7 +172,6 @@ margin-bottom: 2rem;
 
 .line1{
   margin-top: 1rem;
-  margin-bottom: 2rem;
   height: 2px;
   width:100%;
   background-color: white;
@@ -187,4 +187,15 @@ margin-bottom: 2rem;
 .foot_font1{
   font-family: 'Roboto Slab';
   font-size: 0.7em;
+}
+
+.footer_end{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  color: var(--brand-white);
+  font-family: var(--brand-font-body);
+  font-size: 0.8em;
+  padding-bottom: 0.5em;
 }

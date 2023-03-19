@@ -3,14 +3,30 @@ import React from 'react';
 import logo from '../assets/apoorv_logo.svg';
 import year from '../assets/2023.svg';
 import styles from '../styles/Footer.module.css';
-import {AiFillMail,AiFillLinkedin,AiFillTwitterCircle,AiFillFacebook} from 'react-icons/ai';
+import {AiFillMail,AiFillLinkedin,AiFillTwitterCircle,AiFillFacebook,AiFillHeart} from 'react-icons/ai';
 import Image from 'next/image'
+import { motion } from 'framer-motion'
 
 
 const Footer = () => {
   return (
     <>
-     <div className={styles.footer}>
+     <motion.div className={styles.footer} initial="hidden" whileInView="visible" variants={{
+      hidden: {
+
+        opacity: 0,
+        y: 30,
+      },
+      visible: {
+
+        opacity: 1,
+        y: 0,
+        transition: {
+          duration: 0.25,
+
+        }
+      },
+    }}>
       <div className={styles.footer_container}>
       <div className={styles.line} />
         <div className={styles.content}>
@@ -51,7 +67,10 @@ const Footer = () => {
         </div>
         <div className={styles.line1} />
       </div>
-      </div> 
+      <div className={styles.footer_end}>
+     Made with ❤️ by BetaLabs
+      </div>
+      </motion.div> 
     </>
   )
 }
