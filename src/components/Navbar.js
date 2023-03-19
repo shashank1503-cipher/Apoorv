@@ -98,8 +98,8 @@ const Navbar = () => {
         <div className={styles.Mcontainer} id={'mainCont'}>
             <div className={styles.container}>
                 <div className={styles.logo}>
-                    <img src="/logo.svg" alt="logo" />
-                    <img src="/logoText.svg" alt="logo" />
+                    <img src="/logo.svg" alt="logo" className={styles.logoImg} />
+                    <img src="/logoText.svg" alt="logo" className={styles.logoText} />
                 </div>
 
                 <div className={styles.menuButton} onClick={() => setOpen(!open)}>
