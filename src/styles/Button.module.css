@@ -48,8 +48,16 @@
 }
 
 .button:active {
-    background-color: antiquewhite;
+    background-color: rgb(235, 215, 250);
 }
+
+.purple {
+    color: var(--brand-purple-text);
+    border: 2px solid var(--brand-purple-text);
+}
+
+
+
 
 @media (max-width:800px) {
     .button {

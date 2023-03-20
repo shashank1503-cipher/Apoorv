@@ -2,13 +2,13 @@ import React from 'react'
 import styles from '../../styles/Button.module.css'
 
 
-const CollisionButton = (props) => {
+const Button = (props) => {
 
-    let { children } = props
+    let { children, colorScheme } = props
 
     return (
-        <div className={styles.button} {...props}>{children}</div>
+        <div className={`${styles.button} ${colorScheme === "purple" ? styles.purple : colorScheme === "yellow" ? styles.yellow : ""} `}  {...props}>{children}</div>
     )
 }
 
-export { CollisionButton }
+export { Button }
