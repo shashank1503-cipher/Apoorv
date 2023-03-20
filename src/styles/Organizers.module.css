@@ -64,7 +64,7 @@
 @media (max-width: 1000px) {
     .container {
         grid-template-columns: 100%;
-        margin-top: 10%;
+        margin: 10% 0;    
         justify-items: center;
         align-items: center;
         width: 100%;
@@ -83,18 +83,20 @@
 @media (max-width: 800px) {
     .container {
         grid-template-columns: 100%;
-        margin-top: 10%;
+        margin: 10% 0;    
         justify-items: center;
         align-items: center;
         width: 100%;
+        padding: 0;
     }
     
     .head {
         font-size: 3.5rem;
+
     }
     
     .desc {
-        width: 80%;
+        text-align: center;
     }
 
     .contactWrapper {
@@ -109,14 +111,13 @@
         justify-items: center;
         align-items: center;
         width: 100%;
-        
+        padding: 0;
     }
     
     .head {
         font-size: 3.5rem;
     }
     
-    .desc {
-        width: 80%;
-    }
+    
 }
+

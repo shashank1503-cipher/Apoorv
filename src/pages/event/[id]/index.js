@@ -69,7 +69,16 @@ export default function Event({ name, poster, description, register, date, time,
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Navbar isTransparent={true} />
-            <Gradient />
+            <Image
+                src={eventBg}
+                alt={"Gradient Background"}
+                style={{
+                    position: 'absolute',
+                    width: '100%',
+                    // objectFit: 'cover',
+                    top: 0,
+                }}
+            />
             <EventHeading
                 title={name}
                 content={tag}
