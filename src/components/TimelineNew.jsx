@@ -18,7 +18,6 @@ const TimelineNew = () => {
 
     const wrapper = useRef(null)
 
-    const chapterAmount = timelineData.length
     let totalEventsArray = []
     timelineData.forEach((day) => {
         totalEventsArray.push(day.events)
@@ -31,21 +30,36 @@ const TimelineNew = () => {
         let wrapperHeight = wrapper.current.offsetHeight - 0.4 * wrapper.current.offsetHeight
         let wrapperTopY = wrapper.current.offsetTop
 
-        let chapterHeight = wrapperHeight / chapterAmount
+        let totalNumberOfEvents = totalEventsArray.length
+        let chapterHeightsPrev = []
+
+        for (let i = 0; i < 3; i++) {
+            let chapterHeight = wrapperHeight / 3
+            chapterHeightsPrev.push(i * chapterHeight)
+        }
         let chapterHeights = []
 
-        for (let i = 0; i < chapterAmount; i++) {
-            chapterHeights.push(i * chapterHeight)
+        for (let i = 0; i < 3; i++) {
+            if (i === 0) {
+                chapterHeights.push(0)
+                continue
+            }
+            let eventsOnDayIMinusOne = timelineData[i - 1].events.length
+            let chapterHeight = wrapperHeight * (eventsOnDayIMinusOne / totalNumberOfEvents)
+            let prevChapterHeight = chapterHeights[i - 1]
+            chapterHeights.push(chapterHeight + prevChapterHeight)
         }
 
-        for (let i = 0; i < chapterAmount; i++) {
+        
+
+        for (let i = 0; i < 3; i++) {
             let chapterLength = chapterHeights[i] + wrapperTopY;
             if (scrollY >= chapterLength) {
                 setDay(i + 1)
             }
         }
 
-        let totalNumberOfEvents = totalEventsArray.length
+
         let eventHeight = wrapperHeight / totalNumberOfEvents
 
         let eventHeights = []
