@@ -44,6 +44,7 @@
 .content {
     color: var(--brand-white);
     font-family: var(--brand-body-font);
+    font-size: 1.5rem;
 }
 
 .content h1 {
@@ -53,10 +54,13 @@
 }
 
 .content p {
-    font-size: 1.5rem;
     margin-top: 0;
 }
 
+.alias{
+    font-size: 1rem;
+    color: grey;
+}
 @media screen and (max-width: 1200px) {
     .card {
         margin-left: 0;

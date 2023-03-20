@@ -140,6 +140,7 @@ const events = [
                 name: 'Swani',
                 email: 'swani2019@\u200Biiitkottayam.ac.in',
                 image: 'https://res.cloudinary.com/dlu72yo9b/image/upload/v1633973915/IMG_2121_pyqnlt.jpg',
+                alias:"The Design Gawd"
             },
             {
                 key: '2',
@@ -147,6 +148,7 @@ const events = [
                 email: 'techclub@\u200Biiitkottayam.ac.in',
                 phoneNumber: '(+91) 9370324791',
                 image: 'https://res.cloudinary.com/dlu72yo9b/image/upload/v1631972395/00100sPORTRAIT_00100_BURST20210908184205917_COVER_x347rg.jpg',
+                alias:"The Absolute Nerd"
             },
         ],
         poster: 'https://res.cloudinary.com/dpjf6btln/image/upload/v1678950678/Asset_15_eulxyj.png',
