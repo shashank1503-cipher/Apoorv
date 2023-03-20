@@ -1,6 +1,5 @@
-.container {
+.container{
     overflow-x: hidden;
-
 }
 
 .gradient1 {
@@ -11,7 +10,6 @@
     top: 76px;
 
     background: radial-gradient(50% 50% at 50% 50%, rgba(148, 87, 247, 0.4) 16.72%, rgba(208, 116, 251, 0) 100%);
-    z-index: -1;
 }
 
 .gradient2 {
@@ -22,5 +20,4 @@
     top: 7px;
 
     background: radial-gradient(50% 50% at 50% 50%, rgba(101, 37, 219, 0.4) 16.72%, rgba(163, 116, 251, 0) 100%);
-    z-index: -1;
 }

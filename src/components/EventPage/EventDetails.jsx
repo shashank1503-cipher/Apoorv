@@ -10,9 +10,9 @@ const EventDetails = (props) => {
                 <div className={styles.head} >
                     <h1>Details</h1>
                 </div>
-                <div className={styles.body} style={{ whiteSpace: "pre-line" }}>
+                <div className={styles.body}>
                     <p>
-                        {props.description}
+                       {props.description}
                     </p>
                 </div>
             </div>
@@ -24,13 +24,13 @@ const EventDetails = (props) => {
                 />
                 <div className={styles.after}>
                     <div className={styles.date}>
-                        <h1>{props.date}</h1>
+                        <h1>21 Feb</h1>
                     </div>
                     <div className={styles.divider}>
                         <hr />
                     </div>
-                    <div className={styles.time} style={{ whiteSpace: "pre-line" }}>
-                        <h1>{props.time}</h1>
+                    <div className={styles.time}>
+                        <h1>10:00 AM</h1>
                     </div>
                 </div>
             </div>

@@ -133,14 +133,14 @@ const events = [
         description:
             'Ever seen a huge logo on a billboard and thought you could’ve done so much better?\nThis is your chance to redesign some of the infamous brand logos and their identity.\nAnalyse, Ideate, Design!',
         date: '30th October',
-        time: '10:00am \n - \n 12:00am',
+        time: '10:00am - 12:00am',
         organisers: [
             {
                 key: '1',
                 name: 'Swani',
                 email: 'swani2019@\u200Biiitkottayam.ac.in',
                 image: 'https://res.cloudinary.com/dlu72yo9b/image/upload/v1633973915/IMG_2121_pyqnlt.jpg',
-                alias: "The Design Gawd"
+                alias:"The Design Gawd"
             },
             {
                 key: '2',
@@ -148,7 +148,7 @@ const events = [
                 email: 'techclub@\u200Biiitkottayam.ac.in',
                 phoneNumber: '(+91) 9370324791',
                 image: 'https://res.cloudinary.com/dlu72yo9b/image/upload/v1631972395/00100sPORTRAIT_00100_BURST20210908184205917_COVER_x347rg.jpg',
-                alias: "The Absolute Nerd"
+                alias:"The Absolute Nerd"
             },
         ],
         poster: 'https://res.cloudinary.com/dpjf6btln/image/upload/v1678950678/Asset_15_eulxyj.png',
