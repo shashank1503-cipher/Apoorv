@@ -1,0 +1,23 @@
+.container{
+    overflow-x: hidden;
+}
+
+.gradient1 {
+    position: absolute;
+    width: 1367px;
+    height: 1460px;
+    left: 459px;
+    top: 76px;
+
+    background: radial-gradient(50% 50% at 50% 50%, rgba(148, 87, 247, 0.4) 16.72%, rgba(208, 116, 251, 0) 100%);
+}
+
+.gradient2 {
+    position: absolute;
+    width: 1143px;
+    height: 1122px;
+    left: -240px;
+    top: 7px;
+
+    background: radial-gradient(50% 50% at 50% 50%, rgba(101, 37, 219, 0.4) 16.72%, rgba(163, 116, 251, 0) 100%);
+}

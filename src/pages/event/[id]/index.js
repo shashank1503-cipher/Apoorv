@@ -8,6 +8,7 @@ import Head from "next/head"
 import styles from '../../../styles/Home.module.css'
 import eventBg from '../../../../public/eventBg.png'
 import Image from "next/image"
+import Gradient from "@/components/Gradients/Gradient"
 
 export const getStaticPaths = async () => {
     const paths = events.map((event) => {
@@ -68,18 +69,7 @@ export default function Event({ name, poster, description, register, date, time,
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Navbar isTransparent={true} />
-            <Image
-                src={eventBg}
-                alt={"sponsers"}
-                style={{
-                    position: 'absolute',
-                    width: '100%',
-                    zIndex: -1,
-                    // height: '100%',
-                    objectFit: 'cover',
-                    // top: 0,
-                }}
-            />
+            <Gradient />
             <EventHeading
                 title={name}
                 content={tag}
