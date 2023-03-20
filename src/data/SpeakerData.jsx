@@ -7,7 +7,7 @@ const speakersList = [
     {
         image: 'https://res.cloudinary.com/dpjf6btln/image/upload/v1679294024/vikas-kulkarni_evf9in.png',
         title: 'Vikas Kulkarni',
-        description: 'Sr. Product Manager @ZiMetrics Technologies | Former QC Lead @Ubisoft and @Gameloft | Worked on AAA series like Assassin\'s Creed,Asphalt etc.'
+        description: 'Sr. Product Manager @ZiMetrics Technologies | Former QC Lead @Ubisoft and @Gameloft | Worked on Game Series like Assassin\'s Creed,Asphalt etc.'
     },
 ];
 
