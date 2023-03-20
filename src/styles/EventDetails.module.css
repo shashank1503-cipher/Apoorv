@@ -1,4 +1,3 @@
-
 .img {
     position: relative;
     width: 20.45rem;
@@ -110,6 +109,8 @@
         transform: translateY(-7.5%);
         flex-direction: column-reverse;
         padding: 5rem 2rem;
+        margin: 5rem 2rem;
+    
 
     }
 
@@ -122,6 +123,11 @@
         margin-bottom: 2rem;
         align-self: center;
 
+    }
+
+    .head {
+        font-size: 1.75rem;
+        padding-top: 0px;
     }
 
     /* .img .after {
@@ -152,7 +158,7 @@
     }
 
     .head {
-        font-size: 1rem;
+        font-size: 1.75rem;
         padding-top: 0px;
     }
 

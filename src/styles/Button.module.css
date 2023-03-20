@@ -54,14 +54,21 @@
 @media (max-width:800px) {
     .button {
         padding: 0.5rem;
-        width: 50%;
+        width: 15rem;
     }
 }
 
 @media (max-width:600px) {
     .button {
         padding: 0.5rem;
-        width: 75%;
+        width: 15rem;
     }
 
+}
+
+@media (max-width:400px) {
+    .button {
+        padding: 0.5rem;
+        width: 12rem;
+    }
 }

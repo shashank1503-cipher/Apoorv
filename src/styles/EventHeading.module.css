@@ -53,7 +53,7 @@
 }
 
 @media (max-width: 1200px) {
-   
+
 
     .Heading h1 {
         font-size: 3.5rem;
@@ -61,9 +61,9 @@
 }
 
 @media (max-width: 1040px) {
-    
+
     .Heading h1 {
-        font-size: 2.5em;
+        font-size: 3.5rem;
     }
 
     .Heading p {
@@ -82,7 +82,7 @@
         margin-top: 10%;
         flex-direction: column-reverse;
         align-items: center;
-        gap:4rem;
+        gap: 4rem;
     }
 
     .image {
@@ -91,7 +91,7 @@
     }
 
     .Heading h1 {
-        font-size: 2em;
+        font-size: 3.5rem;
     }
 
     .Heading p {
