@@ -1,0 +1,81 @@
+.container {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.team_gradient {
+	background-image: url("../assets/green_blue_bg.jpg");
+	background-size: cover;
+	filter: saturate(0.85);
+	min-height: 50rem;
+	padding: 17rem 0 0 50px;
+	position: relative;
+}
+
+.team_blur {
+	position: absolute;
+	inset: auto 0 0 0;
+	height: 20rem;
+	background-color: #0e3f2d80;
+	backdrop-filter: blur(8px);
+	-webkit-backdrop-filter: blur(8px);
+}
+
+.team_header {
+	display: flex;
+	align-items: center;
+}
+
+.team_maintext {
+	font-family: var(--brand-head-font);
+	font-weight: 100;
+}
+
+.team_title {
+	color: #6cff8cbe;
+	font-size: 6rem;
+	flex-shrink: 0;
+}
+
+.team_line {
+	margin: 10px 70px 0 50px;
+	width: 100%;
+	height: 1px;
+	background-color: white;
+}
+
+.team_subintro {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	column-gap: 12rem;
+}
+
+.team_subtext {
+	color: white;
+	font-family: var(--brand-body-font);
+	font-size: 1.3rem;
+}
+
+.team_introtext {
+	width: 30ch;
+	border-left: 1px solid white;
+	padding-left: 1rem;
+}
+
+.team_members {
+	padding: 10rem 50px 5rem 50px;
+}
+
+.team_subtitle {
+	color: #5aff73d6;
+	font-size: 4rem;
+	margin-bottom: 1rem;
+}
+
+.team_stitletext {
+	font-size: 1.8rem;
+	width: 60ch;
+}
