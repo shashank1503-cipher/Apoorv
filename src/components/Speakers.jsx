@@ -11,52 +11,9 @@ import img7 from '../assets/7.png';
 import img8 from '../assets/8.png';
 // import img2 from "../components/Images/sampleImg.jpg";
 import { motion } from 'framer-motion'
+import speakersList from '@/data/SpeakerData';
 const Speakers = () => {
-    const speakersList = [
-        {
-            image: img1,
-            title: 'Naoko Okiyama',
-            description: 'A.C.O. by Monsterlab COO / Art Director'
-        },
-        {
-            image: img2,
-            title: 'Naoko Okiyama2',
-            description: 'A.C.O. by Monsterlab COO / Art Director'
-        },
 
-        {
-            image: img3,
-            title: 'Naoko Okiyama3',
-            description: 'A.C.O. by Monsterlab COO / Art Director'
-        },
-        {
-            image: img4,
-            title: 'Naoko Okiyama4',
-            description: 'A.C.O. by Monsterlab COO / Art Director'
-        },
-
-        {
-            image: img5,
-            title: 'Naoko Okiyama5',
-            description: 'A.C.O. by Monsterlab COO / Art Director'
-        },
-        {
-            image: img6,
-            title: 'Naoko Okiyama6',
-            description: 'A.C.O. by Monsterlab COO / Art Director'
-        },
-
-        {
-            image: img7,
-            title: 'Naoko Okiyama7',
-            description: 'A.C.O. by Monsterlab COO / Art Director'
-        },
-        {
-            image: img8,
-            title: 'Naoko Okiyama8',
-            description: 'A.C.O. by Monsterlab COO / Art Director'
-        }
-    ];
 
     return (
         <div style={{ width: "100%", display: "flex", justifyContent: "center", backgroundColor: "#F2EFEB" }}>

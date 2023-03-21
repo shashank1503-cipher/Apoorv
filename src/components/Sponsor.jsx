@@ -136,17 +136,17 @@ const Sponsor = () => {
                     }
                 },
             }} className={styles.prizes_container}>
+                <div className={styles.prizes_text}>
+                    An astounding prize pool worth
+                </div>
                 <div className={styles.prizes_heading}>
                     <h1>Rs. 1,00,000+</h1>
                 </div>
                 <div className={styles.prizes_text}>
-                    in prizes to be won
-                </div>
-                <div className={styles.prizes_text}>
-                    along with exciting goodies from
+                    In addition to exciting swags and goodies from .
                 </div>
                 <div className={styles.dial_heading}>
-                    <h1>Our Sponsors</h1>
+                    <h1>Our Acclaimed Sponsors</h1>
                 </div>
             </motion.div>
 
@@ -283,10 +283,12 @@ const Sponsor = () => {
                     </div>
 
                     <div className={styles.make_sponsor_disc_text}>
-                        has been celebrating arts, heritage, music and lifestyle since its inception in 2019. A myriad of events with impressive and breathtaking performances has always
+                        An opportunity for you to gain on-campus branding and publicity during the festival amongst 2000+
+                        odd participants with banners, social media, crowd interactions, website branding and many more.
                     </div>
-
-                    <CollisionButton style={{ width: "35%", marginTop: "1rem" }} onClick={() => window.location = 'mailto:apoorv@iiitkottayam.ac.in'}>Contact Us</CollisionButton>
+                    <div className={styles.buttonGroup}>
+                        <CollisionButton style={{ marginTop: "1rem" }} onClick={() => window.location = 'mailto:apoorv@iiitkottayam.ac.in'}>Contact Us</CollisionButton>
+                    </div>
                 </div>
 
                 <div

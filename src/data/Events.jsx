@@ -21,7 +21,7 @@ const events = [
                 phoneNumber: '7259395776',
             },
         ],
-        poster: 'https://res.cloudinary.com/dpjf6btln/image/upload/v1678950678/Asset_15_eulxyj.png',
+        poster: 'https://res.cloudinary.com/dpjf6btln/image/upload/v1633793220/CTF_bfluvm.png',
         registration: ""
     },
     {
@@ -47,7 +47,7 @@ const events = [
                 phoneNumber: '9607781923',
             },
         ],
-        poster: 'https://res.cloudinary.com/dpjf6btln/image/upload/v1678950678/Asset_15_eulxyj.png',
+        poster: 'https://res.cloudinary.com/dpjf6btln/image/upload/v1633793392/BB_bcq4a4.jpg',
         registration: ""
 
     },
@@ -74,7 +74,7 @@ const events = [
                 phoneNumber: '(+91) 9087609727',
             },
         ],
-        poster: 'https://res.cloudinary.com/dpjf6btln/image/upload/v1678950678/Asset_15_eulxyj.png',
+        poster: 'https://res.cloudinary.com/dpjf6btln/image/upload/v1633793432/CP_Insta_p40r6s.jpg',
         registration: ""
 
     },
@@ -101,7 +101,7 @@ const events = [
                 phoneNumber: '(+91) 7987957308',
             },
         ],
-        poster: 'https://res.cloudinary.com/dpjf6btln/image/upload/v1678950678/Asset_15_eulxyj.png',
+        poster: 'https://res.cloudinary.com/dpjf6btln/image/upload/v1633793230/WebDev_kdy8jd.png',
         registration: ""
 
     },
@@ -119,9 +119,10 @@ const events = [
                 key: '1',
                 name: 'Aditi Shukla',
                 email: 'techclub@\u200Biiitkottayam.ac.in',
+
             },
         ],
-        poster: 'https://res.cloudinary.com/dpjf6btln/image/upload/v1678950678/Asset_15_eulxyj.png',
+        poster: 'https://res.cloudinary.com/dpjf6btln/image/upload/v1633793221/D1_ceshnu.jpg',
         registration: ''
     },
     {
@@ -138,12 +139,16 @@ const events = [
                 key: '1',
                 name: 'Swani',
                 email: 'swani2019@\u200Biiitkottayam.ac.in',
+                image: 'https://res.cloudinary.com/dlu72yo9b/image/upload/v1633973915/IMG_2121_pyqnlt.jpg',
+                alias:"The Design Gawd"
             },
             {
                 key: '2',
                 name: 'Prajjawal',
                 email: 'techclub@\u200Biiitkottayam.ac.in',
                 phoneNumber: '(+91) 9370324791',
+                image: 'https://res.cloudinary.com/dlu72yo9b/image/upload/v1631972395/00100sPORTRAIT_00100_BURST20210908184205917_COVER_x347rg.jpg',
+                alias:"The Absolute Nerd"
             },
         ],
         poster: 'https://res.cloudinary.com/dpjf6btln/image/upload/v1678950678/Asset_15_eulxyj.png',
@@ -166,7 +171,7 @@ const events = [
                 phoneNumber: '(+91) 9599928563',
             },
         ],
-        poster: 'https://res.cloudinary.com/dpjf6btln/image/upload/v1678950678/Asset_15_eulxyj.png',
+        poster: 'https://res.cloudinary.com/dpjf6btln/image/upload/v1633793231/Crypto_ouh7hx.png',
         registration: ''
     },
     {
@@ -186,7 +191,7 @@ const events = [
                 phoneNumber: '(+91) 8688179209',
             },
         ],
-        poster: 'https://res.cloudinary.com/dpjf6btln/image/upload/v1678950678/Asset_15_eulxyj.png',
+        poster: 'https://res.cloudinary.com/dpjf6btln/image/upload/v1633793272/GameDev_z8he5g.png',
         registration: ''
     },
     {
@@ -212,7 +217,7 @@ const events = [
                 phoneNumber: '(+91) 08606922585',
             },
         ],
-        poster: 'https://res.cloudinary.com/dpjf6btln/image/upload/v1678950678/Asset_15_eulxyj.png',
+        poster: 'https://res.cloudinary.com/dlu72yo9b/image/upload/v1634185031/final_1_hug6mt.png',
         registration: ''
     },
     {
@@ -233,7 +238,7 @@ const events = [
             },
         ],
 
-        poster: 'https://res.cloudinary.com/dpjf6btln/image/upload/v1678950678/Asset_15_eulxyj.png',
+        poster: 'https://res.cloudinary.com/dlu72yo9b/image/upload/v1634185036/final_b5pikj.png',
         registration: ''
     },
     {
@@ -259,7 +264,7 @@ const events = [
                 phoneNumber: '(+91) 8139888072',
             },
         ],
-        poster: 'https://res.cloudinary.com/dpjf6btln/image/upload/v1678950678/Asset_15_eulxyj.png',
+        poster: 'https://res.cloudinary.com/dpjf6btln/image/upload/v1633793227/SoldIT_bkhole.png',
         registration: ''
     },
     {
@@ -279,7 +284,7 @@ const events = [
                 phoneNumber: '(+91) 9080385059',
             },
         ],
-        poster: 'https://res.cloudinary.com/dpjf6btln/image/upload/v1678950678/Asset_15_eulxyj.png',
+        poster: 'https://res.cloudinary.com/dlu72yo9b/image/upload/v1634976697/VALORANT_1_tblk1r.jpg',
         registration: ''
     },
     {
@@ -299,7 +304,7 @@ const events = [
                 phoneNumber: '(+91) 8407016547',
             },
         ],
-        poster: 'https://res.cloudinary.com/dpjf6btln/image/upload/v1678950678/Asset_15_eulxyj.png',
+        poster: 'https://res.cloudinary.com/roshin/image/upload/v1635413455/sticktoit_s4kpmz.jpg',
         registration: ''
     },
 ]

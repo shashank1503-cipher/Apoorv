@@ -23,13 +23,13 @@
   --brand-white: #FFFFFF;
   --brand-white-shaded: #b2b2b2;
   --brand-purple: #6525DB;
+  --brand-purple-text: #D5ABFF;
   --brand-black: #000000;
   --sponsors-bg: #009f64;
   --brand-head-font: 'Homrice', serif;
   --brand-body-font: 'Roboto Slab', serif;
 }
 
-html,
 body {
   font-size: 1.2rem;
   line-height: 1.5;
@@ -37,5 +37,10 @@ body {
   scroll-behavior: smooth;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  overflow-x: hidden;
+}
+
+html {
   scroll-behavior: smooth;
+  
 }

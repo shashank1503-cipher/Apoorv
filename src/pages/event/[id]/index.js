@@ -5,6 +5,10 @@ import Footer from "@/components/Footer"
 import Navbar from "@/components/Navbar"
 import { events } from "@/data/Events"
 import Head from "next/head"
+import styles from '../../../styles/Home.module.css'
+import eventBg from '../../../../public/eventBg.png'
+import Image from "next/image"
+import Gradient from "@/components/Gradients/Gradient"
 
 export const getStaticPaths = async () => {
     const paths = events.map((event) => {
@@ -42,7 +46,7 @@ export const getStaticProps = async (context) => {
 export default function Event({ name, poster, description, register, date, time, organisers, tag }) {
     console.log(name, poster, description, register, date, time, organisers, tag)
     return (<>
-        <div >
+        <div className={styles.container}>
             <Head>
                 <title>Apoorv - IIITK | {name}</title>
                 <meta
@@ -64,7 +68,17 @@ export default function Event({ name, poster, description, register, date, time,
                 <meta property="og:type" content="website" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <Navbar />
+            <Navbar isTransparent={true} />
+            <Image
+                src={eventBg}
+                alt={"Gradient Background"}
+                style={{
+                    position: 'absolute',
+                    width: '100%',
+                    // objectFit: 'cover',
+                    top: 0,
+                }}
+            />
             <EventHeading
                 title={name}
                 content={tag}

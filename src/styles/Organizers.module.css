@@ -1,0 +1,123 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: var(--brand-white);
+    margin: 5rem 4rem;
+    /* padding-bottom: 3.71; */
+    margin-bottom: 10rem;
+}
+
+.head {
+    font-family: var(--brand-head-font);
+    font-size: 4.75rem;
+    font-weight: 400;
+    letter-spacing: -3px;
+    margin-bottom: 0px;
+    color: var(--brand-purple-text);
+
+}
+
+.desc {
+    font-family: var(--brand-body-font);
+    font-weight: 500;
+    font-size: 1.75rem;
+    padding-left: 0.5em;
+    padding-right: 0.25em;
+    width: 50%;
+}
+
+.contactWrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+
+}
+
+@media (max-width: 1250px) {
+    .head {
+        font-size: 4.5rem;
+    }
+}
+    
+@media (max-width: 1200px) {
+    .container {
+        grid-template-columns: 50% 50%;
+        margin-top: 10%;
+        justify-items: center;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+    }
+    
+    .head {
+        font-size: 3.5rem;
+    }
+    
+    .desc {
+        width: 80%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .container {
+        grid-template-columns: 100%;
+        margin: 10% 0;    
+        justify-items: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .head {
+        font-size: 3.5rem;
+        text-align: center;
+    }
+    
+    .desc {
+        width: 80%;
+    }
+}
+
+@media (max-width: 800px) {
+    .container {
+        grid-template-columns: 100%;
+        margin: 10% 0;    
+        justify-items: center;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+    }
+    
+    .head {
+        font-size: 3.5rem;
+
+    }
+    
+    .desc {
+        text-align: center;
+    }
+
+    .contactWrapper {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        grid-template-columns: 100%;
+        margin-top: 10%;
+        justify-items: center;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+    }
+    
+    .head {
+        font-size: 3.5rem;
+    }
+    
+    
+}
+

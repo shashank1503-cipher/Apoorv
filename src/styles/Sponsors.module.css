@@ -195,7 +195,7 @@
     z-index: 1;
     /* justify-content: space-between; */
     align-items: center;
-    height: 50vh;
+    /* height: 50vh; */
     width: 80vw;
     /* padding: 30px 30px; */
     margin-top: -50px;
@@ -279,6 +279,12 @@
         padding: 10px;
         justify-content: space-evenly;
         gap: 20px;
+    }
+
+    .buttonGroup {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .prizes_heading {

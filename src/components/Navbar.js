@@ -22,7 +22,9 @@ const MenuClose = () => {
 }
 
 
-const Navbar = () => {
+const Navbar = (props) => {
+
+    let { isTransparent } = props
 
     const [open, setOpen] = useState(false)
     const scrollDirection = useScrollDirection('down');
@@ -73,20 +75,38 @@ const Navbar = () => {
             }
         }
 
+        if (isTransparent) {
+            if (!scrolledToTop) {
+                const nav = document.getElementById('mainCont')
+                {
+                    nav.classList.remove(styles.transparent)
+                }
+            }
+            else {
+                const nav = document.getElementById('mainCont')
+                {
+                    nav.classList.add(styles.transparent)
+                }
+            }
+
+        }
+
 
     }, [open, scrollDirection, scrolledToTop])
 
 
     const NavItem = (props) => {
-        const links = {
-            'Home': '/#hero',
-            'Sponsors': '/#sponsors',
-            'Timeline': '/#timeline',
-            'Events': '/events',
-        }
+        const newPageLinks = ['Events', 'Team']
         return (
             <div className={styles.navItem} onClick={() => {
-                window.location.href = `${links[props.text]}`
+                if (props.text === "Sponsor Us") {
+                    window.open('https://drive.google.com/file/d/1ALBZIrMHY25nVEEaWlzDjcdKr8BNxYiR/view?usp=sharing', '_blank')
+                }
+                else if (newPageLinks.includes(props.text))
+                    window.location.href = `/${props.text.toLowerCase()}`
+                else
+                    window.location.href = `/#${props.text.toLowerCase()}`
+                setOpen(false)
             }}>
                 <div>
 
@@ -98,11 +118,11 @@ const Navbar = () => {
 
 
     return (
-        <div className={styles.Mcontainer} id={'mainCont'}>
+        <div className={`${styles.Mcontainer} ${isTransparent ? styles.transparent : ''}`} id={'mainCont'} >
             <div className={styles.container}>
                 <div className={styles.logo}>
-                    <img src="/logo.svg" alt="logo" />
-                    <img src="/logoText.svg" alt="logo" />
+                    <img src="/logo.svg" alt="logo" className={styles.logoImg} />
+                    <img src="/logoText.svg" alt="logo" className={styles.logoText} />
                 </div>
 
                 <div className={styles.menuButton} onClick={() => setOpen(!open)}>
@@ -114,6 +134,8 @@ const Navbar = () => {
                     <NavItem text="Sponsors" />
                     <NavItem text="Timeline" />
                     <NavItem text="Events" />
+                    <NavItem text="Team" />
+                    <NavItem text="Sponsor Us" />
                 </div>
 
 

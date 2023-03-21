@@ -1,29 +1,31 @@
 import Image from 'next/image'
 import styles from '../../styles/ContainerCard.module.css'
-import { motion, useScroll } from 'framer-motion'
-import React, { useEffect } from 'react'
+import React from 'react'
+import { FaCaretRight } from 'react-icons/fa'
 const ContainerCard = (props) => {
-    const dataDepth = props.dataDepth
+    const { image, alt, subheading, title, subtitles, onHoverAnimation } = props
 
-    const isParallax = dataDepth !== undefined
+
     return (
-        <li data-type={isParallax ? "parallax" : ""} data-depth={props.dataDepth} >
-            <div className={styles.card} onClick={() => {
-                window.location.href = `/event/${props.link}`
-            }}  >
-                <div className={styles.imageWrapper}>
-                    <Image src={props.image} alt={props.alt} fill />
-                </div>
-                <div className={styles.divider}>
-                    <hr />
-                </div>
-                <div className={styles.content}>
-                    <h1>{props.title}</h1>
-                    <p>{props.date}</p>
-                    <p>{props.time}</p>
-                </div>
+        <div className={styles.card}>
+            <div className={`${styles.imageWrapper} ${onHoverAnimation === "scale" ? styles.animationScale : ''}`} >
+                <Image src={image} alt={alt} fill />
             </div>
-        </li>
+            <div className={styles.divider}>
+                <hr />
+            </div>
+            <div className={styles.content}>
+                <p className={styles.alias}><FaCaretRight /> {subheading}</p>
+                <h1>{title}</h1>
+                {subtitles.map((subtitle, index) => {
+                    return (
+                        <p key={index}>{subtitle}</p>
+                    )
+                }
+                )}
+            </div>
+        </div>
+
     )
 }
 

@@ -5,115 +5,89 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--brand-white);
+    background-color: black;
     opacity: 100%;
     /* Closing animation below */
     animation: slide-out-container 3s cubic-bezier(0.97, 0.01, 0.36, 0.99) 1s;
     animation-fill-mode: forwards;
-    
-
-
 }
 
-.textWrapper {
-    color: white;
-    position: absolute;
+.col {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    width: 100%;
-    height: 100%;
-    animation: blink 1s infinite;
-
-
+    /* justify-content: center */
 }
 
-.text {
-    font-family: var(--brand-head-font);
-    font-weight: bolder;
-    font-size: 5.5rem;
+.slideDown {
+    position: absolute;
+    animation: slide-down 2s;
+    /* margin: 1rem; */
+    bottom: 52%;
 }
-
-
-@keyframes blink {
-    0% {
-        background-color: var(--brand-purple);
-        color: var(--brand-white);
-
+.slideUp {
+    position: absolute;
+    animation: slide-up 2s;
+    /* margin: 1rem; */
+    top: 52%;
+}
+.slideLeft {
+    position: absolute;
+    animation: slide-left 2s;
+    /* margin: 1rem; */
+    left: 55%;
+}
+.slideRight {
+    position: absolute;
+    animation: slide-right 2s;
+    /* margin: 1rem; */
+    right: 55%;
+}
+.fadeIn {
+    position: absolute;
+    animation: fade-in 3s;
+    /* margin: 1rem; */
+    right: 46.6%;
+}
+@keyframes fade-in {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@keyframes slide-down {
+    from {
+      bottom: 100%;
     }
 
-    25% {
-        background-color: var(--brand-yellow);
-        color: var(--brand-green);
-
-    }
-
-    50% {
-        background-color: var(--brand-peach);
-        color: var(--brand-white);
-
-    }
-
-    75% {
-        background-color: var(--brand-blue);
-        color: var(--brand-white);
-
-    }
-
-    100% {
-        background-color: var(--brand-blue);
-        color: var(--brand-white);
-
+    to {
+      bottom: 52%;
     }
 }
-
-/* @keyframes slide-out {
-    0% {
-        opacity: 0;
+@keyframes slide-up {
+    from {
+      top: 100%;
     }
 
-    1% {
-        opacity: 100%;
+    to {
+      top: 52%;
+    }
+}
+@keyframes slide-left {
+    from {
+      left: 100%;
     }
 
-    19% {
-        opacity: 100%;
+    to {
+      left: 55%;
+    }
+}
+@keyframes slide-right {
+    from {
+      right: 100%;
     }
 
-    20% {
-        opacity: 0;
+    to {
+      right: 55%;
     }
-
-    39% {
-        opacity: 0;
-    }
-
-    40% {
-        opacity: 100%;
-    }
-
-    59% {
-        opacity: 100%;
-    }
-
-    60% {
-        opacity: 0;
-    }
-
-    79% {
-        opacity: 0;
-    }
-
-    80% {
-        opacity: 100%;
-    }
-
-    100% {
-        opacity: 0%;
-    }
-} */
-
+}
 @keyframes slide-out-container {
     0% {
         scale: 1;
@@ -134,8 +108,32 @@
 
 
 
-@media screen and (max-width: 768px) {
-    .text {
-        font-size: 2rem;
+@media screen and (max-width: 468px) {
+    .slideLeft {
+        left: 60%;
+    }
+    .slideRight {
+        right: 60%;
+    }
+    .fadeIn {
+        right: 44.6%;
+    }
+    @keyframes slide-left {
+        from {
+          left: 100%;
+        }
+    
+        to {
+          left: 60%;
+        }
+    }
+    @keyframes slide-right {
+        from {
+          right: 100%;
+        }
+    
+        to {
+          right: 60%;
+        }
     }
 }

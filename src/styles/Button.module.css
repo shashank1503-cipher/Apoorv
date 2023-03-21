@@ -6,7 +6,7 @@
     position: relative;
     overflow: hidden;
     transition: 0.3s;
-    width: 40%;
+    width: 15rem;
     font-family: var(--brand-head-font);
     color: var(--brand-yellow);
 }
@@ -54,14 +54,21 @@
 @media (max-width:800px) {
     .button {
         padding: 0.5rem;
-        width: 50%;
+        width: 15rem;
     }
 }
 
 @media (max-width:600px) {
     .button {
         padding: 0.5rem;
-        width: 75%;
+        width: 15rem;
     }
 
+}
+
+@media (max-width:400px) {
+    .button {
+        padding: 0.5rem;
+        width: 12rem;
+    }
 }
