@@ -105,6 +105,12 @@
 
 }
 
+@media screen and (max-width: 550px) {
+    .container {
+        padding: 10px 30px;
+    }
+}
+
 .logo {
     display: flex;
     align-items: center;
@@ -118,6 +124,7 @@
     /* border-radius: 50%; */
     object-fit: cover;
     object-position: center;
+    margin-top: -7px; /* To align text and image */
     /* background-color: var(--brand-yellow); */
 }
 

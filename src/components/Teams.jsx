@@ -17,7 +17,7 @@ const Teams = (props) => {
 							hard-work. If you want to see the best, it&#39;s here.
 						</p>
 						<p className={styles.team_subtext + " " + styles.team_introtext}>
-							Check out each section for a comprehensive list of the team,
+							Check out each section for a comprehensive list of the team.
 						</p>
 					</div>
 				</div>
@@ -30,15 +30,17 @@ const Teams = (props) => {
 					They are the basis, the foundation of this event. A big thank you to
 					our mentors.
 				</p>
-				<div className={styles.team_mentor}></div>
+				<div className={styles.the_cards_go_here}>Put Cards here</div>
+
 				<h2 className={styles.team_maintext + " " + styles.team_subtitle}>
 					The Developers
 				</h2>
 				<p className={styles.team_subtext + " " + styles.team_stitletext}>
-					Everything you see here wa painstakingly written by hand, in React by
+					Everything you see here was painstakingly written by hand, in React by
 					our developers.
 				</p>
-				<div className={styles.team_mentor}></div>
+				<div className={styles.the_cards_go_here}>Put Cards here</div>
+
 				<h2 className={styles.team_maintext + " " + styles.team_subtitle}>
 					The Event Managers
 				</h2>
@@ -46,7 +48,8 @@ const Teams = (props) => {
 					The life blood of the events are done by these great people. From the
 					ideation to the implementation.
 				</p>
-				<div className={styles.team_mentor}></div>
+				<div className={styles.the_cards_go_here}>Put Cards here</div>
+
 			</div>
 		</div>
 	);
