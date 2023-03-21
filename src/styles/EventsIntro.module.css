@@ -90,7 +90,7 @@
     .intro {
         display: flex;
         flex-direction: column;
-        height: 92vh;
+        height: 100vh;
     }
 
     .introContainer {

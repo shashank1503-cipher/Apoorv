@@ -1,78 +1,100 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import styles from "../../styles/EventsListContainer.module.css"
 import { FaCaretRight } from "react-icons/fa";
 import { motion } from 'framer-motion'
+import ContainerCard from "../Cards/ContainerCard";
+import im from "../../../public/he.png";
 
 const EventListContainer = () => {
-
+    
     const sponsors_class = {
-        1: 'PLATINUM',
-        2: 'GOLD',
-        3: 'SILVER',
-        4: 'BRONZE'
+        1: 'Day - 1',
+        2: 'Day - 2',
+        3: 'Day - 3'
     }
 
-    const [sponsorsList, setSponsorsList] = useState({
+    const [eventsList, setEventsList] = useState({
         1: {
-            'google': {
-                logo: '/static/logos_sponsors/logo1.svg',
+            1: {
+                "image" : im,
+                "alt" : "event card",
+                "subheading" : "sub heading", 
+                "title" : "event no.1",
+                "subtitles" : "subs", 
+                "onHoverAnimation" : "scale" 
             },
-            'facebook': {
-                logo: '/static/logos_sponsors/logo1.svg',
+            2: {
+                "image" : im,
+                "alt" : "event card",
+                "subheading" : "sub heading", 
+                "title" : "event no.2",
+                "subtitles" : "subs", 
+                "onHoverAnimation" : "scale" 
             },
-            'oracle': {
-                logo: '/static/logos_sponsors/logo2.svg'
-            },
-            'youtube': {
-                logo: '/static/logos_sponsors/logo2.svg'
-            },
-
+            3: {
+                "image" : im,
+                "alt" : "event card",
+                "subheading" : "sub heading", 
+                "title" : "event no.3",
+                "subtitles" : "subs", 
+                "onHoverAnimation" : "scale" 
+            }
         },
         2: {
-            'logo 1': {
-                logo: '/static/logos_sponsors/logo1.svg'
+            1: {
+                "image" : im,
+                "alt" : "event card",
+                "subheading" : "sub heading", 
+                "title" : "event no.1",
+                "subtitles" : "subs", 
+                "onHoverAnimation" : "scale" 
             },
-            'logo 2': {
-                logo: '/static/logos_sponsors/logo2.svg'
+            2: {
+                "image" : im,
+                "alt" : "event card",
+                "subheading" : "sub heading", 
+                "title" : "event no.2",
+                "subtitles" : "subs", 
+                "onHoverAnimation" : "scale" 
             },
-            'logo 3': {
-                logo: 'static/logos_sponsors/logo3.svg'
+            3: {
+                "image" : im,
+                "alt" : "event card",
+                "subheading" : "sub heading", 
+                "title" : "event no.3",
+                "subtitles" : "subs", 
+                "onHoverAnimation" : "scale" 
             },
-            'logo 4': {
-                logo: 'static/logos_sponsors/logo4.svg'
+            4: {
+                "image" : im,
+                "alt" : "event card",
+                "subheading" : "sub heading", 
+                "title" : "event no.4",
+                "subtitles" : "subs", 
+                "onHoverAnimation" : "scale" 
             }
         },
         3: {
-            'logo 5': {
-                logo: '/static/logos_sponsors/logo1.svg'
+            1: {
+                "image" : im,
+                "alt" : "event card",
+                "subheading" : "sub heading", 
+                "title" : "event no.1",
+                "subtitles" : "subs", 
+                "onHoverAnimation" : "scale" 
             },
-            'logo 6': {
-                logo: '/static/logos_sponsors/logo2.svg'
-            },
-            'logo 7': {
-                logo: 'static/logos_sponsors/logo3.svg'
-            },
-            'logo 8': {
-                logo: 'static/logos_sponsors/logo4.svg'
+            2: {
+                "image" : im,
+                "alt" : "event card",
+                "subheading" : "sub heading", 
+                "title" : "event no.2",
+                "subtitles" : "subs", 
+                "onHoverAnimation" : "scale" 
             }
         },
-        4: {
-            'logo 11': {
-                logo: '/static/logos_sponsors/logo1.svg'
-            },
-            'logo 12': {
-                logo: '/static/logos_sponsors/logo2.svg'
-            },
-            'logo 13': {
-                logo: 'static/logos_sponsors/logo3.svg'
-            },
-            'logo 14': {
-                logo: 'static/logos_sponsors/logo4.svg'
-            }
-        }
     })
 
-    const [selectedSponsor, setSelectedSponsor] = useState(1)
+    const [selectedDay, setSelectedDay] = useState(1)
 
 
     return (
@@ -89,25 +111,25 @@ const EventListContainer = () => {
                             <div className={styles.shortLine_d}></div>
                             <div className={styles.shortLine_d}></div>
                         </div>
-                        {sponsorsList && Object.keys(sponsorsList).map((sponsor) => {
+                        {eventsList && Object.keys(eventsList).map((event) => {
                             return (
                                 <>
                                     <div
-                                        key={sponsor}
+                                        key={event}
                                         className={styles.dial_item}
-                                        onClick={() => { setSelectedSponsor(sponsor) }}
+                                        onClick={() => { setSelectedDay(event) }}
                                     >
-                                        {sponsor == selectedSponsor &&
+                                        {event == selectedDay &&
                                             <div className={styles.selected_sponsor}>
                                                 <FaCaretRight />
                                             </div>
                                         }
                                         <div className={styles.longLine}></div>
-                                        <div>
-                                            {sponsors_class[sponsor]}
+                                        <div className = {styles.textCon}>
+                                            {sponsors_class[event]}
                                         </div>
                                     </div>
-                                    {sponsor !== "4" &&
+                                    {event !== "3" &&
                                         <div className={styles.lines}>
                                             <div className={styles.shortLine}></div>
                                             <div className={styles.shortLine}></div>
@@ -124,24 +146,42 @@ const EventListContainer = () => {
                             <div className={styles.shortLine_d}></div>
                             <div className={styles.longLine_d}></div>
                         </div>
-                    
-                    
                     </motion.div>
                 </div>    
             </div>
             <div className = {styles.eventList}>
-                <div style = {{minHeight: "100vh", color: "white"}}>
-                    asdasd
-                </div>
-                <div style = {{minHeight: "100vh", color: "white"}}>
-                    asdasd
-                </div>
-                <div style = {{minHeight: "100vh", color: "white"}}>
-                    asdasd
-                </div>
-                <div style = {{minHeight: "100vh", color: "white"}}>
-                    asdasd
-                </div>
+                {eventsList[selectedDay] && Object.keys(eventsList[selectedDay]).map((event, index) => {
+                    return (
+                        <motion.div
+                            key={event}
+                            
+                            initial="hidden" animate={'visible'} variants={{
+                                hidden: {
+
+                                    y: 50,
+                                    opacity: 0
+                                },
+                                visible: {
+
+                                    y: 0,
+                                    opacity: 1,
+                                    transition: {
+                                        delay: .2,
+                                    }
+                                },
+                            }}
+                        >
+                            <ContainerCard 
+                                image = {eventsList[selectedDay][event].image}
+                                alt = {eventsList[selectedDay][event].alt}
+                                subheading = {eventsList[selectedDay][event].subheading} 
+                                title = {eventsList[selectedDay][event].title}
+                                subtitles = {eventsList[selectedDay][event].subtitles} 
+                                onHoverAnimation = {eventsList[selectedDay][event].onHoverAnimation} 
+                            />          
+                        </motion.div>
+                    )}
+                )}
             </div>
         </div>
     )
