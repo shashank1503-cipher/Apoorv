@@ -63,7 +63,7 @@ const EventListContainer = () => {
         return (
             <div className={styles.card}>
                 <div className={`${styles.imageWrapper}`} >
-                    <Image src={image} fill />
+                    <Image src={image} alt={'back image'} fill />
                 </div>
                 <div className={styles.divider}>
                     <hr />
