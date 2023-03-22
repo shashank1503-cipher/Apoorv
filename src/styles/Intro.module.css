@@ -109,6 +109,15 @@
 
 
 @media screen and (max-width: 468px) {
+
+    .slideUp {
+      top: 51%;
+    }
+
+    .slideDown {
+      bottom: 51%;
+    }
+
     .slideLeft {
         left: 60%;
     }
@@ -116,8 +125,28 @@
         right: 60%;
     }
     .fadeIn {
-        right: 44.6%;
+        right: 45.3%;
     }
+
+    @keyframes slide-down {
+      from {
+        bottom: 100%;
+      }
+  
+      to {
+        bottom: 51%;
+      }
+  }
+    @keyframes slide-up {
+        from {
+          top: 100%;
+        }
+      
+        to {
+          top: 51%;
+        }
+    }
+
     @keyframes slide-left {
         from {
           left: 100%;
