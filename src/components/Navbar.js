@@ -24,7 +24,7 @@ const MenuClose = () => {
 
 const Navbar = (props) => {
 
-    let { isTransparent } = props
+    let { isTransparent, logoHide } = props
 
     const [open, setOpen] = useState(false)
     const scrollDirection = useScrollDirection('down');
@@ -52,6 +52,7 @@ const Navbar = (props) => {
 
 
     useEffect(() => {
+
         window.addEventListener('scroll', handleScroll);
 
         return () => {
@@ -91,6 +92,13 @@ const Navbar = (props) => {
 
         }
 
+        if(logoHide)
+            if (!scrolledToTop) 
+                document.getElementById('logo').style.opacity=1;
+            else 
+                document.getElementById('logo').style.opacity=0;
+            
+        
 
     }, [open, scrollDirection, scrolledToTop])
 
@@ -120,7 +128,7 @@ const Navbar = (props) => {
     return (
         <div className={`${styles.Mcontainer} ${isTransparent ? styles.transparent : ''}`} id={'mainCont'} >
             <div className={styles.container}>
-                <div className={styles.logo}>
+                <div className={styles.logo} id={'logo'}>
                     <img src="/logo.svg" alt="logo" className={styles.logoImg} />
                     <img src="/logoText.svg" alt="logo" className={styles.logoText} />
                 </div>

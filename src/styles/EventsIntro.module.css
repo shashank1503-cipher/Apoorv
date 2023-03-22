@@ -9,17 +9,25 @@
 
 .intro {
     background-image: url("../assets/EventsPage/comp1.png");
-    height: 100vh;
+    min-height: 100vh;
     background-size: cover;
+    background-image:linear-gradient(160deg, rgba(0,0,0,1), rgba(222,84,53,0) 60.71%), 
+    linear-gradient(217deg, rgba(222,84,53,1), rgba(96,45,110,0.4) 80.71%),
+                linear-gradient(232deg, rgba(96,45,110,1), rgba(221,72,42,0) 100.71%), 
+                linear-gradient(186deg, rgba(0,0,0,1), rgba(0,0,0,1) 30.71%);
     background-repeat: no-repeat;
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .introContainer {
-    margin-top: 4rem;
     height: 100%;
     width: 80%;
+    /* background-color: #FF866B; */
     display: flex;
+    position: relative;
     flex-direction: column;
     justify-content: center;
 }
@@ -69,16 +77,41 @@
     color: white;
 }
 
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: translateY(0px);
+    }
+    50% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    100%{
+        opacity: 0;
+        transform: translateY(0px);
+    }
+}
+
 .arrow {
     display: flex;
+    position: relative;
     width: 20%;
     justify-content: center;
     align-items: flex-end;
+    animation-name: animate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-delay: 3s;
+    /* animation-timing-function: ease-in-out; */
+
 }
 
 .arIm {
     height: 10rem;
-    margin-bottom: 8rem;
 }
 
 .scroller {

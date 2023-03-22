@@ -7,7 +7,7 @@ const ContainerCard = (props) => {
 
 
     return (
-        <div className={styles.card}>
+        <div className={styles.card} {...props}>
             <div className={`${styles.imageWrapper} ${onHoverAnimation === "scale" ? styles.animationScale : ''}`} >
                 <Image src={image} alt={alt} fill />
             </div>

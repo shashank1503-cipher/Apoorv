@@ -1,6 +1,7 @@
 .eventContainer {
-    min-height: 100vh;
     
+    position: relative;
+    /* background-color: antiquewhite; */
     display: flex;
 }
 
@@ -13,6 +14,7 @@
     position: sticky;
     top: 0rem;
     color: white;
+    /* background-color: aliceblue; */
 }
 
 .dial_container {
@@ -22,7 +24,7 @@
     /* height: 100%; */
     min-height: 70vh;
     justify-content: center;
-    gap: 10%;
+    /* gap: 10%; */
     /* background-color: blue; */
     overflow: hidden;
     margin: 0px auto;
@@ -44,12 +46,18 @@
     color: var(--brand-white);
     display: flex;
     align-items: center;
-    gap: 5px;
+    /* background-color: antiquewhite; */
+    gap: 10px;
+    align-items: center;
+    /* background-color: antiquewhite; */
+    justify-content: flex-start;
     font-size: 16px;
+    text-transform: uppercase;
     font-weight: 600;
     cursor: pointer;
     transition: all 0.25s ease;
     letter-spacing: 2px;
+    /* line-height: px; */
 }
 
 .selected_sponsor {
@@ -65,15 +73,12 @@
 .lines {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 4px;
 }
 
-.lines_down {
-    margin-top: 8px;
-}
 
 .longLine {
-    width: 1rem;
+    width: 40px;
     height: 4px;
     border-radius: 10px;
     background: var(--brand-white);
@@ -120,17 +125,125 @@
 }
 
 .eventList {
-    width: 70%;
+    position: relative;
     display: flex;
+    width: 70%;
+    height: calc(100% + 200px);
+    /* background-color: aliceblue; */
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
-    gap: 5rem;
+    row-gap: 100px;
+    column-gap: 20px;
+    padding: 100px 0px;
+    justify-content: space-evenly;
 }
+
+.card {
+    /* background-color: aliceblue; */
+    border-radius: 10px;
+}
+
+.imageWrapper {
+    width: 14.7rem;
+    height: 21rem;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-bottom: 5%;
+    /* background-color: aliceblue; */
+    border-radius: 10px;
+}
+
+.imageWrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    transition: all 0.5s ease;
+}
+
+.imageWrapper:hover img{
+    transform: scale(1.1);
+}
+
+.divider>hr {
+    width: 100%;
+    height: 0.1rem;
+    background-color: var(--brand-yellow);
+    border: none;
+}
+
+
+.content {
+    color: var(--brand-white);
+    font-family: var(--brand-body-font);
+    font-size: 1.5rem;
+}
+
+.content h1 {
+    font-size: 2rem;
+    font-family: var(--brand-head-font);
+    margin-bottom: 0;
+}
+
+.content p {
+    margin-top: 0;
+}
+
+.alias{
+    font-size: 1rem;
+    color: grey;
+}
+
+
+.mobile_dial {
+    position: sticky;
+    z-index: 1;
+    display: none;
+    width: 100vw;
+    top: 0;
+    height: 140px;
+    text-align: center;
+    background-color: black;
+}
+
+.mobile_dial_select {
+    width: 90%;
+    height: 70px;
+    position: relative;
+    top: 70px;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: none;
+}
+
+.mobile_dial_select:focus{
+    outline: none;
+}
+
 
 @media (max-width: 468px) {
     .textCon {
         font-size: 0.7rem;
     }
+}
+
+
+@media (max-width: 768px) {
+    
+    .eventContainer{
+        flex-direction: column;
+        /* justify-content: center; */
+        /* background-color: aliceblue; */
+        align-items: center;
+    }
+
+    .fixedContent{
+        display: none;
+    }
+
+    .mobile_dial {
+        display: block;
+    }
+
 }
