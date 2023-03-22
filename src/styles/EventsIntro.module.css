@@ -55,6 +55,7 @@
 }
 
 .im {
+    position: relative;
     height: 5rem;
     width: 6rem;
 }

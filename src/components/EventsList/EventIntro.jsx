@@ -8,10 +8,14 @@ const EventIntro = () => {
         <div className = {styles.intro}>
             <div className = {styles.introContainer}>
                 <div className = {styles.row1}>
-                    <img src = {'/logo.svg'}
+                    <div className = {styles.im}>
+
+                    <Image src = {'/logo.svg'}
                         alt = "apoorv logo"
-                        className = {styles.im}
+                        fill
+                        
                     />
+                    </div>
                     <div className = {styles.textLogo}>apoorv</div>
                 </div>
                 <div className = {styles.row2}></div>

@@ -142,7 +142,7 @@ const EventListContainer = () => {
                 >
                     
                     {catogories.map(cat => (
-                        <option value={cat}>{cat}</option>
+                        <option key={cat} value={cat}>{cat}</option>
                     ))}
 
                 </select>
@@ -152,7 +152,7 @@ const EventListContainer = () => {
             <div className = {styles.eventList}>
                 {eventsList && eventsList.filter(e => selectedCat==='all' || e.cat === selectedCat).map((event, index) => {
                     return (
-                        <Parallax speed={index&1?5:-5}>
+                        <Parallax speed={index&1?5:-5} key={event.title}>
                         <motion.div
                             key={event.title}
                             
