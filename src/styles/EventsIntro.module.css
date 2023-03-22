@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova:wght@400;700&family=Roboto+Slab&display=swap');
+
+@font-face {
+    font-family: 'Homrice';
+    src: url('/static/fonts/Homrice.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.intro {
+    background-image: url("../assets/EventsPage/comp1.png");
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+.introContainer {
+    margin-top: 4rem;
+    height: 100%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.row1 {
+    display: flex;
+    height: 35%;
+    align-items: flex-end;
+    padding: 5rem;
+    padding-bottom: 1.5rem;
+}
+
+.row2 {
+    height: 0.05rem;
+    width: 80%;
+    background-color: white;
+    margin-left: 5rem;
+}
+
+.row3 {
+    display: flex;
+    flex-direction: column;
+    height: 64%;
+    padding: 5rem;
+}
+
+.im {
+    height: 5rem;
+    width: 6rem;
+}
+
+.textLogo {
+    color: white;
+    font: 3rem Homrice;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+.con1 {
+    font: 4rem Homrice;
+    color: #FF866B;
+}
+
+.con2 {
+    margin-top: 2rem;
+    font: 1.5rem Roboto Slab;
+    color: white;
+}
+
+.arrow {
+    display: flex;
+    width: 20%;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.arIm {
+    height: 10rem;
+    margin-bottom: 8rem;
+}
+
+.scroller {
+    display: none;
+}
+
+
+@media (max-width: 468px) {
+    .intro {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .introContainer {
+        align-items: center;
+        width: 100%;
+    }
+
+    .row1 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        height: 30%;
+    }
+
+    .textLogo {
+        margin: 0;
+    }
+
+    .row2 {
+        margin: 0;
+        width: 70%;
+    }
+    
+    .row3 {
+        padding: 4rem;
+        text-align: center;
+        height: 65%;
+    }
+
+    .con1 {
+        font-size: 2rem;
+    }
+    
+    .con2 {
+        font-size: 1rem;
+
+    }
+
+    .scroller {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        background-color: #41180b77;
+    }
+
+    .scroller .lines {
+        height: 5%;
+        width: 35%;
+        background-color: white;
+    }
+
+    .textDown {
+        color: white;
+        font: 1rem poppins;
+    }
+
+    .arrow {
+        display: none;
+    }
+}
