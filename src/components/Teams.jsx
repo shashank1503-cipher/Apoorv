@@ -1,4 +1,7 @@
+import { mentors } from "@/data/team";
+import { Parallax } from "react-scroll-parallax";
 import styles from "../styles/Teams.module.css";
+import TeamCard from "./Cards/TeamCard";
 
 const Teams = (props) => {
 	return (
@@ -30,7 +33,13 @@ const Teams = (props) => {
 					They are the basis, the foundation of this event. A big thank you to
 					our mentors.
 				</p>
-				<div className={styles.the_cards_go_here}>Put Cards here</div>
+				<div className={styles.cardWrapper}>{mentors.map((mentor, index) => {
+
+					return (
+						<Parallax speed={index & 1 ? 5 : -5}>
+							<TeamCard key={index} image={mentor.image} gif={mentor.gif} alt={mentor.name} subheading={mentor.club} title={mentor.name} socials={mentor.socials} onHoverAnimation={"scale"} />
+						</Parallax>)
+				})}</div>
 
 				<h2 className={styles.team_maintext + " " + styles.team_subtitle}>
 					The Developers
@@ -39,7 +48,13 @@ const Teams = (props) => {
 					Everything you see here was painstakingly written by hand, in React by
 					our developers.
 				</p>
-				<div className={styles.the_cards_go_here}>Put Cards here</div>
+				<div className={styles.cardWrapper}>{mentors.map((mentor, index) => {
+
+					return (
+						<Parallax speed={index & 1 ? 5 : -5}>
+							<TeamCard key={index} image={mentor.image} gif={mentor.gif} alt={mentor.name} subheading={mentor.club} title={mentor.name} socials={mentor.socials} onHoverAnimation={"scale"} />
+						</Parallax>)
+				})}</div>
 
 				<h2 className={styles.team_maintext + " " + styles.team_subtitle}>
 					The Event Managers
@@ -48,7 +63,13 @@ const Teams = (props) => {
 					The life blood of the events are done by these great people. From the
 					ideation to the implementation.
 				</p>
-				<div className={styles.the_cards_go_here}>Put Cards here</div>
+				<div className={styles.cardWrapper}>{mentors.map((mentor, index) => {
+
+					return (
+						<Parallax speed={index & 1 ? 5 : -5}>
+							<TeamCard key={index} image={mentor.image} gif={mentor.gif} alt={mentor.name} subheading={mentor.club} title={mentor.name} socials={mentor.socials} onHoverAnimation={"scale"} />
+						</Parallax>)
+				})}</div>
 
 			</div>
 		</div>

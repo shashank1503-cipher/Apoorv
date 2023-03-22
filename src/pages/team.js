@@ -3,6 +3,7 @@ import Navbar from '@/components/Navbar'
 import Head from 'next/head'
 import Team from '@/components/Teams'
 import styles from '../styles/Teams.module.css'
+import { ParallaxProvider } from 'react-scroll-parallax'
 
 const team = () => {
     return (
@@ -16,8 +17,10 @@ const team = () => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <div className={styles.container}>
-                <Navbar isTransparent="true"/>
-                <Team />
+                <ParallaxProvider>
+                    <Navbar isTransparent="true" />
+                    <Team />
+                </ParallaxProvider>
             </div>
             <Footer />
         </>

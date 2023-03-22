@@ -1,23 +1,184 @@
 const mentors = [
 	{
 		id: 1,
-		name: "Name One",
+		name: "Shashank Srivastava",
+		club: "Tech Club",
 		image:
-			"https://res.cloudinary.com/dlu72yo9b/image/upload/v1633973233/WhatsApp_Image_2021-10-10_at_7.26.40_PM_km3wsd.jpg",
-		gif: "https://c.tenor.com/DHGvsLhTOowAAAAC/meme-pikachu.gif",
-		linkedin: "https://www.linkedin.com/in/prasanna-devadiga/",
-		instagram: "https://www.instagram.com/pras_nna/",
-		twitter: "https://twitter.com/Prasanna280",
+			"https://res.cloudinary.com/dlu72yo9b/image/upload/v1631972395/00100sPORTRAIT_00100_BURST20210908184205917_COVER_x347rg.jpg",
+		gif: "https://media.tenor.com/-3WFLncRr0YAAAAC/pols-pols-meme.gif",
+		socials: {
+			linkedin: "https://www.linkedin.com/in/shashank-srivastava-a72899201/",
+			instagram: "https://www.instagram.com/shashank1503_/",
+			twitter: "https://twitter.com/shashank1503_",
+		}
+
 	},
 	{
 		id: 2,
-		name: "Name Two",
+		name: "Akarsh Pandey",
+		club: "Cultural Club",
 		image:
-			"https://res.cloudinary.com/dlu72yo9b/image/upload/v1632027220/IMG-20210825-WA0061_3_rtjas0.jpg",
-		gif: "https://c.tenor.com/xEu4tiLm3hUAAAAM/mr-bean-mr-beans-holiday.gif",
-		linkedin: "https://www.linkedin.com/in/hrishabh-joshi/",
-		instagram: "https://www.instagram.com/_hrishabh_08/",
-		twitter: "https://twitter.com/hrishabhjoshi08",
+			"https://res.cloudinary.com/dpjf6btln/image/upload/v1679491458/20230322_155637_y9n9fy.png",
+		gif: "https://media.tenor.com/1ho4keLXIAkAAAAC/hasbulla-m4kktruck.gif",
+		socials: {
+			linkedin: "https://www.linkedin.com/in/hrishabh-joshi/",
+			instagram: "https://www.instagram.com/_hrishabh_08/",
+			twitter: "https://twitter.com/hrishabhjoshi08",
+		}
+	},
+	{
+		id: 3,
+		name: "Akarsh Pandey",
+		club: "Cultural Club",
+		image:
+			"https://res.cloudinary.com/dpjf6btln/image/upload/v1679491458/20230322_155637_y9n9fy.png",
+		gif: "https://media.tenor.com/1ho4keLXIAkAAAAC/hasbulla-m4kktruck.gif",
+		socials: {
+			linkedin: "https://www.linkedin.com/in/hrishabh-joshi/",
+			instagram: "https://www.instagram.com/_hrishabh_08/",
+			twitter: "https://twitter.com/hrishabhjoshi08",
+		}
+	},
+	{
+		id: 4,
+		name: "Akarsh Pandey",
+		club: "Cultural Club",
+		image:
+			"https://res.cloudinary.com/dpjf6btln/image/upload/v1679491458/20230322_155637_y9n9fy.png",
+		gif: "https://media.tenor.com/1ho4keLXIAkAAAAC/hasbulla-m4kktruck.gif",
+		socials: {
+			linkedin: "https://www.linkedin.com/in/hrishabh-joshi/",
+			instagram: "https://www.instagram.com/_hrishabh_08/",
+			twitter: "https://twitter.com/hrishabhjoshi08",
+		}
+	},
+	{
+		id: 5,
+		name: "Akarsh Pandey",
+		club: "Cultural Club",
+		image:
+			"https://res.cloudinary.com/dpjf6btln/image/upload/v1679491458/20230322_155637_y9n9fy.png",
+		gif: "https://media.tenor.com/1ho4keLXIAkAAAAC/hasbulla-m4kktruck.gif",
+		socials: {
+			linkedin: "https://www.linkedin.com/in/hrishabh-joshi/",
+			instagram: "https://www.instagram.com/_hrishabh_08/",
+			twitter: "https://twitter.com/hrishabhjoshi08",
+		}
+	},
+	{
+		id: 6,
+		name: "Akarsh Pandey",
+		club: "Cultural Club",
+		image:
+			"https://res.cloudinary.com/dpjf6btln/image/upload/v1679491458/20230322_155637_y9n9fy.png",
+		gif: "https://media.tenor.com/1ho4keLXIAkAAAAC/hasbulla-m4kktruck.gif",
+		socials: {
+			linkedin: "https://www.linkedin.com/in/hrishabh-joshi/",
+			instagram: "https://www.instagram.com/_hrishabh_08/",
+			twitter: "https://twitter.com/hrishabhjoshi08",
+		}
 	},
 ];
-export {mentors}
+
+
+const developers = [
+	{
+		id: 1,
+		name: "Shashank Srivastava",
+		club: "Tech Club",
+		image:
+			"https://res.cloudinary.com/dlu72yo9b/image/upload/v1631972395/00100sPORTRAIT_00100_BURST20210908184205917_COVER_x347rg.jpg",
+		gif: "https://media.tenor.com/-3WFLncRr0YAAAAC/pols-pols-meme.gif4",
+		socials: {
+			linkedin: "https://www.linkedin.com/in/shashank-srivastava-a72899201/",
+			instagram: "https://www.instagram.com/shashank1503_/",
+			twitter: "https://twitter.com/shashank1503_",
+		}
+
+	},
+	{
+		id: 2,
+		name: "Shashank Srivastava",
+		club: "Tech Club",
+		image:
+			"https://res.cloudinary.com/dlu72yo9b/image/upload/v1631972395/00100sPORTRAIT_00100_BURST20210908184205917_COVER_x347rg.jpg",
+		gif: "https://media.tenor.com/-3WFLncRr0YAAAAC/pols-pols-meme.gif4",
+		socials: {
+			linkedin: "https://www.linkedin.com/in/shashank-srivastava-a72899201/",
+			instagram: "https://www.instagram.com/shashank1503_/",
+			twitter: "https://twitter.com/shashank1503_",
+		}
+
+	},
+	{
+		id: 3,
+		name: "Shashank Srivastava",
+		club: "Tech Club",
+		image:
+			"https://res.cloudinary.com/dlu72yo9b/image/upload/v1631972395/00100sPORTRAIT_00100_BURST20210908184205917_COVER_x347rg.jpg",
+		gif: "https://media.tenor.com/-3WFLncRr0YAAAAC/pols-pols-meme.gif4",
+		socials: {
+			linkedin: "https://www.linkedin.com/in/shashank-srivastava-a72899201/",
+			instagram: "https://www.instagram.com/shashank1503_/",
+			twitter: "https://twitter.com/shashank1503_",
+		}
+
+	},
+
+]
+
+const eventManagers = [
+	{
+		id: 1,
+		name: "Shashank Srivastava",
+		club: "Tech Club",
+		image:
+			"https://res.cloudinary.com/dlu72yo9b/image/upload/v1631972395/00100sPORTRAIT_00100_BURST20210908184205917_COVER_x347rg.jpg",
+		gif: "https://media.tenor.com/-3WFLncRr0YAAAAC/pols-pols-meme.gif4",
+		socials: {
+			linkedin: "https://www.linkedin.com/in/shashank-srivastava-a72899201/",
+			instagram: "https://www.instagram.com/shashank1503_/",
+			twitter: "https://twitter.com/shashank1503_",
+		}
+
+	}, {
+		id: 1,
+		name: "Shashank Srivastava",
+		club: "Tech Club",
+		image:
+			"https://res.cloudinary.com/dlu72yo9b/image/upload/v1631972395/00100sPORTRAIT_00100_BURST20210908184205917_COVER_x347rg.jpg",
+		gif: "https://media.tenor.com/-3WFLncRr0YAAAAC/pols-pols-meme.gif4",
+		socials: {
+			linkedin: "https://www.linkedin.com/in/shashank-srivastava-a72899201/",
+			instagram: "https://www.instagram.com/shashank1503_/",
+			twitter: "https://twitter.com/shashank1503_",
+		}
+
+	}, {
+		id: 1,
+		name: "Shashank Srivastava",
+		club: "Tech Club",
+		image:
+			"https://res.cloudinary.com/dlu72yo9b/image/upload/v1631972395/00100sPORTRAIT_00100_BURST20210908184205917_COVER_x347rg.jpg",
+		gif: "https://media.tenor.com/-3WFLncRr0YAAAAC/pols-pols-meme.gif4",
+		socials: {
+			linkedin: "https://www.linkedin.com/in/shashank-srivastava-a72899201/",
+			instagram: "https://www.instagram.com/shashank1503_/",
+			twitter: "https://twitter.com/shashank1503_",
+		}
+
+	}, {
+		id: 1,
+		name: "Shashank Srivastava",
+		club: "Tech Club",
+		image:
+			"https://res.cloudinary.com/dlu72yo9b/image/upload/v1631972395/00100sPORTRAIT_00100_BURST20210908184205917_COVER_x347rg.jpg",
+		gif: "https://media.tenor.com/-3WFLncRr0YAAAAC/pols-pols-meme.gif4",
+		socials: {
+			linkedin: "https://www.linkedin.com/in/shashank-srivastava-a72899201/",
+			instagram: "https://www.instagram.com/shashank1503_/",
+			twitter: "https://twitter.com/shashank1503_",
+		}
+
+	},]
+export { mentors, developers, eventManagers };
