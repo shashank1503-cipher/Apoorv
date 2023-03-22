@@ -7,8 +7,6 @@
     font-style: normal;
 }
 
-.img {}
-
 @keyframes rotts {
     0% {
         transform: scale(1);
