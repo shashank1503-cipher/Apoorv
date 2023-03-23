@@ -27,7 +27,7 @@ const TimelineNew = () => {
     let handleScroll = () => {
 
         let scrollY = window.scrollY
-        let wrapperHeight = wrapper.current.offsetHeight - 0.4 * wrapper.current.offsetHeight
+        let wrapperHeight = wrapper.current.offsetHeight - 0.2 * wrapper.current.offsetHeight
         let wrapperTopY = wrapper.current.offsetTop
 
         let totalNumberOfEvents = totalEventsArray.length
