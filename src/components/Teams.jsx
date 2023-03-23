@@ -36,7 +36,7 @@ const Teams = (props) => {
 				<div className={styles.cardWrapper}>{mentors.map((mentor, index) => {
 
 					return (
-						<Parallax speed={index & 1 ? 5 : -5}>
+						<Parallax key={index} speed={index & 1 ? 5 : -5}>
 							<TeamCard key={index} image={mentor.image} gif={mentor.gif} alt={mentor.name} subheading={mentor.club} title={mentor.name} socials={mentor.socials} onHoverAnimation={"scale"} />
 						</Parallax>)
 				})}</div>
@@ -51,7 +51,7 @@ const Teams = (props) => {
 				<div className={styles.cardWrapper}>{mentors.map((mentor, index) => {
 
 					return (
-						<Parallax speed={index & 1 ? 5 : -5}>
+						<Parallax key={index} speed={index & 1 ? 5 : -5}>
 							<TeamCard key={index} image={mentor.image} gif={mentor.gif} alt={mentor.name} subheading={mentor.club} title={mentor.name} socials={mentor.socials} onHoverAnimation={"scale"} />
 						</Parallax>)
 				})}</div>
@@ -66,7 +66,7 @@ const Teams = (props) => {
 				<div className={styles.cardWrapper}>{mentors.map((mentor, index) => {
 
 					return (
-						<Parallax speed={index & 1 ? 5 : -5}>
+						<Parallax key={index} speed={index & 1 ? 5 : -5}>
 							<TeamCard key={index} image={mentor.image} gif={mentor.gif} alt={mentor.name} subheading={mentor.club} title={mentor.name} socials={mentor.socials} onHoverAnimation={"scale"} />
 						</Parallax>)
 				})}</div>
