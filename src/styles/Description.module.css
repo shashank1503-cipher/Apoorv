@@ -1,9 +1,4 @@
-.sponsors {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: fit-content;
-}
+
 
 .img {
     position: relative;
@@ -16,8 +11,7 @@
     background-color: #2e2d2d;
     /* background-color: #D9D9D9; */
     width: 100%;
-    height: auto;
-
+    
 }
 
 .main_div {
@@ -58,11 +52,25 @@
     position: relative;
 
 }
+
+/* .spon1 {
+    width: 20rem;
+    height: 5rem;
+    position: relative;
+} */
+
 .spon3 {
     width: 20rem;
-    height: 10rem;
+    height: 5rem;
     position: relative;
 
+}
+
+.sponsors {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
 }
 
 

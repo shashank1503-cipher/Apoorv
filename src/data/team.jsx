@@ -21,70 +21,19 @@ const mentors = [
 			"https://res.cloudinary.com/dpjf6btln/image/upload/v1679491458/20230322_155637_y9n9fy.png",
 		gif: "https://media.tenor.com/1ho4keLXIAkAAAAC/hasbulla-m4kktruck.gif",
 		socials: {
-			linkedin: "https://www.linkedin.com/in/hrishabh-joshi/",
-			instagram: "https://www.instagram.com/_hrishabh_08/",
-			twitter: "https://twitter.com/hrishabhjoshi08",
+			linkedin: "https://www.linkedin.com/in/akarsh-pandey-238b471b0",
+			instagram: "https://www.instagram.com/iamakarsh___/",
+			twitter: "https://twitter.com/iamakarsh___",
 		}
 	},
-	{
-		id: 3,
-		name: "Akarsh Pandey",
-		club: "Cultural Club",
-		image:
-			"https://res.cloudinary.com/dpjf6btln/image/upload/v1679491458/20230322_155637_y9n9fy.png",
-		gif: "https://media.tenor.com/1ho4keLXIAkAAAAC/hasbulla-m4kktruck.gif",
-		socials: {
-			linkedin: "https://www.linkedin.com/in/hrishabh-joshi/",
-			instagram: "https://www.instagram.com/_hrishabh_08/",
-			twitter: "https://twitter.com/hrishabhjoshi08",
-		}
-	},
-	{
-		id: 4,
-		name: "Akarsh Pandey",
-		club: "Cultural Club",
-		image:
-			"https://res.cloudinary.com/dpjf6btln/image/upload/v1679491458/20230322_155637_y9n9fy.png",
-		gif: "https://media.tenor.com/1ho4keLXIAkAAAAC/hasbulla-m4kktruck.gif",
-		socials: {
-			linkedin: "https://www.linkedin.com/in/hrishabh-joshi/",
-			instagram: "https://www.instagram.com/_hrishabh_08/",
-			twitter: "https://twitter.com/hrishabhjoshi08",
-		}
-	},
-	{
-		id: 5,
-		name: "Akarsh Pandey",
-		club: "Cultural Club",
-		image:
-			"https://res.cloudinary.com/dpjf6btln/image/upload/v1679491458/20230322_155637_y9n9fy.png",
-		gif: "https://media.tenor.com/1ho4keLXIAkAAAAC/hasbulla-m4kktruck.gif",
-		socials: {
-			linkedin: "https://www.linkedin.com/in/hrishabh-joshi/",
-			instagram: "https://www.instagram.com/_hrishabh_08/",
-			twitter: "https://twitter.com/hrishabhjoshi08",
-		}
-	},
-	{
-		id: 6,
-		name: "Akarsh Pandey",
-		club: "Cultural Club",
-		image:
-			"https://res.cloudinary.com/dpjf6btln/image/upload/v1679491458/20230322_155637_y9n9fy.png",
-		gif: "https://media.tenor.com/1ho4keLXIAkAAAAC/hasbulla-m4kktruck.gif",
-		socials: {
-			linkedin: "https://www.linkedin.com/in/hrishabh-joshi/",
-			instagram: "https://www.instagram.com/_hrishabh_08/",
-			twitter: "https://twitter.com/hrishabhjoshi08",
-		}
-	},
+	
 ];
 
 
 const developers = [
 	{
 		id: 1,
-		name: "Shashank Srivastava",
+		name: "Aditya Shitale",
 		club: "Tech Club",
 		image:
 			"https://res.cloudinary.com/dlu72yo9b/image/upload/v1631972395/00100sPORTRAIT_00100_BURST20210908184205917_COVER_x347rg.jpg",
