@@ -1,7 +1,7 @@
 const events = [
     {
         id: 1,
-        poster: "",
+        poster: "https://res.cloudinary.com/dp4dftwrv/image/upload/v1679584516/apoorv_3_to_4_without_star_in_o_mkdhfa.jpg",
         alt: "Symphony of voices",
         subheading: "Cultural",
         name: "Symphony of voices",
@@ -20,7 +20,7 @@ const events = [
     },
     {
         id: 2,
-        poster: "",
+        poster: "https://res.cloudinary.com/dp4dftwrv/image/upload/v1679590243/Beyond_the_harmony_hu8wcf.png",
         alt: "Beyond the harmony",
         subheading: "Cutural",
         name: "Beyond the harmony",
@@ -42,7 +42,7 @@ const events = [
     },
     {
         id: 3,
-        poster: "",
+        poster: "https://res.cloudinary.com/dp4dftwrv/image/upload/v1679584795/A4_yal2py.png",
         alt: "Battle of Bands",
         subheading: "Cultural",
         name: "Battle of Bands",
@@ -70,7 +70,7 @@ const events = [
     },
     {
         id: 4,
-        poster: "",
+        poster: "https://res.cloudinary.com/dp4dftwrv/image/upload/v1679584893/Strings_and_Key_poster_yuxccd.png",
         alt: "Strings and keys",
         subheading: "Cultural",
         name: "Strings and keys",
@@ -93,7 +93,7 @@ const events = [
     },
     {
         id: 5,
-        poster: "",
+        poster: "https://res.cloudinary.com/dp4dftwrv/image/upload/v1679585068/solo-dance-a4_pgtvgu.png",
         alt: "Solo Sizzle",
         subheading: "Cultural",
         name: "Solo Sizzle",
@@ -115,7 +115,7 @@ const events = [
     },
     {
         id: 6,
-        poster: "",
+        poster: "https://res.cloudinary.com/dp4dftwrv/image/upload/v1679585147/puls_beat-a4_oqflfk.png",
         alt: "Pulse and the Beat",
         subheading: "Cultural",
         name: "Pulse and the Beat",
@@ -137,7 +137,7 @@ const events = [
     },
     {
         id: 7,
-        poster: "",
+        poster: "https://res.cloudinary.com/dp4dftwrv/image/upload/v1679585200/dance-a4_zgfd1s.png",
         alt: "Impulse Dare",
         subheading: "Cultural",
         name: "Impulse Dare",
@@ -159,7 +159,7 @@ const events = [
     },
     {
         id: 8,
-        poster: "",
+        poster: "https://res.cloudinary.com/dp4dftwrv/image/upload/v1679584413/fake_it_till_you_makeit_poster_680_970_px_saaubn.png",
         alt: "Fake it Till you Make it",
         subheading: "Cultural",
         name: "Fake it Till you Make it",
@@ -181,7 +181,7 @@ const events = [
     },
     {
         id: 9,
-        poster: "",
+        poster: "https://res.cloudinary.com/dp4dftwrv/image/upload/v1679585248/MOCKB1X1_1_mcnhdc.png",
         alt: "Mockbuster",
         subheading: "Cultural",
         name: "Mockbuster",
@@ -203,11 +203,11 @@ const events = [
     },
     {
         id: 10,
-        poster: "",
+        poster: "https://res.cloudinary.com/dp4dftwrv/image/upload/v1679585298/Comedy_Combat_680_970_px_wxiege.png",
         alt: "Comedy Combat",
         subheading: "Cultural",
         name: "Comedy Combat",
-        cat: ['cultural', 'art'],
+        cat: ['cultural', 'drama'],
         description: "Waiting for your chance to bring out your inner Zakir Khan or Kevin Hart? Ask no more because Apoorv ‘23 is bringing to you the stage, mic and opportunity to make a whole room ROFL quite literally. Be it puns, dad-jokes, one-liners or anecdotes, impress the judges with your unique style and jest to bag a win. We can’t wait to see y’all battle it out with wits and quips at this humor showdown!",
         link: "comedy-combat",
         organisers: [
@@ -225,7 +225,7 @@ const events = [
     },
     {
         id: 11,
-        poster: "",
+        poster: "https://res.cloudinary.com/dp4dftwrv/image/upload/v1679585463/faceoff-a4_bmin8h.png",
         alt: "Face-Off",
         subheading: "Cultural",
         name: "Face-Off",
@@ -247,7 +247,7 @@ const events = [
     },
     {
         id: 12,
-        poster: "",
+        poster: "https://res.cloudinary.com/dp4dftwrv/image/upload/v1679585381/blizzart-a4_vmsfrg.png",
         alt: "Blizzart",
         subheading: "Cultural",
         name: "Blizzart",
@@ -294,7 +294,7 @@ const events = [
     },
     {
         id: 14,
-        poster: "",
+        poster: "https://res.cloudinary.com/dp4dftwrv/image/upload/v1679585710/decentra-a4_vxlvsb.png",
         alt: "Decentra",
         subheading: "Technical",
         name: "Decentra",
@@ -312,7 +312,7 @@ const events = [
     },
     {
         id: 15,
-        poster: "",
+        poster: "https://res.cloudinary.com/dp4dftwrv/image/upload/v1679585783/ai-jam-a4_zfrrwo.png",
         alt: "AI Jam",
         subheading: "Technical",
         name: "AI Jam",
@@ -329,7 +329,7 @@ const events = [
     },
     {
         id: 16,
-        poster: "",
+        poster: "https://res.cloudinary.com/dp4dftwrv/image/upload/v1679585857/codesprint-a4_1_gtgcdc.png",
         alt: "CodeSprint",
         subheading: "Technical",
         name: "CodeSprint",
@@ -350,7 +350,7 @@ const events = [
     },
     {
         id: 17,
-        poster: "",
+        poster: "https://res.cloudinary.com/dp4dftwrv/image/upload/v1679585905/ui-ux-a4_dd5xgp.png",
         alt: "Pixel Perfect",
         subheading: "Technical",
         name: "Pixel Perfect",
@@ -404,14 +404,14 @@ const events = [
     },
     {
         id: 20,
-        poster: "",
+        poster: "https://res.cloudinary.com/dp4dftwrv/image/upload/v1679586147/valorant-a4_p8a2yr.png",
         alt: "Valorant",
         subheading: "Technical",
-        name: "Valorant",
+        name: "E-Lafda (Valorant)",
         cat: ['technical', 'gaming'],
         description: `Get ready to enter the world of high stakes and epic battles at the Valorant Gaming Event! Get your squad together or fly solo and show us what you're made of! Join us at the Valorant Gaming Event and experience the adrenaline rush of intense battles and epic victories. And hey bonus point, 
         You will get the ultimate bragging rights as the best Valorant player in the college(and a lot of money ;))`,
-        link: "project-artemix",
+        link: "valorant",
         organisers: [
 
         ],
@@ -422,10 +422,10 @@ const events = [
     },
     {
         id: 21,
-        poster: "",
+        poster: "https://res.cloudinary.com/dp4dftwrv/image/upload/v1679586038/codm-a4_leqxyh.png",
         alt: "CODM",
         subheading: "Technical",
-        name: "CODM",
+        name: "E-Lafda (CODM)",
         cat: ['technical', 'gaming'],
         description: `Rally your troops and get your game face on, it's time to show the world what you are made of! Prepare for an epic battle in our CODM event at Apoorv Fest! Doesn't matter if you're a sharpshooter or a complete rookie, we've got the perfect arena for you to unleash your inner soldier and dominate the competition.`,
         link: "CODM",
@@ -439,7 +439,7 @@ const events = [
     },
     {
         id: 22,
-        poster: "",
+        poster: "https://res.cloudinary.com/dp4dftwrv/image/upload/v1679586274/bash-a4_iwjd7i.png",
         alt: "Bash or Crash",
         subheading: "Technical",
         name: "Bash or Crash",
@@ -456,7 +456,7 @@ const events = [
     },
     {
         id: 23,
-        poster: "",
+        poster: "https://res.cloudinary.com/dp4dftwrv/image/upload/v1679586354/ece-a4_ref3th.png",
         alt: "Life-O-Mate",
         subheading: "Technical",
         name: "Life-O-Mate",
@@ -476,7 +476,7 @@ const events = [
 
     {
         id: 24,
-        poster: "",
+        poster: "https://res.cloudinary.com/dp4dftwrv/image/upload/v1679586403/mun-a4_xz6pxa.png",
         alt: "MUN",
         subheading: "Trendles",
         name: "MUN",
@@ -493,7 +493,7 @@ const events = [
     },
     {
         id: 25,
-        poster: "",
+        poster: "https://res.cloudinary.com/dp4dftwrv/image/upload/v1679586462/synapse-a4_sqcbne.png",
         alt: "Synapse",
         subheading: "Trendles",
         name: "Synapse",
@@ -551,7 +551,7 @@ const events = [
     },
     {
         id: 28,
-        poster: "",
+        poster: "https://res.cloudinary.com/dp4dftwrv/image/upload/v1679586555/meme-a4_yeddbi.png",
         alt: "Memer's Brawl",
         subheading: "Trendles",
         name: "Memer's Brawl",
@@ -575,7 +575,7 @@ const events = [
     },
     {
         id: 29,
-        poster: "",
+        poster: "https://res.cloudinary.com/dp4dftwrv/image/upload/v1679586616/brandaid-a4_nbxrxt.png",
         alt: "Brand Aid",
         subheading: "Trendles",
         name: "Brand Aid",
@@ -597,7 +597,7 @@ const events = [
     },
     {
         id: 30,
-        poster: "",
+        poster: "https://res.cloudinary.com/dp4dftwrv/image/upload/v1679586664/chromus-a4_y3haww.png",
         alt: "ChroMus",
         subheading: "Trendles",
         name: "ChroMus",
