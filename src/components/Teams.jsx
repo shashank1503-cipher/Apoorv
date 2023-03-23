@@ -41,7 +41,7 @@ const Teams = (props) => {
 						</Parallax>)
 				})}</div>
 
-				<h2 className={styles.team_maintext + " " + styles.team_subtitle}>
+				{/* <h2 className={styles.team_maintext + " " + styles.team_subtitle}>
 					The Developers
 				</h2>
 				<p className={styles.team_subtext + " " + styles.team_stitletext}>
@@ -57,7 +57,7 @@ const Teams = (props) => {
 				})}</div>
 
 				<h2 className={styles.team_maintext + " " + styles.team_subtitle}>
-					Sponsorship Team
+					Sponsorship Outreach Team
 				</h2>
 				<p className={styles.team_subtext + " " + styles.team_stitletext}>
 					These people are the ones who make sure that we have the best sponsors to make this fest possible. 
@@ -83,7 +83,12 @@ const Teams = (props) => {
 						<Parallax key={index} speed={index & 1 ? 5 : -5}>
 							<TeamCard key={index} image={mentor.image} gif={mentor.gif} alt={mentor.name} subheading={mentor.club} title={mentor.name} socials={mentor.socials} onHoverAnimation={"scale"} />
 						</Parallax>)
-				})}</div>
+				})}</div> */}
+
+				<div className={styles.more_coming_in}>
+					<p className={styles.team_subtext + " " + styles.team_stitletext}>
+						.....More people coming in					</p>
+				</div>
 
 			</div>
 		</div>
