@@ -7,8 +7,7 @@ const timelineData = [{
             name: 'Opening Ceremony',
             date: '6th March 2023',
             time: '9:30 AM',
-            details: 'has been celebrating arts, heritage, music and lifestyle since its inception in 2019. A myriad of events with impressive and'
-
+            details: 'A place where stellar tech meets the enlightenment of art, where we celebrate the quantum leap of computers and how classical music is unbeatable till date.'
         },
         {
             id: 2,
@@ -19,17 +18,17 @@ const timelineData = [{
         },
         {
             id: 3,
-            name: 'Blizzart(Painting)',
+            name: 'Blizzart',
             date: '6th March 2023',
             time: '11:30 AM',
-            details: 'Can you paint your dreams?Sketch your aspirations? With colors as vivid as a pulsing supernova and brushstrokes as dynamic as a light-speed chase while exploring the depths of your imagination? Grab your pens and brushes to put forth your astounding skills to join us on this artistic adventure and stand a chance to win big!'
+            details: 'Can you paint your dreams? Sketch your aspirations? With colors as vivid as a pulsing supernova and brushstrokes as dynamic as a light-speed chase while exploring the depths of your imagination? Grab your pens and brushes to put forth your astounding skills to join us on this artistic adventure and stand a chance to win big!'
         },
         {
             id: 4,
             name: 'MUN',
             date: '6th March 2023',
             time: '2:00 PM',
-            details: 'has been celebrating arts, heritage, music and lifestyle since its inception in 2019. A myriad of events with impressive and'
+            details: "Ready to show off your negotiation skills and take on the world? Then join us at Apoorv's MUN competition, where everyone from MUN masterminds to first-timers is welcome to participate! Whether you're a seasoned diplomatic pro or simply eager to learn, we've got a place for you on our team. Come meet new people, debate hot-button issues, and strut your stuff at this unforgettable event. Don't miss out on your chance to rule the MUNiverse!"
         },
         {
             id: 5,
@@ -129,7 +128,7 @@ const timelineData = [{
             details: "Dust off those violins, tune those guitars, and get those drumsticks ready, cause it's time to hit the big stage! Here is your chance to dazzle as you strike a chord with the crowd and pluck at the heartstrings of the judges.We're drumming up some excitement for this competition, and we can't wait to see your beats drop!"
         },
         {
-            id: 17,
+            id: 18,
             name: "Solo Sizzle",
             date: '7th March 2023',
             time: '6:30 PM',
@@ -142,35 +141,36 @@ const timelineData = [{
     imageURL: 'https://res.cloudinary.com/dlu72yo9b/image/upload/v1632664485/DSC_0277_1_tdbkek_1_q1hcom.jpg',
     events: [
         {
-            id: 18,
+            id: 19,
             name: 'Face Off',
             date: '8th March 2023',
             time: '10:00 AM',
             details: 'Unleash your inner Picasso and get ready to paint the town red at our face painting competition! With an abundance of colors and a ton of fun, this is the perfect opportunity to let your imagination run wild and and transform beautiful faces into stunning works of art. Here is to turning heads with your stunning designs!'
         },
         {
-            id: 19,
+            id: 20,
             name: 'Commit The Flag',
             date: '8th March 2023',
             time: '1:00 PM',
             details: 'To create the best lock, know what breaks the good ones around./n /nCompete for the final flag in a labyrinth of information with 6 rounds, ranging from simple ciphers to intricate reverse engineering puzzles.'
         },
         {
-            id: 20,
+            id: 21,
             name: 'Fake it Till you Make it',
             date: '8th March 2023',
             time: '4:15 PM',
-            details: 'has been celebrating arts, heritage, music and lifestyle since its inception in 2019. A myriad of events with impressive and'
+            details: 'Ready to put "fake it till you make it" to the test? Dazzle the audience with your range and versatility, and leave them in awe of your performance.Whether you want to be a villain or a hero, a shy wallflower or a confident superstar, this is your chance to fake it till you make it and take on a new persona.'
+            
         },
         {
-            id: 21,
+            id: 22,
             name: 'Project: Aятємis',
             date: '8th March 2023',
             time: '6:15 PM',
             details: "Ahoy matey, do you want to set sail on a thrilling adventure to find hidden treasure? Our Treasure Hunt will have you digging deep and racking your brain. Work through riddles, coding quests, online challenges and visual puzzles to find the path in this engaging hunt to find your treasure and win big!"
         },
         {
-            id: 22,
+            id: 23,
             name: 'Battle of Bands',
             date: '8th March 2023',
             time: '7:00 PM',

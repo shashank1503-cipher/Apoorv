@@ -160,14 +160,6 @@
     border-radius: 12px ;
 }
 
-.eventName:hover {
-    cursor: pointer;
-}
-
-.eventName:active {
-    background-color: #8e4ff3;
-}
-
 
 @media (max-width: 1200px) {
     .badge {
