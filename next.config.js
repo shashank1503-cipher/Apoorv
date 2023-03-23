@@ -10,6 +10,8 @@ const nextConfig = {
       "authy.com",
       "images.unsplash.com",
       "c.tenor.com",
+      "tenor.com",
+      "media.tenor.com",
       "res.cloudinary.com",
       "res-console.cloudinary.com",
       "drive.google.com",
