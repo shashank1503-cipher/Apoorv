@@ -60,6 +60,28 @@
     /* line-height: px; */
 }
 
+.dial_sub_item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-transform: capitalize;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    color: rgba(255,255,255, 0.5);
+}
+
+.dial_sub_item_selected {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-transform: capitalize;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: all 0.25s ease;
+}
+
 .selected_sponsor {
     position: absolute;
     margin-left: -20px;
@@ -138,13 +160,18 @@
 }
 
 .card {
-    /* background-color: aliceblue; */
+    /* background-color: red; */
+    width: 14.7rem;
+    height: 100%;
+    cursor: pointer;
     border-radius: 10px;
+
 }
 
 .imageWrapper {
     width: 14.7rem;
     height: 21rem;
+    /* background-color: aliceblue; */
     position: relative;
     overflow: hidden;
     margin: 0 auto;
@@ -173,13 +200,17 @@
 
 
 .content {
+    position: relative;
+    width: 100%;
     color: var(--brand-white);
     font-family: var(--brand-body-font);
     font-size: 1.5rem;
 }
 
 .content h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    word-wrap: break-word;
+    /* text-align: center; */
     font-family: var(--brand-head-font);
     margin-bottom: 0;
 }

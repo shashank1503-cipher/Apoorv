@@ -1,312 +1,636 @@
 const events = [
     {
         id: 1,
-        link: 'commit-the-flag',
-        name: 'Commit The Flag',
-        tag: 'Capture The Flag',
-        description: `To create the best lock, know what breaks the good ones around.\n \nCompete for the final flag in a labyrinth of information with 6 rounds, ranging from simple ciphers to intricate reverse engineering puzzles.\nCan you or your team Capture the Flag?`,
-        date: '30th October',
-        time: '4:30pm - 8:30pm',
+        poster: "",
+        alt: "Symphony of voices",
+        subheading: "Cultural",
+        name: "Symphony of voices",
+        cat: ['cultural', 'singing'],
+        description: "Ready to experience the timeless beauty of classical music? From haunting arias to soaring choral pieces, showcase your vocal range and technique to a panel of expert judges. Whether you prefer Baroque, Romantic, or Contemporary pieces, let this Solo vocal competition help your voice transport the audience to another world with its elegance and grace.",
+        link: "symphony-of-voices",
         organisers: [
-            {
-                key: '1',
-                name: 'Gouri Nair',
-                email: 'gourinair20bec7@\u200Biiitkottayam.ac.in',
-                phoneNumber: '08606922585',
-            },
-            {
-                key: '2',
-                name: 'Nikhil Menon',
-                email: 'nikhilmenon20bcs16@\u200Biiitkottayam.ac.in ',
-                phoneNumber: '7259395776',
-            },
+            {},
+            {}
         ],
-        poster: 'https://res.cloudinary.com/dpjf6btln/image/upload/v1633793220/CTF_bfluvm.png',
-        registration: ""
+        registration: "",
+        date: "",
+        time: "",
+        tag: ""
+
     },
     {
         id: 2,
-        link: 'breaking-bad',
-        name: 'Breaking Bad',
-        tag: 'A Deep Learning Approach',
-        description:
-            '“Shut the f— up and let me die in peace.”-Mike, Now that’s deep or is it umm....dark?\n \nShow off your Deep Learning skills by creating the most efficient model from the provided data set and problem statement while experiencing the dramatic, dark and action-packed storyline of breaking bad.',
-        date: '30th October',
-        time: '8:00 am',
+        poster: "",
+        alt: "Beyond the harmony",
+        subheading: "Cutural",
+        name: "Beyond the harmony",
+        cat: ['cultural', 'singing'],
+        description: "Do you have a voice that leaves everyone in a mesmerising trance? Are you ready to become the next singing sensation in Western music? Well here is your cue to get on the stage, grab the mic, and let your inner superstar out!",
+        link: "beyond-the-harmony",
         organisers: [
             {
-                key: '1',
-                name: 'Aditya Srinivas Menon',
-                email: 'adityasrinivas20bcs8@\u200Biiitkottayam.ac.in',
-                phoneNumber: '(+91) 7406540439',
+                key: 1,
+                name: "Valluru Uday Kiran",
+                phoneNumber: "9704271846",
+                email:""
+            }
+        ],
+        registration: "",
+        date: "",
+        time: "",
+        tag: ""
+    },
+    {
+        id: 3,
+        poster: "",
+        alt: "Battle of Bands",
+        subheading: "Cultural",
+        name: "Battle of Bands",
+        cat: ['cultural', 'singing'],
+        description: "Get ready to rock the stage and bring down the house in our epic Battle of the Bands! Show off your band's musical chops and stage presence as you compete against some of the most talented up-and-coming artists around.So tune up your instruments, get in the zone, and let the music do the talking as you battle it out!",
+        link: "battle-of-bands",
+        organisers: [
+            {
+                key: 1,
+                name: "Bhujbal Nishant",
+                phoneNumber: "9307099632",
+                email: ""
             },
             {
-                key: '2',
-                name: 'Prasanna Devadiga',
-                email: 'prasanna2019@\u200Biiitkottayam.ac.in',
-                phoneNumber: '9607781923',
+                key: 2,
+                name: "Palash Rawat",
+                phoneNumber: "8956212546",
+                email: ""
             },
         ],
-        poster: 'https://res.cloudinary.com/dpjf6btln/image/upload/v1633793392/BB_bcq4a4.jpg',
-        registration: ""
+        registration: "",
+        date: "",
+        time: "",
+        tag: ""
+    },
+    {
+        id: 4,
+        poster: "",
+        alt: "Strings and keys",
+        subheading: "Cultural",
+        name: "Strings and keys",
+        cat: ['cultural', 'singing'],
+        description: "Dust off those violins, tune those guitars, and get those drumsticks ready, cause it's time to hit the big stage! Here is your chance to dazzle as you strike a chord with the crowd and pluck at the heartstrings of the judges.We're drumming up some excitement for this competition, and we can't wait to see your beats drop!",
+        link: "strings-and-keys",
+        organisers: [
+            {
+                key: 1,
+                name: "Abhishek Porwal",
+                phoneNumber: "9414436977",
+                email: ""
+            },
+            
+        ],
+        registration: "",
+        date: "",
+        time: "",
+        tag: ""
+    },
+    {
+        id: 5,
+        poster: "",
+        alt: "Solo Sizzle",
+        subheading: "Cultural",
+        name: "Solo Sizzle",
+        cat: ['cultural', 'dancing'],
+        description: "Are you ready to sizzle, dazzle, and groove your way to the top? Put on your dancing shoes because we are here with Solo Sizzle. Whether you're a salsa sensation, a tango titan, or a hip-hop hottie, flex your moves to steal the spotlight with All the classical connoisseurs and a beginner ballerinas, get ready to be crowned the dance champion!",
+        link: "solo-sizzle",
+        organisers: [
+            {
+                key:1,
+                name: "Phanish",
+                phoneNumber: '9030110522',
+                email: ""
+            }
+        ],
+        registration: "",
+        date: "",
+        time: "",
+        tag: ""
+    },
+    {
+        id: 6,
+        poster: "",
+        alt: "Pulse and the Beat",
+        subheading: "Cultural",
+        name: "Pulse and the Beat",
+        cat: ['cultural', 'dancing'],
+        description: "Experience the beauty and power of dance at Apoorv '23's PULSE AND BEAT!  With stunning costumes and mesmerizing lighting, the stage will burst with color and energy, transport us to a realm of pure artistic expression. Bring your crew and showcase your united skills to create a performance that will leave everyone in awe!",
+        link: "pulse-and-the-beat",
+        organisers: [
+            {
+                key: 1,
+                name: 'Shivani',
+                phoneNumber: '8555942321',
+                email: ""
+            }
+        ],
+        registration: "",
+        date: "",
+        time: "",
+        tag: ""
+    },
+    {
+        id: 7,
+        poster: "",
+        alt: "Impulse Dare",
+        subheading: "Cultural",
+        name: "Impulse Dare",
+        cat: ['cultural', 'dancing'],
+        description: "Look no further than \"Impulse Dare,\" our exhilarating freestyle dance competition! Seasoned hip-hop aficionado, a jazz lover, or a contemporary enthusiast(or simply can't resist the urge to move your body when the beat drops) we welcome all of you to bring your unique style to the dance floor and express yourself with zero inhibition!",
+        link: "impulse-dare",
+        organisers: [
+            {
+                key: 1,
+                name: 'Jain Maria Justine',
+                phoneNumber: '8138043646',
+                email: ""
+            }
+        ],
+        registration: "",
+        date: "",
+        time: "",
+        tag: ""
+    },
+    {
+        id: 8,
+        poster: "",
+        alt: "Fake it Till you Make it",
+        subheading: "Cultural",
+        name: "Fake it Till you Make it",
+        cat: ['cultural', 'drama'],
+        description: "Ready to put \"fake it till you make it\" to the test? Dazzle the audience with your range and versatility, and leave them in awe of your performance.Whether you want to be a villain or a hero, a shy wallflower or a confident superstar, this is your chance to fake it till you make it and take on a new persona.",
+        link: "fake-it-till-you-make-it",
+        organisers: [
+            {
+                key: 1,
+                name: 'Rakshith Dondapati',
+                phoneNumber: '7981325861',
+                email: 'dondapati21bcs164@iiitkottayam.ac.in'
+            }
+        ],
+        registration: "",
+        date: "",
+        time: "",
+        tag: ""
+    },
+    {
+        id: 9,
+        poster: "",
+        alt: "Mockbuster",
+        subheading: "Cultural",
+        name: "Mockbuster",
+        cat: ['cultural', 'drama'],
+        description: "\"Lights, camera, action...and laughs! Join us for Mockbusters - the ultimate parody movie event for a hilarious and entertaining experience.An online event where the talented performers will take the stage and present their own unique takes on the classics, making you laugh, cheer, and maybe even shed a tear. From rom-coms to action-packed blockbusters, no movie is safe from our comical twists!",
+        link: "mockbuster",
+        organisers: [
+            {
+                key: 1,
+                name: 'Kanak',
+                phoneNumber: '8690049955',
+                email: ""
+            }
+        ],
+        registration: "",
+        date: "",
+        time: "",
+        tag: ""
+    },
+    {
+        id: 10,
+        poster: "",
+        alt: "Comedy Combat",
+        subheading: "Cultural",
+        name: "Comedy Combat",
+        cat: ['cultural', 'art'],
+        description: "Waiting for your chance to bring out your inner Zakir Khan or Kevin Hart? Ask no more because Apoorv ‘23 is bringing to you the stage, mic and opportunity to make a whole room ROFL quite literally. Be it puns, dad-jokes, one-liners or anecdotes, impress the judges with your unique style and jest to bag a win. We can’t wait to see y’all battle it out with wits and quips at this humor showdown!",
+        link: "comedy-combat",
+        organisers: [
+            {
+                key: 1,
+                name: 'Seth Randive',
+                phoneNumber: '9426179783',
+                email: 'seth21bcy41@iiitkottayam.ac.in'
+            }
+        ],
+        registration: "",
+        date: "",
+        time: "",
+        tag: ""
+    },
+    {
+        id: 11,
+        poster: "",
+        alt: "Face-Off",
+        subheading: "Cultural",
+        name: "Face-Off",
+        cat: ['cultural', 'art'],
+        description: "Unleash your inner Picasso and get ready to paint the town red at our face painting competition! With an abundance of colors and a ton of fun, this is the perfect opportunity to let your imagination run wild and and transform beautiful faces into stunning works of art. Here is to turning heads with your stunning designs!",
+        link: "face-off",
+        organisers: [
+            {
+                key: 1,
+                name: 'Neha',
+                phoneNumber: '9746931472',
+                email: "neha21bcs7@iiitkottayam.ac.in"
+            }
+        ],
+        registration: "",
+        date: "",
+        time: "",
+        tag: ""
+    },
+    {
+        id: 12,
+        poster: "",
+        alt: "Blizzart",
+        subheading: "Cultural",
+        name: "Blizzart",
+        cat: ['cultural', 'art'],
+        description: "Can you paint your dreams?Sketch your aspirations? With colors as vivid as a pulsing supernova and brushstrokes as dynamic as a light-speed chase while exploring the depths of your imagination? Grab your pens and brushes to put forth your astounding skills to join us on this artistic adventure and stand a chance to win big!",
+        link: "blizzart",
+        organisers: [
+            {
+                key: 1,
+                name: 'Aswin',
+                phoneNumber: '8058250943',
+                email: 'aswin21bcy5@iiitkottayam.ac.in'
+            }
+        ],
+        registration: "",
+        date: "",
+        time: "",
+        tag: ""
+    },
 
-    },
-    {
-        id: 1,
-        link: 'codesprint',
-        name: 'CodeSprint',
-        tag: 'Competitive Programming contest',
-        description:
-            'If TLE is something that you don’t wish even for your worst enemies, this event is for you.\n Compete with the best programmers, solve problems and top the leaderboard! The huge prize pool and the dope goodies are just the cherries on top. \n May the best algorithm win!',
-        date: '29th October',
-        time: '6:00pm - 8:00pm',
-        organisers: [
-            {
-                key: '1',
-                name: 'Prabal Kalia',
-                email: 'prabalkalia18bcs@\u200Biiitkottayam.ac.in',
-                phoneNumber: '(+91) 8130580250',
-            },
-            {
-                key: '2',
-                name: 'Seshathri S',
-                email: 'seshathri2019@\u200Biiitkottayam.ac.in',
-                phoneNumber: '(+91) 9087609727',
-            },
-        ],
-        poster: 'https://res.cloudinary.com/dpjf6btln/image/upload/v1633793432/CP_Insta_p40r6s.jpg',
-        registration: ""
+    // TECHNICAL -------------------------------------------
 
-    },
     {
-        id: 1,
-        link: 'console-log-replicate',
-        name: 'console.log(“replicate”)',
-        tag: 'Can you handle the SaSS?',
-        description:
-            'Are you even an engineer if you haven’t done some web dev?\nHere is a chance to implement all the Frontend facts you’ve learned so far.\nAll you’ve to do is replicate the given website. Let’s see how original your copy is!\nGet Set Develop',
-        date: '29th October',
-        time: '3:30pm - 5:00pm',
+        id: 13,
+        poster: "",
+        alt: "Hackoona Matata",
+        subheading: "Technical",
+        name: "Hackoona Matata",
+        cat: ['technical', 'hackathons'],
+        description: `"To all the aspiring coders out there - Suit up and create something remarkable! 
+        Join us for an epic  72-hour long open hackathon.  Let your creativity soar and
+         bring your wildest ideas to life. With no limitations on themes or approaches,
+         you'll have the freedom to push boundaries and create something truly 
+        remarkable. Ideate, Innovate, Implement and create something truly groundbreaking. 
+        "`,
+        link: "hackoona-matata",
         organisers: [
-            {
-                key: '1',
-                name: 'Shashank Srivastava',
-                email: 'shashank.srivastava25sks@\u200Bgmail.com',
-                phoneNumber: '(+91) 9793422020',
-            },
-            {
-                key: '2',
-                name: 'Sarthak Bindal',
-                email: 'bindalsarthak03@\u200Bgmail.com',
-                phoneNumber: '(+91) 7987957308',
-            },
-        ],
-        poster: 'https://res.cloudinary.com/dpjf6btln/image/upload/v1633793230/WebDev_kdy8jd.png',
-        registration: ""
 
+        ],
+        registration: "",
+        date: "",
+        time: "",
+        tag: ""
     },
     {
-        id: 1,
-        link: 'take-de-bait',
-        name: 'Take De Bait!',
-        tag: 'Convince! Rebut! Win!',
-        description:
-            'Do you have a knack in coming up with dope counter arguments? Are you a tech enthusiast looking for a place to talk about your standpoint? Can you convince your opponent that the best ideas lie with you?  Well, TAKE DE BAIT already!',
-        date: '31st October',
-        time: '9:00am - 11:00am',
+        id: 14,
+        poster: "",
+        alt: "Decentra",
+        subheading: "Technical",
+        name: "Decentra",
+        cat: ['technical', 'hackathons'],
+        description: `"To all the crypto wizards and coding magicians ,do you have what  it takes to be the block-star of the decentralized world? This is the platform for you to showcase your skills and create the most innovative and efficient decentralized cloned app. Demonstrate your  proficiency in web 3.0 world by taking on the challenge of converting a traditional web application into a web 3.0 application. So, put on your blockchain boots and let's get coding!
+        "`,
+        link: "decentra",
         organisers: [
-            {
-                key: '1',
-                name: 'Aditi Shukla',
-                email: 'techclub@\u200Biiitkottayam.ac.in',
 
-            },
         ],
-        poster: 'https://res.cloudinary.com/dpjf6btln/image/upload/v1633793221/D1_ceshnu.jpg',
-        registration: ''
+        registration: "",
+        date: "",
+        time: "",
+        tag: ""
     },
     {
-        id: 1,
-        link: 'brandaid',
-        name: 'BrandAID',
-        tag: 'Analyse, Ideate, Design!',
-        description:
-            'Ever seen a huge logo on a billboard and thought you could’ve done so much better?\nThis is your chance to redesign some of the infamous brand logos and their identity.\nAnalyse, Ideate, Design!',
-        date: '30th October',
-        time: '10:00am - 12:00am',
+        id: 15,
+        poster: "",
+        alt: "AI Jam",
+        subheading: "Technical",
+        name: "AI Jam",
+        cat: ['technical', 'contests'],
+        description: `Are you ready to use the power of AI to create a music sensation like never before? AI Jam is a one-of-a-kind contest where you will use deep learning models to compose music, write lyrics, and produce a stunning music video for a given artist. With the help of AI, you can explore new sounds and styles that push the boundaries of what's possible in music. So put your creative skills to the test, and get ready to take the music industry by storm with AI Jam!`,
+        link: "ai-jam",
         organisers: [
-            {
-                key: '1',
-                name: 'Swani',
-                email: 'swani2019@\u200Biiitkottayam.ac.in',
-                image: 'https://res.cloudinary.com/dlu72yo9b/image/upload/v1633973915/IMG_2121_pyqnlt.jpg',
-                alias:"The Design Gawd"
-            },
-            {
-                key: '2',
-                name: 'Prajjawal',
-                email: 'techclub@\u200Biiitkottayam.ac.in',
-                phoneNumber: '(+91) 9370324791',
-                image: 'https://res.cloudinary.com/dlu72yo9b/image/upload/v1631972395/00100sPORTRAIT_00100_BURST20210908184205917_COVER_x347rg.jpg',
-                alias:"The Absolute Nerd"
-            },
-        ],
-        poster: 'https://res.cloudinary.com/dpjf6btln/image/upload/v1678950678/Asset_15_eulxyj.png',
-        registration: ''
-    },
-    {
-        id: 1,
-        link: 'fantasy-crypto-league',
-        name: 'Fantasy Crypto League',
-        tag: 'Elon can do it, you musk too.',
-        description:
-            ' How accurately can you predict the troughs and crests of crypto stocks? \n\nTest your knowledge in this 3-day long mock investment contest. The rules are simple, the one with the most profit wins.',
-        date: '28th October',
-        time: '7:30pm ',
-        organisers: [
-            {
-                key: '1',
-                name: 'Hrishabh Joshi',
-                email: 'harishabh2019@\u200Biiitkottayam.ac.in',
-                phoneNumber: '(+91) 9599928563',
-            },
-        ],
-        poster: 'https://res.cloudinary.com/dpjf6btln/image/upload/v1633793231/Crypto_ouh7hx.png',
-        registration: ''
-    },
-    {
-        id: 1,
-        link: 'retropolis',
-        name: 'Retropolis',
-        tag: 'From Retro to Life',
-        description:
-            "Consider yourself a pro gamer that likes to dabble in its making as well? Got some mad game development skills that you can't wait to exhibit? \n Well, Retroopolis is just the event for you! Build your own virtual world; \n Your World, Your Rules!",
-        date: '29th October',
-        time: '9:00am',
-        organisers: [
-            {
-                key: '1',
-                name: 'Sai Tejashwin',
-                email: 'tejashwin2019@\u200Biiitkottayam.ac.in',
-                phoneNumber: '(+91) 8688179209',
-            },
-        ],
-        poster: 'https://res.cloudinary.com/dpjf6btln/image/upload/v1633793272/GameDev_z8he5g.png',
-        registration: ''
-    },
-    {
-        id: 1,
-        link: 'artemis',
-        name: 'Project: Aятємis',
-        tag: 'Be the next Hardy Boys!',
-        description:
-            "Do you have what it takes to be the next Hardy Boys?\n \nAn expedition that would give you an adrenaline rush like never before! Be the first team to solve mind-bending puzzles that's certain to exercise your grey matter and keep you on your toes.",
-        date: '31st October',
-        time: '7:00pm - 9:00pm',
-        organisers: [
-            {
-                key: '1',
-                name: 'Nikhil Menon',
-                email: 'nikhilmenon20bcs16@\u200Biiitkottayam.ac.in ',
-                phoneNumber: '(+91) 7259395776',
-            },
-            {
-                key: '2',
-                name: 'Gouri Nair',
-                email: 'gourinair20bec7@\u200Biiitkottayam.ac.in',
-                phoneNumber: '(+91) 08606922585',
-            },
-        ],
-        poster: 'https://res.cloudinary.com/dlu72yo9b/image/upload/v1634185031/final_1_hug6mt.png',
-        registration: ''
-    },
-    {
-        id: 1,
-        link: 'reverse-coding',
-        name: 'Reverse Coding',
-        tag: 'Who wants to code straight?',
-        description:
-            'To find order in chaos, is what life is all about. \n \nGiven a black box with certain inputs and their respective outputs, your task is to find how the black box works, and code.',
-        date: '31st October',
-        time: '2:30pm - 4:30pm',
-        organisers: [
-            {
-                key: '1',
-                name: 'Nikhil Menon',
-                email: 'nikhilmenon20bcs16@\u200Biiitkottayam.ac.in ',
-                phoneNumber: '(+91) 7259395776',
-            },
-        ],
 
-        poster: 'https://res.cloudinary.com/dlu72yo9b/image/upload/v1634185036/final_b5pikj.png',
-        registration: ''
+        ],
+        registration: "",
+        date: "",
+        time: "",
+        tag: ""
     },
     {
-        id: 1,
-        link: 'sold-it',
-        name: 'Sold It!',
-        tag: 'Clear the Pitch',
-        description:
-            'A wacky pitching competition that you would never see happening in a boardroom!\n \nUse the best of your wits to smooth-talk, persuade and entice us into buying bizarre and ridiculous ideas that would defy any rationale.',
-        date: '29th October',
-        time: '1:00pm - 3:00pm',
+        id: 16,
+        poster: "",
+        alt: "CodeSprint",
+        subheading: "Technical",
+        name: "CodeSprint",
+        cat: ['technical', 'contests'],
+        description: `"Starters 85 is here! Time to boost your skills..
+        What did you expect – another CodeChef contest headline?
+        CodeSprint is here as a breath of fresh air, bringing newer, better problems, and tougher competitions to immerse yourself in!
+        Be it using Python to Caesar Cipher a string, or using C++ vectorized SIMD intrinsics to turbo-accelerate the same, we have cooked something up for the coder in everybody.
+        "`,
+        link: "codesprint",
         organisers: [
-            {
-                key: '1',
-                name: 'Adithyadev Mattada',
-                email: 'adithyadevm20bec23@\u200Biiitkottayam.ac.in',
-                phoneNumber: '(+91) 7559888295',
-            },
-            {
-                key: '2',
-                name: 'Fathima Hanan Parakkot',
-                email: 'fathima20bec22@\u200Biiitkottayam.ac.in',
-                phoneNumber: '(+91) 8139888072',
-            },
+
         ],
-        poster: 'https://res.cloudinary.com/dpjf6btln/image/upload/v1633793227/SoldIT_bkhole.png',
-        registration: ''
+        registration: "",
+        date: "",
+        time: "",
+        tag: ""
     },
     {
-        id: 1,
-        link: 'rebibe-me-jett',
-        name: 'Inter IIIT Valorant Tournament',
-        tag: 'Rebibe Me Jett',
-        description:
-            'An exhilarating Valorant Tournament, with live commentary, a Huge Prize Pool, cool T-Shirts (real skins are important too), and an Adrenaline rush that you cannot afford to miss',
-        date: 'Every Dhruva-day',
-        time: '9:30pm',
+        id: 17,
+        poster: "",
+        alt: "Pixel Perfect",
+        subheading: "Technical",
+        name: "Pixel Perfect",
+        cat: ['technical', 'contests'],
+        description: `"Are you someone who can has an eye for design and can create alluring and engaging websites? Then this is the perfect opportunity for you!!
+        Apoorva 23’ is THE quintessential platform for you as a young web developer to brandish your designing prowess. Convert wireframes to a website that's aesthetically-pleasing, interactive and solves all your problems (of course ;)! )
+        "`,
+        link: "pixel-perfect",
         organisers: [
-            {
-                key: '1',
-                name: 'Lakshin Kumar R',
-                email: 'lakshin2019@\u200Biiitkottayam.ac.in',
-                phoneNumber: '(+91) 9080385059',
-            },
+
         ],
-        poster: 'https://res.cloudinary.com/dlu72yo9b/image/upload/v1634976697/VALORANT_1_tblk1r.jpg',
-        registration: ''
+        registration: "",
+        date: "",
+        time: "",
+        tag: ""
     },
     {
-        id: 1,
-        link: 'stick-to-it',
-        name: 'Stick-To-It',
-        tag: 'Sticker Making Competition brought to you by RAAHEE',
-        description:
-            'The most important part of any tech event often culminates in the form of stickers that we put on our laptops. In fact, the level of your activity during your engineering days is defined by how much your laptop’s back is not visible due to stickers covering a major part of it.\n \nThis Dhruva, you have a chance to design your own stickers, and if you are good at it, also get rewarded for it.',
-        date: '28th October - 31st October',
-        time: '28th 6:00pm - 31st 11:59pm',
+        id: 18,
+        poster: "",
+        alt: "Project Artemix",
+        subheading: "Technical",
+        name: "Project Artemix",
+        cat: ['technical', 'contests'],
+        description: `"Ahoy matey, do you want to set sail on a thrilling adventure to find hidden treasure? Our Treasure Hunt will have you digging deep and racking your brain. Work through riddles, coding quests, online challenges and visual puzzles to find the path in this engaging hunt to find your treasure and win big!
+        "`,
+        link: "project-artemix",
+        organisers: [
+
+        ],
+        registration: "",
+        date: "",
+        time: "",
+        tag: ""
+    },
+    {
+        id: 19,
+        poster: "",
+        alt: "Commit The Flag",
+        subheading: "Technical",
+        name: "Commit The Flag",
+        cat: ['technical', 'contests'],
+        description: `To create the best lock, know what breaks the good ones around./n /nCompete for the final flag in a labyrinth of information with 6 rounds, ranging from simple ciphers to intricate reverse engineering puzzles.`,
+        link: "commit-the-flag",
+        organisers: [
+
+        ],
+        registration: "",
+        date: "",
+        time: "",
+        tag: ""
+    },
+    {
+        id: 20,
+        poster: "",
+        alt: "Valorant",
+        subheading: "Technical",
+        name: "Valorant",
+        cat: ['technical', 'gaming'],
+        description: `Get ready to enter the world of high stakes and epic battles at the Valorant Gaming Event! Get your squad together or fly solo and show us what you're made of! Join us at the Valorant Gaming Event and experience the adrenaline rush of intense battles and epic victories. And hey bonus point, 
+        You will get the ultimate bragging rights as the best Valorant player in the college(and a lot of money ;))`,
+        link: "project-artemix",
+        organisers: [
+
+        ],
+        registration: "",
+        date: "",
+        time: "",
+        tag: ""
+    },
+    {
+        id: 21,
+        poster: "",
+        alt: "CODM",
+        subheading: "Technical",
+        name: "CODM",
+        cat: ['technical', 'gaming'],
+        description: `Rally your troops and get your game face on, it's time to show the world what you are made of! Prepare for an epic battle in our CODM event at Apoorv Fest! Doesn't matter if you're a sharpshooter or a complete rookie, we've got the perfect arena for you to unleash your inner soldier and dominate the competition.`,
+        link: "CODM",
+        organisers: [
+
+        ],
+        registration: "",
+        date: "",
+        time: "",
+        tag: ""
+    },
+    {
+        id: 22,
+        poster: "",
+        alt: "Bash or Crash",
+        subheading: "Technical",
+        name: "Bash or Crash",
+        cat: ['technical', 'contests'],
+        description: `Rally your troops and get your game face on, it's time to show the world what you are made of! Prepare for an epic battle in our CODM event at Apoorv Fest! Doesn't matter if you're a sharpshooter or a complete rookie, we've got the perfect arena for you to unleash your inner soldier and dominate the competition.`,
+        link: "bash-or-crash",
+        organisers: [
+
+        ],
+        registration: "",
+        date: "",
+        time: "",
+        tag: ""
+    },
+    {
+        id: 23,
+        poster: "",
+        alt: "Life-O-Mate",
+        subheading: "Technical",
+        name: "Life-O-Mate",
+        cat: ['technical', 'hackathons'],
+        description: `Get ready to ignite your passion for Electronics and join our fun-filled hackathon! You'll explore the endless possibilities of lifestyle automation using the power of microprocessors and microcontrollers! From smart home devices to wearable technology, you'll have the chance to innovate and create the next generation of personalized experiences that seamlessly integrate into our daily lives.`,
+        link: "Life-O-Mate",
+        organisers: [
+
+        ],
+        registration: "",
+        date: "",
+        time: "",
+        tag: ""
+    },
+
+    // Trendles ----------------------------------
+
+    {
+        id: 24,
+        poster: "",
+        alt: "MUN",
+        subheading: "Trendles",
+        name: "MUN",
+        cat: ['trendles', 'literary'],
+        description: `Ready to show off your negotiation skills and take on the world? Then join us at Apoorv's MUN competition, where everyone from MUN masterminds to first-timers is welcome to participate! Whether you're a seasoned diplomatic pro or simply eager to learn, we've got a place for you on our team. Come meet new people, debate hot-button issues, and strut your stuff at this unforgettable event. Don't miss out on your chance to rule the MUNiverse!`,
+        link: "MUN",
+        organisers: [
+
+        ],
+        registration: "",
+        date: "",
+        time: "",
+        tag: ""
+    },
+    {
+        id: 25,
+        poster: "",
+        alt: "Synapse",
+        subheading: "Trendles",
+        name: "Synapse",
+        cat: ['trendles', 'art'],
+        description: `"Say Cheese and Say Apoorv! Calling out all the aspiring shutterbugs out there to join us in
+        an exciting photography event that will capture your creativity and imagination like never
+        before. Apoorv brings you a fun-filled photography event Synapse with not one, but two
+         rounds of photographer's thrill. So, dust off your cameras and join us in the
+         ultimate photography showdown!"`,
+        link: "Synapse",
+        organisers: [
+
+        ],
+        registration: "",
+        date: "",
+        time: "",
+        tag: ""
+    },
+    {
+        id: 26,
+        poster: "",
+        alt: "Verse Voyage",
+        subheading: "Trendles",
+        name: "Verse Voyage",
+        cat: ['trendles', 'literary'],
+        description: `Are you ready to unleash your hidden potency and weave sagas that reverberate with life?  Be it sonnets, limericks or free verse, spin your tales that conjure magic, evoke emotions and transport our imagination! Whether you are an experienced writer or just starting out, grab your pens (or rather your keyboards) and let your hidden potency roar out! We can't wait to read your masterpieces.`,
+        link: "Verse-Voyage",
+        organisers: [
+
+        ],
+        registration: "",
+        date: "",
+        time: "",
+        tag: ""
+    },
+    {
+        id: 27,
+        poster: "",
+        alt: "The Alpha trader",
+        subheading: "Trendles",
+        name: "The Alpha trader",
+        cat: ['trendles', 'finance'],
+        description: `Introducing 'The Alpha Trader'! The virtual stock trading competition to test your financial
+        acumen and prowess in real-time stock markets. Make strategic trades, analyze market trends,
+        and outmaneuver your competitors to become the top trader and earn a cash prize. Prove your 
+        mettle against the best traders in the game and earn the prestigious title of Alpha trader. Join now and become the envy of your peers!`,
+        link: "The-Alpha-trader",
+        organisers: [
+
+        ],
+        registration: "",
+        date: "",
+        time: "",
+        tag: ""
+    },
+    {
+        id: 28,
+        poster: "",
+        alt: "Memer's Brawl",
+        subheading: "Trendles",
+        name: "Memer's Brawl",
+        cat: ['trendles', 'art'],
+        description: `Calling all memelords and jokesters! In our grueling battle, let your creativity run wild and demonstrate your prowess at creating memes. From quirky cat pics to viral video snippets, anything goes! The most humorous and inventive submission will be crowned the meme king or queen with prizes that will make you ROFL.
+        What are you still holding out for? Let's meme it up!
+        `,
+        link: "memers-brawl",
         organisers: [
             {
-                key: '1',
-                name: 'Priyanshu',
-                email: 'techclub@\u200Biiitkottayam.ac.in',
-                phoneNumber: '(+91) 8407016547',
-            },
+                key: 1,
+                name: "Ujjwal Jain",
+                phoneNumber: '7905008337',
+                email: 'ujjwal21bcs59@iiitkottayam.ac.in'
+            }
         ],
-        poster: 'https://res.cloudinary.com/roshin/image/upload/v1635413455/sticktoit_s4kpmz.jpg',
-        registration: ''
+        registration: "",
+        date: "",
+        time: "",
+        tag: ""
     },
+    {
+        id: 29,
+        poster: "",
+        alt: "Brand Aid",
+        subheading: "Trendles",
+        name: "Brand Aid",
+        cat: ['trendles', 'art'],
+        description: `Ever seen a huge logo on a billboard and thought you could’ve done so much better?This is your chance to redesign some of the infamous brand logos and their identity.Analyse, Ideate, Design!`,
+        link: "Brand-Aid",
+        organisers: [
+            {
+                key: 1,
+                name: 'Arnav Shah',
+                phoneNumber: '8141273614',
+                email: 'shah21bcs9@iiitkottayam.ac.in'
+            }
+        ],
+        registration: "",
+        date: "",
+        time: "",
+        tag: ""
+    },
+    {
+        id: 30,
+        poster: "",
+        alt: "ChroMus",
+        subheading: "Trendles",
+        name: "ChroMus",
+        cat: ['trendles', 'art'],
+        description: `Enter Apoorva's videography competition and reimagine cinema soundscapes. Create a movie trailer using music from a different film. Showcase your creativity and technical skills by blending cultures and styles for an innovative fusion of sounds. Revolutionize the way we perceive cinema and join us for a luxury and fun-filled event!`,
+        link: "ChroMus",
+        organisers: [
+
+        ],
+        registration: "",
+        date: "",
+        time: "",
+        tag: ""
+    },
+    {
+        id: 31,
+        poster: "",
+        alt: "Writer's Rumble",
+        subheading: "Trendles",
+        name: "Writer's Rumble",
+        cat: ['trendles', 'literary'],
+        description: `Are you ready to put your creative writing skills to the test? Then join us for Apoorv's Short Story event, where you'll have the chance to craft your very own masterpiece. From heart-wrenching dramas to side-splitting comedies, the possibilities are endless, and the prizes are simply divine. So, put pen to paper and let your inner imagination run wild.`,
+        link: "Writers-Rumble",
+        organisers: [
+
+        ],
+        registration: "",
+        date: "",
+        time: "",
+        tag: ""
+    },
+   
+
 ]
 
 export { events }

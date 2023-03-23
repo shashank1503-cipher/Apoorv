@@ -16,7 +16,7 @@ const Footer = () => {
           <div className={styles.content}>
             <div className={styles.first}>
               <div className={styles.head} >
-                <Image src={logo} /></div>
+                <Image alt="image" src={logo} /></div>
               <div className={styles.footer_desc}>
                 A fest that celebrates both the innumerous shades of
                 our culture and the bluey horizons of technology
@@ -29,7 +29,7 @@ const Footer = () => {
             <div className={styles.second}>
               <div className={styles.foot_font2}>April</div>
               <div className={styles.foot_font2} >6th-8th</div>
-              <div className={styles.fontz}><Image src={year} /></div>
+              <div className={styles.fontz}><Image src={year} alt="image"/></div>
               <div className={styles.foot_font}>IIIT KOTTAYAM </div>
             </div>
             <div className={styles.horizontal}></div>
