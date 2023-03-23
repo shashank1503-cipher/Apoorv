@@ -104,7 +104,7 @@ const timelineData = [{
             name: 'Bash or Crash',
             date: '7th March 2023',
             time: '12:00 PM',
-            details: "Get ready for Apoorv’s very own Shell Shock Scripting Showdown! Are you a scripting guru, a master of the command line? If so, we challenge you to compete in a battle of Bash shell scripting. /n We're not looking for just any script; we want your most creative and efficient code, something that will make the T-1000 look like a teddy bear. Put on your coding hats, prime your terminals, and get ready to blow the judges' circuits."
+            details: "Get ready for Apoorv’s very own Shell Shock Scripting Showdown! Are you a scripting guru, a master of the command line? If so, we challenge you to compete in a battle of Bash shell scripting. We're not looking for just any script; we want your most creative and efficient code, something that will make the T-1000 look like a teddy bear. Put on your coding hats, prime your terminals, and get ready to blow the judges' circuits."
         },
         {
             id: 15,

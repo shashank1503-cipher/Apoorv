@@ -21,8 +21,8 @@ const Description = () => {
                             alt={"sponsers"}
 
                             style={{
-                                maxWidth: '33%',
-                                height: '50%',
+                                maxWidth: '20%',
+                                height: '40%',
                             }}
                         />
                         <div className={styles.spon}>
@@ -47,17 +47,13 @@ const Description = () => {
                             />
                         </div>
 
-
-
-
-
                         <Image
                             src={sp1}
                             alt={"sponsers"}
 
                             style={{
                                 maxWidth: '33%',
-                                height: '50%',
+                                height: '40%',
                             }}
                         />
 
