@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from '../styles/Description.module.css'
 import Image from 'next/image'
-import sp1 from '../../public/spon1.png'
+import sp1 from '../../public/Devfolio - White.svg'
 import sp2 from '../../public/spon2.png'
 import sp3 from '../../public/spon3.png'
 
@@ -22,7 +22,7 @@ const Description = () => {
 
                             style={{
                                 maxWidth: '33%',
-                                height: 'auto',
+                                height: '50%',
                             }}
                         />
 
@@ -56,7 +56,7 @@ const Description = () => {
 
                             style={{
                                 maxWidth: '33%',
-                                height: 'auto',
+                                height: '50%',
                             }}
                         />
 

@@ -3,7 +3,7 @@ import React from 'react';
 import logo from '../assets/apoorv_logo.svg';
 import year from '../assets/2023.svg';
 import styles from '../styles/Footer.module.css';
-import { AiFillMail, AiFillLinkedin, AiFillTwitterCircle, AiFillFacebook } from 'react-icons/ai';
+import { AiFillMail, AiFillLinkedin, AiFillTwitterCircle, AiFillFacebook, AiFillInstagram } from 'react-icons/ai';
 import Image from 'next/image'
 
 
@@ -28,7 +28,7 @@ const Footer = () => {
 
             <div className={styles.second}>
               <div className={styles.foot_font2}>April</div>
-              <div className={styles.foot_font2} >18-22nd</div>
+              <div className={styles.foot_font2} >6th-8th</div>
               <div className={styles.fontz}><Image src={year} /></div>
               <div className={styles.foot_font}>IIIT KOTTAYAM </div>
             </div>
@@ -37,8 +37,8 @@ const Footer = () => {
               <div className={styles.foot_font}>follow us</div>
               <div className={styles.icons}>
                 <div><a target="_blank" rel="noreferrer" href='mailto:apoorv@iiitkottayam.ac.in'><AiFillMail className={styles.icon} /></a></div>
-                <div> <a target="_blank" rel="noreferrer" href=''><AiFillLinkedin className={styles.icon} /></a></div>
-                <div> <a target="_blank" rel="noreferrer" href='#'><AiFillFacebook className={styles.icon} /></a></div>
+                <div> <a target="_blank" rel="noreferrer" href='https://www.linkedin.com/company/apoorv-iiit-kottayam/'><AiFillLinkedin className={styles.icon} /></a></div>
+                <div> <a target="_blank" rel="noreferrer" href='https://instagram.com/apoorv_iiitk?igshid=ZDdkNTZiNTM'><AiFillInstagram className={styles.icon} /></a></div>
                 <div> <a target="_blank" rel="noreferrer" href='#'><AiFillTwitterCircle className={styles.icon} /></a></div>
               </div>
               {/* <div className={styles.foot_font1} >+91 9370324791</div>

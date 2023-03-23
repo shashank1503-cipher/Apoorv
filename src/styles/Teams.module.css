@@ -1,0 +1,151 @@
+.container {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.team_gradient {
+	background-image: url("../assets/green_blue_bg.jpg");
+	background-size: cover;
+	filter: saturate(0.85);
+	min-height: 45rem;
+	padding: 0 0 0 50px;
+	position: relative;
+	/* border-radius: 0 0 1.5rem 1.5rem; */
+}
+
+.team_blur {
+	position: absolute;
+	inset: auto 1rem 1rem 1rem;
+	height: 16rem;
+	/* border-radius: 1.5rem; */
+	background-color: #0e3f2d80;
+	outline: 3px solid #11553c80;
+	backdrop-filter: blur(8px);
+	-webkit-backdrop-filter: blur(8px);
+	margin: 0;
+}
+
+.team_header {
+	padding-top: 16rem;
+	display: flex;
+	align-items: center;
+}
+
+.team_maintext {
+	font-family: var(--brand-head-font);
+	font-weight: 100;
+}
+
+.team_title {
+	color: #57ff7cbe;
+	font-size: clamp(3.2em, 8vw + 1.2rem, 6rem);
+	flex-shrink: 0;
+}
+
+.team_line {
+	margin: 10px 70px 0 50px;
+	width: 100%;
+	height: 1px;
+	background-color: white;
+}
+
+.team_subintro {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	column-gap: clamp(2rem, 10vw + 0.6rem, 12rem);
+}
+
+.team_subtext {
+	color: white;
+	font-family: var(--brand-body-font);
+	font-size: clamp(0.85rem, 1.5vw + 0.4rem, 1.5rem);
+}
+
+.team_introtext {
+	max-width: 30ch;
+	border-left: 1px solid white;
+	padding-left: 1rem;
+}
+
+.team_members {
+	padding: 10rem 50px 5rem 50px;
+}
+
+.team_subtitle {
+	color: #5aff73d6;
+	font-size: clamp(2.5rem, 6vw + 1.2rem, 4rem);
+	margin-bottom: 1rem;
+}
+
+.team_stitletext {
+	font-size: clamp(0.4rem, 2vw + 0.6rem, 1.8rem);
+	max-width: 60ch;
+}
+
+.cardWrapper {
+	display: flex;
+	flex-direction: row;
+	gap: 5rem;
+	justify-content: center;
+	align-items: center;
+	margin: 10rem 0rem;
+	flex-wrap: wrap;
+
+}
+
+
+@media screen and (max-width: 800px) {
+	.team_gradient {
+		padding: 0;
+	}
+
+	.team_line {
+		display: none;
+	}
+
+	.team_header {
+		padding-top: 12rem;
+		justify-content: center;
+	}
+
+	.team_subtitle {
+		text-align: center;
+	}
+
+	.team_gradient {
+		min-height: 30rem;
+		border-radius: 0;
+	}
+
+	.team_blur {
+		height: 10rem;
+		border-radius: 0;
+		inset: auto 0 0 0;
+		padding: 1rem;
+	}
+
+	.team_members {
+		padding: 5rem 30px 3rem 30px;
+	}
+
+	.team_stitletext {
+		text-align: center;
+	}
+
+	.cardWrapper {
+		flex-direction: column;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.team_subintro {
+		flex-direction: column;
+	}
+
+	.team_introtext {
+		max-width: 40ch;
+	}
+}

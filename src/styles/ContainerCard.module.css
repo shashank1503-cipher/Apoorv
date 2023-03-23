@@ -9,6 +9,19 @@
 
 } */
 
+.imageContainer {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    width: 23rem;
+    height: 30rem;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+
 .imageWrapper {
     width: 23rem;
     height: 30rem;
@@ -17,7 +30,30 @@
     margin: 0 auto;
     margin-bottom: 5%;
     border-radius: 10px;
-    
+    transition: all 0.5s ease;
+
+}
+
+
+.gifWrapper {
+    width: 23rem;
+    height: 30rem;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-bottom: 5%;
+    border-radius: 10px;
+    transform: translateX(-200%);
+    transition: all 0.5s ease;
+}
+
+
+.imageContainer:hover .gifWrapper {
+    transform: translateX(0%);
+}
+
+.imageContainer:hover .imageWrapper {
+    transform: translateX(200%);
 }
 
 
@@ -37,7 +73,7 @@
 .divider>hr {
     width: 100%;
     height: 0.1rem;
-    background-color: var(--brand-yellow);
+    background-color: var(--brand-white);
     border: none;
 }
 
@@ -49,7 +85,7 @@
 
 .content h1 {
     font-size: 2rem;
-    font-family: var(--brand-head-font);
+    font-family: var(--brand-body-font);
     margin-bottom: 0;
 }
 
@@ -57,10 +93,30 @@
     margin-top: 0;
 }
 
-.alias{
+.alias {
     font-size: 1rem;
     color: grey;
 }
+
+.socials {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+}
+
+.social {
+    margin-right: 1rem;
+    font-size: 1.5rem;
+    color: var(--brand-white);
+    transition: all 0.3s ease;
+}
+
+.social:hover {
+    color: var(--brand-green);
+}
+
+
+
 @media screen and (max-width: 1200px) {
     .card {
         margin-left: 0;
