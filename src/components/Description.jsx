@@ -2,8 +2,8 @@ import React from 'react'
 import styles from '../styles/Description.module.css'
 import Image from 'next/image'
 import sp1 from '../../public/Devfolio - White.svg'
-import sp2 from '../../public/spon2.png'
-import sp3 from '../../public/spon3.png'
+import sp2 from '../../public/solana-logo.png'
+import sp3 from '../../public/polygon-logo.png'
 
 
 import abc from '../../public/img.svg'
@@ -25,28 +25,29 @@ const Description = () => {
                                 height: '50%',
                             }}
                         />
+                        <div className={styles.spon}>
+                            <Image
+                                src={sp2}
+                                alt={"sponsers"}
+                                fill
+                                style={{
+                                    "-webkit-filter": "invert(100%)",
+                                    "filter": "invert(100%)"
+                                }}
+                            />
+                        </div>
+                        <div className={styles.spon3}>
+                            <Image
+                                src={sp3}
+                                alt={"sponsers"}
+                                fill
+                                style={{
+                                    "filter": "brightness(0) invert(1)"
+                                }}
+                            />
+                        </div>
 
-                        <Image
-                            src={sp2}
-                            alt={"sponsers"}
-                            // width={1200}
-                            // height={400}
-                            style={{
-                                maxWidth: '33%',
-                                height: 'auto',
-                            }}
-                        />
 
-                        <Image
-                            src={sp3}
-                            alt={"sponsers"}
-                            // width={1200}
-                            // height={400}
-                            style={{
-                                maxWidth: '33%',
-                                height: 'auto',
-                            }}
-                        />
 
 
 
@@ -60,24 +61,27 @@ const Description = () => {
                             }}
                         />
 
-                        <Image
-                            src={sp2}
-                            alt={"sponsers"}
-
-                            style={{
-                                maxWidth: '33%',
-                                height: 'auto',
-                            }}
-                        />
-                        <Image
-                            src={sp3}
-                            alt={"sponsers"}
-
-                            style={{
-                                maxWidth: '33%',
-                                height: 'auto',
-                            }}
-                        />
+                        <div className={styles.spon}>
+                            <Image
+                                src={sp2}
+                                alt={"sponsers"}
+                                fill
+                                style={{
+                                    "-webkit-filter": "invert(100%)",
+                                    "filter": "invert(100%)"
+                                }}
+                            />
+                        </div>
+                        <div className={styles.spon3}>
+                            <Image
+                                src={sp3}
+                                alt={"sponsers"}
+                                fill
+                                style={{
+                                    "filter": "brightness(0) invert(1)"
+                                }}
+                            />
+                        </div>
                     </Marquee>
                 </div>
 
