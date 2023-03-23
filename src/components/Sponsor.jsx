@@ -223,7 +223,6 @@ const Sponsor = () => {
                                 className={styles.sponsor_item}
                                 initial="hidden" animate={'visible'} variants={{
                                     hidden: {
-
                                         y: 50,
                                         opacity: 0
                                     },

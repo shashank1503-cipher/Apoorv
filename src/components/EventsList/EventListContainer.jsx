@@ -2,75 +2,59 @@ import { useEffect, useState } from "react";
 import styles from "../../styles/EventsListContainer.module.css"
 import { FaCaretRight } from "react-icons/fa";
 import { motion } from 'framer-motion'
-// import ContainerCard from "../Cards/ContainerCard";
-import im from "../../../public/he.png";
 import {Parallax} from 'react-scroll-parallax'
 import Image from "next/image";
+import { events } from "@/data/Events";
 
 const EventListContainer = () => {
-    
+
     const catogories = [
+        'technical',
+        'cultural',
+        'trendles',
         'all',
-       'cat 1',
-       'cat 2',
-       'cat 3',
     ]
 
-    const [eventsList, setEventsList] = useState([
-        {
-            "image" : im,
-            "alt" : "event card",
-            "subheading" : "sub heading", 
-            "title" : "event no.1",
-            "subtitles" : "subs", 
-            "onHoverAnimation" : "scale",
-            'cat': "cat 1"
-        },
-        {
-            "image" : im,
-            "alt" : "event card",
-            "subheading" : "sub heading", 
-            "title" : "event no.2",
-            "subtitles" : "subs", 
-            "onHoverAnimation" : "scale",
-            'cat': "cat 1"
-        },
-        {
-            "image" : im,
-            "alt" : "event card",
-            "subheading" : "sub heading", 
-            "title" : "event no.3",
-            "subtitles" : "subs", 
-            "onHoverAnimation" : "scale",
-            'cat': "cat 2"
-        },
-        {
-            "image" : im,
-            "alt" : "event card",
-            "subheading" : "sub heading", 
-            "title" : "event no.4",
-            "subtitles" : "subs", 
-            "onHoverAnimation" : "scale",
-            'cat': "cat 3"
-        },
-           
-    ])
+    const catogoriesSub = {
+        'all' : [],
+       'technical' : [
+            'gaming',
+            "hackathons",
+            'contests',
+        ],
+       'cultural' : [
+            'dancing',
+            'drama',
+            'singing',
+            'art'
+       ],
+       'trendles' : [
+            'literary',
+            'finance',
+            'art'
+       ],
+       
+       
+    }
+
+    // console.log(events)
+    const [eventsList, setEventsList] = useState(events)
 
     const ContainerCard = (props) => {
 
-        const {image, subheading, title} = props
+        const {poster, subheading, name, link} = props
 
         return (
-            <div className={styles.card}>
+            <div className={styles.card} onClick={() => window.location.href = `/event/${link}`}>
                 <div className={`${styles.imageWrapper}`} >
-                    <Image src={image} alt={'back image'} fill />
+                    <Image src={poster} alt={'back image'} fill />
                 </div>
                 <div className={styles.divider}>
                     <hr />
                 </div>
                 <div className={styles.content}>
                     <p className={styles.alias}><FaCaretRight /> {subheading}</p>
-                    <h1>{title}</h1>
+                    <h1>{name}</h1>
                 </div>
             </div>
         )
@@ -78,7 +62,14 @@ const EventListContainer = () => {
 
 
     const [selectedCat, setSelectedCat] = useState('all')
+    const [selectedSub, setSelectedSub] = useState("")
 
+
+    useEffect(() => {
+
+        document.getElementById('eventList').scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" })
+
+    }, [selectedCat, selectedSub])
 
     return (
         <div className = {styles.eventContainer}>
@@ -88,19 +79,19 @@ const EventListContainer = () => {
                         className={styles.dial}
                         id="dial"
                     >
-                        <div className={styles.lines}>
+                        {/* <div className={styles.lines}>
                             <div className={styles.longLine_d}></div>
                             <div className={styles.shortLine_d}></div>
                             <div className={styles.shortLine_d}></div>
                             <div className={styles.shortLine_d}></div>
-                        </div>
+                        </div> */}
                         {catogories.map((event, index) => {
                             return (
                                 <>
                                     <div
                                         key={event}
                                         className={styles.dial_item}
-                                        onClick={() => { setSelectedCat(event) }}
+                                        onClick={() => { setSelectedCat(event); setSelectedSub("") }}
                                     >
                                         {event == selectedCat &&
                                             <div className={styles.selected_sponsor}>
@@ -112,23 +103,60 @@ const EventListContainer = () => {
                                             {event}
                                         </div>
                                     </div>
-                                    {index !== (catogories.length-1) &&
-                                        <div className={styles.lines}>
-                                            <div className={styles.shortLine}></div>
-                                            <div className={styles.shortLine}></div>
-                                            <div className={styles.shortLine}></div>
-                                        </div>}
+                                    {event === selectedCat?
+                                        catogoriesSub[selectedCat].map(e => (
+                                            <motion.div className={e!==selectedSub?styles.dial_sub_item:styles.dial_sub_item_selected}
+                                                onClick={() => setSelectedSub(e)}
+
+                                                initial="hidden" animate={'visible'} variants={{
+                                                    hidden: {
+                    
+                                                        x: -20,
+                                                        opacity: 0
+                                                    },
+                                                    visible: {
+                    
+                                                        x: 0,
+                                                        opacity: 1,
+                                                        transition: {
+                                                            duration: 0.05,
+                                    
+                                                        }
+                                                    },
+                                                }}
+
+                                            >
+
+                                            {e == selectedSub &&
+                                                <div className={styles.selected_sponsor}>
+                                                    <FaCaretRight />
+                                                </div>
+                                            }
+
+                                                <div className={e===selectedSub?styles.shortLine:styles.shortLine_d}></div>
+                                                    <div className = {styles.textCon}>
+                                                        {e}
+                                                    </div>
+
+                                            </motion.div>
+                                        )):event !== 'all'?<div className={styles.lines}>
+                                        <div className={styles.shortLine_d}></div>
+                                        <div className={styles.shortLine_d}></div>
+                                        <div className={styles.shortLine_d}></div>
+                                        </div>:<></>
+                                    
+                                    }
                                 </>
 
                             )
                         }
                         )}
-                        <div className={styles.lines}>
+                        {/* <div className={styles.lines}>
                             <div className={styles.shortLine_d}></div>
                             <div className={styles.shortLine_d}></div>
                             <div className={styles.shortLine_d}></div>
                             <div className={styles.longLine_d}></div>
-                        </div>
+                        </div> */}
                     </motion.div>
                 </div>    
             </div>
@@ -149,16 +177,18 @@ const EventListContainer = () => {
 
             </div>
 
-            <div className = {styles.eventList}>
-                {eventsList && eventsList.filter(e => selectedCat==='all' || e.cat === selectedCat).map((event, index) => {
+            <div className = {styles.eventList} id="eventList">
+                {eventsList && eventsList.filter(e => selectedCat==='all' || 
+                    selectedSub === "" && e.cat.includes(selectedCat) ||
+                    e.cat.includes(selectedCat) && e.cat.includes(selectedSub)
+                        
+                ).map((event, index) => {
                     return (
-                        <Parallax speed={index&1?5:-5} key={event.title}>
                         <motion.div
                             key={event.title}
-                            
+
                             initial="hidden" animate={'visible'} variants={{
                                 hidden: {
-
                                     y: 50,
                                     opacity: 0
                                 },
@@ -167,22 +197,24 @@ const EventListContainer = () => {
                                     y: 0,
                                     opacity: 1,
                                     transition: {
-                                        delay: .2,
+                                        duration: 0.2
                                     }
                                 },
                             }}
                         >
+                            <Parallax speed={index&1?5:-5} key={event.key}>
                             
                             <ContainerCard
-                                image = {event.image}
+                                poster = {event.poster}
                                 alt = {event.alt}
+                                link={event.link}
                                 subheading = {event.subheading} 
-                                title = {event.title}
+                                name = {event.name}
                                 subtitles = {event.subtitles} 
                                 // onHoverAnimation = {event.onHoverAnimation} 
                             />
-                        </motion.div>
                         </Parallax>
+                        </motion.div>
                     )}
                 )}
             </div>
