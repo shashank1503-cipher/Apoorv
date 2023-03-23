@@ -9,7 +9,9 @@ const EventHeading = (props) => {
                 <h1>{props.title}</h1>
                 <p >{props.content}</p>
                 <div>
-                    <ChakraUIGhostButton colorScheme="purple" style={{marginTop:"5%"}}>Register here</ChakraUIGhostButton>
+                    <ChakraUIGhostButton colorScheme="purple" style={{ marginTop: "5%" }} onClick={() => {
+                        window.open(props.register)
+                    }}>Register here</ChakraUIGhostButton>
                 </div>
             </div>
             <div className={styles.image}>

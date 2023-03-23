@@ -77,6 +77,7 @@ export default function Event({ name, poster, description, register, date, time,
                     width: '100%',
                     // objectFit: 'cover',
                     top: 0,
+                    zIndex: -1,
                 }}
             />
             <EventHeading
@@ -84,6 +85,7 @@ export default function Event({ name, poster, description, register, date, time,
                 content={tag}
                 register={register}
                 eventPoster={poster}
+                link={register}
 
             ></EventHeading>
             <EventDetails
