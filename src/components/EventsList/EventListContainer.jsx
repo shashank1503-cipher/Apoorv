@@ -45,9 +45,9 @@ const EventListContainer = () => {
         const {poster, subheading, name, link} = props
 
         return (
-            <div className={styles.card} onClick={() => window.location.href = `/event/${link}`}>
-                <div className={`${styles.imageWrapper}`} >
-                    <Image src={poster} alt={'back image'} fill />
+            <div key={name} className={styles.card} onClick={() => window.location.href = `/event/${link}`}>
+                <div key={name} className={`${styles.imageWrapper}`} >
+                    <Image src={poster || '/he.png'} alt={'back image'} fill />
                 </div>
                 <div className={styles.divider}>
                     <hr />
@@ -79,17 +79,13 @@ const EventListContainer = () => {
                         className={styles.dial}
                         id="dial"
                     >
-                        {/* <div className={styles.lines}>
-                            <div className={styles.longLine_d}></div>
-                            <div className={styles.shortLine_d}></div>
-                            <div className={styles.shortLine_d}></div>
-                            <div className={styles.shortLine_d}></div>
-                        </div> */}
                         {catogories.map((event, index) => {
                             return (
-                                <>
+                                <div
+                                key={index}
+                                >
                                     <div
-                                        key={event}
+                                        
                                         className={styles.dial_item}
                                         onClick={() => { setSelectedCat(event); setSelectedSub("") }}
                                     >
@@ -104,10 +100,10 @@ const EventListContainer = () => {
                                         </div>
                                     </div>
                                     {event === selectedCat?
-                                        catogoriesSub[selectedCat].map(e => (
+                                        catogoriesSub[selectedCat].map((e,i) => (
                                             <motion.div className={e!==selectedSub?styles.dial_sub_item:styles.dial_sub_item_selected}
                                                 onClick={() => setSelectedSub(e)}
-
+                                                key={e}
                                                 initial="hidden" animate={'visible'} variants={{
                                                     hidden: {
                     
@@ -146,17 +142,11 @@ const EventListContainer = () => {
                                         </div>:<></>
                                     
                                     }
-                                </>
+                                </div>
 
                             )
                         }
                         )}
-                        {/* <div className={styles.lines}>
-                            <div className={styles.shortLine_d}></div>
-                            <div className={styles.shortLine_d}></div>
-                            <div className={styles.shortLine_d}></div>
-                            <div className={styles.longLine_d}></div>
-                        </div> */}
                     </motion.div>
                 </div>    
             </div>
@@ -185,8 +175,7 @@ const EventListContainer = () => {
                 ).map((event, index) => {
                     return (
                         <motion.div
-                            key={event.title}
-
+                            key={event.key}
                             initial="hidden" animate={'visible'} variants={{
                                 hidden: {
                                     y: 50,
