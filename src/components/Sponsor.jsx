@@ -6,106 +6,24 @@ import sponsorHandShake from '../assets/sponsors_handshake.svg'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { CollisionButton } from './Buttons/Button'
+import { Sponsors } from '@/data/Sponsors'
 
 const Sponsor = () => {
 
     const sponsors_class = {
-        1: 'PLATINUM',
-        2: 'GOLD',
-        3: 'SILVER',
-        4: 'BRONZE'
+        1: 'TITLE',
+        2: 'TECH',
+        3: 'EMERALD',
     }
 
-    const [sponsorsList, setSponsorsList] = useState({
-        1: {
-            'google': {
-                logo: '/static/logos_sponsors/logo1.svg',
-            },
-            'facebook': {
-                logo: '/static/logos_sponsors/logo1.svg',
-            },
-            'oracle': {
-                logo: '/static/logos_sponsors/logo2.svg'
-            },
-            'youtube': {
-                logo: '/static/logos_sponsors/logo2.svg'
-            },
+    const [sponsorsList, setSponsorsList] = useState(Sponsors)
 
-        },
-        2: {
-            'logo 1': {
-                logo: '/static/logos_sponsors/logo1.svg'
-            },
-            'logo 2': {
-                logo: '/static/logos_sponsors/logo2.svg'
-            },
-            'logo 3': {
-                logo: 'static/logos_sponsors/logo3.svg'
-            },
-            'logo 4': {
-                logo: 'static/logos_sponsors/logo4.svg'
-            }
-        },
-        3: {
-            'logo 5': {
-                logo: '/static/logos_sponsors/logo1.svg'
-            },
-            'logo 6': {
-                logo: '/static/logos_sponsors/logo2.svg'
-            },
-            'logo 7': {
-                logo: 'static/logos_sponsors/logo3.svg'
-            },
-            'logo 8': {
-                logo: 'static/logos_sponsors/logo4.svg'
-            }
-        },
-        4: {
-            'logo 11': {
-                logo: '/static/logos_sponsors/logo1.svg'
-            },
-            'logo 12': {
-                logo: '/static/logos_sponsors/logo2.svg'
-            },
-            'logo 13': {
-                logo: 'static/logos_sponsors/logo3.svg'
-            },
-            'logo 14': {
-                logo: 'static/logos_sponsors/logo4.svg'
-            }
-        }
-    })
+    useEffect(() => {
+        console.log(Sponsors)
+    }, [sponsorsList])
 
     const [selectedSponsor, setSelectedSponsor] = useState(1)
 
-
-    // const detectTrackpad = () => {
-
-
-
-    // };
-
-    // const handleWheel = (e) => {
-
-    //     if(detectTrackpad()) return true
-
-    //     e.preventDefault()
-    //     console.log(e.deltaY)
-    //     if(e.deltaY > 1)
-    //     setSelectedSponsor(selectedSponsor<4?selectedSponsor+1:1)
-    //     else
-    //     setSelectedSponsor(selectedSponsor>1?selectedSponsor-1:4)
-    // }
-
-    // useEffect(() => {
-
-    //     document.getElementById('dial')?.addEventListener('wheel',handleWheel)
-
-    //     return () => {
-    //         document.getElementById('dial')?.removeEventListener('wheel', handleWheel)
-    //     }
-
-    // })
 
     return (
         <div className={styles.main_container} id="sponsors" >
@@ -163,8 +81,9 @@ const Sponsor = () => {
                         <div className={styles.shortLine_d}></div>
                         <div className={styles.shortLine_d}></div>
                     </div>
-                    {sponsorsList && Object.keys(sponsorsList).map((sponsor) => {
+                    {sponsorsList && Object.keys(sponsors_class).map((sponsor) => {
                         console.log("working...")
+                        console.log(sponsor)
                         return (
                             <>
                                 <div
@@ -182,7 +101,7 @@ const Sponsor = () => {
                                         {sponsors_class[sponsor]}
                                     </div>
                                 </div>
-                                {sponsor !== "4" &&
+                                {sponsor !== "3" &&
                                     <div className={styles.lines}>
                                         <div className={styles.shortLine}></div>
                                         <div className={styles.shortLine}></div>
@@ -207,19 +126,11 @@ const Sponsor = () => {
                     className={styles.sponsors}
                 >
                     {sponsorsList && sponsorsList[selectedSponsor] && Object.keys(sponsorsList[selectedSponsor])?.map((sponsor, i) => {
-
-                        // const ratts = {
-                        //     0: { x: 1, y: 1 },
-                        //     1: { x: -1, y: 1 },
-                        //     2: { x: 1, y: -1 },
-                        //     3: { x: -1, y: -1 },
-                        // }
-                        // console.log(sponsor, i)
-                        // console.log(sponsor, i)
+                        console.log(sponsor)
                         return (
                             <motion.div
 
-                                key={sponsor}
+                                key={sponsorsList[selectedSponsor][sponsor].name}
                                 className={styles.sponsor_item}
                                 initial="hidden" animate={'visible'} variants={{
                                     hidden: {
@@ -238,14 +149,20 @@ const Sponsor = () => {
                                 }}
                             >
 
+                                
+                                <div className={styles.imageWrapper_sponsors}>
 
-                                <img className={styles.sponsor_logo}
-                                    src={sponsorsList[selectedSponsor][sponsor]?.logo}
-                                />
+                                    <Image
+                                        src={sponsorsList[selectedSponsor][sponsor]?.logo || sponsorHandShake}
+                                        className={styles.imageSponsors}
+                                        fill={'contain'}
+                                        alt='Logo Not Available'
+                                        />
+                                </div>
                                 <div
                                     className={styles.sponsor_name}
                                 >
-                                    {sponsor.toUpperCase()}
+                                    {sponsorsList[selectedSponsor][sponsor].name.toUpperCase()}
                                 </div>
 
                             </motion.div>

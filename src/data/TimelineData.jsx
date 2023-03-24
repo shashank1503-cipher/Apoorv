@@ -5,14 +5,14 @@ const timelineData = [{
         {
             id: 1,
             name: 'Opening Ceremony',
-            date: '6th March 2023',
+            date: '6th April 2023',
             time: '9:30 AM',
             details: 'A Celebration of Tech and Art - Join us for Opening Ceremony'
         },
         {
             id: 2,
             name: 'Hackoona Matata',
-            date: '6th March 2023',
+            date: '6th April 2023',
             time: '11:00 AM',
             details: "72-Hours of Non-Stop Innovation and Coding",
             link:'hackoona-matata'
@@ -20,7 +20,7 @@ const timelineData = [{
         {
             id: 3,
             name: 'Blizzart',
-            date: '6th March 2023',
+            date: '6th April 2023',
             time: '11:30 AM',
             details: 'Experience the Artistic Adventure of a Lifetime at Blizzart',
             link: "blizzart",
@@ -28,7 +28,7 @@ const timelineData = [{
         {
             id: 4,
             name: 'MUN',
-            date: '6th March 2023',
+            date: '6th April 2023',
             time: '2:00 PM',
             details: "Debate, Deliberate, and Rule the MUNiverse at Apoorv's MUN",
             link: "MUN",
@@ -36,7 +36,7 @@ const timelineData = [{
         {
             id: 5,
             name: 'Decentra',
-            date: '6th March 2023',
+            date: '6th April 2023',
             time: '2:00 PM',
             details: "Unleash Your Blockchain Wizardry at Decentra",
             link: "decentra",
@@ -44,7 +44,7 @@ const timelineData = [{
         {
             id: 6,
             name: 'AI Jam',
-            date: '6th March 2023',
+            date: '6th April 2023',
             time: '2:30 PM',
             details: "Get Ready to Jam with AI - The Ultimate Music Challenge",
             link: "ai-jam",
@@ -52,7 +52,7 @@ const timelineData = [{
         {
             id: 7,
             name: 'Pixel Perfect',
-            date: '6th March 2023',
+            date: '6th April 2023',
             time: '3:30 PM',
             details: "The Platform to Showcase Your Designing Prowess",
             link: "pixel-perfect",
@@ -60,7 +60,7 @@ const timelineData = [{
         {
             id: 8,
             name: 'Life-o-Mate',
-            date: '6th March 2023',
+            date: '6th April 2023',
             time: '4:00 PM',
             details: "Innovate the Future of Lifestyle Automation at Life-o-Mate",
             link: "Life-O-Mate",
@@ -68,7 +68,7 @@ const timelineData = [{
         {
             id: 9,
             name: 'GameVita',
-            date: '6th March 2023',
+            date: '6th April 2023',
             time: '5:00 PM',
             details: "Enter the Virtual World at GameVita"
 
@@ -76,7 +76,7 @@ const timelineData = [{
         {
             id: 10,
             name: 'Pulse and The Beat',
-            date: '6th March 2023',
+            date: '6th April 2023',
             time: '5:30 PM',
             details: "Let Your Feet Do the Talking at Pulse and The Beat",
             link: "pulse-and-the-beat",
@@ -84,7 +84,7 @@ const timelineData = [{
         {
             id: 11,
             name: 'Beyond the harmony',
-            date: '6th March 2023',
+            date: '6th April 2023',
             time: '7:00 PM',
             details: "Step Up to the Mic and Let Your Voice Shine ",
             link: "beyond-the-harmony",
@@ -92,7 +92,7 @@ const timelineData = [{
         {
             id: 12,
             name: 'E-Lafda (Valorant)',
-            date: '6th March 2023',
+            date: '6th April 2023',
             time: '9:00 PM',
             details: "Rebibe Me Jett",
             link: "valorant",
@@ -100,7 +100,7 @@ const timelineData = [{
         {
             id: 13,
             name: 'E-Lafda (CODM)',
-            date: '6th March 2023',
+            date: '6th April 2023',
             time: '9:00 PM',
             details: "PUBG is for noobs",
             link: "CODM",
@@ -114,7 +114,7 @@ const timelineData = [{
         {
             id: 14,
             name: 'Bash or Crash',
-            date: '7th March 2023',
+            date: '7th April 2023',
             time: '12:00 PM',
             details: "Are You Ready to Bash or Crash? Join the Shell Scripting Showdown Now!",
             link: "bash-or-crash",
@@ -122,7 +122,7 @@ const timelineData = [{
         {
             id: 15,
             name: 'Project: Aятємis',
-            date: '7th March 2023',
+            date: '7th April 2023',
             time: '3:00 PM',
             details: "Be the next Hardy Boys!",
             link: "project-artemix",
@@ -130,7 +130,7 @@ const timelineData = [{
         {
             id: 16,
             name: 'CodeSprint',
-            date: '7th March 2023',
+            date: '7th April 2023',
             time: '4:00 PM',
             details: "Code Like a Pro at CodeSprint",
             link: "codesprint",
@@ -138,7 +138,7 @@ const timelineData = [{
         {
             id: 17,
             name: "Strings and keys",
-            date: '7th March 2023',
+            date: '7th April 2023',
             time: '5:30 PM',
             details: "Get Ready to Strike a Chord ",
             link: "strings-and-keys",
@@ -146,7 +146,7 @@ const timelineData = [{
         {
             id: 18,
             name: "Solo Sizzle",
-            date: '7th March 2023',
+            date: '7th April 2023',
             time: '6:30 PM',
             details: "Light Up the Dance Floor",
             link: "solo-sizzle",
@@ -160,7 +160,7 @@ const timelineData = [{
         {
             id: 19,
             name: 'Face Off',
-            date: '8th March 2023',
+            date: '8th April 2023',
             time: '10:00 AM',
             details: 'Creating Stunning Masterpieces One Face at a Time',
             link: "face-off",
@@ -168,7 +168,7 @@ const timelineData = [{
         {
             id: 20,
             name: 'Commit The Flag',
-            date: '8th March 2023',
+            date: '8th April 2023',
             time: '1:00 PM',
             details: 'The Ultimate Capture the Flag Event',
             link: "commit-the-flag",
@@ -176,7 +176,7 @@ const timelineData = [{
         {
             id: 21,
             name: 'Fake it Till you Make it',
-            date: '8th March 2023',
+            date: '8th April 2023',
             time: '4:15 PM',
             details: 'A Solo Monoact Competition',
             link: "fake-it-till-you-make-it",
@@ -185,7 +185,7 @@ const timelineData = [{
         {
             id: 22,
             name: 'Project: Aятємis',
-            date: '8th March 2023',
+            date: '8th April 2023',
             time: '6:15 PM',
             details: "Be the next Hardy Boys!",
             link: "project-artemix",
@@ -193,7 +193,7 @@ const timelineData = [{
         {
             id: 23,
             name: 'Battle of Bands',
-            date: '8th March 2023',
+            date: '8th April 2023',
             time: '7:00 PM',
             details: "A Resplendent Musical Band Event",
             link: "battle-of-bands",

@@ -49,7 +49,7 @@ const Hero = () => {
 
         const mx = e.screenX;
         const my = e.screenY;
-        console.log(e)
+        // console.log(e)
 
         const image = document.getElementById('img');
         adjustImage(image, mx, my)
