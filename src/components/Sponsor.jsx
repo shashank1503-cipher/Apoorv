@@ -58,7 +58,7 @@ const Sponsor = () => {
                     An astounding prize pool worth
                 </div>
                 <div className={styles.prizes_heading}>
-                    <h1>Rs. 1,00,000+</h1>
+                    <h1>Rs. 2,50,000+</h1>
                 </div>
                 <div className={styles.prizes_text}>
                     In addition to exciting swags and goodies from .

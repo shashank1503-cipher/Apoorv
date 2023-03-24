@@ -1,4 +1,4 @@
-import { mentors } from "@/data/team";
+import { design, developers, mentors } from "@/data/team";
 import { Parallax } from "react-scroll-parallax";
 import styles from "../styles/Teams.module.css";
 import TeamCard from "./Cards/TeamCard";
@@ -41,14 +41,14 @@ const Teams = (props) => {
 						</Parallax>)
 				})}</div>
 
-				{/* <h2 className={styles.team_maintext + " " + styles.team_subtitle}>
+				<h2 className={styles.team_maintext + " " + styles.team_subtitle}>
 					The Developers
 				</h2>
 				<p className={styles.team_subtext + " " + styles.team_stitletext}>
 					Everything you see here was painstakingly written by hand, in React by
 					our developers.
 				</p>
-				<div className={styles.cardWrapper}>{mentors.map((mentor, index) => {
+				<div className={styles.cardWrapper}>{developers.map((mentor, index) => {
 
 					return (
 						<Parallax key={index} speed={index & 1 ? 5 : -5}>
@@ -56,7 +56,7 @@ const Teams = (props) => {
 						</Parallax>)
 				})}</div>
 
-				<h2 className={styles.team_maintext + " " + styles.team_subtitle}>
+				{/* <h2 className={styles.team_maintext + " " + styles.team_subtitle}>
 					Sponsorship Outreach Team
 				</h2>
 				<p className={styles.team_subtext + " " + styles.team_stitletext}>
@@ -68,9 +68,9 @@ const Teams = (props) => {
 						<Parallax key={index} speed={index & 1 ? 5 : -5}>
 							<TeamCard key={index} image={mentor.image} gif={mentor.gif} alt={mentor.name} subheading={mentor.club} title={mentor.name} socials={mentor.socials} onHoverAnimation={"scale"} />
 						</Parallax>)
-				})}</div>
+				})}</div> */}
 
-				<h2 className={styles.team_maintext + " " + styles.team_subtitle}>
+				{/* <h2 className={styles.team_maintext + " " + styles.team_subtitle}>
 					The Event Managers
 				</h2>
 				<p className={styles.team_subtext + " " + styles.team_stitletext}>
@@ -84,6 +84,21 @@ const Teams = (props) => {
 							<TeamCard key={index} image={mentor.image} gif={mentor.gif} alt={mentor.name} subheading={mentor.club} title={mentor.name} socials={mentor.socials} onHoverAnimation={"scale"} />
 						</Parallax>)
 				})}</div> */}
+
+				<h2 className={styles.team_maintext + " " + styles.team_subtitle}>
+					The Design Team				
+				</h2>
+				<p className={styles.team_subtext + " " + styles.team_stitletext}>
+					People who make sure that the fest&apos;s branding is on point. From the logo to the website to the posters, they are the ones who make it happen.
+				</p>
+				<div className={styles.cardWrapper}>{design.map((mentor, index) => {
+
+					return (
+						<Parallax key={index} speed={index & 1 ? 5 : -5}>
+							<TeamCard key={index} image={mentor.image} gif={mentor.gif} alt={mentor.name} subheading={mentor.club} title={mentor.name} socials={mentor.socials} onHoverAnimation={"scale"} />
+						</Parallax>)
+				})}</div>
+
 
 				<div className={styles.more_coming_in}>
 					<p className={styles.team_subtext + " " + styles.team_stitletext}>

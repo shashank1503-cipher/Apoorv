@@ -19,9 +19,7 @@ const TeamCard = (props) => {
     return (
         <div className={styles.card}>
             <div className={`${styles.imageWrapper} ${onHoverAnimation === "scale" ? styles.animationScale : ''}`} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} >
-                {!isHovering ? <Image src={image} alt={alt} fill /> : <Image src={gif} alt={alt} fill />}
-
-
+                {gif ? !isHovering ? <Image src={image} alt={alt} fill /> : <Image src={gif} alt={alt} fill /> : <Image src={image} alt={alt} fill />}
             </div>
 
             <div className={styles.divider}>

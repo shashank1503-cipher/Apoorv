@@ -17,12 +17,12 @@ const ContainerCard = (props) => {
             <div className={styles.content}>
                 <p className={styles.alias}><FaCaretRight /> {subheading}</p>
                 <h1>{title}</h1>
-                {/* {subtitles.map((subtitle, index) => {
+                {subtitles.map((subtitle, index) => {
                     return (
                         <p key={index}>{subtitle}</p>
                     )
                 }
-                )} */}
+                )}
             </div>
         </div>
 
