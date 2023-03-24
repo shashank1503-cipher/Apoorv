@@ -89,7 +89,7 @@ const Teams = (props) => {
 					The Design Team				
 				</h2>
 				<p className={styles.team_subtext + " " + styles.team_stitletext}>
-					People who make sure that the fest's branding is on point. From the logo to the website to the posters, they are the ones who make it happen.
+					People who make sure that the fest&apos;s branding is on point. From the logo to the website to the posters, they are the ones who make it happen.
 				</p>
 				<div className={styles.cardWrapper}>{design.map((mentor, index) => {
 
