@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import styles from "../../styles/EventsListContainer.module.css"
 import { FaCaretRight } from "react-icons/fa";
 import { motion } from 'framer-motion'
@@ -64,10 +64,21 @@ const EventListContainer = () => {
     const [selectedCat, setSelectedCat] = useState('all')
     const [selectedSub, setSelectedSub] = useState("")
 
+    const firstUpdate = useRef(true)
+
+    useLayoutEffect(() => {
+        if(firstUpdate.current){
+            firstUpdate.current = false;
+            return;
+        }
+
+        document.getElementById('eventList').scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" })
+
+    })
 
     useEffect(() => {
 
-        document.getElementById('eventList').scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" })
+        
 
     }, [selectedCat, selectedSub])
 
