@@ -32,7 +32,7 @@ const mentors = [
 		club: "Cultural Club",
 		image:
 			"http://res.cloudinary.com/dpjf6btln/image/upload/c_crop,h_852/v1679648408/IMG_20230323_190951_-_ARUNDHATI_J_KARTHA_-IIITK_s5ztcr.jpg",
-		// gif: "https://media.tenor.com/1ho4keLXIAkAAAAC/hasbulla-m4kktruck.gif",
+		gif: "https://media.tenor.com/oYJPGjJmkB4AAAAC/kid-fabulous.gif",
 		socials: {
 			instagram: "https://www.instagram.com/athi_j_kartha/",
 		}

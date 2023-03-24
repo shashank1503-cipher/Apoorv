@@ -204,7 +204,7 @@ const events = [
                 name: 'Kanak',
                 phoneNumber: '8690049955',
                 email: "",
-                image: "https://res.cloudinary.com/dpjf6btln/image/upload/v1679652308/Kanak_Mockbuster_sdxup8.jpg"
+                image: "http://res.cloudinary.com/dpjf6btln/image/upload/v1679665521/Kanak_Mockbuster_sdxup8.jpg"
             }
         ],
         registration: "https://unstop.com/events/mockbuster-apoorv-iiit-kottayam-648975",
