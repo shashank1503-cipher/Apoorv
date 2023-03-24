@@ -50,7 +50,7 @@ const TimelineNew = () => {
             chapterHeights.push(chapterHeight + prevChapterHeight)
         }
 
-        
+
 
         for (let i = 0; i < 3; i++) {
             let chapterLength = chapterHeights[i] + wrapperTopY;
@@ -186,7 +186,7 @@ const TimelineNew = () => {
                                 {currentEvent.id === 1 && <ItemName />}
                                 {totalEventsArray.map((item, index) => {
                                     return (
-                                        <ItemName key={item.id} name={item.name} day={1} index={index + 1} isCurrent={currentEvent.id === item.id} isPrevious={previousEvent?.id === item.id} isNext={nextEvent?.id === item.id} isAnimated={true} isFirst={currentEvent.id === 1} />
+                                        <ItemName key={item.id} name={item.name} link={item.link} day={1} index={index + 1} isCurrent={currentEvent.id === item.id} isPrevious={previousEvent?.id === item.id} isNext={nextEvent?.id === item.id} isAnimated={true} isFirst={currentEvent.id === 1} />
                                     )
                                 }
                                 )}

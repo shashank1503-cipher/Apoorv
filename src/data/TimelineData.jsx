@@ -7,91 +7,103 @@ const timelineData = [{
             name: 'Opening Ceremony',
             date: '6th March 2023',
             time: '9:30 AM',
-            details: 'A place where stellar tech meets the enlightenment of art, where we celebrate the quantum leap of computers and how classical music is unbeatable till date.'
+            details: 'A Celebration of Tech and Art - Join us for Opening Ceremony'
         },
         {
             id: 2,
             name: 'Hackoona Matata',
             date: '6th March 2023',
             time: '11:00 AM',
-            details: "To all the aspiring coders out there - Suit up and create something remarkable! Join us for an epic  72-hour long open hackathon.  Let your creativity soar and bring your wildest ideas to life. With no limitations on themes or approaches, you'll have the freedom to push boundaries and create something trulyremarkable. Ideate, Innovate, Implement and create something truly groundbreaking.",
+            details: "72-Hours of Non-Stop Innovation and Coding",
+            link:'hackoona-matata'
         },
         {
             id: 3,
             name: 'Blizzart',
             date: '6th March 2023',
             time: '11:30 AM',
-            details: 'Can you paint your dreams? Sketch your aspirations? With colors as vivid as a pulsing supernova and brushstrokes as dynamic as a light-speed chase while exploring the depths of your imagination? Grab your pens and brushes to put forth your astounding skills to join us on this artistic adventure and stand a chance to win big!'
+            details: 'Experience the Artistic Adventure of a Lifetime at Blizzart',
+            link: "blizzart",
         },
         {
             id: 4,
             name: 'MUN',
             date: '6th March 2023',
             time: '2:00 PM',
-            details: "Ready to show off your negotiation skills and take on the world? Then join us at Apoorv's MUN competition, where everyone from MUN masterminds to first-timers is welcome to participate! Whether you're a seasoned diplomatic pro or simply eager to learn, we've got a place for you on our team. Come meet new people, debate hot-button issues, and strut your stuff at this unforgettable event. Don't miss out on your chance to rule the MUNiverse!"
+            details: "Debate, Deliberate, and Rule the MUNiverse at Apoorv's MUN",
+            link: "MUN",
         },
         {
             id: 5,
             name: 'Decentra',
             date: '6th March 2023',
             time: '2:00 PM',
-            details: "To all the crypto wizards and coding magicians ,do you have what  it takes to be the block-star of the decentralized world? This is the platform for you to showcase your skills and create the most innovative and efficient decentralized cloned app. Demonstrate your  proficiency in web 3.0 world by taking on the challenge of converting a traditional web application into a web 3.0 application. So, put on your blockchain boots and let's get coding!"
+            details: "Unleash Your Blockchain Wizardry at Decentra",
+            link: "decentra",
         },
         {
             id: 6,
             name: 'AI Jam',
             date: '6th March 2023',
             time: '2:30 PM',
-            details: "Are you ready to use the power of AI to create a music sensation like never before? AI Jam is a one-of-a-kind contest where you will use deep learning models to compose music, write lyrics, and produce a stunning music video for a given artist. With the help of AI, you can explore new sounds and styles that push the boundaries of what's possible in music. So put your creative skills to the test, and get ready to take the music industry by storm with AI Jam!"
+            details: "Get Ready to Jam with AI - The Ultimate Music Challenge",
+            link: "ai-jam",
         },
         {
             id: 7,
             name: 'Pixel Perfect',
             date: '6th March 2023',
             time: '3:30 PM',
-            details: "Are you someone who can has an eye for design and can create alluring and engaging websites? Then this is the perfect opportunity for you!! Apoorva 23’ is THE quintessential platform for you as a young web developer to brandish your designing prowess. Convert wireframes to a website that's aesthetically-pleasing, interactive and solves all your problems (of course ;)! )"
+            details: "The Platform to Showcase Your Designing Prowess",
+            link: "pixel-perfect",
         },
         {
             id: 8,
             name: 'Life-o-Mate',
             date: '6th March 2023',
             time: '4:00 PM',
-            details: "Get ready to ignite your passion for Electronics and join our fun-filled hackathon! You'll explore the endless possibilities of lifestyle automation using the power of microprocessors and microcontrollers! From smart home devices to wearable technology, you'll have the chance to innovate and create the next generation of personalized experiences that seamlessly integrate into our daily lives."
+            details: "Innovate the Future of Lifestyle Automation at Life-o-Mate",
+            link: "Life-O-Mate",
         },
         {
             id: 9,
             name: 'GameVita',
             date: '6th March 2023',
             time: '5:00 PM',
-            details: "Consider yourself a pro gamer that likes to dabble in its making as well? Got some mad game development skills that you can't wait to exhibit? Well, Retroopolis is just the event for you! Build your own virtual world; Your World, Your Rules!"
+            details: "Enter the Virtual World at GameVita"
+
         },
         {
             id: 10,
             name: 'Pulse and The Beat',
             date: '6th March 2023',
             time: '5:30 PM',
-            details: "Consider yourself a pro gamer that likes to dabble in its making as well? Got some mad game development skills that you can't wait to exhibit? Well, Retroopolis is just the event for you! Build your own virtual world; Your World, Your Rules!"
+            details: "Let Your Feet Do the Talking at Pulse and The Beat",
+            link: "pulse-and-the-beat",
         },
         {
             id: 11,
             name: 'Beyond the harmony',
             date: '6th March 2023',
             time: '7:00 PM',
-            details: "Consider yourself a pro gamer that likes to dabble in its making as well? Got some mad game development skills that you can't wait to exhibit? Well, Retroopolis is just the event for you! Build your own virtual world; Your World, Your Rules!"
+            details: "Step Up to the Mic and Let Your Voice Shine ",
+            link: "beyond-the-harmony",
         },
         {
             id: 12,
             name: 'E-Lafda (Valorant)',
             date: '6th March 2023',
             time: '9:00 PM',
-            details: "Get ready to enter the world of high stakes and epic battles at the Valorant Gaming Event! Get your squad together or fly solo and show us what you're made of! Join us at the Valorant Gaming Event and experience the adrenaline rush of intense battles and epic victories. And hey bonus point, You will get the ultimate bragging rights as the best Valorant player in the college(and a lot of money ;)) "
+            details: "Rebibe Me Jett",
+            link: "valorant",
         },
         {
             id: 13,
             name: 'E-Lafda (CODM)',
             date: '6th March 2023',
             time: '9:00 PM',
-            details: "Rally your troops and get your game face on, it's time to show the world what you are made of! Prepare for an epic battle in our CODM event at Apoorv Fest! Doesn't matter if you're a sharpshooter or a complete rookie, we've got the perfect arena for you to unleash your inner soldier and dominate the competition."
+            details: "PUBG is for noobs",
+            link: "CODM",
         },
     ]
 },
@@ -104,35 +116,40 @@ const timelineData = [{
             name: 'Bash or Crash',
             date: '7th March 2023',
             time: '12:00 PM',
-            details: "Get ready for Apoorv’s very own Shell Shock Scripting Showdown! Are you a scripting guru, a master of the command line? If so, we challenge you to compete in a battle of Bash shell scripting. We're not looking for just any script; we want your most creative and efficient code, something that will make the T-1000 look like a teddy bear. Put on your coding hats, prime your terminals, and get ready to blow the judges' circuits."
+            details: "Are You Ready to Bash or Crash? Join the Shell Scripting Showdown Now!",
+            link: "bash-or-crash",
         },
         {
             id: 15,
             name: 'Project: Aятємis',
             date: '7th March 2023',
             time: '3:00 PM',
-            details: "Ahoy matey, do you want to set sail on a thrilling adventure to find hidden treasure? Our Treasure Hunt will have you digging deep and racking your brain. Work through riddles, coding quests, online challenges and visual puzzles to find the path in this engaging hunt to find your treasure and win big!"
+            details: "Be the next Hardy Boys!",
+            link: "project-artemix",
         },
         {
             id: 16,
             name: 'CodeSprint',
             date: '7th March 2023',
             time: '4:00 PM',
-            details: "Starters 85 is here! Time to boost your skills..What did you expect – another CodeChef contest headline? CodeSprint is here as a breath of fresh air, bringing newer, better problems, and tougher competitions to immerse yourself in! Be it using Python to Caesar Cipher a string, or using C++ vectorized SIMD intrinsics to turbo-accelerate the same, we have cooked something up for the coder in everybody."
+            details: "Code Like a Pro at CodeSprint",
+            link: "codesprint",
         },
         {
             id: 17,
             name: "Strings and keys",
             date: '7th March 2023',
             time: '5:30 PM',
-            details: "Dust off those violins, tune those guitars, and get those drumsticks ready, cause it's time to hit the big stage! Here is your chance to dazzle as you strike a chord with the crowd and pluck at the heartstrings of the judges.We're drumming up some excitement for this competition, and we can't wait to see your beats drop!"
+            details: "Get Ready to Strike a Chord ",
+            link: "strings-and-keys",
         },
         {
             id: 18,
             name: "Solo Sizzle",
             date: '7th March 2023',
             time: '6:30 PM',
-            details: "Are you ready to sizzle, dazzle, and groove your way to the top? Put on your dancing shoes because we are here with Solo Sizzle. Whether you're a salsa sensation, a tango titan, or a hip-hop hottie, flex your moves to steal the spotlight with All the classical connoisseurs and a beginner ballerinas, get ready to be crowned the dance champion!"
+            details: "Light Up the Dance Floor",
+            link: "solo-sizzle",
         },
     ]
 },
@@ -145,36 +162,41 @@ const timelineData = [{
             name: 'Face Off',
             date: '8th March 2023',
             time: '10:00 AM',
-            details: 'Unleash your inner Picasso and get ready to paint the town red at our face painting competition! With an abundance of colors and a ton of fun, this is the perfect opportunity to let your imagination run wild and and transform beautiful faces into stunning works of art. Here is to turning heads with your stunning designs!'
+            details: 'Creating Stunning Masterpieces One Face at a Time',
+            link: "face-off",
         },
         {
             id: 20,
             name: 'Commit The Flag',
             date: '8th March 2023',
             time: '1:00 PM',
-            details: 'To create the best lock, know what breaks the good ones around./n /nCompete for the final flag in a labyrinth of information with 6 rounds, ranging from simple ciphers to intricate reverse engineering puzzles.'
+            details: 'The Ultimate Capture the Flag Event',
+            link: "commit-the-flag",
         },
         {
             id: 21,
             name: 'Fake it Till you Make it',
             date: '8th March 2023',
             time: '4:15 PM',
-            details: 'Ready to put "fake it till you make it" to the test? Dazzle the audience with your range and versatility, and leave them in awe of your performance.Whether you want to be a villain or a hero, a shy wallflower or a confident superstar, this is your chance to fake it till you make it and take on a new persona.'
-            
+            details: 'A Solo Monoact Competition',
+            link: "fake-it-till-you-make-it",
+
         },
         {
             id: 22,
             name: 'Project: Aятємis',
             date: '8th March 2023',
             time: '6:15 PM',
-            details: "Ahoy matey, do you want to set sail on a thrilling adventure to find hidden treasure? Our Treasure Hunt will have you digging deep and racking your brain. Work through riddles, coding quests, online challenges and visual puzzles to find the path in this engaging hunt to find your treasure and win big!"
+            details: "Be the next Hardy Boys!",
+            link: "project-artemix",
         },
         {
             id: 23,
             name: 'Battle of Bands',
             date: '8th March 2023',
             time: '7:00 PM',
-            details: "Get ready to rock the stage and bring down the house in our epic Battle of the Bands! Show off your band's musical chops and stage presence as you compete against some of the most talented up-and-coming artists around.So tune up your instruments, get in the zone, and let the music do the talking as you battle it out!"
+            details: "A Resplendent Musical Band Event",
+            link: "battle-of-bands",
         },
     ]
 },

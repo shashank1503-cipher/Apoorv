@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import { useDetectScroll } from '@smakss/react-scroll-direction'
 
 
-const ItemName = ({ name, isAnimated, isCurrent, isPrevious, isNext, }) => {
+const ItemName = ({ name, isAnimated, isCurrent, isPrevious, isNext, link }) => {
 
     const [scrollDir] = useDetectScroll({})
     let isVisible = false
@@ -47,7 +47,11 @@ const ItemName = ({ name, isAnimated, isCurrent, isPrevious, isNext, }) => {
 
 
     return (<>
-        {isAnimated ? isVisible ? <motion.div className={styles.content} initial={{ scale: initialScale, opacity: initialOpacity, y: initialTransformX }} animate={{ scale: scale, opacity: opacity, y: transformX }} transition={{ ease: "easeOut", duration: .2 }}>
+        {isAnimated ? isVisible ? <motion.div className={styles.content} onClick={() => {
+            if (link) {
+                window.location.href = `/event/${link}`
+            }
+        }} initial={{ scale: initialScale, opacity: initialOpacity, y: initialTransformX }} animate={{ scale: scale, opacity: opacity, y: transformX }} transition={{ ease: "easeOut", duration: .2 }}>
             <div className={styles.eventName}>
                 {name}
             </div>

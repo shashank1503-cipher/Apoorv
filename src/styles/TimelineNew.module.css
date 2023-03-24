@@ -150,6 +150,8 @@
     padding: 0 1rem;
     /* margin: 1.5rem auto; */
     font-family: var(--brand-body-font);
+    
+    
 }
 
 .wrapper {
@@ -224,51 +226,17 @@
 
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1034px) {
     .middle .title {
         font-size: 3.25rem;
     }
 
 }
 
-@media (max-width: 800px) {
-    .badge {
-        height: 6rem;
-    }
-
-    .imageWrapper {
-        width: 10rem;
-        height: 6.66rem;
-    }
-
-    .title {
-        font-size: 3.5rem;
-    }
-
-    .middle .title {
-        font-size: 2.75rem;
-    }
-
-    .content {
-        font-size: 1.25rem;
-    }
-
-    .eventDetails {
-        font-size: 1rem;
-    }
-
-    .sideParagraph {
-        margin: 1rem auto;
-    }
-
-    .date {
-        margin-top: 0.25rem;
-    }
-
-}
 
 
-@media (max-width:750px) {
+
+@media (max-width:800px) {
     .badge {
         height: 4rem;
     }
