@@ -135,7 +135,7 @@ const developers = [
 		name: "Omkar Khatale",
 		club: "Tech Club",
 		image:
-			"https://res.cloudinary.com/dq1hdtycj/image/upload/v1679651573/IMG-20220127-WA0010_-_OMKAR_SANJAY_KHATALE_-IIITK_ofxpvn.jpg",
+			"https://res.cloudinary.com/dpjf6btln/image/upload/v1679672052/Screenshot_20230324-204304_Gallery_xp8z02.jpg",
 		gif: "https://media.tenor.com/OPqwQ0d39MgAAAAC/faizal-khan.gif",
 		socials: {
 			linkedin: "https://www.linkedin.com/in/omkar-khatale-25695a258/",
@@ -155,7 +155,7 @@ const developers = [
 	},
 	{
 		key: 6,
-		name: "Bhujbal Nishant",
+		name: "Nishant Bhujbal",
 		club: "Tech Club",
 		image: "https://res.cloudinary.com/dpjf6btln/image/upload/v1679651705/IMG20221024222740_hz654q.jpg",
 		gif: "https://res.cloudinary.com/dpjf6btln/image/upload/v1679655225/asd_efnrdo.gif",

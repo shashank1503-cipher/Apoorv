@@ -53,7 +53,7 @@ const events = [
         organisers: [
             {
                 key: 1,
-                name: "Bhujbal Nishant",
+                name: "Nishant Bhujbal",
                 phoneNumber: "9307099632",
                 email: "",
                 image: "https://res.cloudinary.com/dpjf6btln/image/upload/v1679651705/IMG20221024222740_hz654q.jpg"
