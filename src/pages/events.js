@@ -3,6 +3,7 @@ import EventIntro from "@/components/EventsList/EventIntro";
 import EventListContainer from "@/components/EventsList/EventListContainer";
 import Footer from "@/components/Footer";
 import { ParallaxProvider } from 'react-scroll-parallax';
+import Head from "next/head";
 
 
 const Events = () => {
