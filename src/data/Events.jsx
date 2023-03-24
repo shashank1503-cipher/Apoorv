@@ -13,8 +13,8 @@ const events = [
             {}
         ],
         registration: "https://unstop.com/festival/apoorv-indian-institute-of-information-technology-iiit-kottayam-118308",
-        date: "TBD",
-        time: "TBD",
+        date: "Date TBD",
+        time: "Time TBD",
         tag: ""
 
     },
@@ -37,8 +37,8 @@ const events = [
             }
         ],
         registration: "https://unstop.com/events/beyond-the-harmony-western-and-classical-apoorv-iiit-kottayam-648770",
-        date: "TBD",
-        time: "TBD",
+        date: "Date TBD",
+        time: "Time TBD",
         tag: ""
     },
     {
@@ -68,8 +68,8 @@ const events = [
             },
         ],
         registration: "https://unstop.com/events/battle-of-bands-apoorv-iiit-kottayam-649003",
-        date: "TBD",
-        time: "TBD",
+        date: "Date TBD",
+        time: "Time TBD",
         tag: ""
     },
     {
@@ -92,8 +92,8 @@ const events = [
 
         ],
         registration: "https://unstop.com/festival/apoorv-indian-institute-of-information-technology-iiit-kottayam-118308",
-        date: "TBD",
-        time: "TBD",
+        date: "Date TBD",
+        time: "Time TBD",
         tag: ""
     },
     {
@@ -116,8 +116,8 @@ const events = [
             }
         ],
         registration: "https://unstop.com/festival/apoorv-indian-institute-of-information-technology-iiit-kottayam-118308",
-        date: "TBD",
-        time: "TBD",
+        date: "Date TBD",
+        time: "Time TBD",
         tag: ""
     },
     {
@@ -139,8 +139,8 @@ const events = [
             }
         ],
         registration: "https://unstop.com/events/pulse-and-the-beat-apoorv-iiit-kottayam-649730",
-        date: "TBD",
-        time: "TBD",
+        date: "Date TBD",
+        time: "Time TBD",
         tag: ""
     },
     {
@@ -162,8 +162,8 @@ const events = [
             }
         ],
         registration: "https://unstop.com/events/impulse-dare-spot-dance-apoorv-iiit-kottayam-648932",
-        date: "TBD",
-        time: "TBD",
+        date: "Date TBD",
+        time: "Time TBD",
         tag: ""
     },
     {
@@ -185,8 +185,8 @@ const events = [
             }
         ],
         registration: "https://unstop.com/events/strings-and-keys-apoorv-iiit-kottayam-650161",
-        date: "TBD",
-        time: "TBD",
+        date: "Date TBD",
+        time: "Time TBD",
         tag: ""
     },
     {
@@ -208,8 +208,8 @@ const events = [
             }
         ],
         registration: "https://unstop.com/events/mockbuster-apoorv-iiit-kottayam-648975",
-        date: "TBD",
-        time: "TBD",
+        date: "Date TBD",
+        time: "Time TBD",
         tag: ""
     },
     {
@@ -230,8 +230,8 @@ const events = [
             }
         ],
         registration: "https://unstop.com/events/comedy-combat-apoorv-iiit-kottayam-649002",
-        date: "TBD",
-        time: "TBD",
+        date: "Date TBD",
+        time: "Time TBD",
         tag: ""
     },
     {
@@ -253,8 +253,8 @@ const events = [
             }
         ],
         registration: "https://unstop.com/events/face-off-apoorv-iiit-kottayam-649578",
-        date: "TBD",
-        time: "TBD",
+        date: "Date TBD",
+        time: "Time TBD",
         tag: ""
     },
     {
@@ -276,8 +276,8 @@ const events = [
             }
         ],
         registration: "https://unstop.com/events/blizzart-apoorv-iiit-kottayam-649704",
-        date: "TBD",
-        time: "TBD",
+        date: "Date TBD",
+        time: "Time TBD",
         tag: ""
     },
 
@@ -301,8 +301,8 @@ const events = [
 
         ],
         registration: "https://unstop.com/festival/apoorv-indian-institute-of-information-technology-iiit-kottayam-118308",
-        date: "TBD",
-        time: "TBD",
+        date: "Date TBD",
+        time: "Time TBD",
         tag: ""
     },
     {
@@ -324,8 +324,8 @@ const events = [
             }
         ],
         registration: "https://unstop.com/hackathons/decentra-apoorv-iiit-kottayam-650589",
-        date: "TBD",
-        time: "TBD",
+        date: "Date TBD",
+        time: "Time TBD",
         tag: ""
     },
     {
@@ -341,8 +341,8 @@ const events = [
 
         ],
         registration: "https://unstop.com/festival/apoorv-indian-institute-of-information-technology-iiit-kottayam-118308",
-        date: "TBD",
-        time: "TBD",
+        date: "Date TBD",
+        time: "Time TBD",
         tag: ""
     },
     {
@@ -368,8 +368,8 @@ const events = [
 
         ],
         registration: "https://unstop.com/festival/apoorv-indian-institute-of-information-technology-iiit-kottayam-118308",
-        date: "TBD",
-        time: "TBD",
+        date: "Date TBD",
+        time: "Time TBD",
         tag: ""
     },
     {
@@ -395,8 +395,8 @@ const events = [
 
         ],
         registration: "https://unstop.com/festival/apoorv-indian-institute-of-information-technology-iiit-kottayam-118308",
-        date: "TBD",
-        time: "TBD",
+        date: "Date TBD",
+        time: "Time TBD",
         tag: ""
     },
     {
@@ -433,8 +433,8 @@ const events = [
         },
         ],
         registration: "https://unstop.com/competitions/project-artemis-apoorv-iiit-kottayam-650922",
-        date: "TBD",
-        time: "TBD",
+        date: "Date TBD",
+        time: "Time TBD",
         tag: ""
     },
     {
@@ -457,8 +457,8 @@ const events = [
 
         ],
         registration: "https://unstop.com/festival/apoorv-indian-institute-of-information-technology-iiit-kottayam-118308",
-        date: "TBD",
-        time: "TBD",
+        date: "Date TBD",
+        time: "Time TBD",
         tag: ""
     },
     {
@@ -488,8 +488,8 @@ const events = [
         },
         ],
         registration: "https://unstop.com/events/e-lafda-apoorv-iiit-kottayam-650417",
-        date: "TBD",
-        time: "TBD",
+        date: "Date TBD",
+        time: "Time TBD",
         tag: ""
     },
     {
@@ -517,9 +517,9 @@ const events = [
             image: "https://res.cloudinary.com/dq1hdtycj/image/upload/v1679651126/File_001-1_-_SHAUN_VARGHESE_-IIITK_dak9iv.jpg",
         },
         ],
-        registration: "https://unstop.com/festival/apoorv-indian-institute-of-information-technology-iiit-kottayam-118308",
-        date: "TBD",
-        time: "TBD",
+        registration: "https://unstop.com/p/e-lafda-codm-gaming-event-apoorv-iiit-kottayam-650725",
+        date: "Date TBD",
+        time: "Time TBD",
         tag: ""
     },
     {
@@ -548,9 +548,9 @@ const events = [
             },
 
         ],
-        registration: "https://unstop.com/festival/apoorv-indian-institute-of-information-technology-iiit-kottayam-118308",
-        date: "TBD",
-        time: "TBD",
+        registration: "https://unstop.com/p/bash-or-crash-apoorv-iiit-kottayam-650850",
+        date: "Date TBD",
+        time: "Time TBD",
         tag: ""
     },
     {
@@ -573,8 +573,8 @@ const events = [
 
         ],
         registration: "https://unstop.com/hackathons/life-o-mate-apoorv-iiit-kottayam-650525",
-        date: "TBD",
-        time: "TBD",
+        date: "Date TBD",
+        time: "Time TBD",
         tag: ""
     },
 
@@ -593,8 +593,8 @@ const events = [
 
         ],
         registration: "https://unstop.com/festival/apoorv-indian-institute-of-information-technology-iiit-kottayam-118308",
-        date: "TBD",
-        time: "TBD",
+        date: "Date TBD",
+        time: "Time TBD",
         tag: ""
     },
     {
@@ -614,8 +614,8 @@ const events = [
 
         ],
         registration: "https://unstop.com/festival/apoorv-indian-institute-of-information-technology-iiit-kottayam-118308",
-        date: "TBD",
-        time: "TBD",
+        date: "Date TBD",
+        time: "Time TBD",
         tag: ""
     },
     {
@@ -631,8 +631,8 @@ const events = [
 
         ],
         registration: "https://unstop.com/festival/apoorv-indian-institute-of-information-technology-iiit-kottayam-118308",
-        date: "TBD",
-        time: "TBD",
+        date: "Date TBD",
+        time: "Time TBD",
         tag: ""
     },
     {
@@ -651,8 +651,8 @@ const events = [
 
         ],
         registration: "https://unstop.com/festival/apoorv-indian-institute-of-information-technology-iiit-kottayam-118308",
-        date: "TBD",
-        time: "TBD",
+        date: "Date TBD",
+        time: "Time TBD",
         tag: ""
     },
     {
@@ -675,8 +675,8 @@ const events = [
             }
         ],
         registration: "https://unstop.com/events/memers-brawl-apoorv-iiit-kottayam-649625",
-        date: "TBD",
-        time: "TBD",
+        date: "Date TBD",
+        time: "Time TBD",
         tag: ""
     },
     {
@@ -697,8 +697,8 @@ const events = [
             }
         ],
         registration: "https://unstop.com/events/brandaid-apoorv-iiit-kottayam-649612",
-        date: "TBD",
-        time: "TBD",
+        date: "Date TBD",
+        time: "Time TBD",
         tag: ""
     },
     {
@@ -714,8 +714,8 @@ const events = [
 
         ],
         registration: "https://unstop.com/festival/apoorv-indian-institute-of-information-technology-iiit-kottayam-118308",
-        date: "TBD",
-        time: "TBD",
+        date: "Date TBD",
+        time: "Time TBD",
         tag: ""
     },
     {
@@ -731,8 +731,8 @@ const events = [
 
         ],
         registration: "https://unstop.com/festival/apoorv-indian-institute-of-information-technology-iiit-kottayam-118308",
-        date: "TBD",
-        time: "TBD",
+        date: "Date TBD",
+        time: "Time TBD",
         tag: ""
     },
 

@@ -9,7 +9,7 @@ const team = () => {
     return (
         <>
             <Head>
-                <title>Apoorv - IIITK Team </title>
+                <title>Apoorv - IIITK | Team </title>
                 <meta
                     name="description"
                     content="Apoorv IIITK Techno Cultural Fest"

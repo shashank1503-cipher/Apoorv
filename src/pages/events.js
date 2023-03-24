@@ -7,12 +7,22 @@ import { ParallaxProvider } from 'react-scroll-parallax';
 
 const Events = () => {
     return (
-        <ParallaxProvider>
-            <Navbar isTransparent={true} logoHide={true}/>
-            <EventIntro />
-            <EventListContainer />
-            <Footer />
-        </ParallaxProvider>
+        <>
+        <Head>
+                <title>Apoorv - IIITK | Events </title>
+                <meta
+                    name="description"
+                    content="Apoorv IIITK Techno Cultural Fest"
+                />
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
+            <ParallaxProvider>
+                <Navbar isTransparent={true} logoHide={true} />
+                <EventIntro />
+                <EventListContainer />
+                <Footer />
+            </ParallaxProvider>
+        </>
     )
 }
 
