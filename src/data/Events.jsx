@@ -53,7 +53,7 @@ const events = [
         organisers: [
             {
                 key: 1,
-                name: "Bhujbal Nishant",
+                name: "Nishant Bhujbal",
                 phoneNumber: "9307099632",
                 email: "",
                 image: "https://res.cloudinary.com/dpjf6btln/image/upload/v1679651705/IMG20221024222740_hz654q.jpg"
@@ -204,7 +204,7 @@ const events = [
                 name: 'Kanak',
                 phoneNumber: '8690049955',
                 email: "",
-                image: "https://res.cloudinary.com/dpjf6btln/image/upload/v1679652308/Kanak_Mockbuster_sdxup8.jpg"
+                image: "http://res.cloudinary.com/dpjf6btln/image/upload/v1679665820/Kanak_Mockbuster_sdxup8.jpg"
             }
         ],
         registration: "https://unstop.com/events/mockbuster-apoorv-iiit-kottayam-648975",
@@ -401,7 +401,7 @@ const events = [
     },
     {
         id: 18,
-        poster: "",
+        poster: "https://res.cloudinary.com/dpu074ryk/image/upload/v1679683897/treasure-a4_febkyn.jpg",
         alt: "Project Artemix",
         subheading: "Technical",
         name: "Project Artemix",
@@ -429,7 +429,7 @@ const events = [
             name: "Aditya Shitale ",
             phoneNumber: "9021629698",
             email: "sanjayshitale20bcs82@iiitkottayam.ac.in ",
-            image: "https://res.cloudinary.com/dpjf6btln/image/upload/v1679648964/IMG_20221202_110505_705_-_ADITYA_SANJAY_SHITALE_-IIITK_c7dqn9.jpg",
+            image: "https://res.cloudinary.com/dpu074ryk/image/upload/v1679679602/aditya_jcm0sc.jpg",
         },
         ],
         registration: "https://unstop.com/competitions/project-artemis-apoorv-iiit-kottayam-650922",
@@ -439,7 +439,7 @@ const events = [
     },
     {
         id: 19,
-        poster: "",
+        poster: "https://res.cloudinary.com/dpu074ryk/image/upload/v1679684690/ctf-a4_z6ohgo.jpg",
         alt: "Commit The Flag",
         subheading: "Technical",
         name: "Commit The Flag",
@@ -476,7 +476,7 @@ const events = [
             name: "Pranjal Prasoon",
             phoneNumber: "9660924735",
             email: "pranjalprasoon20bcs41@iiitkottayam.ac.in",
-            image: "https://res.cloudinary.com/dq1hdtycj/image/upload/v1679651061/WhatsApp_Image_2023-03-24_at_01.48.14_-_PRANJAL_PRASOON_-IIITK_by7oga.jpg",
+            image: "https://res.cloudinary.com/dpu074ryk/image/upload/v1679678195/pranjal_g9mqbl.jpg",
 
         },
         {
@@ -487,7 +487,7 @@ const events = [
             image: "https://res.cloudinary.com/dq1hdtycj/image/upload/v1679651126/File_001-1_-_SHAUN_VARGHESE_-IIITK_dak9iv.jpg",
         },
         ],
-        registration: "https://unstop.com/events/e-lafda-apoorv-iiit-kottayam-650417",
+        registration: "https://forms.gle/HTf2398eeCJBu2BcA",
         date: "Date TBD",
         time: "Time TBD",
         tag: ""
@@ -506,18 +506,18 @@ const events = [
             name: "Pranjal Prasoon",
             phoneNumber: "9660924735",
             email: "pranjalprasoon20bcs41@iiitkottayam.ac.in",
-            image: "https://res.cloudinary.com/dq1hdtycj/image/upload/v1679651061/WhatsApp_Image_2023-03-24_at_01.48.14_-_PRANJAL_PRASOON_-IIITK_by7oga.jpg",
+            image: "https://res.cloudinary.com/dpu074ryk/image/upload/v1679678195/pranjal_g9mqbl.jpg",
 
         },
         {
             key: 2,
-            name: "Shaun Varghese",
-            phoneNumber: "7649800755",
-            email: "shaunvarghese20bcs51@iiitkottayam.ac.in",
-            image: "https://res.cloudinary.com/dq1hdtycj/image/upload/v1679651126/File_001-1_-_SHAUN_VARGHESE_-IIITK_dak9iv.jpg",
+            name: "Sandeep Gundlapalli",
+            phoneNumber: "8106253055",
+            email: "sandeep20bcs51@iiitkottayam.ac.in",
+            image: "https://res.cloudinary.com/dpu074ryk/image/upload/v1679678831/sandeep_d4rkpt.jpg",
         },
         ],
-        registration: "https://unstop.com/p/e-lafda-codm-gaming-event-apoorv-iiit-kottayam-650725",
+        registration: "https://forms.gle/oWGYD5fkgkhh8CbY9",
         date: "Date TBD",
         time: "Time TBD",
         tag: ""
@@ -620,7 +620,7 @@ const events = [
     },
     {
         id: 26,
-        poster: "",
+        poster: "https://res.cloudinary.com/dpu074ryk/image/upload/v1679685049/poetry-a4-1_sgqzx9.jpg",
         alt: "Verse Voyage",
         subheading: "Trendles",
         name: "Verse Voyage",
@@ -637,7 +637,7 @@ const events = [
     },
     {
         id: 27,
-        poster: "",
+        poster: "https://res.cloudinary.com/dpu074ryk/image/upload/v1679684263/alpha-trade-a4_sgqjuq.jpg",
         alt: "The Alpha trader",
         subheading: "Trendles",
         name: "The Alpha trader",
@@ -720,7 +720,7 @@ const events = [
     },
     {
         id: 31,
-        poster: "",
+        poster: "https://res.cloudinary.com/dpu074ryk/image/upload/v1679684919/story-a4_clldev.jpg",
         alt: "Writer's Rumble",
         subheading: "Trendles",
         name: "Writer's Rumble",
