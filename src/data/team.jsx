@@ -94,8 +94,8 @@ const developers = [
 		name: "Aditya Shitale",
 		club: "Tech Club",
 		image:
-			"https://res.cloudinary.com/dpjf6btln/image/upload/v1679648964/IMG_20221202_110505_705_-_ADITYA_SANJAY_SHITALE_-IIITK_c7dqn9.jpg",
-		gif: "https://media.tenor.com/UTxKJNlZilwAAAAC/luffy-monkey-d-luffy.gif",
+			"https://res.cloudinary.com/dpu074ryk/image/upload/v1679679602/aditya_jcm0sc.jpg",
+		gif: "https://media.tenor.com/ofKKbAiVczQAAAAC/gojo-gojo-saotoru.gif",
 		socials: {
 			linkedin: "https://www.linkedin.com/in/aditya-shitale-664991214/",
 			instagram: "https://instagram.com/shitaleaditya?igshid=ZDdkNTZiNTM=",
@@ -160,6 +160,8 @@ const developers = [
 		image: "https://res.cloudinary.com/dpjf6btln/image/upload/v1679651705/IMG20221024222740_hz654q.jpg",
 		gif: "https://res.cloudinary.com/dpjf6btln/image/upload/v1679655225/asd_efnrdo.gif",
 		socials: {
+			linkedin: "https://www.linkedin.com/in/nishant-bhujbal",
+			instagram: "https://instagram.com/bhujbal_nishant?igshid=ZDdkNTZiNTM=",
 		}
 	},
 
