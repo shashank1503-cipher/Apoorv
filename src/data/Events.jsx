@@ -529,7 +529,7 @@ const events = [
         subheading: "Technical",
         name: "Bash or Crash",
         cat: ['technical', 'contests'],
-        description: `Rally your troops and get your game face on, it's time to show the world what you are made of! Prepare for an epic battle in our CODM event at Apoorv Fest! Doesn't matter if you're a sharpshooter or a complete rookie, we've got the perfect arena for you to unleash your inner soldier and dominate the competition.`,
+        description: `Get ready for Apoorv\'s very own Shell Shock Scripting Showdown! Are you a scripting guru, a master of the command line? If so, we challenge you to compete in a battle of Bash shell scripting. /n We're not looking for just any script; we want your most creative and efficient code, something that will make the T-1000 look like a teddy bear. Put on your coding hats, prime your terminals, and get ready to blow the judges' circuits.`,
         link: "bash-or-crash",
         organisers: [
             {
