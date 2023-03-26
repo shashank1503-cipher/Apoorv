@@ -191,7 +191,7 @@ const events = [
     },
     {
         id: 9,
-        poster: "https://res.cloudinary.com/dp4dftwrv/image/upload/v1679585248/MOCKB1X1_1_mcnhdc.png",
+        poster: "https://res.cloudinary.com/roshin/image/upload/v1679827934/MOCKB-a4_tlxw8h.png",
         alt: "Mockbuster",
         subheading: "Cultural",
         name: "Mockbuster",
