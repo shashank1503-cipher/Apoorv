@@ -74,16 +74,28 @@ const mentors = [
 	},
 	{
 		id: 7,
+		name: "Sarthak Bindal",
+		club: "Sponsorship",
+		image: "https://res.cloudinary.com/wtcey4wy/image/upload/v1679853798/apoorv/teams/Sarthak_bindal_edu6xj.jpg",
+		gif: "https://media.tenor.com/Hmeibj73tS0AAAAd/mario-party-mario.gif",
+		socials: {
+			linkedin: "https://www.linkedin.com/in/sarthak-bindal-747a6b202",
+			instagram: "https://instagram.com/sarthak_0306?igshid=ZDdkNTZiNTM=",
+			twitter: "https://twitter.com/SarthakBindal03?t=G6X5cYVz8IBDjETOEH00Xg&s=08",
+		}
+	},
+	{
+		id: 8,
 		name: "Divyansh Panwar",
 		club: "Cultural Club",
 		image: "https://res.cloudinary.com/dvbzt3j3v/image/upload/v1679651206/WhatsApp_Image_2023-03-23_at_00.07.20_-_Divyansh_Panwar_-IIITK_qnu7su.jpg",
-		gif: "https://media.tenor.com/P8VsDwHZreYAAAAC/tobey-maguire-spider-man.gif",
+		gif: "https://media.tenor.com/YlVxiZk6aqwAAAAd/trending-phir-hera-pheri.gif",
 		socials: {
 			linkedin: "https://www.linkedin.com/in/divyanshpanwar/",
 			instagram: "https://www.instagram.com/junior._.geek/",
 			twitter: "https://twitter.com/DivyanshPanwa18",
 		}
-	},
+	}
 
 ];
 
