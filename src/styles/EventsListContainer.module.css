@@ -154,7 +154,7 @@
     flex-wrap: wrap;
     row-gap: 7.5rem;
     column-gap: 1.3rem;
-    padding: 4rem 0px;
+    padding: 8rem 0px;
     justify-content: space-evenly;
 }
 
@@ -269,6 +269,10 @@
         /* justify-content: center; */
         /* background-color: aliceblue; */
         align-items: center;
+    }
+
+    .eventList {
+        padding: 4rem 0;
     }
 
     .fixedContent{
