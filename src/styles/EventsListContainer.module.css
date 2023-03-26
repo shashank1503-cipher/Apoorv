@@ -154,7 +154,7 @@
     flex-wrap: wrap;
     row-gap: 7.5rem;
     column-gap: 1.3rem;
-    padding: 100px 0px;
+    padding: 4rem 0px;
     justify-content: space-evenly;
 }
 
@@ -231,7 +231,8 @@
     display: none;
     width: 100vw;
     top: 0;
-    height: 140px;
+    height: 70px;
+    margin-top: 2rem;
     text-align: center;
     background-color: black;
 }
@@ -241,7 +242,7 @@
     width: 80%;
     height: 70px;
     position: relative;
-    top: 70px;
+    top: 0px;
     background-color: black;
     color: white;
     font-size: 18px;
