@@ -13,7 +13,7 @@ const EventIntro = () => {
                     <Image src = {'/logo.svg'}
                         alt = "apoorv logo"
                         fill
-                        
+                        className={styles.logo}
                     />
                     </div>
                     <div className = {styles.textLogo}>apoorv</div>
@@ -27,7 +27,7 @@ const EventIntro = () => {
                     </div>
                     </div>
                     <div className = {styles.con2}>
-                    Check out the events we have available for Apoorv 23 &#8217; down below. 
+                    Check out the events we have available for Apoorv 23&#8217; down below. 
                         <div>    
                         Click on any to register for them.
                         </div>

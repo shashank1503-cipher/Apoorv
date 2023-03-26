@@ -176,6 +176,18 @@ const developers = [
 			instagram: "https://instagram.com/bhujbal_nishant?igshid=ZDdkNTZiNTM=",
 		}
 	},
+	{
+		id: 7,
+		name: "Roshin Nishad",
+		club: "Tech Club",
+		image: "https://res.cloudinary.com/dq1hdtycj/image/upload/v1679650974/starlight_-_ROSHIN_NISHAD_-IIITK_1_plbf7s.jpg",
+		gif: "https://c.tenor.com/G9HVBz-OJ-oAAAAC/dancing-peter-parker.gif",
+		socials: {
+			linkedin: "https://www.linkedin.com/in/roshin-nishad/",
+			instagram: "https://www.instagram.com/juve_vittoria/",
+			twitter: "https://twitter.com/GetPsyched67",
+		}
+	},
 
 ]
 
