@@ -91,7 +91,7 @@ const events = [
             },
 
         ],
-        registration: "https://unstop.com/festival/apoorv-indian-institute-of-information-technology-iiit-kottayam-118308",
+        registration: "https://unstop.com/events/strings-and-keys-apoorv-iiit-kottayam-650161",
         date: "Date TBD",
         time: "Time TBD",
         tag: ""
@@ -115,7 +115,7 @@ const events = [
 
             }
         ],
-        registration: "https://unstop.com/festival/apoorv-indian-institute-of-information-technology-iiit-kottayam-118308",
+        registration: "https://unstop.com/events/solo-sizzle-apoorv-iiit-kottayam-651561",
         date: "Date TBD",
         time: "Time TBD",
         tag: ""
@@ -184,7 +184,7 @@ const events = [
                 image: "https://res.cloudinary.com/dpjf6btln/image/upload/v1679652268/Rakshith_Dondapati_wh8ddj.jpg"
             }
         ],
-        registration: "https://unstop.com/events/strings-and-keys-apoorv-iiit-kottayam-650161",
+        registration: "https://unstop.com/events/fake-it-till-you-make-it-apoorv-iiit-kottayam-650149",
         date: "Date TBD",
         time: "Time TBD",
         tag: ""
@@ -400,13 +400,13 @@ const events = [
     {
         id: 18,
         poster: "https://res.cloudinary.com/dpu074ryk/image/upload/v1679683897/treasure-a4_febkyn.jpg",
-        alt: "Project Artemix",
+        alt: "Project Artemis",
         subheading: "Technical",
-        name: "Project Artemix",
+        name: "Project Artemis",
         cat: ['technical', 'contests'],
         description: `"Ahoy matey, do you want to set sail on a thrilling adventure to find hidden treasure? Our Treasure Hunt will have you digging deep and racking your brain. Work through riddles, coding quests, online challenges and visual puzzles to find the path in this engaging hunt to find your treasure and win big!
         "`,
-        link: "project-artemix",
+        link: "project-artemis",
         organisers: [{
             key: 1,
             name: "SAKET ROSHAN RAI",
@@ -438,12 +438,12 @@ const events = [
     {
         id: 19,
         poster: "https://res.cloudinary.com/dpu074ryk/image/upload/v1679684690/ctf-a4_z6ohgo.jpg",
-        alt: "Commit The Flag",
+        alt: "Capture The Flag",
         subheading: "Technical",
-        name: "Commit The Flag",
+        name: "Capture The Flag",
         cat: ['technical', 'contests'],
         description: `To create the best lock, know what breaks the good ones around./n /nCompete for the final flag in a labyrinth of information with 6 rounds, ranging from simple ciphers to intricate reverse engineering puzzles.`,
-        link: "commit-the-flag",
+        link: "capture-the-flag",
         organisers: [
             {
                 key: 1,
@@ -454,7 +454,7 @@ const events = [
             }
 
         ],
-        registration: "https://unstop.com/festival/apoorv-indian-institute-of-information-technology-iiit-kottayam-118308",
+        registration: "https://unstop.com/hackathons/capture-the-flag-apoorv-iiit-kottayam-653006",
         date: "Date TBD",
         time: "Time TBD",
         tag: ""
@@ -546,7 +546,7 @@ const events = [
             },
 
         ],
-        registration: "https://unstop.com/p/bash-or-crash-apoorv-iiit-kottayam-650850",
+        registration: "https://unstop.com/hackathons/bash-or-crash-apoorv-iiit-kottayam-650464",
         date: "Date TBD",
         time: "Time TBD",
         tag: ""
@@ -611,7 +611,7 @@ const events = [
         organisers: [
 
         ],
-        registration: "https://unstop.com/festival/apoorv-indian-institute-of-information-technology-iiit-kottayam-118308",
+        registration: "https://unstop.com/events/synapse-apoorv-iiit-kottayam-650596",
         date: "Date TBD",
         time: "Time TBD",
         tag: ""
@@ -628,7 +628,7 @@ const events = [
         organisers: [
 
         ],
-        registration: "https://unstop.com/festival/apoorv-indian-institute-of-information-technology-iiit-kottayam-118308",
+        registration: "https://unstop.com/events/verse-voyage-apoorv-iiit-kottayam-650819",
         date: "Date TBD",
         time: "Time TBD",
         tag: ""
@@ -711,7 +711,7 @@ const events = [
         organisers: [
 
         ],
-        registration: "https://unstop.com/festival/apoorv-indian-institute-of-information-technology-iiit-kottayam-118308",
+        registration: "https://unstop.com/events/chromus-apoorv-iiit-kottayam-650875",
         date: "Date TBD",
         time: "Time TBD",
         tag: ""
@@ -728,7 +728,7 @@ const events = [
         organisers: [
 
         ],
-        registration: "https://unstop.com/festival/apoorv-indian-institute-of-information-technology-iiit-kottayam-118308",
+        registration: "https://unstop.com/events/writers-rumble-apoorv-iiit-kottayam-650838",
         date: "Date TBD",
         time: "Time TBD",
         tag: ""
