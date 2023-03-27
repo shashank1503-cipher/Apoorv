@@ -191,7 +191,7 @@ const events = [
     },
     {
         id: 9,
-        poster: "https://res.cloudinary.com/dp4dftwrv/image/upload/v1679585248/MOCKB1X1_1_mcnhdc.png",
+        poster: "https://res.cloudinary.com/roshin/image/upload/v1679827934/MOCKB-a4_tlxw8h.png",
         alt: "Mockbuster",
         subheading: "Cultural",
         name: "Mockbuster",
@@ -379,25 +379,24 @@ const events = [
         subheading: "Technical",
         name: "Pixel Perfect",
         cat: ['technical', 'contests'],
-        description: `"Are you someone who can has an eye for design and can create alluring and engaging websites? Then this is the perfect opportunity for you!!
-        Apoorva 23’ is THE quintessential platform for you as a young web developer to brandish your designing prowess. Convert wireframes to a website that's aesthetically-pleasing, interactive and solves all your problems (of course ;)! )
-        "`,
+        description: `Are you someone who can has an eye for design and can create alluring and engaging websites? Then this is the perfect opportunity for you!!
+        Apoorva 23’ is THE quintessential platform for you as a young web developer to brandish your designing prowess. Convert wireframes to a website that's aesthetically-pleasing, interactive and solves all your problems [ of course ;) ]`,
         link: "pixel-perfect",
         organisers: [
             {
                 key: 1,
                 name: "Roshin Nishad",
-                phoneNumber: "+91 80860 23082",
+                phoneNumber: "+91 83300 25082",
                 image: "https://res.cloudinary.com/dq1hdtycj/image/upload/v1679650974/starlight_-_ROSHIN_NISHAD_-IIITK_1_plbf7s.jpg"
 
 
             }
 
         ],
-        registration: "https://unstop.com/festival/apoorv-indian-institute-of-information-technology-iiit-kottayam-118308",
-        date: "Date TBD",
-        time: "Time TBD",
-        tag: ""
+        registration: "https://unstop.com/hackathons/pixel-perfect-apoorv-iiit-kottayam-652559",
+        date: "6th April",
+        time: "3:30 PM",
+        tag: "Master your aesthetic spark! ✨"
     },
     {
         id: 18,
