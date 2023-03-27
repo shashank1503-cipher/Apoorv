@@ -76,11 +76,14 @@ const EventListContainer = () => {
 
     })
 
-    useEffect(() => {
+    // useEffect(() => {
 
         
 
-    }, [selectedCat, selectedSub])
+    // }, [selectedCat, selectedSub])
+
+    // useEffect(() => setSelectedCat('all'), [])
+
 
     return (
         <div className = {styles.eventContainer}>
