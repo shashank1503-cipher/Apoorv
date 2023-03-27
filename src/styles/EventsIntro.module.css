@@ -1,10 +1,29 @@
+/* @keyframes ani {
+    0% {
+        filter : brightness(0) blur(10px);
+    }
+
+    100% {
+        filter : brightness(1) blur(0px);
+    }
+} */
+
 .intro {
-    background-image: url("../assets/EventsPage/comp1.jpg");
+    /* background-image: url("../assets/EventsPage/comp1.png"); */
     min-height: 100vh;
-    filter: brightness(0.9);
+    /* filter: brightness(0.9); */
     background-size: cover;
+    background-image:linear-gradient(160deg, rgba(0,0,0,1), rgba(222,84,53,0) 60.71%), 
+    linear-gradient(217deg, rgba(222,84,53,1), rgba(96,45,110,0.4) 80.71%),
+                linear-gradient(232deg, rgba(96,45,110,1), rgba(221,72,42,0) 100.71%), 
+                linear-gradient(186deg, rgba(0,0,0,1), rgba(0,0,0,1) 30.71%);
     background-repeat: no-repeat;
     display: flex;
+    /* animation-name: ani;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    animation-iteration-count: 1;
+    animation-play-state: running; */
     flex-direction: row;
     justify-content: center;
     align-items: center;
