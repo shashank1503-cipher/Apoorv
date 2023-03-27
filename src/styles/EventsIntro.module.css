@@ -8,7 +8,7 @@
 }
 
 .intro {
-    background-image: url("../assets/EventsPage/comp1.png");
+    /* background-image: url("../assets/EventsPage/comp1.png"); */
     min-height: 100vh;
     background-size: cover;
     background-image:linear-gradient(160deg, rgba(0,0,0,1), rgba(222,84,53,0) 60.71%), 
