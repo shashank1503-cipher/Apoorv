@@ -16,6 +16,7 @@
     color: #FFF;
     background: rgba(81, 35, 30, 0.75);
     backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
     border-radius: 6.563rem 0px;
 }
 

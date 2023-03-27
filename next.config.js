@@ -15,6 +15,7 @@ const nextConfig = {
       "res.cloudinary.com",
       "res-console.cloudinary.com",
       "drive.google.com",
+      
     ],
   },
 }

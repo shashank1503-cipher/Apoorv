@@ -27,7 +27,8 @@
     font-size: 1.75rem;
     padding-left: 0.5em;
     padding-right: 0.25em;
-    width: 80%;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
 }
 
 .image img {

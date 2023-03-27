@@ -3,7 +3,7 @@ import React from 'react';
 import logo from '../assets/apoorv_logo.svg';
 import year from '../assets/2023.svg';
 import styles from '../styles/Footer.module.css';
-import { AiFillMail, AiFillLinkedin, AiFillTwitterCircle, AiFillFacebook, AiFillInstagram } from 'react-icons/ai';
+import { AiFillMail, AiFillLinkedin ,AiFillInstagram } from 'react-icons/ai';
 import Image from 'next/image'
 
 
@@ -39,7 +39,6 @@ const Footer = () => {
                 <div><a target="_blank" rel="noreferrer" href='mailto:apoorv@iiitkottayam.ac.in'><AiFillMail className={styles.icon} /></a></div>
                 <div> <a target="_blank" rel="noreferrer" href='https://www.linkedin.com/company/apoorv-iiit-kottayam/'><AiFillLinkedin className={styles.icon} /></a></div>
                 <div> <a target="_blank" rel="noreferrer" href='https://instagram.com/apoorv_iiitk?igshid=ZDdkNTZiNTM'><AiFillInstagram className={styles.icon} /></a></div>
-                <div> <a target="_blank" rel="noreferrer" href='#'><AiFillTwitterCircle className={styles.icon} /></a></div>
               </div>
               {/* <div className={styles.foot_font1} >+91 9370324791</div>
           <div className={styles.foot_font1}>+91 9326791283</div> */}

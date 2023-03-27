@@ -74,16 +74,28 @@ const mentors = [
 	},
 	{
 		id: 7,
+		name: "Sarthak Bindal",
+		club: "Sponsorship",
+		image: "https://res.cloudinary.com/wtcey4wy/image/upload/v1679853798/apoorv/teams/Sarthak_bindal_edu6xj.jpg",
+		gif: "https://media.tenor.com/Hmeibj73tS0AAAAd/mario-party-mario.gif",
+		socials: {
+			linkedin: "https://www.linkedin.com/in/sarthak-bindal-747a6b202",
+			instagram: "https://instagram.com/sarthak_0306?igshid=ZDdkNTZiNTM=",
+			twitter: "https://twitter.com/SarthakBindal03?t=G6X5cYVz8IBDjETOEH00Xg&s=08",
+		}
+	},
+	{
+		id: 8,
 		name: "Divyansh Panwar",
 		club: "Cultural Club",
 		image: "https://res.cloudinary.com/dvbzt3j3v/image/upload/v1679651206/WhatsApp_Image_2023-03-23_at_00.07.20_-_Divyansh_Panwar_-IIITK_qnu7su.jpg",
-		gif: "https://media.tenor.com/P8VsDwHZreYAAAAC/tobey-maguire-spider-man.gif",
+		gif: "https://media.tenor.com/YlVxiZk6aqwAAAAd/trending-phir-hera-pheri.gif",
 		socials: {
 			linkedin: "https://www.linkedin.com/in/divyanshpanwar/",
 			instagram: "https://www.instagram.com/junior._.geek/",
 			twitter: "https://twitter.com/DivyanshPanwa18",
 		}
-	},
+	}
 
 ];
 
@@ -94,8 +106,8 @@ const developers = [
 		name: "Aditya Shitale",
 		club: "Tech Club",
 		image:
-			"https://res.cloudinary.com/dpjf6btln/image/upload/v1679648964/IMG_20221202_110505_705_-_ADITYA_SANJAY_SHITALE_-IIITK_c7dqn9.jpg",
-		gif: "https://media.tenor.com/UTxKJNlZilwAAAAC/luffy-monkey-d-luffy.gif",
+			"https://res.cloudinary.com/dpu074ryk/image/upload/v1679679602/aditya_jcm0sc.jpg",
+		gif: "https://media.tenor.com/ofKKbAiVczQAAAAC/gojo-gojo-saotoru.gif",
 		socials: {
 			linkedin: "https://www.linkedin.com/in/aditya-shitale-664991214/",
 			instagram: "https://instagram.com/shitaleaditya?igshid=ZDdkNTZiNTM=",
@@ -160,6 +172,20 @@ const developers = [
 		image: "https://res.cloudinary.com/dpjf6btln/image/upload/v1679651705/IMG20221024222740_hz654q.jpg",
 		gif: "https://res.cloudinary.com/dpjf6btln/image/upload/v1679655225/asd_efnrdo.gif",
 		socials: {
+			linkedin: "https://www.linkedin.com/in/nishant-bhujbal",
+			instagram: "https://instagram.com/bhujbal_nishant?igshid=ZDdkNTZiNTM=",
+		}
+	},
+	{
+		id: 7,
+		name: "Roshin Nishad",
+		club: "Tech Club",
+		image: "https://res.cloudinary.com/dq1hdtycj/image/upload/v1679650974/starlight_-_ROSHIN_NISHAD_-IIITK_1_plbf7s.jpg",
+		gif: "https://c.tenor.com/G9HVBz-OJ-oAAAAC/dancing-peter-parker.gif",
+		socials: {
+			linkedin: "https://www.linkedin.com/in/roshin-nishad/",
+			instagram: "https://www.instagram.com/juve_vittoria/",
+			twitter: "https://twitter.com/GetPsyched67",
 		}
 	},
 

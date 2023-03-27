@@ -35,6 +35,10 @@ const Sponsors = {
         {
             logo: 'https://res.cloudinary.com/wtcey4wy/image/upload/v1679662355/apoorv/sponsors/the_man_cave_kzjhtc.png',
             name: 'The Man Cave'
+        },
+        {
+            logo: "https://res.cloudinary.com/wtcey4wy/image/upload/v1679765844/apoorv/sponsors/fabLabs_l811eo.png",
+            name: 'FabLabs.in'
         }
     ]
 }

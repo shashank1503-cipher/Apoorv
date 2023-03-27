@@ -10,7 +10,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    width: 30%;
+    width: 25%;
     position: sticky;
     top: 0rem;
     color: white;
@@ -33,7 +33,7 @@
 
 .dial {
     display: flex;
-
+    font-family: Roboto Slab;
     flex-direction: column;
     justify-content: flex-start;
     width: 50%;
@@ -149,35 +149,34 @@
 .eventList {
     position: relative;
     display: flex;
-    width: 70%;
+    width: 75%;
     height: calc(100% + 200px);
-    /* background-color: aliceblue; */
     flex-wrap: wrap;
-    row-gap: 100px;
-    column-gap: 20px;
-    padding: 100px 0px;
+    row-gap: 7.5rem;
+    column-gap: 1.3rem;
+    padding: 8rem 0px;
     justify-content: space-evenly;
 }
 
 .card {
     /* background-color: red; */
-    width: 14.7rem;
+    width: 18rem;
     height: 100%;
     cursor: pointer;
-    border-radius: 10px;
+    border-radius: 0.75rem;
 
 }
 
 .imageWrapper {
-    width: 14.7rem;
-    height: 21rem;
+    width: 18rem;
+    height: 25.72rem;
     /* background-color: aliceblue; */
     position: relative;
     overflow: hidden;
     margin: 0 auto;
     margin-bottom: 5%;
     /* background-color: aliceblue; */
-    border-radius: 10px;
+    border-radius: 0.75rem;
 }
 
 .imageWrapper img {
@@ -192,6 +191,7 @@
 }
 
 .divider>hr {
+    margin-top: 2.5rem;
     width: 100%;
     height: 0.1rem;
     background-color: var(--brand-yellow);
@@ -201,6 +201,7 @@
 
 .content {
     position: relative;
+    margin-top: 1rem;
     width: 100%;
     color: var(--brand-white);
     font-family: var(--brand-body-font);
@@ -210,7 +211,6 @@
 .content h1 {
     font-size: 1.5rem;
     word-wrap: break-word;
-    /* text-align: center; */
     font-family: var(--brand-head-font);
     margin-bottom: 0;
 }
@@ -231,16 +231,18 @@
     display: none;
     width: 100vw;
     top: 0;
-    height: 140px;
+    height: 70px;
+    margin-top: 2rem;
     text-align: center;
     background-color: black;
 }
 
 .mobile_dial_select {
-    width: 90%;
+    font-family: Roboto Slab;
+    width: 80%;
     height: 70px;
     position: relative;
-    top: 70px;
+    top: 0px;
     background-color: black;
     color: white;
     font-size: 18px;
@@ -267,6 +269,10 @@
         /* justify-content: center; */
         /* background-color: aliceblue; */
         align-items: center;
+    }
+
+    .eventList {
+        padding: 4rem 0;
     }
 
     .fixedContent{

@@ -191,7 +191,7 @@ const events = [
     },
     {
         id: 9,
-        poster: "https://res.cloudinary.com/dp4dftwrv/image/upload/v1679585248/MOCKB1X1_1_mcnhdc.png",
+        poster: "https://res.cloudinary.com/roshin/image/upload/v1679827934/MOCKB-a4_tlxw8h.png",
         alt: "Mockbuster",
         subheading: "Cultural",
         name: "Mockbuster",
@@ -378,29 +378,28 @@ const events = [
         subheading: "Technical",
         name: "Pixel Perfect",
         cat: ['technical', 'contests'],
-        description: `"Are you someone who can has an eye for design and can create alluring and engaging websites? Then this is the perfect opportunity for you!!
-        Apoorva 23’ is THE quintessential platform for you as a young web developer to brandish your designing prowess. Convert wireframes to a website that's aesthetically-pleasing, interactive and solves all your problems (of course ;)! )
-        "`,
+        description: `Are you someone who can has an eye for design and can create alluring and engaging websites? Then this is the perfect opportunity for you!!
+        Apoorva 23’ is THE quintessential platform for you as a young web developer to brandish your designing prowess. Convert wireframes to a website that's aesthetically-pleasing, interactive and solves all your problems [ of course ;) ]`,
         link: "pixel-perfect",
         organisers: [
             {
                 key: 1,
                 name: "Roshin Nishad",
-                phoneNumber: "+91 80860 23082",
+                phoneNumber: "+91 83300 25082",
                 image: "https://res.cloudinary.com/dq1hdtycj/image/upload/v1679650974/starlight_-_ROSHIN_NISHAD_-IIITK_1_plbf7s.jpg"
 
 
             }
 
         ],
-        registration: "https://unstop.com/festival/apoorv-indian-institute-of-information-technology-iiit-kottayam-118308",
-        date: "Date TBD",
-        time: "Time TBD",
-        tag: ""
+        registration: "https://unstop.com/hackathons/pixel-perfect-apoorv-iiit-kottayam-652559",
+        date: "6th April",
+        time: "3:30 PM",
+        tag: "Master your aesthetic spark! ✨"
     },
     {
         id: 18,
-        poster: "",
+        poster: "https://res.cloudinary.com/dpu074ryk/image/upload/v1679683897/treasure-a4_febkyn.jpg",
         alt: "Project Artemix",
         subheading: "Technical",
         name: "Project Artemix",
@@ -428,7 +427,7 @@ const events = [
             name: "Aditya Shitale ",
             phoneNumber: "9021629698",
             email: "sanjayshitale20bcs82@iiitkottayam.ac.in ",
-            image: "https://res.cloudinary.com/dpjf6btln/image/upload/v1679648964/IMG_20221202_110505_705_-_ADITYA_SANJAY_SHITALE_-IIITK_c7dqn9.jpg",
+            image: "https://res.cloudinary.com/dpu074ryk/image/upload/v1679679602/aditya_jcm0sc.jpg",
         },
         ],
         registration: "https://unstop.com/competitions/project-artemis-apoorv-iiit-kottayam-650922",
@@ -438,7 +437,7 @@ const events = [
     },
     {
         id: 19,
-        poster: "",
+        poster: "https://res.cloudinary.com/dpu074ryk/image/upload/v1679684690/ctf-a4_z6ohgo.jpg",
         alt: "Commit The Flag",
         subheading: "Technical",
         name: "Commit The Flag",
@@ -475,7 +474,7 @@ const events = [
             name: "Pranjal Prasoon",
             phoneNumber: "9660924735",
             email: "pranjalprasoon20bcs41@iiitkottayam.ac.in",
-            image: "https://res.cloudinary.com/dq1hdtycj/image/upload/v1679651061/WhatsApp_Image_2023-03-24_at_01.48.14_-_PRANJAL_PRASOON_-IIITK_by7oga.jpg",
+            image: "https://res.cloudinary.com/dpu074ryk/image/upload/v1679678195/pranjal_g9mqbl.jpg",
 
         },
         {
@@ -486,7 +485,7 @@ const events = [
             image: "https://res.cloudinary.com/dq1hdtycj/image/upload/v1679651126/File_001-1_-_SHAUN_VARGHESE_-IIITK_dak9iv.jpg",
         },
         ],
-        registration: "https://unstop.com/events/e-lafda-apoorv-iiit-kottayam-650417",
+        registration: "https://forms.gle/HTf2398eeCJBu2BcA",
         date: "Date TBD",
         time: "Time TBD",
         tag: ""
@@ -505,18 +504,18 @@ const events = [
             name: "Pranjal Prasoon",
             phoneNumber: "9660924735",
             email: "pranjalprasoon20bcs41@iiitkottayam.ac.in",
-            image: "https://res.cloudinary.com/dq1hdtycj/image/upload/v1679651061/WhatsApp_Image_2023-03-24_at_01.48.14_-_PRANJAL_PRASOON_-IIITK_by7oga.jpg",
+            image: "https://res.cloudinary.com/dpu074ryk/image/upload/v1679678195/pranjal_g9mqbl.jpg",
 
         },
         {
             key: 2,
-            name: "Shaun Varghese",
-            phoneNumber: "7649800755",
-            email: "shaunvarghese20bcs51@iiitkottayam.ac.in",
-            image: "https://res.cloudinary.com/dq1hdtycj/image/upload/v1679651126/File_001-1_-_SHAUN_VARGHESE_-IIITK_dak9iv.jpg",
+            name: "Sandeep Gundlapalli",
+            phoneNumber: "8106253055",
+            email: "sandeep20bcs51@iiitkottayam.ac.in",
+            image: "https://res.cloudinary.com/dpu074ryk/image/upload/v1679678831/sandeep_d4rkpt.jpg",
         },
         ],
-        registration: "https://unstop.com/p/e-lafda-codm-gaming-event-apoorv-iiit-kottayam-650725",
+        registration: "https://forms.gle/oWGYD5fkgkhh8CbY9",
         date: "Date TBD",
         time: "Time TBD",
         tag: ""
@@ -528,7 +527,7 @@ const events = [
         subheading: "Technical",
         name: "Bash or Crash",
         cat: ['technical', 'contests'],
-        description: `Rally your troops and get your game face on, it's time to show the world what you are made of! Prepare for an epic battle in our CODM event at Apoorv Fest! Doesn't matter if you're a sharpshooter or a complete rookie, we've got the perfect arena for you to unleash your inner soldier and dominate the competition.`,
+        description: `Get ready for Apoorv\'s very own Shell Shock Scripting Showdown! Are you a scripting guru, a master of the command line? If so, we challenge you to compete in a battle of Bash shell scripting. /n We're not looking for just any script; we want your most creative and efficient code, something that will make the T-1000 look like a teddy bear. Put on your coding hats, prime your terminals, and get ready to blow the judges' circuits.`,
         link: "bash-or-crash",
         organisers: [
             {
@@ -619,7 +618,7 @@ const events = [
     },
     {
         id: 26,
-        poster: "",
+        poster: "https://res.cloudinary.com/dpu074ryk/image/upload/v1679685049/poetry-a4-1_sgqzx9.jpg",
         alt: "Verse Voyage",
         subheading: "Trendles",
         name: "Verse Voyage",
@@ -636,7 +635,7 @@ const events = [
     },
     {
         id: 27,
-        poster: "",
+        poster: "https://res.cloudinary.com/dpu074ryk/image/upload/v1679684263/alpha-trade-a4_sgqjuq.jpg",
         alt: "The Alpha trader",
         subheading: "Trendles",
         name: "The Alpha trader",
@@ -719,7 +718,7 @@ const events = [
     },
     {
         id: 31,
-        poster: "",
+        poster: "https://res.cloudinary.com/dpu074ryk/image/upload/v1679684919/story-a4_clldev.jpg",
         alt: "Writer's Rumble",
         subheading: "Trendles",
         name: "Writer's Rumble",
