@@ -298,9 +298,8 @@ const events = [
         "`,
         link: "hackoona-matata",
         organisers: [
-
         ],
-        registration: "https://unstop.com/festival/apoorv-indian-institute-of-information-technology-iiit-kottayam-118308",
+        registration: "apply with devfolio",
         date: "Date TBD",
         time: "Time TBD",
         tag: ""

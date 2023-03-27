@@ -141,6 +141,7 @@ const Navbar = (props) => {
                     <NavItem text="Home" />
                     <NavItem text="Sponsors" />
                     <NavItem text="Timeline" />
+                    <NavItem text="Speakers" />
                     <NavItem text="Events" />
                     <NavItem text="Team" />
                     <NavItem text="Sponsor Us" />

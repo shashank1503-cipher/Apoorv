@@ -16,7 +16,7 @@ const Speakers = () => {
 
 
     return (
-        <div style={{ width: "100%", display: "flex", justifyContent: "center", backgroundColor: "#F2EFEB" }}>
+        <div style={{ width: "100%", display: "flex", justifyContent: "center", backgroundColor: "#F2EFEB" }} id="speakers">
             <div className={styles.SpeakersContainer}>
                 <motion.div className={styles.title} initial="hidden" whileInView="visible" variants={{
                     hidden: {
