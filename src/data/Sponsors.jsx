@@ -39,7 +39,15 @@ const Sponsors = {
         {
             logo: "https://res.cloudinary.com/wtcey4wy/image/upload/v1679765844/apoorv/sponsors/fabLabs_l811eo.png",
             name: 'FabLabs.in'
-        }
+        },
+        {
+            logo: "https://res.cloudinary.com/wtcey4wy/image/upload/v1679922209/apoorv/sponsors/sbi_b6n1yx.png",
+            name: 'SBI'
+        },
+        {
+            logo: "https://res.cloudinary.com/wtcey4wy/image/upload/v1679922523/apoorv/sponsors/T.I.M.E_zcy1q1.png",
+            name: 'T.I.M.E'
+        },
     ]
 }
 
