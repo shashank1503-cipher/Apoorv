@@ -648,7 +648,7 @@ const events = [
         organisers: [
 
         ],
-        registration: "https://unstop.com/festival/apoorv-indian-institute-of-information-technology-iiit-kottayam-118308",
+        registration: "https://unstop.com/p/the-alpha-trader-by-iiit-kottayam-in-association-with-stockgro-apoorv-iiit-kottayam-651996",
         date: "Date TBD",
         time: "Time TBD",
         tag: ""
