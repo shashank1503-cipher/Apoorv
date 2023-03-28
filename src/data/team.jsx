@@ -95,7 +95,42 @@ const mentors = [
 			instagram: "https://www.instagram.com/junior._.geek/",
 			twitter: "https://twitter.com/DivyanshPanwa18",
 		}
-	}
+	},
+	{
+		id: 9,
+		name: "Ankur Mandal",
+		club: "Social Club",
+		image: "https://res.cloudinary.com/dpjf6btln/image/upload/v1680006282/WhatsApp_Image_2023-03-24_at_20.36.22_-_ANKUR_KUMAR_MANDAL_-IIITK_uxtzha.png",
+		gif: "https://media.tenor.com/QpCSDAc37icAAAAC/srk-shahrukh.gif",
+		socials: {
+			linkedin: "https://www.linkedin.com/in/ankur-kumar-mandal-a22b861b9/",
+			instagram: "https://www.instagram.com/aperture_traveller/",
+			twitter: "https://twitter.com/AnkurKu57084475",
+		}
+	},
+	{
+		id: 10,
+		name: "Prajjwal Jogdand",
+		club: "Social Club",
+		image: "https://res.cloudinary.com/dq1hdtycj/image/upload/v1679651496/prajjwal_-_PRAJJWAL_MAHARUDRA_JOGDAND_-IIITK_joxdmk.png",
+		gif: "https://media.tenor.com/j-r-ILbtdkEAAAAC/luffy-one-piece.gif",
+		socials: {
+			linkedin: "https://www.linkedin.com/in/prajjwal-jogdand-562792201/",
+			instagram: "https://www.instagram.com/prajjwaljogdand/",
+		}
+	},
+	{
+		id: 11,
+		name: "Shubham Anand",
+		club: "Cultural Club",
+		image: "https://res.cloudinary.com/dpjf6btln/image/upload/v1680006753/IMG_3858-01_-_SHUBHAM_ANAND_jreygj.jpg",
+		gif: "https://res.cloudinary.com/dpjf6btln/image/upload/v1680006941/my-meme_kyp2me.webp",
+		socials: {
+			linkedin: "https://www.linkedin.com/in/shubham-anand-91a10b211/",
+			instagram: "https://www.instagram.com/shub_ham2729/",
+		}
+	},
+
 
 ];
 
@@ -247,29 +282,19 @@ const eventManagers = [
 	},]
 
 const design = [
-	{
-		id: 1,
-		name: "Prajjwal Jogdand",
-		club: "Social Club",
-		image: "https://res.cloudinary.com/dq1hdtycj/image/upload/v1679651496/prajjwal_-_PRAJJWAL_MAHARUDRA_JOGDAND_-IIITK_joxdmk.png",
-		gif: "https://media.tenor.com/j-r-ILbtdkEAAAAC/luffy-one-piece.gif",
-		socials: {
-			linkedin: "https://www.linkedin.com/in/prajjwal-jogdand-562792201/",
-			instagram: "https://www.instagram.com/prajjwaljogdand/",
-		}
-	},
-	{
-		id: 2,
-		name: "Roshin Nishad",
-		club: "Tech Club",
-		image: "https://res.cloudinary.com/dq1hdtycj/image/upload/v1679650974/starlight_-_ROSHIN_NISHAD_-IIITK_1_plbf7s.jpg",
-		gif: "https://c.tenor.com/G9HVBz-OJ-oAAAAC/dancing-peter-parker.gif",
-		socials: {
-			linkedin: "https://www.linkedin.com/in/roshin-nishad/",
-			instagram: "https://www.instagram.com/juve_vittoria/",
-			twitter: "https://twitter.com/GetPsyched67",
-		}
-	},
+	
+	// {
+	// 	id: 2,
+	// 	name: "Roshin Nishad",
+	// 	club: "Tech Club",
+	// 	image: "https://res.cloudinary.com/dq1hdtycj/image/upload/v1679650974/starlight_-_ROSHIN_NISHAD_-IIITK_1_plbf7s.jpg",
+	// 	gif: "https://c.tenor.com/G9HVBz-OJ-oAAAAC/dancing-peter-parker.gif",
+	// 	socials: {
+	// 		linkedin: "https://www.linkedin.com/in/roshin-nishad/",
+	// 		instagram: "https://www.instagram.com/juve_vittoria/",
+	// 		twitter: "https://twitter.com/GetPsyched67",
+	// 	}
+	// },
 ];
 
 export { mentors, developers, eventManagers, design };

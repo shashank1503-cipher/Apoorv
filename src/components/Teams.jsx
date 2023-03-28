@@ -1,4 +1,4 @@
-import { design, developers, mentors } from "@/data/team";
+import { design, developers, mentors } from "@/data/Team";
 import { Parallax } from "react-scroll-parallax";
 import styles from "../styles/Teams.module.css";
 import TeamCard from "./Cards/TeamCard";
@@ -85,7 +85,7 @@ const Teams = (props) => {
 						</Parallax>)
 				})}</div> */}
 
-				<h2 className={styles.team_maintext + " " + styles.team_subtitle}>
+				{/* <h2 className={styles.team_maintext + " " + styles.team_subtitle}>
 					The Design Team				
 				</h2>
 				<p className={styles.team_subtext + " " + styles.team_stitletext}>
@@ -97,7 +97,7 @@ const Teams = (props) => {
 						<Parallax key={index} speed={index & 1 ? 5 : -5}>
 							<TeamCard key={index} image={mentor.image} gif={mentor.gif} alt={mentor.name} subheading={mentor.club} title={mentor.name} socials={mentor.socials} onHoverAnimation={"scale"} />
 						</Parallax>)
-				})}</div>
+				})}</div> */}
 
 
 				<div className={styles.more_coming_in}>
