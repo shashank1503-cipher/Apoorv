@@ -187,9 +187,10 @@ const EventListContainer = () => {
                     e.cat.includes(selectedCat) && e.cat.includes(selectedSub)
                         
                 ).map((event, index) => {
+                    // console.log(event.key)
                     return (
                         <motion.div
-                            key={event.key}
+                            key={event.id}
                             initial="hidden" animate={'visible'} variants={{
                                 hidden: {
                                     y: 50,
