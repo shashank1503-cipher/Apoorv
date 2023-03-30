@@ -34,8 +34,8 @@ const EventHeading = (props) => {
                     : (
                         <div
                             className={"apply-button"}
-                            data-hackathon-slug="apoorv-iiitk"
-                            data-button-theme="light"
+                            data-hackathon-slug="apoorv-hackathon"
+                            data-button-theme="dark"
                             style={{ height: "44px", width: "312px" }}
                         ></div>)}
             </div>

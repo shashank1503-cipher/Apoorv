@@ -285,7 +285,7 @@ const events = [
 
     {
         id: 13,
-        poster: "https://res.cloudinary.com/dbarpjvas/image/upload/v1679919305/hackthon-a4_hy1vkf.jpg",
+        poster: "https://res.cloudinary.com/dpjf6btln/image/upload/v1680166467/hackthon-a4_1_p432gq.png",
         alt: "Hackoona Matata",
         subheading: "Technical",
         name: "Hackoona Matata",
