@@ -1,24 +1,5 @@
 const events = [
     {
-        id: 1,
-        poster: "https://res.cloudinary.com/dp4dftwrv/image/upload/v1679584516/apoorv_3_to_4_without_star_in_o_mkdhfa.jpg",
-        alt: "Symphony of voices",
-        subheading: "Cultural",
-        name: "Symphony of voices",
-        cat: ['cultural', 'singing'],
-        description: "Ready to experience the timeless beauty of classical music? From haunting arias to soaring choral pieces, showcase your vocal range and technique to a panel of expert judges. Whether you prefer Baroque, Romantic, or Contemporary pieces, let this Solo vocal competition help your voice transport the audience to another world with its elegance and grace.",
-        link: "symphony-of-voices",
-        organisers: [
-            {},
-            {}
-        ],
-        registration: "https://unstop.com/festival/apoorv-indian-institute-of-information-technology-iiit-kottayam-118308",
-        date: "Date TBD",
-        time: "Time TBD",
-        tag: ""
-
-    },
-    {
         id: 2,
         poster: "https://res.cloudinary.com/dp4dftwrv/image/upload/v1679590243/Beyond_the_harmony_hu8wcf.png",
         alt: "Beyond the harmony",
