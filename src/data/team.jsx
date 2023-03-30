@@ -130,6 +130,17 @@ const mentors = [
 			instagram: "https://www.instagram.com/shub_ham2729/",
 		}
 	},
+	{
+		id: 12,
+		name: "Harsh Raj",
+		club: "Trendles Club",
+		image: "https://res.cloudinary.com/wtcey4wy/image/upload/v1680009783/apoorv/teams/harsh_raj_o1mxns.jpg",
+		gif: "https://media.tenor.com/Z6Gqy-qS-EQAAAAC/kakashi-naruto.gif",
+		socials: {
+			linkedin: "https://www.linkedin.com/in/harsh-raj-181801206/",
+			instagram: "https://instagram.com/harsh_raj_gupta07?igshid=ZDdkNTZiNTM=",
+		}
+	},
 
 
 ];
