@@ -366,7 +366,7 @@ const events = [
             }
 
         ],
-        registration: "https://unstop.com/festival/apoorv-indian-institute-of-information-technology-iiit-kottayam-118308",
+        registration: "https://unstop.com/p/codesprint-apoorv-iiit-kottayam-656874",
         date: "Date TBD",
         time: "Time TBD",
         tag: ""
