@@ -22,6 +22,10 @@ const Sponsors = {
             logo: "https://res.cloudinary.com/wtcey4wy/image/upload/v1679663462/apoorv/sponsors/polygon-matic-logo_wye3am.png",
             name: "Polygon"
         },
+        {
+            logo: "https://res.cloudinary.com/dpjf6btln/image/upload/v1680168393/Filecoin.svg_s3w0jl.png",
+            name: "Filecoin"
+        },
     ],
     3: [
         {
