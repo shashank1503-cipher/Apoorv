@@ -14,7 +14,7 @@ const OrganizerContainer = ({ organiser }) => {
             <div className={styles.contactWrapper}>
                 {organiser.map((item, index) => {
                     return (
-                        <ContainerCard key={index} image={item.image} alt={item.name} subheading={item.alias} title={item.name} subtitles={[item.email, item.phoneNumber]} onHoverAnimation={'scale'} />
+                        <ContainerCard key={index} gif={item.gif} image={item.image} alt={item.name} subheading={item.alias} title={item.name} subtitles={[item.email, item.phoneNumber]} onHoverAnimation={'scale'} />
                     )
                 })}
             </div>
