@@ -1,4 +1,4 @@
-import { design, developers, mentors } from "@/data/Team";
+import { design, developers, mentors } from "@/data/team";
 import { Parallax } from "react-scroll-parallax";
 import styles from "../styles/Teams.module.css";
 import TeamCard from "./Cards/TeamCard";

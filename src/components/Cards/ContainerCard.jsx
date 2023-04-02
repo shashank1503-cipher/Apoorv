@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import styles from '../../styles/ContainerCard.module.css'
-import React from 'react'
+import React, { useState } from 'react'
 import { FaCaretRight } from 'react-icons/fa'
 const ContainerCard = (props) => {
     const [isHovering, setIsHovered] = useState(false);

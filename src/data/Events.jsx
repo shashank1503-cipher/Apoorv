@@ -1,24 +1,5 @@
 const events = [
     {
-        id: 1,
-        poster: "https://res.cloudinary.com/dp4dftwrv/image/upload/v1679584516/apoorv_3_to_4_without_star_in_o_mkdhfa.jpg",
-        alt: "Symphony of voices",
-        subheading: "Cultural",
-        name: "Symphony of voices",
-        cat: ['cultural', 'singing'],
-        description: "Ready to experience the timeless beauty of classical music? From haunting arias to soaring choral pieces, showcase your vocal range and technique to a panel of expert judges. Whether you prefer Baroque, Romantic, or Contemporary pieces, let this Solo vocal competition help your voice transport the audience to another world with its elegance and grace.",
-        link: "symphony-of-voices",
-        organisers: [
-            {},
-            {}
-        ],
-        registration: "https://unstop.com/festival/apoorv-indian-institute-of-information-technology-iiit-kottayam-118308",
-        date: "Date TBD",
-        time: "Time TBD",
-        tag: ""
-
-    },
-    {
         id: 2,
         poster: "https://res.cloudinary.com/dp4dftwrv/image/upload/v1679590243/Beyond_the_harmony_hu8wcf.png",
         alt: "Beyond the harmony",
@@ -33,43 +14,13 @@ const events = [
                 name: "Valluru Uday Kiran",
                 phoneNumber: "9704271846",
                 email: "",
-                image: "https://res.cloudinary.com/dpjf6btln/image/upload/v1679651316/Uday_Kiran_i0yovi.jpg"
+                image: "https://res.cloudinary.com/dpjf6btln/image/upload/v1679651316/Uday_Kiran_i0yovi.jpg",
+                gif: ""
             }
         ],
         registration: "https://unstop.com/events/beyond-the-harmony-western-and-classical-apoorv-iiit-kottayam-648770",
-        date: "Date TBD",
-        time: "Time TBD",
-        tag: ""
-    },
-    {
-        id: 3,
-        poster: "https://res.cloudinary.com/dp4dftwrv/image/upload/v1679584795/A4_yal2py.png",
-        alt: "Battle of Bands",
-        subheading: "Cultural",
-        name: "Battle of Bands",
-        cat: ['cultural', 'singing'],
-        description: "Get ready to rock the stage and bring down the house in our epic Battle of the Bands! Show off your band's musical chops and stage presence as you compete against some of the most talented up-and-coming artists around.So tune up your instruments, get in the zone, and let the music do the talking as you battle it out!",
-        link: "battle-of-bands",
-        organisers: [
-            {
-                key: 1,
-                name: "Nishant Bhujbal",
-                phoneNumber: "9307099632",
-                email: "",
-                image: "https://res.cloudinary.com/dpjf6btln/image/upload/v1679651705/IMG20221024222740_hz654q.jpg"
-
-            },
-            {
-                key: 2,
-                name: "Palash Rawat",
-                phoneNumber: "8956212546",
-                email: "",
-                image: "https://res.cloudinary.com/dpjf6btln/image/upload/v1679651751/20230323_133555_sibdh2.jpg",
-            },
-        ],
-        registration: "https://unstop.com/events/battle-of-bands-apoorv-iiit-kottayam-649003",
-        date: "Date TBD",
-        time: "Time TBD",
+        date: "6th April",
+        time: "7:00 PM",
         tag: ""
     },
     {
@@ -87,13 +38,14 @@ const events = [
                 name: "Abhishek Porwal",
                 phoneNumber: "9414436977",
                 email: "",
-                image: "http://res.cloudinary.com/dpjf6btln/image/upload/v1679653559/20230113_042422_juijxg.jpg"
+                image: "http://res.cloudinary.com/dpjf6btln/image/upload/v1679653559/20230113_042422_juijxg.jpg",
+                gif: ""
             },
 
         ],
         registration: "https://unstop.com/events/strings-and-keys-apoorv-iiit-kottayam-650161",
-        date: "Date TBD",
-        time: "Time TBD",
+        date: "7th April",
+        time: "5:30 PM",
         tag: ""
     },
     {
@@ -111,13 +63,13 @@ const events = [
                 name: "Phanish",
                 phoneNumber: '9030110522',
                 email: "",
-                image: "https://res.cloudinary.com/dpjf6btln/image/upload/v1679651867/Phanish_solo_sizzle_qth4px.jpg"
-
+                image: "https://res.cloudinary.com/dpjf6btln/image/upload/v1679651867/Phanish_solo_sizzle_qth4px.jpg",
+                gif: ""
             }
         ],
         registration: "https://unstop.com/events/solo-sizzle-apoorv-iiit-kottayam-651561",
-        date: "Date TBD",
-        time: "Time TBD",
+        date: "7th April",
+        time: "6:30 PM",
         tag: ""
     },
     {
@@ -135,12 +87,13 @@ const events = [
                 name: 'Shivani',
                 phoneNumber: '8555942321',
                 email: "",
-                image: "https://res.cloudinary.com/dpjf6btln/image/upload/v1679651902/shivani_ta9dlm.jpg"
+                image: "https://res.cloudinary.com/dpjf6btln/image/upload/v1679651902/shivani_ta9dlm.jpg",
+                gif: ""
             }
         ],
         registration: "https://unstop.com/events/pulse-and-the-beat-apoorv-iiit-kottayam-649730",
-        date: "Date TBD",
-        time: "Time TBD",
+        date: "6th April",
+        time: "5:30 PM",
         tag: ""
     },
     {
@@ -158,7 +111,8 @@ const events = [
                 name: 'Jain Maria Justine',
                 phoneNumber: '8138043646',
                 email: "",
-                image: "https://res.cloudinary.com/dpjf6btln/image/upload/v1679652207/Jain_Maria_Justine_qkkvsg.jpg"
+                image: "https://res.cloudinary.com/dpjf6btln/image/upload/v1679652207/Jain_Maria_Justine_qkkvsg.jpg",
+                gif: ""
             }
         ],
         registration: "https://unstop.com/events/impulse-dare-spot-dance-apoorv-iiit-kottayam-648932",
@@ -181,12 +135,13 @@ const events = [
                 name: 'Rakshith Dondapati',
                 phoneNumber: '7981325861',
                 email: 'dondapati21bcs164@iiitkottayam.ac.in',
-                image: "https://res.cloudinary.com/dpjf6btln/image/upload/v1679652268/Rakshith_Dondapati_wh8ddj.jpg"
+                image: "https://res.cloudinary.com/dpjf6btln/image/upload/v1679652268/Rakshith_Dondapati_wh8ddj.jpg",
+                gif: ""
             }
         ],
         registration: "https://unstop.com/events/fake-it-till-you-make-it-apoorv-iiit-kottayam-650149",
-        date: "Date TBD",
-        time: "Time TBD",
+        date: "8th April",
+        time: "4:15 PM",
         tag: ""
     },
     {
@@ -204,7 +159,8 @@ const events = [
                 name: 'Kanak',
                 phoneNumber: '8690049955',
                 email: "",
-                image: "http://res.cloudinary.com/dpjf6btln/image/upload/v1679665820/Kanak_Mockbuster_sdxup8.jpg"
+                image: "http://res.cloudinary.com/dpjf6btln/image/upload/v1679665820/Kanak_Mockbuster_sdxup8.jpg",
+                gif: ""
             }
         ],
         registration: "https://unstop.com/events/mockbuster-apoorv-iiit-kottayam-648975",
@@ -226,7 +182,8 @@ const events = [
                 key: 1,
                 name: 'Seth Randive',
                 phoneNumber: '9426179783',
-                email: 'seth21bcy41@iiitkottayam.ac.in'
+                email: 'seth21bcy41@iiitkottayam.ac.in',
+                gif: ""
             }
         ],
         registration: "https://unstop.com/events/comedy-combat-apoorv-iiit-kottayam-649002",
@@ -249,12 +206,13 @@ const events = [
                 name: 'Neha',
                 phoneNumber: '9746931472',
                 email: "neha21bcs7@iiitkottayam.ac.in",
-                image: "https://res.cloudinary.com/dpjf6btln/image/upload/v1679652417/Neha_rlvmqx.jpg"
+                image: "https://res.cloudinary.com/dpjf6btln/image/upload/v1679652417/Neha_rlvmqx.jpg",
+                gif: ""
             }
         ],
         registration: "https://unstop.com/events/face-off-apoorv-iiit-kottayam-649578",
-        date: "Date TBD",
-        time: "Time TBD",
+        date: "8th April",
+        time: "10:00 AM",
         tag: ""
     },
     {
@@ -272,12 +230,13 @@ const events = [
                 name: 'Aswin',
                 phoneNumber: '8058250943',
                 email: 'aswin21bcy5@iiitkottayam.ac.in',
-                image: "https://res.cloudinary.com/dpjf6btln/image/upload/v1679652461/Aswin_Blizzart_pixltt.jpg"
+                image: "https://res.cloudinary.com/dpjf6btln/image/upload/v1679652461/Aswin_Blizzart_pixltt.jpg",
+                gif: ""
             }
         ],
         registration: "https://unstop.com/events/blizzart-apoorv-iiit-kottayam-649704",
-        date: "Date TBD",
-        time: "Time TBD",
+        date: "6th April",
+        time: "11:30 AM",
         tag: ""
     },
 
@@ -285,7 +244,7 @@ const events = [
 
     {
         id: 13,
-        poster: "https://res.cloudinary.com/dbarpjvas/image/upload/v1679919305/hackthon-a4_hy1vkf.jpg",
+        poster: "https://res.cloudinary.com/dpjf6btln/image/upload/v1680166467/hackthon-a4_1_p432gq.png",
         alt: "Hackoona Matata",
         subheading: "Technical",
         name: "Hackoona Matata",
@@ -298,10 +257,17 @@ const events = [
         "`,
         link: "hackoona-matata",
         organisers: [
+           { 
+            key: 1,
+            name: "Vishal Lokare",
+            phoneNumber: '+91 95913 63761',
+            image:"https://res.cloudinary.com/dvbzt3j3v/image/upload/v1679651205/IMG_1781_1_-_VISHAL_LOKARE_-IIITK_acpgvv.jpg",
+            gif: "https://media.tenor.com/s0ScpkzQZvIAAAAC/phir-hera-pheri-akshay-kumar.gif",
+	    }
         ],
         registration: "apply with devfolio",
-        date: "Date TBD",
-        time: "Time TBD",
+        date: "6th April",
+        time: "11:00 AM",
         tag: ""
     },
     {
@@ -319,29 +285,13 @@ const events = [
                 key: 1,
                 name: 'M S Vamsi',
                 phoneNumber: '+91 80500 33710',
-                image: "https://res.cloudinary.com/dvbzt3j3v/image/upload/v1679650902/image_2023-03-23_153238904_-_MAJJI_SAI_VAMSI_-IIITK_mbf6aj.png"
+                image: "https://res.cloudinary.com/dvbzt3j3v/image/upload/v1679650902/image_2023-03-23_153238904_-_MAJJI_SAI_VAMSI_-IIITK_mbf6aj.png",
+                gif: "https://media.tenor.com/RUIwkdSscysAAAAC/slap-angry.gif",
             }
         ],
         registration: "https://unstop.com/hackathons/decentra-apoorv-iiit-kottayam-650589",
-        date: "Date TBD",
-        time: "Time TBD",
-        tag: ""
-    },
-    {
-        id: 15,
-        poster: "https://res.cloudinary.com/dp4dftwrv/image/upload/v1679585783/ai-jam-a4_zfrrwo.png",
-        alt: "AI Jam",
-        subheading: "Technical",
-        name: "AI Jam",
-        cat: ['technical', 'contests'],
-        description: `Are you ready to use the power of AI to create a music sensation like never before? AI Jam is a one-of-a-kind contest where you will use deep learning models to compose music, write lyrics, and produce a stunning music video for a given artist. With the help of AI, you can explore new sounds and styles that push the boundaries of what's possible in music. So put your creative skills to the test, and get ready to take the music industry by storm with AI Jam!`,
-        link: "ai-jam",
-        organisers: [
-
-        ],
-        registration: "https://unstop.com/festival/apoorv-indian-institute-of-information-technology-iiit-kottayam-118308",
-        date: "Date TBD",
-        time: "Time TBD",
+        date: "6th April",
+        time: "02:00 PM",
         tag: ""
     },
     {
@@ -362,11 +312,12 @@ const events = [
                 key: 1,
                 name: "Aditya Tyagi",
                 phoneNumber: "+91 80772 92673",
-                image: "https://res.cloudinary.com/dvbzt3j3v/image/upload/v1679651309/IMG_20230322_132132_-_ADITYA_TYAGI_-IIITK_t6tkt4.jpg"
+                image: "https://res.cloudinary.com/dvbzt3j3v/image/upload/v1679651309/IMG_20230322_132132_-_ADITYA_TYAGI_-IIITK_t6tkt4.jpg",
+                gif: "https://media.tenor.com/MPUjNCFqoikAAAAC/no-hand-cycling-akshay-kumar.gif"
             }
 
         ],
-        registration: "https://unstop.com/festival/apoorv-indian-institute-of-information-technology-iiit-kottayam-118308",
+        registration: "https://unstop.com/p/codesprint-apoorv-iiit-kottayam-656874",
         date: "Date TBD",
         time: "Time TBD",
         tag: ""
@@ -386,15 +337,14 @@ const events = [
                 key: 1,
                 name: "Roshin Nishad",
                 phoneNumber: "+91 83300 25082",
-                image: "https://res.cloudinary.com/dq1hdtycj/image/upload/v1679650974/starlight_-_ROSHIN_NISHAD_-IIITK_1_plbf7s.jpg"
-
-
+                image: "https://res.cloudinary.com/dq1hdtycj/image/upload/v1679650974/starlight_-_ROSHIN_NISHAD_-IIITK_1_plbf7s.jpg",
+                gif: "https://c.tenor.com/G9HVBz-OJ-oAAAAC/dancing-peter-parker.gif.gif"
             }
 
         ],
         registration: "https://unstop.com/hackathons/pixel-perfect-apoorv-iiit-kottayam-652559",
         date: "6th April",
-        time: "3:30 PM",
+        time: "03:30 PM",
         tag: "Master your aesthetic spark! ✨"
     },
     {
@@ -412,7 +362,8 @@ const events = [
             name: "SAKET ROSHAN RAI",
             phoneNumber: "6260205467",
             email: 'roshanrai20bcs122@iiitkottayam.ac.in',
-            image: "https://res.cloudinary.com/dvbzt3j3v/image/upload/v1679651205/IMG-20220910-WA0031_-_SAKET_ROSHAN_RAI_-IIITK_kv0lmj.jpg"
+            image: "https://res.cloudinary.com/dvbzt3j3v/image/upload/v1679651205/IMG-20220910-WA0031_-_SAKET_ROSHAN_RAI_-IIITK_kv0lmj.jpg",
+            gif: "https://media.tenor.com/1F8wdfD4SdgAAAAC/ezio-revelations.gif"
 
         },
         {
@@ -421,6 +372,7 @@ const events = [
             phoneNumber: "7259395776",
             email: "nikhilmenon20bcs16@iiitkottayam.ac.in",
             image: "https://res.cloudinary.com/dvbzt3j3v/image/upload/v1679651205/IMG_20220724_212622_162_-_NIKHIL_MENON_-IIITK_jopslq.jpg",
+            gif: "https://media.tenor.com/HGqYnMAtAJwAAAAC/one-piece.gif"
         },
         {
             key: 3,
@@ -428,11 +380,12 @@ const events = [
             phoneNumber: "9021629698",
             email: "sanjayshitale20bcs82@iiitkottayam.ac.in ",
             image: "https://res.cloudinary.com/dpu074ryk/image/upload/v1679679602/aditya_jcm0sc.jpg",
+            gif: "https://media.tenor.com/ied9B22Pf20AAAAC/itoshi-rin-blue-lock.gif"
         },
         ],
         registration: "https://unstop.com/competitions/project-artemis-apoorv-iiit-kottayam-650922",
-        date: "Date TBD",
-        time: "Time TBD",
+        date: "8th April",
+        time: "06:15 PM",
         tag: ""
     },
     {
@@ -451,12 +404,13 @@ const events = [
                 phoneNumber: "08606922585",
                 email: "gourinair20bec7@​iiitkottayam.ac.in",
                 image: "",
+                gif: ""
             }
 
         ],
         registration: "https://unstop.com/hackathons/capture-the-flag-apoorv-iiit-kottayam-653006",
-        date: "Date TBD",
-        time: "Time TBD",
+        date: "8th April",
+        time: "01:00 PM",
         tag: ""
     },
     {
@@ -475,7 +429,7 @@ const events = [
             phoneNumber: "9660924735",
             email: "pranjalprasoon20bcs41@iiitkottayam.ac.in",
             image: "https://res.cloudinary.com/dpu074ryk/image/upload/v1679678195/pranjal_g9mqbl.jpg",
-
+            gif: "https://media.tenor.com/nYAbPZ6Im4YAAAAC/uwu-cute.gif"
         },
         {
             key: 2,
@@ -483,11 +437,12 @@ const events = [
             phoneNumber: "7649800755",
             email: "shaunvarghese20bcs51@iiitkottayam.ac.in",
             image: "https://res.cloudinary.com/dq1hdtycj/image/upload/v1679651126/File_001-1_-_SHAUN_VARGHESE_-IIITK_dak9iv.jpg",
+            gif: "https://media.tenor.com/S7FIloMJ4LYAAAAC/kiss-yo.gif"
         },
         ],
         registration: "https://forms.gle/HTf2398eeCJBu2BcA",
-        date: "Date TBD",
-        time: "Time TBD",
+        date: "6th April",
+        time: "09:00 PM",
         tag: ""
     },
     {
@@ -505,7 +460,7 @@ const events = [
             phoneNumber: "9660924735",
             email: "pranjalprasoon20bcs41@iiitkottayam.ac.in",
             image: "https://res.cloudinary.com/dpu074ryk/image/upload/v1679678195/pranjal_g9mqbl.jpg",
-
+            gif: "https://media.tenor.com/VmuZR7HafEMAAAAC/julesmumm-bejules.gif"
         },
         {
             key: 2,
@@ -513,11 +468,12 @@ const events = [
             phoneNumber: "8106253055",
             email: "sandeep20bcs51@iiitkottayam.ac.in",
             image: "https://res.cloudinary.com/dpu074ryk/image/upload/v1679678831/sandeep_d4rkpt.jpg",
+            gif: "https://media.tenor.com/4mNIHZ9nnWMAAAAC/dancing-lizard.gif"
         },
         ],
         registration: "https://forms.gle/oWGYD5fkgkhh8CbY9",
-        date: "Date TBD",
-        time: "Time TBD",
+        date: "6th April",
+        time: "09:00 PM",
         tag: ""
     },
     {
@@ -536,6 +492,7 @@ const events = [
                 phoneNumber: "9597424654",
                 email: "harinit20bcs95@iiitkottayam.ac.in",
                 image: "https://res.cloudinary.com/dvbzt3j3v/image/upload/v1679651205/harini-profile_-_HARINI_T_-IIITK_ir3wvo.jpg",
+                gif: "https://media.tenor.com/toTc97ztegUAAAAC/tim-boss-baby.gif"
             },
             {
                 key: 2,
@@ -543,12 +500,13 @@ const events = [
                 phoneNumber: "7259395776",
                 email: "nikhilmenon20bcs16@iiitkottayam.ac.in",
                 image: "https://res.cloudinary.com/dvbzt3j3v/image/upload/v1679651205/IMG_20220724_212622_162_-_NIKHIL_MENON_-IIITK_jopslq.jpg",
+                gif: "https://media.tenor.com/HGqYnMAtAJwAAAAC/one-piece.gif"
             },
 
         ],
         registration: "https://unstop.com/hackathons/bash-or-crash-apoorv-iiit-kottayam-650464",
-        date: "Date TBD",
-        time: "Time TBD",
+        date: "7th April",
+        time: "12:00 PM",
         tag: ""
     },
     {
@@ -567,12 +525,13 @@ const events = [
                 phoneNumber: "9123125993",
                 email: "rahulbarnwal20bec3@iiitkottayam.ac.in",
                 image: "https://res.cloudinary.com/dq1hdtycj/image/upload/v1679651719/20220729_113706_-_RAHUL_BARNWAL_-IIITK_dbphpp.jpg",
+                gif: "https://media.tenor.com/PuKi7sMMIeIAAAAC/zomato-guy.gif"
             },
 
         ],
         registration: "https://unstop.com/hackathons/life-o-mate-apoorv-iiit-kottayam-650525",
-        date: "Date TBD",
-        time: "Time TBD",
+        date: "6th April",
+        time: "04:00 PM",
         tag: ""
     },
 
@@ -590,9 +549,9 @@ const events = [
         organisers: [
 
         ],
-        registration: "https://unstop.com/festival/apoorv-indian-institute-of-information-technology-iiit-kottayam-118308",
-        date: "Date TBD",
-        time: "Time TBD",
+        registration: "https://unstop.com/conferences/mun-model-united-nations-apoorv-iiit-kottayam-655560",
+        date: "6th April",
+        time: "02:00 PM",
         tag: ""
     },
     {
@@ -646,7 +605,13 @@ const events = [
         mettle against the best traders in the game and earn the prestigious title of Alpha trader. Join now and become the envy of your peers!`,
         link: "The-Alpha-trader",
         organisers: [
-
+            {
+                key: 1,
+                name: "Ankur Mandal",
+                phoneNumber: "9182024792",
+                image: "https://res.cloudinary.com/dpjf6btln/image/upload/v1680006282/WhatsApp_Image_2023-03-24_at_20.36.22_-_ANKUR_KUMAR_MANDAL_-IIITK_uxtzha.png",
+                gif: "https://media.tenor.com/QpCSDAc37icAAAAC/srk-shahrukh.gif",
+            },
         ],
         registration: "https://unstop.com/p/the-alpha-trader-by-iiit-kottayam-in-association-with-stockgro-apoorv-iiit-kottayam-651996",
         date: "Date TBD",
@@ -669,7 +634,8 @@ const events = [
                 key: 1,
                 name: "Ujjwal Jain",
                 phoneNumber: '7905008337',
-                email: 'ujjwal21bcs59@iiitkottayam.ac.in'
+                email: 'ujjwal21bcs59@iiitkottayam.ac.in',
+                gif: ""
             }
         ],
         registration: "https://unstop.com/events/memers-brawl-apoorv-iiit-kottayam-649625",
@@ -691,7 +657,8 @@ const events = [
                 key: 1,
                 name: 'Arnav Shah',
                 phoneNumber: '8141273614',
-                email: 'shah21bcs9@iiitkottayam.ac.in'
+                email: 'shah21bcs9@iiitkottayam.ac.in',
+                gif: ""
             }
         ],
         registration: "https://unstop.com/events/brandaid-apoorv-iiit-kottayam-649612",
