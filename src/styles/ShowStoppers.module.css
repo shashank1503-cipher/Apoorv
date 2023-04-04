@@ -1,0 +1,195 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    position: relative;
+}
+
+
+.stopperBar {
+    background-color: #6525DB;
+    width: 100vw;
+    height: 10rem;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    font-family: 'homrice';
+    color: #6525DB;
+    font-weight: 500;
+    -webkit-text-stroke: 1.5px white;
+    letter-spacing: 3px;
+}
+
+.reveal {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #6525DB;
+  z-index: 1;
+}
+
+.cardCont {
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.stopperCardCont{
+    position: relative;
+    perspective: 1000px;
+    /* background-color: #6525DB; */
+    width: 50%;
+    min-width: 24rem;
+    text-align: center;
+    align-items: center;
+}
+
+.stopperCard {
+    position: relative;
+    display: inline-block;
+    width: 24rem;
+    height: 36rem;
+    z-index: 1;
+    overflow: hidden;
+    /* background-color: #6525DB; */
+    cursor: pointer;
+
+    transition: transform 0.3s ease-out;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.stopperCard img {
+    display: inline-block;
+    position: relative;
+    max-width: 100%;
+    transform: scale(1.02);
+    transition: all 0.25s ease;
+    height: 100%;
+}
+
+.stopperCardCont:hover .stopperCard {
+  /* transform: rotateX(10deg) rotateY(-10deg) scale(1.05);  */
+}
+
+
+.name {
+    color: white;z-index: 1;
+    font-family: 'homrice';
+    font-size: 2.5rem;
+    position: relative;
+    right:15%;
+    /* text-align: center; */
+}
+
+.time {
+    color: white;
+    z-index: 1;font-size: 1rem;
+    display: flex;
+    align-items: center;
+    /* background-color: #6525DB; */
+    padding: 1px;
+    color: rgba(255,255,255,0.5);
+    position: absolute;
+    /* bottom: -1.5rem; */
+    bottom: 0px;
+    right: 30%;
+    transition: all 0.25s ease;
+}
+
+.stopperCard:hover .time {
+
+  color: rgba(255,255,255,1);
+  /* transform: scale(1.01); */
+  /* margin-left: 3px; */
+}
+
+
+
+.icon {
+  font-size: 18px;
+}
+
+.data {
+    position: absolute;
+    width: 120%;
+    height: 100px;
+    display: flex;
+    margin-left: 1rem;
+    bottom: 4rem;
+    border-radius: 40rem;
+    transform: rotateZ(-10deg);
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    padding: 0px 0rem;
+    background-color: rgba(0,0,0,0.9);
+    background: linear-gradient(60deg, rgba(0,0,0,0.7), 20% ,rgba(0,0,0,1));
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+    /* justify-content: flex-end; */
+    flex-direction: column;
+    transition: all 0.25s ease;
+}
+
+.stopperCard:hover::before, .stopperCard:hover::after{
+    opacity: 0;
+}
+
+
+
+.stopperCard::before,
+.stopperCard::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: all 0.25s ease;
+  mix-blend-mode: multiply;
+}
+
+.stopperCard::before {
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(0, 0, 0, 0.5) 0%,
+    rgba(0, 0, 0, 0.3) 50%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.stopperCard::after {
+  background-image: linear-gradient(
+    to bottom left,
+    rgba(0, 0, 0, 0.5) 0%,
+    rgba(0, 0, 0, 0.3) 50%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+
+@media screen and (max-width: 800px) {
+
+  .stopperBar {
+    font-size: 3rem;
+  }
+
+  .stopperCard {
+    width: 20rem;
+    height: 30rem;
+  }
+
+}
+@media screen and (max-width: 500px) {
+
+  .stopperBar {
+    font-size: 2rem;
+  }
+
+
+
+}
