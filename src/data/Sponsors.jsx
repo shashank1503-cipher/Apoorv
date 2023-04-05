@@ -48,10 +48,20 @@ const Sponsors = {
             logo: "https://res.cloudinary.com/wtcey4wy/image/upload/v1679922209/apoorv/sponsors/sbi_b6n1yx.png",
             name: 'SBI'
         },
-        // {
-        //     logo: "https://res.cloudinary.com/wtcey4wy/image/upload/v1679922523/apoorv/sponsors/T.I.M.E_zcy1q1.png",
-        //     name: 'T.I.M.E'
-        // },
+        {
+            logo: "https://res.cloudinary.com/wtcey4wy/image/upload/v1679922523/apoorv/sponsors/T.I.M.E_zcy1q1.png",
+            name: 'T.I.M.E'
+        },
+        {
+            logo: "https://res.cloudinary.com/wtcey4wy/image/upload/v1680701078/apoorv/sponsors/milma_lnmwpc.png",
+            name: "Milma"
+        }
+    ],
+    4: [
+        {
+            logo: "https://res.cloudinary.com/wtcey4wy/image/upload/v1680701077/apoorv/sponsors/adda_q5dyvv.jpg",
+            name: "Adda52"
+        }
     ]
 }
 
