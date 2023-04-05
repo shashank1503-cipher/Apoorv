@@ -86,7 +86,7 @@ export default function Home() {
           <Description />
           <TimelineNew />
           <Speakers />
-          {/* <ShowStoppers/> */}
+          <ShowStoppers/>
           <Sponsor />
           <Footer />
         </>}
