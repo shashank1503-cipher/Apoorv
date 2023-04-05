@@ -19,8 +19,8 @@ const events = [
             }
         ],
         registration: "https://unstop.com/events/beyond-the-harmony-western-and-classical-apoorv-iiit-kottayam-648770",
-        date: "6th April",
-        time: "7:00 PM",
+        date: "8th April",
+        time: "4:30 PM",
         tag: ""
     },
     {
@@ -45,7 +45,7 @@ const events = [
         ],
         registration: "https://unstop.com/events/strings-and-keys-apoorv-iiit-kottayam-650161",
         date: "7th April",
-        time: "5:30 PM",
+        time: "6:30 PM",
         tag: ""
     },
     {
@@ -69,7 +69,7 @@ const events = [
         ],
         registration: "https://unstop.com/events/solo-sizzle-apoorv-iiit-kottayam-651561",
         date: "7th April",
-        time: "6:30 PM",
+        time: "5:30 PM",
         tag: ""
     },
     {
@@ -92,7 +92,7 @@ const events = [
             }
         ],
         registration: "https://unstop.com/events/pulse-and-the-beat-apoorv-iiit-kottayam-649730",
-        date: "6th April",
+        date: "8th April",
         time: "5:30 PM",
         tag: ""
     },
@@ -116,8 +116,8 @@ const events = [
             }
         ],
         registration: "https://unstop.com/events/impulse-dare-spot-dance-apoorv-iiit-kottayam-648932",
-        date: "Date TBD",
-        time: "Time TBD",
+        date: "8th April",
+        time: "3:00 PM",
         tag: ""
     },
     {
@@ -141,7 +141,7 @@ const events = [
         ],
         registration: "https://unstop.com/events/fake-it-till-you-make-it-apoorv-iiit-kottayam-650149",
         date: "8th April",
-        time: "4:15 PM",
+        time: "1:00 PM",
         tag: ""
     },
     {
@@ -187,8 +187,8 @@ const events = [
             }
         ],
         registration: "https://unstop.com/events/comedy-combat-apoorv-iiit-kottayam-649002",
-        date: "Date TBD",
-        time: "Time TBD",
+        date: "6th April",
+        time: "7:30 PM",
         tag: ""
     },
     {
@@ -212,7 +212,7 @@ const events = [
         ],
         registration: "https://unstop.com/events/face-off-apoorv-iiit-kottayam-649578",
         date: "8th April",
-        time: "10:00 AM",
+        time: "9:30 AM",
         tag: ""
     },
     {
@@ -318,8 +318,8 @@ const events = [
 
         ],
         registration: "https://unstop.com/p/codesprint-apoorv-iiit-kottayam-656874",
-        date: "Date TBD",
-        time: "Time TBD",
+        date: "7th April",
+        time: "4:00 PM",
         tag: ""
     },
     {
@@ -385,7 +385,7 @@ const events = [
         ],
         registration: "https://unstop.com/competitions/project-artemis-apoorv-iiit-kottayam-650922",
         date: "8th April",
-        time: "06:15 PM",
+        time: "11:30 AM",
         tag: ""
     },
     {
@@ -409,8 +409,8 @@ const events = [
 
         ],
         registration: "https://unstop.com/hackathons/capture-the-flag-apoorv-iiit-kottayam-653006",
-        date: "8th April",
-        time: "01:00 PM",
+        date: "7th April",
+        time: "02:00 PM",
         tag: ""
     },
     {
@@ -506,7 +506,7 @@ const events = [
         ],
         registration: "https://unstop.com/hackathons/bash-or-crash-apoorv-iiit-kottayam-650464",
         date: "7th April",
-        time: "12:00 PM",
+        time: "09:30 AM",
         tag: ""
     },
     {
@@ -614,8 +614,8 @@ const events = [
             },
         ],
         registration: "https://unstop.com/p/the-alpha-trader-by-iiit-kottayam-in-association-with-stockgro-apoorv-iiit-kottayam-651996",
-        date: "Date TBD",
-        time: "Time TBD",
+        date: "6th April",
+        time: "12:00 PM",
         tag: ""
     },
     {
@@ -662,8 +662,8 @@ const events = [
             }
         ],
         registration: "https://unstop.com/events/brandaid-apoorv-iiit-kottayam-649612",
-        date: "Date TBD",
-        time: "Time TBD",
+        date: "6th April",
+        time: "5:00 PM",
         tag: ""
     },
     {
