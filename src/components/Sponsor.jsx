@@ -14,7 +14,7 @@ const Sponsor = () => {
         1: 'TITLE',
         2: 'TECH',
         3: 'EMERALD',
-        4: "REGISTRATION"
+        // 4: "REGISTRATION"
     }
 
     const [sponsorsList, setSponsorsList] = useState(Sponsors)
@@ -102,7 +102,7 @@ const Sponsor = () => {
                                         {sponsors_class[sponsor]}
                                     </div>
                                 </div>
-                                {sponsor !== "4" &&
+                                {sponsor !== "3" &&
                                     <div className={styles.lines}>
                                         <div className={styles.shortLine}></div>
                                         <div className={styles.shortLine}></div>
