@@ -129,7 +129,7 @@ const timelineData = [{
         {
             id: 16,
             name: 'Capture The Flag',
-            date: '8th April 2023',
+            date: '7th April 2023',
             time: '2:00 PM',
             details: 'The Ultimate Capture the Flag Event',
             link: "capture-the-flag",
@@ -191,7 +191,7 @@ const timelineData = [{
             name: 'Project Aятємis',
             date: '8th April 2023',
             time: '11:30 AM',
-            details: "Be the next Hardy Boys!",
+            details: "Unleash the adventurer within you.!",
             link: "project-artemis",
         },
         {
