@@ -128,11 +128,11 @@ const timelineData = [{
         },
         {
             id: 16,
-            name: 'Commit The Flag',
+            name: 'Capture The Flag',
             date: '8th April 2023',
             time: '2:00 PM',
             details: 'The Ultimate Capture the Flag Event',
-            link: "commit-the-flag",
+            link: "capture-the-flag",
         },
         {
             id: 17,
