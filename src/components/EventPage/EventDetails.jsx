@@ -29,7 +29,7 @@ const EventDetails = (props) => {
                   flexDirection: "column",
                 }}
               >
-                Haha! April's Fool!
+                Haha! April&apos;s Fool!
                 <br /> Wait... It was on 1st April?
                 <br />
                 Then the flag must have been revealed!
