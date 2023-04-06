@@ -395,7 +395,7 @@ const events = [
         subheading: "Technical",
         name: "Capture The Flag",
         cat: ['technical', 'contests'],
-        description: `To create the best lock, know what breaks the good ones around./n /nCompete for the final flag in a labyrinth of information with 6 rounds, ranging from simple ciphers to intricate reverse engineering puzzles.`,
+        description: `To create the best lock, know what breaks the good ones around.Compete for the final flag in a labyrinth of information with 6 rounds, ranging from simple ciphers to intricate reverse engineering puzzles.`,
         link: "capture-the-flag",
         organisers: [
             {
