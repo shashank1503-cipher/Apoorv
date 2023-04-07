@@ -405,6 +405,14 @@ const events = [
                 email: "gourinair20bec7@​iiitkottayam.ac.in",
                 image: "",
                 gif: ""
+            },
+            {
+                key: 2,
+                name: "Darisi Priyatham",
+                phoneNumber: "",
+                email: "darisi21bcy16@iiitkottayam.ac.in",
+                image: "https://res.cloudinary.com/dbarpjvas/image/upload/v1680853585/_DSC0707_wd3jjc.jpg",
+                gif: "https://media.tenor.com/zQtIVihPry8AAAAC/warning-cyber-attack.gif"
             }
 
         ],

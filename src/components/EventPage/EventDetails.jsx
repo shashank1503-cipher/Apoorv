@@ -4,14 +4,7 @@ import abc from "../../../public/img2.svg";
 import { useState } from "react";
 
 const EventDetails = (props) => {
-  const [visible, setVisible] = useState("invisible");
-  const handleVisible = () => {
-    if (visible === "visible") {
-      setVisible("invisible");
-    } else {
-      setVisible("visible");
-    }
-  };
+
   return (
     <div className={styles.main_div}>
       <div className={styles.wrapper}>
@@ -22,22 +15,7 @@ const EventDetails = (props) => {
           <p>{props.description}</p>
           {props.isCTF ? (
             <div>
-              <button onClick={(e) => handleVisible()}>Click here</button>
-              <div
-                style={{
-                  display: visible === "visible" ? "flex" : "none",
-                  flexDirection: "column",
-                }}
-              >
-                Haha! April's Fool!
-                <br /> Wait... It was on 1st April?
-                <br />
-                Then the flag must have been revealed!
-                <br />
-                <p style={{ color: "RGB(77, 34, 30)" }}>
-                  QXBvb3J2Q1RGe3QzeHRfaGlnaDFpOXRpbjlfaXNfcjM0bGx5X2MwMGx9
-                </p>
-              </div>
+             <a href="https://ctf-repo.vercel.app/" target="_blank" rel="noreferrer">Click Here</a>
             </div>
           ) : (
             <></>
