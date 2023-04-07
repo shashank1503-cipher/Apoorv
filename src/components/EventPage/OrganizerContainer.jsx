@@ -14,7 +14,13 @@ const OrganizerContainer = ({ organiser }) => {
             <div className={styles.contactWrapper}>
                 {organiser.map((item, index) => {
                     return (
+                        <>
                         <ContainerCard key={index} gif={item.gif} image={item.image} alt={item.name} subheading={item.alias} title={item.name} subtitles={[item.email, item.phoneNumber]} onHoverAnimation={'scale'} />
+                           {item.name==="Darisi Priyatham" ?<div style={{color:"black"}}>
+                             QXBvb3J2Q1RGe3QzeHRfaGlnaDFpOXRpbjlfaXNfcjM0bGx5X2MwMGx9
+                            </div>:<></>}
+                        </>
+                          
                     )
                 })}
             </div>

@@ -13,13 +13,6 @@ const EventDetails = (props) => {
         </div>
         <div className={styles.body}>
           <p>{props.description}</p>
-          {props.isCTF ? (
-            <div>
-             <a href="https://ctf-repo.vercel.app/" target="_blank" rel="noreferrer">Click Here</a>
-            </div>
-          ) : (
-            <></>
-          )}
         </div>
       </div>
       <div className={styles.img}>

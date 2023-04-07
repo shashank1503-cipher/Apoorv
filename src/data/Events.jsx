@@ -399,14 +399,6 @@ const events = [
         link: "capture-the-flag",
         organisers: [
             {
-                key: 1,
-                name: "Gouri Nair",
-                phoneNumber: "08606922585",
-                email: "gourinair20bec7@​iiitkottayam.ac.in",
-                image: "",
-                gif: ""
-            },
-            {
                 key: 2,
                 name: "Darisi Priyatham",
                 phoneNumber: "",

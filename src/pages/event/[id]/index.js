@@ -92,9 +92,8 @@ export default function Event({ name, poster, description, register, date, time,
                 description={description}
                 date={date}
                 time={time}
-                isCTF= {name==="Capture The Flag"}
             />
-            <OrganizerContainer organiser={organisers} />
+            <OrganizerContainer organiser={organisers}/>
         </div>
         <Footer />
     </>
