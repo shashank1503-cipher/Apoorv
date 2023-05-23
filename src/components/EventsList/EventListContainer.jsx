@@ -2,11 +2,17 @@ import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import styles from "../../styles/EventsListContainer.module.css"
 import { FaCaretRight } from "react-icons/fa";
 import { motion } from 'framer-motion'
-import {Parallax} from 'react-scroll-parallax'
+import { Parallax } from 'react-scroll-parallax'
 import Image from "next/image";
 import { events } from "@/data/Events";
+import { useRouter } from "next/router";
 
 const EventListContainer = () => {
+
+    const router = useRouter()
+    let { cat, sub } = router.query
+    cat = cat || 'all'
+    sub = sub || ''
 
     const catogories = [
         'technical',
@@ -16,25 +22,25 @@ const EventListContainer = () => {
     ]
 
     const catogoriesSub = {
-        'all' : [],
-       'technical' : [
+        'all': [],
+        'technical': [
             'gaming',
             "hackathons",
             'contests',
         ],
-       'cultural' : [
+        'cultural': [
             'dancing',
             'drama',
             'singing',
             'art'
-       ],
-       'trendles' : [
+        ],
+        'trendles': [
             'literary',
             'finance',
             'art'
-       ],
-       
-       
+        ],
+
+
     }
 
     // console.log(events)
@@ -42,7 +48,7 @@ const EventListContainer = () => {
 
     const ContainerCard = (props) => {
 
-        const {poster, subheading, name, link} = props
+        const { poster, subheading, name, link } = props
 
         return (
             <div key={name} className={styles.card} onClick={() => window.location.href = `/event/${link}`}>
@@ -61,13 +67,12 @@ const EventListContainer = () => {
     }
 
 
-    const [selectedCat, setSelectedCat] = useState('all')
-    const [selectedSub, setSelectedSub] = useState("")
-
+    const [selectedCat, setSelectedCat] = useState(cat)
+    const [selectedSub, setSelectedSub] = useState(sub)
     const firstUpdate = useRef(true)
 
     useLayoutEffect(() => {
-        if(firstUpdate.current){
+        if (firstUpdate.current) {
             firstUpdate.current = false;
             return;
         }
@@ -76,9 +81,18 @@ const EventListContainer = () => {
 
     })
 
+    useEffect(() => {
+        router.push({
+            pathname: '/events',
+            query: { cat: selectedCat, sub: selectedSub }
+        },
+            undefined, { shallow: true }
+        )
+    }, [selectedCat, selectedSub])
+
     // useEffect(() => {
 
-        
+
 
     // }, [selectedCat, selectedSub])
 
@@ -86,8 +100,8 @@ const EventListContainer = () => {
 
 
     return (
-        <div className = {styles.eventContainer}>
-            <div className = {styles.fixedContent}>
+        <div className={styles.eventContainer}>
+            <div className={styles.fixedContent}>
                 <div className={styles.dial_container}>
                     <motion.div
                         className={styles.dial}
@@ -96,10 +110,10 @@ const EventListContainer = () => {
                         {catogories.map((event, index) => {
                             return (
                                 <div
-                                key={index}
+                                    key={index}
                                 >
                                     <div
-                                        
+
                                         className={styles.dial_item}
                                         onClick={() => { setSelectedCat(event); setSelectedSub("") }}
                                     >
@@ -109,52 +123,52 @@ const EventListContainer = () => {
                                             </div>
                                         }
                                         <div className={styles.longLine}></div>
-                                        <div className = {styles.textCon}>
+                                        <div className={styles.textCon}>
                                             {event}
                                         </div>
                                     </div>
-                                    {event === selectedCat?
-                                        catogoriesSub[selectedCat].map((e,i) => (
-                                            <motion.div className={e!==selectedSub?styles.dial_sub_item:styles.dial_sub_item_selected}
+                                    {event === selectedCat ?
+                                        catogoriesSub[selectedCat].map((e, i) => (
+                                            <motion.div className={e !== selectedSub ? styles.dial_sub_item : styles.dial_sub_item_selected}
                                                 onClick={() => setSelectedSub(e)}
                                                 key={e}
                                                 initial="hidden" animate={'visible'} variants={{
                                                     hidden: {
-                    
+
                                                         x: -20,
                                                         opacity: 0
                                                     },
                                                     visible: {
-                    
+
                                                         x: 0,
                                                         opacity: 1,
                                                         transition: {
                                                             duration: 0.05,
-                                    
+
                                                         }
                                                     },
                                                 }}
 
                                             >
 
-                                            {e == selectedSub &&
-                                                <div className={styles.selected_sponsor}>
-                                                    <FaCaretRight />
-                                                </div>
-                                            }
-
-                                                <div className={e===selectedSub?styles.shortLine:styles.shortLine_d}></div>
-                                                    <div className = {styles.textCon}>
-                                                        {e}
+                                                {e == selectedSub &&
+                                                    <div className={styles.selected_sponsor}>
+                                                        <FaCaretRight />
                                                     </div>
+                                                }
+
+                                                <div className={e === selectedSub ? styles.shortLine : styles.shortLine_d}></div>
+                                                <div className={styles.textCon}>
+                                                    {e}
+                                                </div>
 
                                             </motion.div>
-                                        )):event !== 'all'?<div className={styles.lines}>
-                                        <div className={styles.shortLine_d}></div>
-                                        <div className={styles.shortLine_d}></div>
-                                        <div className={styles.shortLine_d}></div>
-                                        </div>:<></>
-                                    
+                                        )) : event !== 'all' ? <div className={styles.lines}>
+                                            <div className={styles.shortLine_d}></div>
+                                            <div className={styles.shortLine_d}></div>
+                                            <div className={styles.shortLine_d}></div>
+                                        </div> : <></>
+
                                     }
                                 </div>
 
@@ -162,17 +176,17 @@ const EventListContainer = () => {
                         }
                         )}
                     </motion.div>
-                </div>    
+                </div>
             </div>
 
             <div className={styles.mobile_dial}>
-                        
-                <select 
-                    className={styles.mobile_dial_select} 
+
+                <select
+                    className={styles.mobile_dial_select}
                     value={selectedCat}
                     onChange={(e) => setSelectedCat(e.target.value)}
                 >
-                    
+
                     {catogories.map(cat => (
                         <option key={cat} value={cat}>{cat}</option>
                     ))}
@@ -181,11 +195,11 @@ const EventListContainer = () => {
 
             </div>
 
-            <div className = {styles.eventList} id="eventList">
-                {eventsList && eventsList.filter(e => selectedCat==='all' || 
+            <div className={styles.eventList} id="eventList">
+                {eventsList && eventsList.filter(e => selectedCat === 'all' ||
                     selectedSub === "" && e.cat.includes(selectedCat) ||
                     e.cat.includes(selectedCat) && e.cat.includes(selectedSub)
-                        
+
                 ).map((event, index) => {
                     // console.log(event.key)
                     return (
@@ -206,20 +220,21 @@ const EventListContainer = () => {
                                 },
                             }}
                         >
-                            <Parallax speed={index&1?5:-5} key={event.key}>
-                            
-                            <ContainerCard
-                                poster = {event.poster}
-                                alt = {event.alt}
-                                link={event.link}
-                                subheading = {event.subheading} 
-                                name = {event.name}
-                                subtitles = {event.subtitles} 
+                            <Parallax speed={index & 1 ? 5 : -5} key={event.key}>
+
+                                <ContainerCard
+                                    poster={event.poster}
+                                    alt={event.alt}
+                                    link={event.link}
+                                    subheading={event.subheading}
+                                    name={event.name}
+                                    subtitles={event.subtitles}
                                 // onHoverAnimation = {event.onHoverAnimation} 
-                            />
-                        </Parallax>
+                                />
+                            </Parallax>
                         </motion.div>
-                    )}
+                    )
+                }
                 )}
             </div>
         </div>
