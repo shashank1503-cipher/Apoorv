@@ -14,6 +14,7 @@ const Sponsor = () => {
         1: 'TITLE',
         2: 'TECH',
         3: 'EMERALD',
+        // 4: "REGISTRATION"
     }
 
     const [sponsorsList, setSponsorsList] = useState(Sponsors)

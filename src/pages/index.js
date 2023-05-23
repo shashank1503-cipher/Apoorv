@@ -13,6 +13,7 @@ import TimelineNew from '@/components/TimelineNew'
 import Intro from '@/components/Intro'
 import { useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
+import ShowStoppers from '@/components/ShowStoppers'
 
 export default function Home() {
   const router = useRouter()
@@ -85,6 +86,7 @@ export default function Home() {
           <Description />
           <TimelineNew />
           <Speakers />
+          <ShowStoppers/>
           <Sponsor />
           <Footer />
         </>}
